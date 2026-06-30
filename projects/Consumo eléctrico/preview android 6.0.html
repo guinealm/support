@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control energético doméstico</title>
+  <style>
+    :root{
+      --azul:#17677f;
+      --azul-oscuro:#0f4f65;
+      --verde:#12a85a;
+      --gris:#e8ecef;
+      --gris2:#cfd6dc;
+      --texto:#0b1020;
+      --borde:#d8dde3;
+      --alerta:#d97706;
+    }
+
+    *{box-sizing:border-box}
+
+    html{
+      -webkit-text-size-adjust:100%;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--texto);
+      background:#f4f6f8;
+    }
+
+    header{
+      background:var(--azul);
+      color:white;
+      padding:22px 18px;
+      text-align:center;
+    }
+
+    header h1{
+      margin:0;
+      font-size:clamp(1.7rem,3vw,2.6rem);
+      letter-spacing:.03em;
+    }
+
+    header p{
+      margin:.5rem auto 0;
+      max-width:760px;
+      color:#dff4fb;
+      line-height:1.35;
+    }
+
+    main{
+      width:min(1120px,94vw);
+      margin:24px auto 48px;
+      display:grid;
+      gap:24px;
+    }
+
+    .panel{
+      background:white;
+      border:1px solid var(--borde);
+      border-radius:16px;
+      box-shadow:0 10px 24px rgba(15,35,50,.08);
+      overflow:hidden;
+    }
+
+    .panel h2{
+      margin:0;
+      padding:16px 20px;
+      background:var(--azul);
+      color:white;
+      font-size:1.25rem;
+    }
+
+    .inputs{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      padding:18px;
+    }
+
+    label{
+      display:grid;
+      gap:6px;
+      font-weight:700;
+    }
+
+    label span{
+      font-size:.95rem;
+    }
+
+    input,select{
+      width:100%;
+      min-height:44px;
+      padding:10px 12px;
+      border:1px solid #b8c2cc;
+      border-radius:10px;
+      font-size:1rem;
+      background:white;
+    }
+
+    .unit{
+      color:#62717f;
+      font-weight:500;
+      font-size:.85rem;
+    }
+
+    .diagram{
+      padding:26px;
+      display:grid;
+      grid-template-columns:1fr 1.15fr 1fr;
+      grid-template-rows:auto auto auto;
+      gap:20px;
+      align-items:stretch;
+      text-align:center;
+    }
+
+    .source,.sink,.battery,.homebox{
+      border-radius:16px;
+      padding:18px;
+      background:#fff;
+      min-height:150px;
+      display:grid;
+      align-content:center;
+      justify-items:center;
+      border:2px solid #e5eaf0;
+    }
+
+    .source strong,.sink strong,.battery strong{
+      font-size:1.1rem;
+    }
+
+    .value{
+      margin-top:4px;
+      font-size:2.2rem;
+      font-weight:800;
+      color:#111827;
+    }
+
+    .value small{
+      font-size:1rem;
+      color:#8a94a3;
+      font-weight:500;
+    }
+
+    .icon{
+      font-size:3.8rem;
+      line-height:1;
+      margin-bottom:8px;
+    }
+
+    .grid{grid-column:1;grid-row:1}
+    .solar{grid-column:3;grid-row:1}
+    .homebox{
+      grid-column:1/4;
+      grid-row:2;
+      border:4px solid #12384a;
+      min-height:250px;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:10px;
+      align-items:center;
+    }
+
+    .homebox .total{
+      grid-column:1/4;
+      border-top:1px solid #e5eaf0;
+      padding-top:14px;
+      width:80%;
+      justify-self:center;
+    }
+
+    .export{grid-column:1;grid-row:3}
+    .battery{grid-column:3;grid-row:3}
+
+    .formula-wrap{
+      overflow-x:auto;
+    }
+
+    .formula{
+      width:100%;
+      border-collapse:collapse;
+      font-size:1rem;
+    }
+
+    .formula th{
+      background:var(--azul);
+      color:white;
+      text-align:left;
+      padding:13px 14px;
+      font-size:1.05rem;
+    }
+
+    .formula td{
+      padding:12px 14px;
+      border:2px solid white;
+      background:var(--gris);
+      vertical-align:top;
+    }
+
+    .formula tr:nth-child(even) td{background:var(--gris2)}
+    .formula code{
+      font-family:ui-monospace,SFMono-Regular,Consolas,monospace;
+      background:rgba(255,255,255,.75);
+      padding:2px 5px;
+      border-radius:5px;
+    }
+
+    .note{
+      padding:0 18px 18px;
+      color:#334155;
+      line-height:1.5;
+    }
+
+    @media (max-width:900px){
+      main{
+        width:min(720px,94vw);
+      }
+      .inputs{
+        grid-template-columns:1fr 1fr;
+      }
+      .diagram{
+        gap:16px;
+        padding:18px;
+      }
+      .source,.sink,.battery,.homebox{
+        padding:14px;
+      }
+      .icon{font-size:3rem}
+      .value{font-size:1.9rem}
+    }
+
+    @media (max-width:640px){
+      header{
+        padding:18px 14px;
+      }
+      header h1{
+        font-size:1.75rem;
+      }
+      header p{
+        font-size:.95rem;
+      }
+      main{
+        width:100%;
+        margin:14px 0 32px;
+        padding:0 10px;
+        gap:16px;
+      }
+      .panel{
+        border-radius:13px;
+      }
+      .panel h2{
+        padding:13px 14px;
+        font-size:1.08rem;
+      }
+      .inputs{
+        grid-template-columns:1fr;
+        gap:12px;
+        padding:14px;
+      }
+      .note{
+        padding:0 14px 14px;
+        font-size:.92rem;
+      }
+
+      /* Versión móvil: el esquema deja de ser un plano ancho y se convierte
+         en tarjetas verticales, evitando que Android lo estire o fuerce zoom. */
+      .diagram{
+        grid-template-columns:1fr;
+        grid-template-rows:none;
+        gap:12px;
+        padding:14px;
+      }
+      .grid,.solar,.homebox,.export,.battery{
+        grid-column:1;
+        grid-row:auto;
+      }
+      .source,.sink,.battery{
+        min-height:auto;
+        padding:14px 12px;
+      }
+      .homebox{
+        min-height:auto;
+        grid-template-columns:1fr;
+        border-width:3px;
+        gap:12px;
+      }
+      .homebox .total{
+        grid-column:1;
+        width:100%;
+      }
+      .icon{
+        font-size:2.35rem;
+        margin-bottom:5px;
+      }
+      .source strong,.sink strong,.battery strong{
+        font-size:1rem;
+      }
+      .value{
+        font-size:1.65rem;
+      }
+      .value small{
+        font-size:.9rem;
+      }
+      .formula,
+      .formula thead,
+      .formula tbody,
+      .formula tr,
+      .formula th,
+      .formula td{
+        display:block;
+      }
+      .formula thead{
+        display:none;
+      }
+      .formula tr{
+        margin:0 0 10px;
+        border:1px solid var(--borde);
+        border-radius:12px;
+        overflow:hidden;
+      }
+      .formula td{
+        border:0;
+        border-bottom:1px solid white;
+        padding:10px 12px;
+      }
+      .formula td:nth-child(1)::before{content:"Variable: ";font-weight:700}
+      .formula td:nth-child(2)::before{content:"Concepto: ";font-weight:700}
+      .formula td:nth-child(3)::before{content:"Cálculo: ";font-weight:700}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CONTROL</h1>
+    <p>Simulación de autoconsumo solar, red eléctrica, vehículo eléctrico y batería</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Datos discrecionales</h2>
+      <div class="inputs">
+        <label>
+          <span>PS · Paneles solares <span class="unit">(kW)</span></span>
+          <input id="ps" type="number" min="0" max="5" step="0.1" value="3.5" inputmode="decimal">
+        </label>
+        <label>
+          <span>DO · Consumo doméstico <span class="unit">(kW)</span></span>
+          <input id="do" type="number" min="0" step="0.1" value="1.2" inputmode="decimal">
+        </label>
+        <label>
+          <span>VE · Tesla / coche <span class="unit">(kW)</span></span>
+          <input id="ve" type="number" min="0" step="0.1" value="2.0" inputmode="decimal">
+        </label>
+        <label>
+          <span>BA · Estado batería</span>
+          <select id="ba">
+            <option value="vacia">Vacía</option>
+            <option value="operativa" selected>Operativa</option>
+            <option value="llena">Llena</option>
+          </select>
+        </label>
+      </div>
+      <p class="note">IM y EX se calculan automáticamente. La batería se modela de forma discrecional mediante tres estados: Vacía, Operativa y Llena.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Consumo en tiempo real</h2>
+      <div class="diagram">
+        <div class="source grid">
+          <div class="icon">🔌</div>
+          <strong>Importaciones desde<br>red eléctrica</strong>
+          <div class="value" id="imOut">0 <small>kW</small></div>
+        </div>
+
+        <div class="source solar">
+          <div class="icon">☀️</div>
+          <strong>Paneles solares</strong>
+          <div class="value" id="psOut">0 <small>kW</small></div>
+        </div>
+
+        <div class="homebox">
+          <div>
+            <div class="icon">🏠</div>
+            <strong>Doméstico</strong>
+            <div class="value" id="doOut">0 <small>kW</small></div>
+          </div>
+          <div>
+            <strong>Consumo total</strong>
+            <div class="value" id="ctOut">0 <small>kW</small></div>
+          </div>
+          <div>
+            <div class="icon">🚗</div>
+            <strong>Tesla</strong>
+            <div class="value" id="veOut">0 <small>kW</small></div>
+          </div>
+          <div class="total">
+            <strong>Balance instantáneo</strong>
+            <div id="balanceText">Equilibrado</div>
+          </div>
+        </div>
+
+        <div class="sink export">
+          <div class="icon">💶</div>
+          <strong>Exportaciones hacia<br>red eléctrica</strong>
+          <div class="value" id="exOut">0 <small>kW</small></div>
+        </div>
+
+        <div class="battery">
+          <div class="icon">🔋</div>
+          <strong>Batería</strong>
+          <div class="value" id="batOut">Operativa</div>
+          <div id="batText">Sin carga/descarga</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Cálculo</h2>
+      <div class="formula-wrap">
+        <table class="formula">
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Concepto</th>
+              <th>Cálculo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>PS</td><td>Paneles solares</td><td>Discrecional, máximo <code>5 kW</code></td></tr>
+            <tr><td>DO</td><td>Consumo doméstico</td><td>Discrecional</td></tr>
+            <tr><td>VE</td><td>Tesla / vehículo eléctrico</td><td>Discrecional</td></tr>
+            <tr><td>CT</td><td>Consumo total</td><td><code>CT = DO + VE</code></td></tr>
+            <tr><td>BA</td><td>Estado de batería</td><td>Discrecional: Vacía, Operativa y Llena</td></tr>
+            <tr><td>IM</td><td>Importaciones desde red eléctrica</td><td><code>IM = max(0, CT - PS - descarga batería)</code></td></tr>
+            <tr><td>EX</td><td>Exportaciones hacia red eléctrica</td><td><code>EX = max(0, PS - CT - carga batería)</code></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const ids = ["ps","do","ve","ba"];
+    const f = new Intl.NumberFormat("es-ES",{maximumFractionDigits:2});
+    const estadoTexto = {vacia:"Vacía", operativa:"Operativa", llena:"Llena"};
+
+    function n(id){
+      return Math.max(0, Number(document.getElementById(id).value) || 0);
+    }
+
+    function set(id, value, unit){
+      document.getElementById(id).innerHTML = `${f.format(value)} <small>${unit}</small>`;
+    }
+
+    function calc(){
+      let ps = Math.min(n("ps"), 5);
+      const dom = n("do");
+      const ve = n("ve");
+      const ba = document.getElementById("ba").value;
+
+      document.getElementById("ps").value = ps;
+
+      const ct = dom + ve;
+      const saldo = ps - ct;
+
+      let im = 0, ex = 0, cargaBat = 0, descargaBat = 0;
+
+      if (saldo >= 0){
+        if (ba === "llena"){
+          ex = saldo;
+        } else {
+          cargaBat = saldo;
+        }
+      } else {
+        if (ba === "vacia"){
+          im = -saldo;
+        } else {
+          descargaBat = -saldo;
+        }
+      }
+
+      set("psOut", ps, "kW");
+      set("doOut", dom, "kW");
+      set("veOut", ve, "kW");
+      set("ctOut", ct, "kW");
+      set("imOut", im, "kW");
+      set("exOut", ex, "kW");
+      document.getElementById("batOut").textContent = estadoTexto[ba];
+
+      const balanceText = document.getElementById("balanceText");
+      const batText = document.getElementById("batText");
+
+      if (saldo >= 0){
+        balanceText.textContent = `Excedente solar bruto: ${f.format(saldo)} kW`;
+      } else {
+        balanceText.textContent = `Déficit bruto: ${f.format(-saldo)} kW`;
+      }
+
+      if (cargaBat > 0){
+        batText.textContent = `Cargando: ${f.format(cargaBat)} kW`;
+      } else if (descargaBat > 0){
+        batText.textContent = `Descargando: ${f.format(descargaBat)} kW`;
+      } else {
+        batText.textContent = "Sin carga/descarga";
+      }
+    }
+
+    ids.forEach(id => document.getElementById(id).addEventListener("input", calc));
+    calc();
+  </script>
+</body>
+</html>

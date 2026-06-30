@@ -1,0 +1,193 @@
+/* =========================================
+   1. VARIABLES GLOBALES & RESET
+   ========================================= */
+:root {
+    /* Paleta Dark Dashboard (Landing Page) */
+    --dash-bg: #0B1120;       /* Fondo muy oscuro */
+    --dash-card: #151e32;     /* Fondo de tarjetas */
+    --dash-text: #e2e8f0;     /* Texto claro */
+    --dash-accent: #3B82F6;   /* Azul acento */
+    --dash-border: rgba(255, 255, 255, 0.1);
+
+    /* Variables Migradas de HERENCIA (Prefijo --h) */
+    --h-primary: #2c3e50;
+    --h-accent-gold: #f1c40f;
+    --h-accent-blue: #3498db;
+    --h-accent-green: #27ae60;
+    --h-alert: #e74c3c;
+    --h-bg-color: #f4f7f6;
+    --h-card-bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, sans-serif; /* Fuente por defecto */
+}
+
+/* =========================================
+   2. ESTILOS LANDING PAGE (index.html)
+   ========================================= */
+body.landing-page {
+    background-color: var(--dash-bg);
+    color: var(--dash-text);
+    padding: 40px 20px;
+}
+
+.landing-header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    border-bottom: 1px solid var(--dash-border);
+    padding-bottom: 20px;
+}
+
+.landing-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+.landing-header p { color: #94a3b8; }
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dash-card {
+    background-color: var(--dash-card);
+    border: 1px solid var(--dash-border);
+    border-radius: 12px;
+    padding: 25px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+}
+
+.dash-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--dash-accent);
+}
+
+.card-icon { font-size: 2rem; margin-bottom: 15px; }
+.dash-card h2 { margin: 0 0 10px 0; font-size: 1.25rem; }
+.dash-card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.5; flex-grow: 1; }
+.card-meta {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 0.75rem;
+    font-family: monospace;
+}
+.tag {
+    background: rgba(255,255,255,0.05);
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: var(--dash-accent);
+}
+
+/* =========================================
+   3. ESTILOS EXTRAÍDOS DE "HERENCIA"
+   ========================================= */
+body.herencia-body {
+    background-color: var(--h-bg-color);
+    color: var(--h-primary);
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+.h-header {
+    background: linear-gradient(135deg, var(--h-primary), #1a252f);
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.h-container { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+
+.section-card {
+    background: var(--h-card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+.section-card.visible { opacity: 1; transform: translateY(0); }
+
+.pyramid-container { display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; margin: 2rem 0; }
+.shape-inverted {
+    width: 180px; height: 100px; background: var(--h-primary);
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;
+}
+.shape-small {
+    width: 100px; height: 60px; background: var(--h-accent-blue);
+    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0% 100%);
+    margin: 5px auto 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem;
+}
+.arrow-down { font-size: 2rem; color: var(--h-accent-gold); animation: bounce 2s infinite; }
+@keyframes bounce { 0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 40% {transform: translateY(-10px);} 60% {transform: translateY(-5px);} }
+
+.bar-bg { background: #eee; height: 20px; border-radius: 10px; overflow: hidden; }
+.bar-fill { height: 100%; width: 0; transition: width 1.5s ease-out; }
+.fill-salary { background: var(--h-accent-blue); }
+.fill-cost { background: var(--h-alert); }
+
+.pipe-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+.pipe-card { border: 1px solid #eee; border-radius: 8px; padding: 1.5rem; text-align: center; position: relative; }
+.pipe-wide { height: 25px; background: var(--h-accent-gold); width: 100%; border-radius: 5px; margin: 1rem 0;}
+.pipe-narrow { height: 8px; background: var(--h-accent-blue); width: 100%; border-radius: 5px; margin: 1rem 0;}
+.pipe-broken { height: 8px; background: linear-gradient(to right, var(--h-accent-blue) 40%, transparent 40%, transparent 60%, var(--h-accent-blue) 60%); width: 100%; margin: 1rem 0;}
+.leak { color: var(--h-alert); position: absolute; top: 15px; left: 50%; font-size: 0.8rem; transform: translateX(-50%); }
+
+.verdict-container { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 3rem; }
+.pie-chart {
+    width: 200px; height: 200px; border-radius: 50%;
+    background: conic-gradient(var(--h-accent-gold) 0% 0%, var(--h-primary) 0% 0%, var(--h-accent-green) 0% 0%);
+    transition: background 1.5s ease-out; position: relative; box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.pie-chart.animate {
+    background: conic-gradient(var(--h-accent-gold) 0% 65%, var(--h-accent-blue) 65% 90%, var(--h-accent-green) 90% 100%);
+}
+.chart-legend { list-style: none; padding: 0; }
+.chart-legend li { margin-bottom: 0.8rem; display: flex; align-items: center; }
+.dot { width: 15px; height: 15px; display: inline-block; margin-right: 10px; border-radius: 50%; }
+
+/* =========================================
+   4. ESTILOS EXTRAÍDOS DE "MAPA MUNDI"
+   Nota: La mayoría del estilo está en Tailwind, aquí van los custom.
+   ========================================= */
+.map-container {
+    width: 100%; height: auto; max-height: 80vh;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.5));
+}
+.region-path {
+    fill: #1e293b; stroke: #334155; stroke-width: 0.5;
+    transition: all 0.3s ease; cursor: pointer;
+}
+/* Hover Effects (Mapa) */
+.region-na:hover { fill: #3B82F6; filter: drop-shadow(0 0 10px #3B82F6); }
+.region-sa:hover { fill: #10B981; filter: drop-shadow(0 0 10px #10B981); }
+.region-eu:hover { fill: #8B5CF6; filter: drop-shadow(0 0 10px #8B5CF6); }
+.region-ru:hover { fill: #EF4444; filter: drop-shadow(0 0 10px #EF4444); }
+.region-cn:hover { fill: #EC4899; filter: drop-shadow(0 0 10px #EC4899); }
+.region-in:hover { fill: #F97316; filter: drop-shadow(0 0 10px #F97316); }
+.region-af:hover { fill: #F59E0B; filter: drop-shadow(0 0 10px #F59E0B); }
+.region-me:hover { fill: #D946EF; filter: drop-shadow(0 0 10px #D946EF); }
+.region-jk:hover { fill: #06B6D4; filter: drop-shadow(0 0 10px #06B6D4); }
+.region-se:hover { fill: #6366F1; filter: drop-shadow(0 0 10px #6366F1); }
+
+#map-tooltip {
+    pointer-events: none; position: fixed; z-index: 100;
+    opacity: 0; transition: opacity 0.2s;
+    transform: translate(-50%, -100%); margin-top: -10px;
+}
+#pdf-viewer-modal { transition: opacity 0.3s ease-in-out; }
+.chart-wrapper { position: relative; height: 350px; width: 100%; }

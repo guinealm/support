@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Geopolítico: Retícula Global 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Exo 2"', 'sans-serif'], mono: ['"Roboto Mono"', 'monospace'] },
+                    colors: {
+                        'utm-dark': '#0B1120', 'utm-panel': 'rgba(30, 41, 59, 0.65)', 'utm-border': 'rgba(148, 163, 184, 0.2)',
+                        'area-na': '#3B82F6', 'area-sa': '#10B981', 'area-eu': '#8B5CF6', 'area-ru': '#EF4444',
+                        'area-cn': '#EC4899', 'area-in': '#F97316', 'area-af': '#F59E0B', 'area-me': '#D946EF',
+                        'area-jk': '#06B6D4', 'area-se': '#6366F1'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased font-sans selection:bg-blue-500 selection:text-white bg-[#0B1120] text-slate-200">
+
+    <header class="fixed top-0 w-full z-50 bg-utm-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <a href="index.html" class="text-white hover:text-blue-400 mr-2 font-mono text-xs">← VOLVER</a>
+                
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded flex items-center justify-center font-bold text-white text-xs">UTM</div>
+                <div>
+                    <h1 class="text-lg md:text-xl font-bold leading-none tracking-tight">
+                        Atlas Geopolítico <span class="text-xs align-top opacity-50">2025</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-4 text-xs font-mono text-gray-400">
+                <span>VISTA: VECTORIAL</span>
+                <span class="text-green-500">● ACTIVO</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative pt-20 pb-12 min-h-screen">
+        
+        <section class="container mx-auto px-4 mb-16">
+            <div class="flex justify-between items-end mb-4">
+                <h2 class="text-2xl font-bold border-l-4 border-blue-500 pl-3">Mapa Estratégico Interactivo</h2>
+            </div>
+
+            <div class="w-full bg-slate-900/50 rounded-xl border border-white/10 p-2 md:p-8 flex justify-center overflow-hidden relative group">
+                
+                <div id="map-tooltip" class="bg-black/90 text-white text-xs px-3 py-2 rounded border border-white/20 shadow-xl backdrop-blur-sm pointer-events-none">
+                    <span class="font-bold block text-sm" id="tt-title">Region</span>
+                    <span class="text-gray-400" id="tt-desc">Description</span>
+                </div>
+
+                <svg viewBox="0 0 1000 500" class="map-container" xmlns="http://www.w3.org/2000/svg">
+                    <g class="region-path region-na" onmouseenter="showTooltip(evt, 'I. Norteamérica', 'La Fortaleza Continental')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque I Norteamérica.pdf', 'na')">
+                        <path d="M50,70 L280,30 L350,20 L380,40 L320,150 L250,220 L180,250 L120,200 L50,150 Z" />
+                        <path d="M290,30 L380,20 L360,90 L300,80 Z" />
+                    </g>
+                    <g class="region-path region-ru" onmouseenter="showTooltip(evt, 'III. Rusia & Eurasia', 'El Espacio Post-Soviético')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque III Rusia.pdf', 'ru')">
+                        <path d="M550,60 L900,60 L950,120 L850,180 L700,160 L620,140 L580,100 Z" />
+                    </g>
+                    <g class="region-path region-eu" onmouseenter="showTooltip(evt, 'II. Europa', 'La Península Atlántica')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque II Europa.pdf', 'eu')">
+                        <path d="M450,80 L540,70 L560,120 L520,140 L480,135 L440,120 Z" />
+                    </g>
+                    <g class="region-path region-cn" onmouseenter="showTooltip(evt, 'IV. China', 'El Reino Medio Industrial')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque IV China.pdf', 'cn')">
+                        <path d="M720,165 L850,185 L840,240 L760,230 L730,200 Z" />
+                    </g>
+                    <g class="region-path region-in" onmouseenter="showTooltip(evt, 'V. Sur de Asia', 'El Núcleo Demográfico')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque V Sur de Asia.pdf', 'in')">
+                        <path d="M680,210 L750,235 L730,290 L670,260 Z" />
+                    </g>
+                    <g class="region-path region-jk" onmouseenter="showTooltip(evt, 'VII. APAC', 'El Arco Tecnológico')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque VII APAC.pdf', 'jk')">
+                        <path d="M860,190 L880,180 L870,210 L855,200 Z" /> 
+                        <path d="M845,190 L855,190 L855,200 L845,200 Z" />
+                    </g>
+                    <g class="region-path region-me" onmouseenter="showTooltip(evt, 'VIII. MENA', 'El Pivote Energético')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque VIII MENA.pdf', 'me')">
+                        <path d="M530,150 L660,150 L660,250 L600,240 L560,180 Z" />
+                    </g>
+                    <g class="region-path region-af" onmouseenter="showTooltip(evt, 'IX. África', 'El Gigante Dormido')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque IX África.pdf', 'af')">
+                        <path d="M430,180 L550,180 L600,250 L550,400 L480,380 L420,250 Z" />
+                    </g>
+                    <g class="region-path region-se" onmouseenter="showTooltip(evt, 'VI. ASEAN', 'La Encrucijada Marítima')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque VI ASEAN.pdf', 'se')">
+                        <path d="M760,250 L880,250 L900,300 L800,310 Z" />
+                        <path d="M780,330 L920,330 L910,450 L770,430 Z" />
+                    </g>
+                    <g class="region-path region-sa" onmouseenter="showTooltip(evt, 'X. Sudamérica', 'La Reserva Estratégica')" onmousemove="moveTooltip(evt)" onmouseleave="hideTooltip()" onclick="openViewer('Bloque X Sudamérica.pdf', 'sa')">
+                        <path d="M220,260 L320,280 L350,350 L280,480 L200,400 Z" />
+                    </g>
+                </svg>
+                
+                <div class="absolute inset-0 pointer-events-none opacity-10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')]"></div>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <div class="bg-utm-panel rounded-lg border border-utm-border p-4 backdrop-blur-sm">
+                <h3 class="text-lg font-bold mb-4 text-gray-300">⚖️ Asimetría: Población vs Poder Económico</h3>
+                <div class="chart-wrapper"><canvas id="scatterChart"></canvas></div>
+            </div>
+            <div class="bg-utm-panel rounded-lg border border-utm-border p-4 backdrop-blur-sm">
+                <h3 class="text-lg font-bold mb-4 text-gray-300">🛡️ Índice de Fuerza</h3>
+                <div class="chart-wrapper"><canvas id="barChart"></canvas></div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="pdf-viewer-modal" class="hidden fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex justify-center items-center p-4">
+        <div class="bg-slate-900 w-full max-w-4xl h-[85vh] rounded-xl border border-white/20 flex flex-col overflow-hidden relative">
+            <div class="bg-slate-800 px-4 py-3 border-b border-white/10 flex justify-between items-center">
+                <span id="modal-title" class="text-gray-200 font-mono text-sm">Doc</span>
+                <button onclick="closeViewer()" class="text-white">X</button>
+            </div>
+            <div class="p-8 text-white"><h2 id="doc-heading" class="text-2xl font-bold"></h2><p>Contenido simulado del PDF: <span id="doc-name-ref"></span></p></div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

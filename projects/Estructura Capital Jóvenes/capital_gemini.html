@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Futuro Financiero: 2025-2045</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent-gold: #f1c40f;
+            --accent-blue: #3498db;
+            --accent-green: #27ae60;
+            --alert: #e74c3c;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--primary);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #1a252f);
+            color: white;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 1rem;
+            font-weight: 300;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            opacity: 0; /* Para animación */
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        .section-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            border-bottom: 4px solid var(--accent-gold);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- VISUALIZACIÓN PIRÁMIDE --- */
+        .pyramid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin: 2rem 0;
+        }
+
+        .pyramid-visual {
+            text-align: center;
+        }
+
+        .shape-inverted {
+            width: 180px;
+            height: 100px;
+            background: var(--primary);
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .shape-small {
+            width: 100px;
+            height: 60px;
+            background: var(--accent-blue);
+            clip-path: polygon(25% 0, 75% 0, 100% 100%, 0% 100%);
+            margin: 5px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.8rem;
+        }
+
+        .arrow-down {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-10px);}
+            60% {transform: translateY(-5px);}
+        }
+
+        /* --- BARRAS DE SUELDO --- */
+        .bar-chart {
+            margin-top: 2rem;
+        }
+        .bar-group {
+            margin-bottom: 1rem;
+        }
+        .bar-label { font-size: 0.9rem; margin-bottom: 0.2rem; display: flex; justify-content: space-between;}
+        .bar-bg { background: #eee; height: 20px; border-radius: 10px; overflow: hidden; }
+        .bar-fill { height: 100%; width: 0; transition: width 1.5s ease-out; }
+        .fill-salary { background: var(--accent-blue); }
+        .fill-cost { background: var(--alert); }
+
+        /* --- TUBERÍAS DE CAPITAL --- */
+        .pipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .pipe-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .pipe-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        
+        .pipe-width {
+            height: 10px;
+            background: #ddd;
+            margin: 1rem auto;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .pipe-wide { height: 25px; background: var(--accent-gold); width: 100%; }
+        .pipe-narrow { height: 8px; background: var(--accent-blue); width: 100%; }
+        .pipe-broken { 
+            height: 8px; 
+            background: linear-gradient(to right, var(--accent-blue) 40%, transparent 40%, transparent 60%, var(--accent-blue) 60%); 
+            width: 100%;
+        }
+        .leak { color: var(--alert); position: absolute; top: 15px; left: 50%; font-size: 0.8rem; transform: translateX(-50%); }
+
+        /* --- GRÁFICO DE PASTEL CSS --- */
+        .verdict-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .pie-chart {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(
+                var(--accent-gold) 0% 0%, 
+                var(--primary) 0% 0%, 
+                var(--accent-green) 0% 0%
+            );
+            transition: background 1.5s ease-out;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Clase para activar la animación del grafico */
+        .pie-chart.animate {
+            background: conic-gradient(
+                var(--accent-gold) 0% 65%, 
+                var(--accent-blue) 65% 90%, 
+                var(--accent-green) 90% 100%
+            );
+        }
+
+        .chart-legend {
+            list-style: none;
+            padding: 0;
+        }
+
+        .chart-legend li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .dot { width: 15px; height: 15px; display: inline-block; margin-right: 10px; border-radius: 50%; }
+        .dot-gold { background: var(--accent-gold); }
+        .dot-blue { background: var(--accent-blue); }
+        .dot-green { background: var(--accent-green); }
+
+        .percentage { font-weight: bold; font-size: 1.2rem; margin-right: 5px; }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #ddd;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .highlight-box {
+            background-color: #fdf2cd;
+            border-left: 5px solid var(--accent-gold);
+            padding: 1rem;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>¿Carrera de Méritos o Lotería Genética?</h1>
+    <p class="subtitle">Análisis del origen de tu riqueza futura (2025-2045)</p>
+</header>
+
+<main>
+
+    <section class="section-card" id="contexto">
+        <h2>1. El Embudo Demográfico</h2>
+        <p>España tiene una pirámide de población invertida. La generación del <em>Baby Boom</em> acumula la mayor parte de los activos inmobiliarios y financieros.</p>
+        
+        <div class="pyramid-container">
+            <div class="pyramid-visual">
+                <div class="shape-inverted">BOOMERS<br>(Activos)</div>
+                <div class="arrow-down">⬇ Transferencia ⬇</div>
+                <div class="shape-small">TÚ<br>(Herederos)</div>
+            </div>
+            
+            <div style="flex: 1; min-width: 250px;">
+                <p><strong>El problema del ahorro actual:</strong></p>
+                <div class="bar-chart">
+                    <div class="bar-group">
+                        <div class="bar-label"><span>Ingresos Medios</span> <span>100%</span></div>
+                        <div class="bar-bg"><div class="bar-fill fill-salary" style="width: 100%"></div></div>
+                    </div>
+                    <div class="bar-group">
+                        <div class="bar-label"><span>Vivienda y Coste Vida</span> <span style="color:var(--alert)">70-80%</span></div>
+                        <div class="bar-bg"><div class="bar-fill fill-cost" data-width="80%"></div></div>
+                    </div>
+                    <p style="font-size: 0.8rem; color: #666;">El margen de maniobra para crear riqueza trabajando es mínimo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-card" id="vias">
+        <h2>2. Las 3 Tuberías de Capital</h2>
+        <p>¿De dónde vendrá tu patrimonio neto cuando tengas 50 años?</p>
+        
+        <div class="pipe-grid">
+            <div class="pipe-card">
+                <div class="pipe-icon">🔨</div>
+                <h3>Ahorro Propio</h3>
+                <div class="pipe-width pipe-broken"></div>
+                <div class="leak">💧 Fuga (Alquiler/Inflación)</div>
+                <p style="font-size:0.9rem">Mermado por el coste de vida. Servirá para emergencias, no para grandes activos.</p>
+            </div>
+
+            <div class="pipe-card" style="border-color: var(--accent-gold); background: #fffcf0;">
+                <div class="pipe-icon">🏡</div>
+                <h3>Herencia / Donación</h3>
+                <div class="pipe-width pipe-wide"></div>
+                <p style="font-size:0.9rem"><strong>La vía principal.</strong> Transferencia de inmuebles y capital de una generación numerosa a una reducida.</p>
+            </div>
+
+            <div class="pipe-card">
+                <div class="pipe-icon">📈</div>
+                <h3>Inversión</h3>
+                <div class="pipe-width pipe-narrow"></div>
+                <p style="font-size:0.9rem">El "Turbo". Solo funciona eficazmente si tienes capital inicial (provisto por la vía 2).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-card" id="veredicto">
+        <h2>3. El Veredicto (Proyección 2045)</h2>
+        <p>Estimación del origen de la riqueza acumulada para un español medio que hoy tiene 25-30 años.</p>
+
+        <div class="verdict-container">
+            <div class="pie-chart" id="myPieChart"></div>
+            
+            <ul class="chart-legend">
+                <li>
+                    <span class="dot dot-gold"></span>
+                    <span class="percentage">65%</span>
+                    <span><strong>Herencias y Familia</strong><br><small>Patrimonio "transferido"</small></span>
+                </li>
+                <li>
+                    <span class="dot dot-blue"></span>
+                    <span class="percentage">25%</span>
+                    <span><strong>Ahorros del Trabajo</strong><br><small>Patrimonio "creado"</small></span>
+                </li>
+                <li>
+                    <span class="dot dot-green"></span>
+                    <span class="percentage">10%</span>
+                    <span><strong>Revalorización / Otros</strong><br><small>Interés compuesto</small></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            CONCLUSIÓN: Estamos pasando de una sociedad de ingresos (donde un buen sueldo te hacía rico) a una sociedad de patrimonio (donde heredar te mantiene rico).
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>Basado en proyecciones demográficas del INE y tendencias de riqueza del Banco de España.</p>
+    <p><em>Generado por tu Asistente de IA</em></p>
+</footer>
+
+<script>
+    // Script simple para animaciones al hacer scroll
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Animar barras si estamos en la sección de contexto
+                    if(entry.target.id === 'contexto') {
+                        const bars = entry.target.querySelectorAll('.fill-cost');
+                        bars.forEach(bar => bar.style.width = bar.getAttribute('data-width'));
+                    }
+
+                    // Animar gráfico de pastel si estamos en la sección veredicto
+                    if(entry.target.id === 'veredicto') {
+                        const pie = entry.target.querySelector('.pie-chart');
+                        pie.classList.add('animate');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-card').forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
+
+</body>
+</html>

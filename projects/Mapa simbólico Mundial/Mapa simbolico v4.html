@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Geopolítico de la Retícula Global 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Exo 2"', 'sans-serif'],
+                        mono: ['"Roboto Mono"', 'monospace'],
+                    },
+                    colors: {
+                        'utm-dark': '#0B1120',
+                        'utm-panel': 'rgba(30, 41, 59, 0.65)', 
+                        'utm-border': 'rgba(148, 163, 184, 0.2)',
+                        'area-na': '#3B82F6',   // Blue
+                        'area-sa': '#10B981',   // Green
+                        'area-eu': '#8B5CF6',   // Purple
+                        'area-ru': '#EF4444',   // Red
+                        'area-cn': '#EC4899',   // Pink
+                        'area-in': '#F97316',   // Orange
+                        'area-af': '#F59E0B',   // Amber
+                        'area-me': '#D946EF',   // Fuchsia (Middle East)
+                        'area-jk': '#06B6D4',   // Cyan (Japan/Korea)
+                        'area-se': '#6366F1',   // Indigo (ASEAN/Oceania)
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+                    }
+                }
+            }
+        }
+        
+        // Simulation function for PDF links
+        function openPDF(docName) {
+            alert(`Simulación: Abriendo documento externo PDF...\n\n📄 Archivo: ${docName}\n\nEn un entorno de producción, esto abriría el archivo en una nueva pestaña.`);
+            return false; // Prevent actual navigation
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0B1120;
+            color: #E2E8F0;
+        }
+
+        /* UTM Background Map Effect */
+        .utm-background {
+            /* Using a reliable Wikimedia raster source for the "Real Map" effect */
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_map_blank_without_borders.svg/2000px-World_map_blank_without_borders.svg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: grayscale(100%) contrast(120%) brightness(30%); 
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 0;
+        }
+
+        .utm-overlay {
+            /* The grid lines overlay */
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Glassmorphism Block Styling */
+        .geo-block {
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none; /* For the <a> tags */
+        }
+
+        .geo-block:hover {
+            transform: scale(1.02);
+            border-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(30, 41, 59, 0.85) !important; /* Make less transparent on hover for readability */
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            z-index: 50;
+        }
+
+        /* Specific Grid Layout for 10 Areas */
+        .world-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(10, minmax(40px, auto));
+            gap: 8px;
+            position: relative;
+            z-index: 10;
+            aspect-ratio: 16/9; /* Maintain general map ratio */
+        }
+        
+        .chart-wrapper {
+            position: relative;
+            height: 350px;
+            width: 100%;
+        }
+
+        /* Corner accents for tech feel */
+        .corner-accent {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid currentColor;
+            border-left: 2px solid currentColor;
+            top: 2px;
+            left: 2px;
+            opacity: 0.7;
+        }
+        
+        /* Table Styling fixes */
+        th { white-space: nowrap; }
+
+    </style>
+</head>
+<body class="antialiased font-sans selection:bg-blue-500 selection:text-white">
+
+    <!-- Sticky Header with PDF Link 1 -->
+    <header class="fixed top-0 w-full z-50 bg-utm-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded flex items-center justify-center font-bold text-white text-xs">UTM</div>
+                <div>
+                    <!-- PDF Link 1: Title (INTRO) -->
+                    <a href="#" onclick="return openPDF('Introducción.pdf')" class="hover:text-blue-400 transition group">
+                        <h1 class="text-lg md:text-xl font-bold leading-none tracking-tight">
+                            Atlas Geopolítico de la Retícula Global <span class="text-xs align-top opacity-50">2025</span>
+                        </h1>
+                        <p class="text-[10px] text-gray-400 font-mono group-hover:text-blue-300">
+                            📄 Introducción.pdf
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-4 text-xs font-mono text-gray-400">
+                <span>PROYECCIÓN: UTM-MOD</span>
+                <span>POBLACIÓN OBJ: ~7.1B</span>
+                <span>BLOQUES: 10</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative pt-20 pb-12 min-h-screen">
+        
+        <!-- SECTION 1: The Interactive 10-Area Map -->
+        <section class="container mx-auto px-4 mb-16">
+            <div class="flex justify-between items-end mb-4">
+                <h2 class="text-2xl font-bold border-l-4 border-blue-500 pl-3">Visualización de Bloques</h2>
+                <span class="text-xs text-gray-500 font-mono text-right hidden md:block">
+                    Haga clic en un área para acceder a su informe PDF.<br>
+                    Fondo: Proyección satelital real.
+                </span>
+            </div>
+
+            <!-- Map Container -->
+            <div class="relative w-full max-w-6xl mx-auto bg-black rounded-lg shadow-2xl overflow-hidden border border-white/10 p-2 md:p-6">
+                <!-- Background Layers -->
+                <div class="utm-background"></div>
+                <div class="utm-overlay"></div>
+
+                <!-- The 10-Area Grid -->
+                <div class="world-grid font-mono text-xs md:text-sm">
+                    
+                    <!-- BLOQUE I: North America (Top Left) -->
+                    <a href="#" onclick="return openPDF('Bloque I Norteamérica (La Fortaleza Continental).pdf')" 
+                       class="geo-block bg-area-na/30 hover:bg-area-na/50 text-blue-100 col-span-4 row-span-3"
+                       style="grid-column: 1 / span 4; grid-row: 1 / span 3;">
+                        <div class="corner-accent text-area-na"></div>
+                        <div class="p-2 md:p-4">
+                            <span class="block font-bold text-base md:text-lg">I. Norteamérica</span>
+                            <span class="block opacity-70 text-[10px] md:text-xs">USA, CAN, MEX</span>
+                        </div>
+                        <div class="p-2 md:p-4 text-right opacity-60 font-mono text-[10px]">BLOQUE I</div>
+                    </a>
+
+                    <!-- BLOQUE III: Russia/Eurasia (Top Right - Wide) -->
+                    <a href="#" onclick="return openPDF('Bloque III Rusia y el Espacio Post-Soviético (Eurasia Norte).pdf')" 
+                       class="geo-block bg-area-ru/30 hover:bg-area-ru/50 text-red-100 col-span-5 row-span-3"
+                       style="grid-column: 8 / span 5; grid-row: 1 / span 3;">
+                        <div class="corner-accent text-area-ru"></div>
+                        <div class="p-2 md:p-4">
+                            <span class="block font-bold text-base md:text-lg">III. Rusia & Eurasia</span>
+                            <span class="block opacity-70 text-[10px] md:text-xs">RF, Asia Central</span>
+                        </div>
+                        <div class="p-2 md:p-4 text-right opacity-60 font-mono text-[10px]">BLOQUE III</div>
+                    </a>
+
+                    <!-- BLOQUE II: Europa (Top Center) -->
+                    <a href="#" onclick="return openPDF('Bloque II Europa (La Península Atlántica y su Frontera Oriental).pdf')" 
+                       class="geo-block bg-area-eu/30 hover:bg-area-eu/50 text-purple-100 col-span-3 row-span-2"
+                       style="grid-column: 5 / span 3; grid-row: 1 / span 2;">
+                        <div class="corner-accent text-area-eu"></div>
+                        <div class="p-2 text-center">
+                            <span class="block font-bold">II. Europa</span>
+                            <span class="block opacity-70 text-[10px]">UE+, UK, Balcanes</span>
+                        </div>
+                        <div class="absolute bottom-1 right-2 opacity-60 text-[9px]">BLQ II</div>
+                    </a>
+
+                    <!-- BLOQUE VIII: MENA (Center) -->
+                    <a href="#" onclick="return openPDF('Bloque VIII Medio Oriente y Turquía (El Pivote Energético).pdf')" 
+                       class="geo-block bg-area-me/30 hover:bg-area-me/50 text-fuchsia-100 col-span-2 row-span-2"
+                       style="grid-column: 5 / span 2; grid-row: 3 / span 2;">
+                        <div class="corner-accent text-area-me"></div>
+                        <div class="p-1 flex flex-col justify-center h-full text-center">
+                            <span class="block font-bold leading-tight">VIII. MENA</span>
+                            <span class="block opacity-70 text-[9px]">Turquía, Golfo</span>
+                        </div>
+                    </a>
+
+                    <!-- BLOQUE IV: China (Center Right) -->
+                    <a href="#" onclick="return openPDF('Bloque IV China (El Reino Medio Industrial).pdf')" 
+                       class="geo-block bg-area-cn/30 hover:bg-area-cn/50 text-pink-100 col-span-3 row-span-3"
+                       style="grid-column: 7 / span 3; grid-row: 4 / span 3;">
+                        <div class="corner-accent text-area-cn"></div>
+                        <div class="p-2 md:p-4">
+                            <span class="block font-bold text-base md:text-lg">IV. China</span>
+                            <span class="block opacity-70 text-[10px]">RPC, Esfera</span>
+                        </div>
+                        <div class="p-2 text-right opacity-60 text-[10px]">BLOQUE IV</div>
+                    </a>
+
+                    <!-- BLOQUE VII: Asia-Pacífico Avanzado (East Flank) -->
+                    <a href="#" onclick="return openPDF('Bloque VII Asia-Pacífico Avanzado (El Arco Tecnológico).pdf')" 
+                       class="geo-block bg-area-jk/30 hover:bg-area-jk/50 text-cyan-100 col-span-2 row-span-2"
+                       style="grid-column: 10 / span 2; grid-row: 4 / span 2;">
+                        <div class="corner-accent text-area-jk"></div>
+                        <div class="p-2 text-center">
+                            <span class="block font-bold text-sm">VII. APAC</span>
+                            <span class="block opacity-70 text-[9px]">Japón, Corea</span>
+                        </div>
+                    </a>
+
+                    <!-- BLOQUE V: Sur de Asia (Center South) -->
+                    <a href="#" onclick="return openPDF('Bloque V Sur de Asia (El Núcleo Demográfico).pdf')" 
+                       class="geo-block bg-area-in/30 hover:bg-area-in/50 text-orange-100 col-span-2 row-span-2"
+                       style="grid-column: 7 / span 2; grid-row: 7 / span 2;">
+                        <div class="corner-accent text-area-in"></div>
+                        <div class="p-2 text-center">
+                            <span class="block font-bold">V. Sur de Asia</span>
+                            <span class="block opacity-70 text-[9px]">India y vecinos</span>
+                        </div>
+                    </a>
+
+                    <!-- BLOQUE IX: África (Center Bottom) -->
+                    <a href="#" onclick="return openPDF('Bloque IX África (El Gigante Dormido).pdf')" 
+                       class="geo-block bg-area-af/30 hover:bg-area-af/50 text-amber-100 col-span-3 row-span-4"
+                       style="grid-column: 4 / span 3; grid-row: 5 / span 4;">
+                        <div class="corner-accent text-area-af"></div>
+                        <div class="p-2 md:p-4">
+                            <span class="block font-bold text-base">IX. África</span>
+                            <span class="block opacity-70 text-[10px]">Continente Africano</span>
+                        </div>
+                        <div class="p-2 mt-auto text-right opacity-60 text-[10px]">BLOQUE IX</div>
+                    </a>
+
+                    <!-- BLOQUE X: Sudamérica (Bottom Left) -->
+                    <a href="#" onclick="return openPDF('Bloque X Sudamérica (La Reserva Estratégica).pdf')" 
+                       class="geo-block bg-area-sa/30 hover:bg-area-sa/50 text-green-100 col-span-3 row-span-4"
+                       style="grid-column: 1 / span 3; grid-row: 4 / span 4;">
+                        <div class="corner-accent text-area-sa"></div>
+                        <div class="p-2 md:p-4">
+                            <span class="block font-bold text-base md:text-lg">X. Sudamérica</span>
+                            <span class="block opacity-70 text-[10px]">LATAM Sur & Andes</span>
+                        </div>
+                        <div class="p-2 mt-auto text-right opacity-60 text-[10px]">BLOQUE X</div>
+                    </a>
+
+                    <!-- BLOQUE VI: ASEAN (Bottom Right) -->
+                    <a href="#" onclick="return openPDF('Bloque VI ASEAN (La Encrucijada Marítima).pdf')" 
+                       class="geo-block bg-area-se/30 hover:bg-area-se/50 text-indigo-100 col-span-4 row-span-3"
+                       style="grid-column: 9 / span 4; grid-row: 6 / span 3;">
+                        <div class="corner-accent text-area-se"></div>
+                        <div class="p-2 md:p-4 text-right">
+                            <span class="block font-bold text-sm md:text-base">VI. ASEAN</span>
+                            <span class="block opacity-70 text-[10px]">Indo-Pacífico Sur</span>
+                        </div>
+                        <div class="p-2 mr-auto text-left opacity-60 text-[10px]">BLOQUE VI</div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Analytical Data Charts -->
+        <section class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            
+            <!-- Chart 1: Population vs GDP -->
+            <div class="bg-utm-panel rounded-lg border border-utm-border p-4 backdrop-blur-sm">
+                <h3 class="text-lg font-bold mb-4 text-gray-300">⚖️ Asimetría: Población vs Poder Económico</h3>
+                <div class="chart-wrapper">
+                    <canvas id="scatterChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Chart 2: Military & Tech -->
+            <div class="bg-utm-panel rounded-lg border border-utm-border p-4 backdrop-blur-sm">
+                <h3 class="text-lg font-bold mb-4 text-gray-300">🛡️ Índice de Fuerza (Militar + Tecnológica)</h3>
+                <div class="chart-wrapper">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 3: Detailed Table (Updated with Correct Filenames) -->
+        <section class="container mx-auto px-4 mb-16">
+            <h3 class="text-xl font-bold mb-6 text-gray-300 border-l-4 border-purple-500 pl-3">Matriz de Datos Consolidados (10 Áreas)</h3>
+            <div class="overflow-x-auto rounded-lg border border-utm-border">
+                <table class="w-full text-left text-sm text-gray-400 bg-utm-panel backdrop-blur-md">
+                    <thead class="bg-gray-900/50 text-xs uppercase font-mono text-gray-200">
+                        <tr>
+                            <th class="px-6 py-3 border-b border-gray-700">Bloque (PDF Link)</th>
+                            <th class="px-6 py-3 border-b border-gray-700 text-right">ÁREA (M km²)</th>
+                            <th class="px-6 py-3 border-b border-gray-700 text-right">Población (M)</th>
+                            <th class="px-6 py-3 border-b border-gray-700 text-center">Fuerza Mil. (1-10)</th>
+                            <th class="px-6 py-3 border-b border-gray-700 text-center">Rec. Econ. (1-10)</th>
+                            <th class="px-6 py-3 border-b border-gray-700">Nota Estratégica</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700/50">
+                        
+                        <!-- I. Norteamérica -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-na cursor-pointer" onclick="openPDF('Bloque I Norteamérica (La Fortaleza Continental).pdf')">I. Norteamérica</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">24.7</td>
+                            <td class="px-6 py-4 text-right">~505 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-blue-900/50 text-blue-300">10</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-blue-900/50 text-blue-300">10</span></td>
+                            <td class="px-6 py-4 text-xs">Hegemonía financiera y naval global.</td>
+                        </tr>
+
+                        <!-- II. Europa -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-eu cursor-pointer" onclick="openPDF('Bloque II Europa (La Península Atlántica y su Frontera Oriental).pdf')">II. Europa</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">6.2</td>
+                            <td class="px-6 py-4 text-right">~600 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-purple-900/50 text-purple-300">7</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-purple-900/50 text-purple-300">9</span></td>
+                            <td class="px-6 py-4 text-xs">Poder regulatorio "Efecto Bruselas" y mercado común.</td>
+                        </tr>
+
+                        <!-- III. Rusia -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-ru cursor-pointer" onclick="openPDF('Bloque III Rusia y el Espacio Post-Soviético (Eurasia Norte).pdf')">III. Rusia & Eurasia</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">22.0</td>
+                            <td class="px-6 py-4 text-right">~220 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-red-900/50 text-red-300">9</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-red-900/50 text-red-300">5</span></td>
+                            <td class="px-6 py-4 text-xs">Máxima profundidad estratégica terrestre y energía.</td>
+                        </tr>
+
+                        <!-- IV. China -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-cn cursor-pointer" onclick="openPDF('Bloque IV China (El Reino Medio Industrial).pdf')">IV. China</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">9.6</td>
+                            <td class="px-6 py-4 text-right">~1,410 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-pink-900/50 text-pink-300">9</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-pink-900/50 text-pink-300">9</span></td>
+                            <td class="px-6 py-4 text-xs">Centro de manufactura global y rápido ascenso naval.</td>
+                        </tr>
+
+                        <!-- V. Sur de Asia -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-in cursor-pointer" onclick="openPDF('Bloque V Sur de Asia (El Núcleo Demográfico).pdf')">V. Sur de Asia</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">4.5</td>
+                            <td class="px-6 py-4 text-right">~1,850 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-orange-900/50 text-orange-300">7</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-orange-900/50 text-orange-300">6</span></td>
+                            <td class="px-6 py-4 text-xs">Mayor bono demográfico y sector tecnológico en auge.</td>
+                        </tr>
+
+                        <!-- VI. ASEAN -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-se cursor-pointer" onclick="openPDF('Bloque VI ASEAN (La Encrucijada Marítima).pdf')">VI. ASEAN</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">4.5</td>
+                            <td class="px-6 py-4 text-right">~680 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-indigo-900/50 text-indigo-300">5</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-indigo-900/50 text-indigo-300">6</span></td>
+                            <td class="px-6 py-4 text-xs">Control de estrechos marítimos (Malaca) y crecimiento rápido.</td>
+                        </tr>
+
+                        <!-- VII. Asia-Pacífico Avanzado -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-jk cursor-pointer" onclick="openPDF('Bloque VII Asia-Pacífico Avanzado (El Arco Tecnológico).pdf')">VII. APAC</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">0.6</td>
+                            <td class="px-6 py-4 text-right">~175 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-cyan-900/50 text-cyan-300">7</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-cyan-900/50 text-cyan-300">8</span></td>
+                            <td class="px-6 py-4 text-xs">Vanguardia tecnológica avanzada (Chips/Robótica).</td>
+                        </tr>
+
+                        <!-- VIII. MENA -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-me cursor-pointer" onclick="openPDF('Bloque VIII Medio Oriente y Turquía (El Pivote Energético).pdf')">VIII. MENA</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">11.1</td>
+                            <td class="px-6 py-4 text-right">~550 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-fuchsia-900/50 text-fuchsia-300">6</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-fuchsia-900/50 text-fuchsia-300">7</span></td>
+                            <td class="px-6 py-4 text-xs">Pivote energético global y rutas de tránsito clave.</td>
+                        </tr>
+
+                         <!-- IX. África -->
+                         <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-af cursor-pointer" onclick="openPDF('Bloque IX África (El Gigante Dormido).pdf')">IX. África</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">24.2</td>
+                            <td class="px-6 py-4 text-right">~1,100 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-amber-900/50 text-amber-300">4</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-amber-900/50 text-amber-300">3</span></td>
+                            <td class="px-6 py-4 text-xs">Reserva futura de mano de obra y minerales raros.</td>
+                        </tr>
+
+                        <!-- X. Sudamérica -->
+                        <tr class="hover:bg-white/5 transition">
+                            <td class="px-6 py-4 font-bold text-area-sa cursor-pointer" onclick="openPDF('Bloque X Sudamérica (La Reserva Estratégica).pdf')">X. Sudamérica</td>
+                            <td class="px-6 py-4 text-right font-mono text-white">17.8</td>
+                            <td class="px-6 py-4 text-right">~440 M</td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-green-900/50 text-green-300">5</span></td>
+                            <td class="px-6 py-4 text-center"><span class="px-2 py-1 rounded bg-green-900/50 text-green-300">5</span></td>
+                            <td class="px-6 py-4 text-xs">Recursos naturales críticos (Litio/Agua/Biomasa).</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Final Conclusion Link -->
+        <section class="container mx-auto px-4 text-center py-12">
+            <a href="#" onclick="return openPDF('Conclusión La Retícula del Nuevo Orden.pdf')" 
+               class="inline-block group bg-gradient-to-r from-blue-600 to-purple-600 p-[2px] rounded-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.6)] transition duration-300">
+                <div class="bg-black rounded-md px-8 py-4 flex items-center gap-4 transition group-hover:bg-opacity-90">
+                    <div class="text-left">
+                        <h4 class="text-white font-bold text-lg">Conclusión: La Retícula del Nuevo Orden</h4>
+                        <p class="text-gray-400 text-xs">Haga clic para acceder al análisis final (PDF)</p>
+                    </div>
+                    <span class="text-2xl">➔</span>
+                </div>
+            </a>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-white/10 bg-black py-8 text-center text-gray-600 text-xs font-mono">
+        <p>ATLAS GEOPOLÍTICO 2025 // PROYECCIÓN UTM SIMBÓLICA</p>
+        <p class="mt-2">Simulación de interfaz documental. Los enlaces abren alertas de demostración.</p>
+    </footer>
+
+    <!-- Chart Logic -->
+    <script>
+        // Colors corresponding to CSS variables (manually matched)
+        const colors = {
+            na: '#3B82F6', sa: '#10B981', eu: '#8B5CF6', ru: '#EF4444',
+            cn: '#EC4899', in: '#F97316', af: '#F59E0B', me: '#D946EF',
+            jk: '#06B6D4', se: '#6366F1'
+        };
+
+        const areas = [
+            'Norteamérica', 'Sudamérica', 'Europa', 'Rusia/Eurasia', 'China', 
+            'Sur de Asia', 'África', 'MENA', 'APAC', 'ASEAN'
+        ];
+
+        // 1. Scatter Chart Data (Pop vs Econ)
+        // x: Econ Score (Proxy for GDP/Power), y: Population
+        const scatterData = [
+            { x: 10, y: 505, r: 15, label: 'N. America' },
+            { x: 5, y: 440, r: 8, label: 'S. America' },
+            { x: 9, y: 600, r: 12, label: 'Europa' },
+            { x: 5, y: 220, r: 10, label: 'Rusia' }, 
+            { x: 9, y: 1410, r: 18, label: 'China' },
+            { x: 6, y: 1850, r: 16, label: 'Sur de Asia' },
+            { x: 3, y: 1100, r: 10, label: 'África' },
+            { x: 7, y: 550, r: 8, label: 'MENA' },
+            { x: 8, y: 175, r: 6, label: 'APAC' },
+            { x: 6, y: 680, r: 9, label: 'ASEAN' }
+        ];
+
+        new Chart(document.getElementById('scatterChart'), {
+            type: 'bubble',
+            data: {
+                datasets: areas.map((area, i) => ({
+                    label: area,
+                    data: [scatterData[i]],
+                    backgroundColor: Object.values(colors)[i] + '80', // 50% opacity
+                    borderColor: Object.values(colors)[i],
+                    borderWidth: 1
+                }))
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Poder Económico (Índice 1-10)', color: '#64748b' },
+                        grid: { color: '#334155' }, ticks: { color: '#94a3b8' }, min: 0, max: 12
+                    },
+                    y: {
+                        title: { display: true, text: 'Población (Millones)', color: '#64748b' },
+                        grid: { color: '#334155' }, ticks: { color: '#94a3b8' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }, // Too many items for legend
+                    tooltip: {
+                        callbacks: {
+                            label: (ctx) => `${ctx.raw.label}: ${ctx.raw.y}M Hab. (Econ: ${ctx.raw.x})`
+                        }
+                    }
+                }
+            }
+        });
+
+        // 2. Bar Chart (Military Strength)
+        const milData = [10, 5, 7, 9, 9, 7, 4, 6, 7, 5];
+        
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: {
+                labels: areas,
+                datasets: [{
+                    label: 'Índice de Fuerza (Militar + Tech)',
+                    data: milData,
+                    backgroundColor: Object.values(colors).map(c => c + '90'),
+                    borderColor: Object.values(colors),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y', // Horizontal bars
+                scales: {
+                    x: {
+                        grid: { color: '#334155' }, ticks: { color: '#94a3b8' }, max: 10
+                    },
+                    y: {
+                        grid: { display: false }, ticks: { color: '#e2e8f0', font: { size: 10 } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

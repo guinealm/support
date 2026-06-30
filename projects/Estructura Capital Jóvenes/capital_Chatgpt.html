@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Infografía · ¿De dónde vendrá el capital (30–50) para quien hoy tiene 25–30? · España</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#121a33;
+      --card2:#0f1730;
+      --text:#e9eefc;
+      --muted:#b6c2e6;
+      --muted2:#8fa0cf;
+      --line:rgba(233,238,252,.12);
+      --accent:#7aa2ff;
+      --accent2:#7dffbf;
+      --warn:#ffd166;
+      --danger:#ff6b6b;
+      --ok:#60d394;
+      --shadow: 0 14px 40px rgba(0,0,0,.32);
+      --radius: 18px;
+      --radius2: 14px;
+      --maxw: 1040px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background:
+        radial-gradient(1200px 700px at 20% 0%, rgba(122,162,255,.22), transparent 55%),
+        radial-gradient(1000px 600px at 80% 20%, rgba(125,255,191,.16), transparent 60%),
+        radial-gradient(800px 500px at 50% 85%, rgba(255,209,102,.12), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.35;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:28px 18px 40px;
+    }
+    header{
+      display:grid;
+      gap:14px;
+      padding:22px 20px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      box-shadow: var(--shadow);
+    }
+    .kicker{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      color:var(--muted);
+      font-size:14px;
+      letter-spacing:.02em;
+      text-transform:uppercase;
+    }
+    .pill{
+      padding:4px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+    }
+    h1{
+      margin:0;
+      font-size: clamp(22px, 3.0vw, 34px);
+      letter-spacing:-.01em;
+      line-height:1.12;
+    }
+    .subtitle{
+      margin:0;
+      color:var(--muted);
+      font-size: clamp(14px, 1.7vw, 16px);
+      max-width: 76ch;
+    }
+    .grid{
+      display:grid;
+      gap:14px;
+      margin-top:14px;
+    }
+    @media (min-width: 860px){
+      .grid{ grid-template-columns: 1.35fr .95fr; }
+    }
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: rgba(255,255,255,.03);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card .hd{
+      padding:16px 18px 12px;
+      border-bottom:1px solid var(--line);
+      display:flex;
+      gap:10px;
+      align-items:baseline;
+      justify-content:space-between;
+    }
+    .card h2{
+      margin:0;
+      font-size:16px;
+      letter-spacing:.01em;
+    }
+    .card .bd{
+      padding:16px 18px;
+    }
+    .small{
+      font-size:13px;
+      color:var(--muted);
+    }
+    .muted{ color:var(--muted); }
+    .muted2{ color:var(--muted2); }
+
+    /* metric cards */
+    .metrics{
+      display:grid;
+      gap:10px;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+    @media (min-width: 540px){
+      .metrics{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+    }
+    .metric{
+      padding:12px 12px 11px;
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: linear-gradient(180deg, rgba(18,26,51,.72), rgba(15,23,48,.72));
+    }
+    .metric .v{
+      font-size:18px;
+      font-weight:750;
+      letter-spacing:-.02em;
+      line-height:1.05;
+    }
+    .metric .l{
+      margin-top:6px;
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    /* pathways */
+    .pathways{
+      display:grid;
+      gap:10px;
+    }
+    .path{
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: rgba(18,26,51,.55);
+      padding:12px 12px 10px;
+    }
+    .path .top{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:center;
+      margin-bottom:8px;
+    }
+    .tag{
+      font-family:var(--mono);
+      font-size:12px;
+      padding:3px 8px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--muted);
+      background: rgba(255,255,255,.03);
+      white-space:nowrap;
+    }
+    .path h3{
+      margin:0;
+      font-size:14px;
+      letter-spacing:.01em;
+    }
+    .path p{
+      margin:0;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* range bars */
+    .ranges{ display:grid; gap:12px; }
+    .rangeBlock{
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      background: rgba(18,26,51,.55);
+      padding:12px;
+    }
+    .rangeBlock .ttl{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      align-items:baseline;
+      margin-bottom:8px;
+    }
+    .rangeBlock .ttl strong{
+      font-size:13px;
+      letter-spacing:.01em;
+    }
+    .rangeBlock .ttl span{
+      font-size:12px;
+      color:var(--muted2);
+      font-family:var(--mono);
+    }
+    .bar{
+      height:14px;
+      border-radius:999px;
+      background: rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
+    }
+    .bar .seg{
+      height:100%;
+      position:absolute;
+      top:0;
+    }
+    .seg.own{ background: linear-gradient(90deg, rgba(122,162,255,.70), rgba(122,162,255,.35)); }
+    .seg.inh{ background: linear-gradient(90deg, rgba(255,209,102,.75), rgba(255,209,102,.35)); }
+    .seg.other{ background: linear-gradient(90deg, rgba(125,255,191,.62), rgba(125,255,191,.30)); }
+
+    .legend{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:8px;
+      font-size:12px;
+      color:var(--muted);
+    }
+    .dot{
+      width:10px;height:10px;border-radius:99px;display:inline-block;margin-right:6px;
+      border:1px solid var(--line);
+      transform: translateY(1px);
+    }
+    .dot.own{ background: rgba(122,162,255,.7); }
+    .dot.inh{ background: rgba(255,209,102,.75); }
+    .dot.other{ background: rgba(125,255,191,.62); }
+
+    /* timeline */
+    .timeline{
+      display:grid;
+      gap:10px;
+    }
+    .step{
+      border:1px solid var(--line);
+      border-radius:var(--radius2);
+      padding:12px;
+      background: rgba(18,26,51,.55);
+      display:grid;
+      gap:6px;
+    }
+    .step .when{
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted2);
+    }
+    .step .txt{
+      font-size:13px;
+      color:var(--muted);
+      margin:0;
+    }
+
+    footer{
+      margin-top:14px;
+      padding:14px 18px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background: rgba(255,255,255,.02);
+      color:var(--muted2);
+      font-size:12px;
+    }
+    footer code{ font-family:var(--mono); color:var(--muted); }
+    a{ color: inherit; text-decoration: underline; text-decoration-color: rgba(233,238,252,.25); }
+    .note{
+      border-left: 3px solid rgba(255,209,102,.65);
+      padding-left: 12px;
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="kicker">
+        <span class="pill">España · cohorte 25–30 (hoy)</span>
+        <span class="pill">Horizonte: 30–50 años</span>
+        <span class="pill">Actualizado: dic-2025</span>
+      </div>
+      <h1>¿De dónde vendrá el capital entre los 30 y 50?</h1>
+      <p class="subtitle">
+        Lectura práctica “a partir de la pirámide de población” y de la estructura patrimonial española:
+        la vivienda (y su financiación) domina el balance típico; las transferencias familiares crecen y se concentran,
+        y suelen pesar más en la <em>media</em> que en la <em>mediana</em>.
+      </p>
+    </header>
+
+    <div class="grid">
+      <!-- LEFT COLUMN -->
+      <section class="card">
+        <div class="hd">
+          <h2>1) Hecho estructural: el patrimonio es mayoritariamente “real” (vivienda)</h2>
+          <span class="pill">datos EFF 2022</span>
+        </div>
+        <div class="bd">
+          <div class="metrics" role="list">
+            <div class="metric" role="listitem">
+              <div class="v">72,1%</div>
+              <div class="l">Hogares propietarios de su vivienda principal (2022)</div>
+            </div>
+            <div class="metric" role="listitem">
+              <div class="v">78,9%</div>
+              <div class="l">Activos reales / activos totales (valor medio)</div>
+            </div>
+            <div class="metric" role="listitem">
+              <div class="v">52,9%</div>
+              <div class="l">Vivienda principal dentro de los activos reales (valor)</div>
+            </div>
+            <div class="metric" role="listitem">
+              <div class="v">64,8%</div>
+              <div class="l">&lt;35: vivienda principal dentro de activos reales (valor)</div>
+            </div>
+          </div>
+
+          <p class="note">
+            Implicación: para una mayoría de hogares, el “capital” entre 30–50 se acumula sobre todo como
+            <strong>equity</strong> en vivienda (entrada, amortización de hipoteca y revalorización), más que como cartera financiera.
+          </p>
+
+          <div style="height:10px"></div>
+
+          <div class="pathways" aria-label="Vías de formación de capital">
+            <div class="path">
+              <div class="top">
+                <h3>Ahorro propio (laboral) + amortización</h3>
+                <span class="tag">predominante en la mediana</span>
+              </div>
+              <p>Salario → ahorro → compra/entrada → hipoteca (amortización) → capital en vivienda y/o activos financieros.</p>
+            </div>
+
+            <div class="path">
+              <div class="top">
+                <h3>Herencias y donaciones</h3>
+                <span class="tag">creciente, concentrado</span>
+              </div>
+              <p>Ayudas para entrada, donaciones de vivienda, herencias (a menudo más tarde; pero se adelantan por la crisis de acceso).</p>
+            </div>
+
+            <div class="path">
+              <div class="top">
+                <h3>Otros (empresa/Estado/negocio)</h3>
+                <span class="tag">heterogéneo</span>
+              </div>
+              <p>Planes de empresa, emprendimiento, plusvalías financieras, indemnizaciones, ayudas públicas puntuales.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <aside class="card">
+        <div class="hd">
+          <h2>2) ¿Qué vía será predominante y en qué proporción?</h2>
+          <span class="pill">orientativo</span>
+        </div>
+        <div class="bd">
+          <p class="small">
+            No existe una estadística única que descomponga “capital acumulado 30–50” por vía (ahorro vs herencia).
+            Lo siguiente es un <strong>rango de trabajo</strong> coherente con (i) el peso de la vivienda en el patrimonio
+            y (ii) el aumento de transferencias familiares.
+          </p>
+
+          <div class="ranges" style="margin-top:10px">
+            <div class="rangeBlock">
+              <div class="ttl">
+                <strong>Hogar típico (mediana)</strong>
+                <span>30–50 · % del aumento de capital</span>
+              </div>
+              <div class="bar" aria-label="Rango mediana">
+                <div class="seg own" style="left:0; width:75%"></div>
+                <div class="seg inh" style="left:75%; width:18%"></div>
+                <div class="seg other" style="left:93%; width:7%"></div>
+              </div>
+              <div class="legend" aria-hidden="true">
+                <span><span class="dot own"></span>Ahorro+vivienda ≈ 70–85%</span>
+                <span><span class="dot inh"></span>Herencias/donaciones ≈ 10–25%</span>
+                <span><span class="dot other"></span>Otros ≈ 0–10%</span>
+              </div>
+            </div>
+
+            <div class="rangeBlock">
+              <div class="ttl">
+                <strong>Hogar medio / percentiles altos</strong>
+                <span>30–50 · % del aumento de capital</span>
+              </div>
+              <div class="bar" aria-label="Rango media">
+                <div class="seg own" style="left:0; width:65%"></div>
+                <div class="seg inh" style="left:65%; width:28%"></div>
+                <div class="seg other" style="left:93%; width:7%"></div>
+              </div>
+              <div class="legend" aria-hidden="true">
+                <span><span class="dot own"></span>Ahorro+vivienda ≈ 55–75%</span>
+                <span><span class="dot inh"></span>Herencias/donaciones ≈ 20–40%</span>
+                <span><span class="dot other"></span>Otros ≈ 0–10%</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="height:8px"></div>
+          <div class="timeline" aria-label="Calendario probable (pirámide de población)">
+            <div class="step">
+              <div class="when">≈ 30–40</div>
+              <p class="txt">Predomina <strong>formación de capital por ingresos</strong> (si se logra acceso a vivienda). Donaciones para la entrada pueden ser decisivas en una minoría grande.</p>
+            </div>
+            <div class="step">
+              <div class="when">≈ 40–50</div>
+              <p class="txt">Aumenta la probabilidad de <strong>transferencias intergeneracionales</strong> (donaciones/primeras herencias), pero con fuerte desigualdad: depende de patrimonio familiar.</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="card" style="margin-top:14px">
+      <div class="hd">
+        <h2>3) Señales recientes (por qué “herencias/donaciones” ganan peso)</h2>
+        <span class="pill">tendencias 2024–2025</span>
+      </div>
+      <div class="bd">
+        <div class="metrics" role="list">
+          <div class="metric" role="listitem">
+            <div class="v">199.448</div>
+            <div class="l">Donaciones ante notario en 2024 (+15% vs 2023)</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="v">54.735</div>
+            <div class="l">Donaciones de viviendas (2024)</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="v">403.854</div>
+            <div class="l">Viviendas heredadas (2024)</div>
+          </div>
+          <div class="metric" role="listitem">
+            <div class="v">26.923</div>
+            <div class="l">Viviendas donadas (1º semestre 2025)</div>
+          </div>
+        </div>
+
+        <p class="note">
+          El patrón que encaja con la pirámide: envejecimiento + vivienda como principal activo → más
+          traspasos patrimoniales (especialmente vivienda), y en parte <strong>se adelantan</strong> como donaciones para ayudar al acceso.
+        </p>
+
+        <p class="small" style="margin-top:10px">
+          Contexto adicional: varios análisis periodísticos (basados en datos del Banco de España/encuestas) señalan
+          que la propiedad de vivienda entre menores de 35 ha caído con fuerza en las últimas décadas, lo que debilita
+          el canal “ahorro→vivienda” y aumenta la relevancia de la ayuda familiar.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div><strong>Fuentes (para datos mostrados):</strong></div>
+      <ul style="margin:8px 0 0 18px; padding:0; display:grid; gap:6px;">
+        <li>Banco de España, <em>Encuesta Financiera de las Familias (EFF) 2022</em> (Documentos Ocasionales 2413, mayo 2024).</li>
+        <li>Consejo General del Notariado (CIEN), nota sobre donaciones y herencias de vivienda (oct-2025) y cifras de viviendas donadas/heredadas.</li>
+        <li>El País (feb-2025 y oct-2025) sobre donaciones y dinámica vivienda–ahorro (síntesis de fuentes oficiales y estudios).</li>
+        <li>Banco de España (jul-2025) sobre impuesto de sucesiones y donaciones (ISD), para magnitudes y contexto fiscal.</li>
+      </ul>
+      <div style="margin-top:10px">
+        <span class="muted2">Nota metodológica:</span>
+        <span class="muted2">
+          los porcentajes “predominante y proporción” son rangos orientativos (no una estadística oficial directa) y deben ajustarse
+          si defines: (i) qué llamas “capital” (neto, financiero, inmobiliario, pensiones), y (ii) si miras mediana, media o percentiles.
+        </span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

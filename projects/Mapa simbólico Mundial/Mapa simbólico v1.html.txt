@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Simbólico Global: Matrices de Poder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    },
+                    colors: {
+                        // Vibrant Palette: Energetic & Playful / Cyberpunk-ish Professional
+                        'geo-bg': '#0F172A',      // Slate 900
+                        'geo-card': '#1E293B',    // Slate 800
+                        'geo-text': '#F1F5F9',    // Slate 100
+                        'geo-blue': '#3B82F6',    // Blue 500 (North America)
+                        'geo-pink': '#EC4899',    // Pink 500 (China)
+                        'geo-purple': '#8B5CF6',  // Violet 500 (Europe)
+                        'geo-green': '#10B981',   // Emerald 500 (S. America)
+                        'geo-yellow': '#F59E0B',  // Amber 500 (Africa)
+                        'geo-red': '#EF4444',     // Red 500 (Russia)
+                        'geo-orange': '#F97316',  // Orange 500 (India)
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0F172A;
+            color: #F1F5F9;
+        }
+        /* Chart Container Strict Styling */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px; /* Max width for large screens */
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Grid Map Styling */
+        .symbolic-map-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(8, 60px);
+            gap: 12px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .map-block {
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+
+        .map-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.7);
+            z-index: 10;
+        }
+
+        .map-label { font-size: 1.1rem; line-height: 1.2; }
+        .map-metric { font-size: 0.8rem; opacity: 0.9; font-weight: normal; margin-top: 4px; }
+
+        @media (max-width: 768px) {
+            .symbolic-map-grid {
+                display: flex;
+                flex-direction: column;
+            }
+            .map-block { height: 100px; margin-bottom: 10px; }
+            .chart-container { height: 300px; }
+        }
+    </style>
+    <!-- 
+        Palette Used: "Vibrant Night"
+        Background: #0F172A
+        Accents: #3B82F6 (Blue), #EC4899 (Pink), #8B5CF6 (Purple), #10B981 (Green), #F59E0B (Amber), #EF4444 (Red), #F97316 (Orange)
+        
+        Source Analysis:
+        - Defined 7 major geopolitical areas.
+        - Integration logic: Mexico joined with N. America (USMCA). 
+        - Total Pop aim: ~6.2 Billion explicitly in these blocks, representing the core power centers.
+        - Scores (1-10) estimated based on current geopolitical analysis (Global Firepower, GDP data).
+        
+        Visualizations:
+        1. Symbolic CSS Grid Map (Location/Size)
+        2. Radar Chart (Multi-criteria comparison)
+        3. Bubble Chart (Pop vs Area)
+        4. Stacked Bar (Composition)
+    -->
+</head>
+<body class="antialiased font-sans">
+
+    <!-- Navigation / Header -->
+    <header class="sticky top-0 z-50 bg-geo-card/90 backdrop-blur-md shadow-lg border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-black tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-geo-blue to-geo-pink">
+                    GEO.MATRIX
+                </h1>
+                <p class="text-xs text-gray-400">Mapa Simbólico de Poder Global</p>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-bold text-gray-300">
+                <a href="#mapa" class="hover:text-geo-blue transition">EL MAPA</a>
+                <a href="#demografia" class="hover:text-geo-pink transition">DEMOGRAFÍA</a>
+                <a href="#poder" class="hover:text-geo-purple transition">FUERZA Y ECONOMÍA</a>
+                <a href="#datos" class="hover:text-geo-green transition">DATOS</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-12 md:py-20 text-center">
+        <h2 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+            La Estructura del <br> <span class="text-geo-blue">Mundo Simbólico</span>
+        </h2>
+        <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10">
+            Un análisis visual de las 7 grandes áreas de influencia geopolítica. 
+            Este modelo simplificado agrupa a las naciones por lazos geográficos, económicos y sociales, 
+            abarcando la mayoría de la población mundial y redefiniendo las fronteras tradicionales 
+            en bloques de poder estratégico.
+        </p>
+        
+        <!-- Key Stats Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="bg-geo-card p-6 rounded-xl border-l-4 border-geo-blue shadow-lg">
+                <p class="text-gray-400 text-sm uppercase tracking-wide">Población Analizada</p>
+                <p class="text-4xl font-bold text-white">~6.2 <span class="text-lg">Mil Millones</span></p>
+                <p class="text-xs text-gray-500 mt-2">Representando el núcleo de poder global</p>
+            </div>
+            <div class="bg-geo-card p-6 rounded-xl border-l-4 border-geo-pink shadow-lg">
+                <p class="text-gray-400 text-sm uppercase tracking-wide">Áreas Definidas</p>
+                <p class="text-4xl font-bold text-white">7 <span class="text-lg">Bloques</span></p>
+                <p class="text-xs text-gray-500 mt-2">Desde América hasta Asia Oriental</p>
+            </div>
+            <div class="bg-geo-card p-6 rounded-xl border-l-4 border-geo-purple shadow-lg">
+                <p class="text-gray-400 text-sm uppercase tracking-wide">PIB Combinado (Est)</p>
+                <p class="text-4xl font-bold text-white">85%+</p>
+                <p class="text-xs text-gray-500 mt-2">De la economía mundial global</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: The Symbolic Map (CSS Grid Implementation) -->
+    <section id="mapa" class="bg-opacity-50 bg-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="mb-10 text-center md:text-left">
+                <h3 class="text-3xl font-bold text-white mb-4 border-l-8 border-geo-yellow pl-4">El Mapa Simbólico (Proyección de Bloques)</h3>
+                <p class="text-gray-400 max-w-2xl">
+                    Esta visualización abstracta representa la disposición geográfica relativa. El tamaño de los bloques es simbólico, buscando maximizar la visualización de las áreas de influencia. 
+                    <strong>Nota sobre México:</strong> Se ha integrado en el bloque de Norteamérica debido a la fuerte integración económica (T-MEC) y geográfica.
+                </p>
+            </div>
+
+            <!-- CSS Grid Symbolic Map -->
+            <div class="symbolic-map-grid font-sans">
+                <!-- North America: Spans top left -->
+                <div class="map-block bg-geo-blue col-span-4 row-span-3" style="grid-column: 1 / span 3; grid-row: 1 / span 3;">
+                    <span class="map-label">Norteamérica</span>
+                    <span class="map-metric">EEUU, Canadá, México</span>
+                    <span class="text-2xl mt-2">🇺🇸 🇨🇦 🇲🇽</span>
+                </div>
+
+                <!-- Europe: Top Middle -->
+                <div class="map-block bg-geo-purple col-span-3 row-span-2" style="grid-column: 4 / span 3; grid-row: 1 / span 2;">
+                    <span class="map-label">Europa (Extendida)</span>
+                    <span class="map-metric">UE, UK, Balcanes</span>
+                    <span class="text-2xl mt-2">🇪🇺 🇬🇧</span>
+                </div>
+
+                <!-- Russia & CIS: Top Right (Huge Area) -->
+                <div class="map-block bg-geo-red col-span-5 row-span-2" style="grid-column: 7 / span 6; grid-row: 1 / span 2;">
+                    <span class="map-label">Rusia & Ex-Rep. Sov.</span>
+                    <span class="map-metric">Eurasia del Norte</span>
+                    <span class="text-2xl mt-2">🇷🇺 🇰🇿</span>
+                </div>
+
+                <!-- China: Middle Right -->
+                <div class="map-block bg-geo-pink col-span-3 row-span-2" style="grid-column: 8 / span 3; grid-row: 3 / span 3;">
+                    <span class="map-label">China & Esfera</span>
+                    <span class="map-metric">Asia Oriental</span>
+                    <span class="text-2xl mt-2">🇨🇳</span>
+                </div>
+
+                <!-- India: Below China/Russia -->
+                <div class="map-block bg-geo-orange col-span-2 row-span-2" style="grid-column: 6 / span 2; grid-row: 3 / span 2;">
+                    <span class="map-label">India & Sur de Asia</span>
+                    <span class="map-metric">Subcontinente</span>
+                    <span class="text-2xl mt-2">🇮🇳</span>
+                </div>
+
+                <!-- Africa: Middle Bottom -->
+                <div class="map-block bg-geo-yellow col-span-3 row-span-4" style="grid-column: 4 / span 3; grid-row: 3 / span 4;">
+                    <span class="map-label">África</span>
+                    <span class="map-metric">El Continente Joven</span>
+                    <span class="text-2xl mt-2">🇳🇬 🇿🇦 🇪🇬</span>
+                </div>
+
+                <!-- South America: Bottom Left -->
+                <div class="map-block bg-geo-green col-span-3 row-span-4" style="grid-column: 1 / span 3; grid-row: 4 / span 4;">
+                    <span class="map-label">Sudamérica</span>
+                    <span class="map-metric">Cono Sur & Andes</span>
+                    <span class="text-2xl mt-2">🇧🇷 🇦🇷 🇨🇴</span>
+                </div>
+                
+                <!-- Spacer for layout balance -->
+                <div class="bg-gray-800 rounded opacity-20 col-span-4" style="grid-column: 7 / span 5; grid-row: 6 / span 1; display: flex; align-items: center; justify-content: center; color: #555;">
+                    <span class="text-xs">Océano Índico / Pacífico Sur</span>
+                </div>
+            </div>
+            
+            <div class="mt-4 text-center text-xs text-gray-500">
+                *Representación esquemática no a escala real geográfica. Proyección simbólica de vecindad.
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Demographics (Bubble Chart) -->
+    <section id="demografia" class="py-16 container mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Text Content -->
+            <div>
+                <h3 class="text-3xl font-bold text-white mb-6 border-l-8 border-geo-pink pl-4">Densidad y Dimensión</h3>
+                <p class="text-gray-300 mb-4 leading-relaxed">
+                    Al contrastar la superficie física con la población humana, surgen disparidades críticas. 
+                    <strong>China e India</strong> destacan como colosos demográficos en superficies relativamente contenidas en comparación con Rusia.
+                </p>
+                <p class="text-gray-300 mb-6 leading-relaxed">
+                    <strong>Rusia</strong> posee la mayor extensión territorial (recursos naturales potenciales), pero su densidad demográfica es extremadamente baja, lo que plantea retos para la defensa y explotación del territorio.
+                    <strong>África</strong> muestra un equilibrio con un enorme potencial de crecimiento futuro.
+                </p>
+                
+                <div class="bg-geo-card p-4 rounded-lg mt-8">
+                    <h4 class="font-bold text-geo-blue mb-2">Dato Clave:</h4>
+                    <p class="text-sm text-gray-400">
+                        La suma de China e India representa casi el 40% de la población humana en menos del 10% de la superficie terrestre habitable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Chart Container -->
+            <div class="bg-geo-card rounded-xl p-4 shadow-xl">
+                <div class="chart-container">
+                    <canvas id="bubbleChart"></canvas>
+                </div>
+                <p class="text-center text-xs text-gray-500 mt-2">Eje X: Superficie (M km²) | Eje Y: Población (Millones) | Tamaño: Densidad Relativa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Power Profile (Radar Chart) -->
+    <section id="poder" class="bg-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="mb-12 text-center">
+                <h3 class="text-3xl font-bold text-white mb-4">Perfil de Poder Multidimensional</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Evaluación cualitativa (Escala 1-10) basada en tres pilares fundamentales. 
+                    La <strong>Fuerza Militar</strong> pondera tecnología y arsenal nuclear (Rusia/EEUU). 
+                    Los <strong>Recursos Económicos</strong> valoran PIB y capacidad industrial.
+                    El <strong>Potencial Futuro</strong> considera demografía joven y crecimiento.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Radar Chart -->
+                <div class="bg-geo-card rounded-xl p-2 md:p-6 shadow-xl order-2 md:order-1">
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Analysis Text -->
+                <div class="order-1 md:order-2 space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-geo-blue p-3 rounded-lg mr-4 text-white font-bold">01</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">Hegemonía Tecnológica</h4>
+                            <p class="text-sm text-gray-400 mt-1">Norteamérica lidera en proyección militar global y tecnología, aunque China cierra la brecha rápidamente en capacidad económica.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-geo-red p-3 rounded-lg mr-4 text-white font-bold">02</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">El Gigante Asimétrico</h4>
+                            <p class="text-sm text-gray-400 mt-1">Rusia mantiene un índice militar máximo (10/10) debido a su arsenal nuclear incomparable, a pesar de una economía del tamaño de economías europeas medianas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-geo-yellow p-3 rounded-lg mr-4 text-white font-bold">03</div>
+                        <div>
+                            <h4 class="text-xl font-bold text-white">El Despertar del Sur</h4>
+                            <p class="text-sm text-gray-400 mt-1">África e India puntúan alto en potencial futuro, impulsados por una demografía joven, frente al envejecimiento de Europa y Rusia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Data Table -->
+    <section id="datos" class="py-16 container mx-auto px-6">
+        <h3 class="text-3xl font-bold text-white mb-8 border-l-8 border-geo-green pl-4">Matriz de Datos Consolidados</h3>
+        <p class="text-gray-400 mb-8">
+            Datos aproximados para el año en curso. La escala de 1 a 10 es una estimación comparativa sintética para facilitar la visualización de asimetrías.
+        </p>
+
+        <div class="overflow-x-auto bg-geo-card rounded-xl shadow-2xl">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-gray-900 text-gray-400 uppercase text-xs tracking-wider border-b border-gray-700">
+                        <th class="p-4 font-semibold">Área Geopolítica</th>
+                        <th class="p-4 font-semibold text-right">Población (M)</th>
+                        <th class="p-4 font-semibold text-right">Superficie (M km²)</th>
+                        <th class="p-4 font-semibold text-center">Fuerza Militar (1-10)</th>
+                        <th class="p-4 font-semibold text-center">Recursos Econ. (1-10)</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-700 text-sm">
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-blue flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-blue"></span> Norteamérica</td>
+                        <td class="p-4 text-right text-white">~500</td>
+                        <td class="p-4 text-right text-gray-300">24.7</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-blue font-bold">10</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-blue font-bold">10</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-pink flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-pink"></span> China</td>
+                        <td class="p-4 text-right text-white">~1,410</td>
+                        <td class="p-4 text-right text-gray-300">9.6</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-pink font-bold">9</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-pink font-bold">9</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-orange flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-orange"></span> India</td>
+                        <td class="p-4 text-right text-white">~1,428</td>
+                        <td class="p-4 text-right text-gray-300">3.3</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-orange font-bold">7</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-orange font-bold">6</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-purple flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-purple"></span> Europa</td>
+                        <td class="p-4 text-right text-white">~750</td>
+                        <td class="p-4 text-right text-gray-300">10.2</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-purple font-bold">7</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-purple font-bold">9</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-yellow flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-yellow"></span> África</td>
+                        <td class="p-4 text-right text-white">~1,400</td>
+                        <td class="p-4 text-right text-gray-300">30.3</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-yellow font-bold">4</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-yellow font-bold">3</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-red flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-red"></span> Rusia & CEI</td>
+                        <td class="p-4 text-right text-white">~230</td>
+                        <td class="p-4 text-right text-gray-300">22.0</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-red font-bold">9</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-red font-bold">5</span></td>
+                    </tr>
+                    <tr class="hover:bg-gray-700 transition">
+                        <td class="p-4 font-bold text-geo-green flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-geo-green"></span> Sudamérica</td>
+                        <td class="p-4 text-right text-white">~435</td>
+                        <td class="p-4 text-right text-gray-300">17.8</td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-green font-bold">5</span></td>
+                        <td class="p-4 text-center"><span class="bg-gray-800 px-2 py-1 rounded text-geo-green font-bold">5</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm">© 2024 Análisis de Geopolítica Simbólica.</p>
+        <p class="text-gray-600 text-xs mt-2">Los datos son estimaciones con fines ilustrativos. SVG y Mermaid JS no utilizados.</p>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // --- 1. Utility Functions ---
+
+        // Label Wrapping Helper (>16 chars)
+        function wrapLabels(labels) {
+            return labels.map(label => {
+                if (label.length > 16) {
+                    const words = label.split(' ');
+                    const lines = [];
+                    let currentLine = words[0];
+
+                    for (let i = 1; i < words.length; i++) {
+                        if ((currentLine + " " + words[i]).length <= 16) {
+                            currentLine += " " + words[i];
+                        } else {
+                            lines.push(currentLine);
+                            currentLine = words[i];
+                        }
+                    }
+                    lines.push(currentLine);
+                    return lines;
+                }
+                return label;
+            });
+        }
+
+        // Common Tooltip Config
+        const commonTooltipOptions = {
+            backgroundColor: 'rgba(15, 23, 42, 0.9)',
+            titleColor: '#fff',
+            bodyColor: '#cbd5e1',
+            borderColor: '#334155',
+            borderWidth: 1,
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    } else {
+                        return label;
+                    }
+                }
+            }
+        };
+
+        // --- 2. Data Setup ---
+        
+        const regions = [
+            "Norteamérica", 
+            "China", 
+            "India", 
+            "Europa", 
+            "África", 
+            "Rusia & CEI", 
+            "Sudamérica"
+        ];
+        
+        const wrappedRegions = wrapLabels(regions);
+
+        const colors = {
+            na: '#3B82F6', // Blue
+            cn: '#EC4899', // Pink
+            in: '#F97316', // Orange
+            eu: '#8B5CF6', // Purple
+            af: '#F59E0B', // Yellow/Amber
+            ru: '#EF4444', // Red
+            sa: '#10B981'  // Green
+        };
+        const regionColors = [colors.na, colors.cn, colors.in, colors.eu, colors.af, colors.ru, colors.sa];
+        const regionColorsAlpha = regionColors.map(c => c + '40'); // Add transparency
+
+        // Data Arrays
+        const popData = [500, 1410, 1428, 750, 1400, 230, 435]; // Millions
+        const areaData = [24.7, 9.6, 3.3, 10.2, 30.3, 22.0, 17.8]; // Million km2
+        const milScore = [10, 9, 7, 7, 4, 9, 5];
+        const ecoScore = [10, 9, 6, 9, 3, 5, 5];
+
+        // --- 3. Chart Initialization ---
+
+        // A. Bubble Chart (Pop vs Area)
+        // Need specific structure: {x, y, r}
+        const bubbleData = regions.map((reg, i) => ({
+            x: areaData[i],
+            y: popData[i],
+            r: Math.sqrt(popData[i]) / 2 // Scale radius
+        }));
+
+        new Chart(document.getElementById('bubbleChart'), {
+            type: 'bubble',
+            data: {
+                labels: regions, // Passed but not directly used by bubble standard logic, used in tooltip
+                datasets: [{
+                    label: 'Regiones',
+                    data: bubbleData,
+                    backgroundColor: regionColorsAlpha,
+                    borderColor: regionColors,
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        title: { display: true, text: 'Superficie (Millones km²)', color: '#94a3b8' },
+                        grid: { color: '#334155' },
+                        ticks: { color: '#cbd5e1' }
+                    },
+                    y: {
+                        title: { display: true, text: 'Población (Millones)', color: '#94a3b8' },
+                        grid: { color: '#334155' },
+                        ticks: { color: '#cbd5e1' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        ...commonTooltipOptions,
+                        callbacks: {
+                            label: function(context) {
+                                const label = regions[context.dataIndex];
+                                const x = context.raw.x;
+                                const y = context.raw.y;
+                                return `${label}: ${y}M habitantes en ${x}M km²`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // B. Radar Chart (Comparison)
+        new Chart(document.getElementById('radarChart'), {
+            type: 'radar',
+            data: {
+                labels: wrappedRegions,
+                datasets: [
+                    {
+                        label: 'Fuerza Militar (1-10)',
+                        data: milScore,
+                        backgroundColor: 'rgba(239, 68, 68, 0.2)', // Red alpha
+                        borderColor: '#EF4444',
+                        pointBackgroundColor: '#EF4444',
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'Recursos Económicos (1-10)',
+                        data: ecoScore,
+                        backgroundColor: 'rgba(59, 130, 246, 0.2)', // Blue alpha
+                        borderColor: '#3B82F6',
+                        pointBackgroundColor: '#3B82F6',
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#475569' },
+                        grid: { color: '#334155' },
+                        pointLabels: {
+                            color: '#e2e8f0',
+                            font: { size: 11, family: 'Roboto' }
+                        },
+                        ticks: { display: false, backdropColor: 'transparent' },
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: { color: '#cbd5e1', font: { family: 'Roboto' } },
+                        position: 'bottom'
+                    },
+                    tooltip: commonTooltipOptions
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
