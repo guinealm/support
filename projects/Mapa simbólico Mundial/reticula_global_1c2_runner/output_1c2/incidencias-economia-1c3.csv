@@ -1,0 +1,47 @@
+﻿codigo_iso3,codigo_m49,pais,area_codigo,tipo_incidencia,detalle,estado
+ASM,016,American Samoa,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+IOT,086,British Indian Ocean Territory,AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+VGB,092,"Virgin Islands, British",NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+TWN,158,"Taiwan, Province of China",APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+CXR,162,Christmas Island,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+CCK,166,Cocos (Keeling) Islands,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+MYT,175,Mayotte,AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+COK,184,Cook Islands,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+CUB,192,Cuba,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+ERI,232,Eritrea,AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+FLK,238,Falkland Islands (Malvinas),SAM,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+ALA,248,Åland Islands,EUR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+GUF,254,French Guiana,SAM,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+GIB,292,Gibraltar,EUR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+GLP,312,Guadeloupe,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+GUM,316,Guam,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+VAT,336,Holy See (Vatican City State),EUR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+PRK,408,Corea del Norte,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+MTQ,474,Martinique,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+MSR,500,Montserrat,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+BES,535,"Bonaire, Sint Eustatius and Saba",NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+NIU,570,Niue,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+NFK,574,Norfolk Island,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+MNP,580,Northern Mariana Islands,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+PCN,612,Pitcairn,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+REU,638,Réunion,AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+BLM,652,Saint Barthélemy,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+SHN,654,"Saint Helena, Ascension and Tristan da Cunha",AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+AIA,660,Anguilla,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+MAF,663,Saint Martin (French part),NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+SPM,666,Saint Pierre and Miquelon,NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+SSD,728,South Sudan,AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+ESH,732,Western Sahara,AFR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+SJM,744,Svalbard and Jan Mayen,EUR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+SYR,760,Siria,MDE,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+TKL,772,Tokelau,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+GGY,831,Guernsey,EUR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+JEY,832,Jersey,EUR,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+VIR,850,"Virgin Islands, U.S.",NAC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+WLF,876,Wallis and Futuna,APC,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+YEM,887,Yemen,MDE,SIN_DATO,Sin valor WDI 2024/2023 comparable.,REVISAR
+GRL,304,Greenland,NAC,FALLBACK_2023,"2024 ausente, se usa 2023.",OK
+SMR,674,San Marino,EUR,FALLBACK_2023,"2024 ausente, se usa 2023.",OK
+IMN,833,Isle of Man,EUR,FALLBACK_2023,"2024 ausente, se usa 2023.",OK
+USA,840,Estados Unidos,NAC,VALOR_EXTREMO,"Valor alto relativo, revisar unidad/fuente.",REVISAR
+,,,,AGREGADOS_WB_NO_IMPORTADOS,Registros WDI fuera del maestro no importados: 95.,OK

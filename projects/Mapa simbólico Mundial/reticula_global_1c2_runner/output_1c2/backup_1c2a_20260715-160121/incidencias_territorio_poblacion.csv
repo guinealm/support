@@ -1,0 +1,11 @@
+﻿codigo_iso3,codigo_m49,nombre_es,area_codigo,area_nombre,tipo_entidad,incluir_calculos,superficie_km2,anio_superficie,poblacion_2025,poblacion_2050,edad_mediana_2025,fuente_superficie,fuente_poblacion,estado_revision,observaciones_datos
+IOT,086,British Indian Ocean Territory,AFR,África,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+CXR,162,Christmas Island,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+CCK,166,Cocos (Keeling) Islands,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+ALA,248,Åland Islands,EUR,Europa,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+NFK,574,Norfolk Island,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,40.0,2023.0,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+PCN,612,Pitcairn,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,47.0,2023.0,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+SJM,744,Svalbard and Jan Mayen,EUR,Europa,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+GGY,831,Guernsey,EUR,Europa,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,64498.0,62823.0,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+JEY,832,Jersey,EUR,Europa,TERRITORIO_DEPENDIENTE,SEGUN_FUENTE,,,104002.0,104780.0,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,
+XKX,,Kosovo,EUR,Europa,ENTIDAD_ESTADISTICA,SEGUN_FUENTE,,,,,,"FAOSTAT 2025, processed by Our World in Data","UN WPP 2024, processed by Our World in Data",REVISAR,

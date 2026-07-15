@@ -1,0 +1,8 @@
+{
+  "population_url": "https://ourworldindata.org/grapher/population-with-un-projections.csv?v=1&csvType=full&useColumnShortNames=false",
+  "median_age_url": "https://ourworldindata.org/grapher/median-age.csv?v=1&csvType=full&useColumnShortNames=false",
+  "land_url": "https://ourworldindata.org/grapher/land-area-hectares.csv?v=1&csvType=full&useColumnShortNames=false",
+  "population_source": "United Nations World Population Prospects 2024",
+  "land_source": "FAOSTAT 2025",
+  "processing": "Our World in Data"
+}

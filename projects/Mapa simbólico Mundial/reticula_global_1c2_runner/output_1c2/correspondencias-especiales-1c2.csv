@@ -1,0 +1,11 @@
+﻿Entidad,ISO maestro,Codigo fuente,Fuente,Indicador,Tratamiento,Nota
+British Indian Ocean Territory,IOT,SIN_CODIGO_SEPARADO,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Se mantiene en maestro y mapa; no se imputa cero.
+Christmas Island,CXR,INTEGRADO_EN_AUS,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Sin registro separado comparable para 2025/2050.
+Cocos (Keeling) Islands,CCK,INTEGRADO_EN_AUS,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Sin registro separado comparable para 2025/2050.
+Åland Islands,ALA,INTEGRADO_EN_FIN,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Sin registro separado comparable para 2025/2050.
+Norfolk Island,NFK,INTEGRADO_EN_AUS,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Se excluye superficie para evitar riesgo de doble conteo.
+Pitcairn,PCN,SIN_CODIGO_SEPARADO,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Se excluye superficie para consistencia de tratamiento.
+Svalbard and Jan Mayen,SJM,INTEGRADO_EN_NOR,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Sin separacion comparable en la fuente principal.
+Guernsey,GGY,GGY,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",INCLUIR_POB_EXCLUIR_SUP,No se imputa superficie alternativa sin comparabilidad metodologica cerrada.
+Jersey,JEY,JEY,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",INCLUIR_POB_EXCLUIR_SUP,No se imputa superficie alternativa sin comparabilidad metodologica cerrada.
+Kosovo,XKX,NO_PRESENTE_EN_FUENTE,OWID/UN WPP 2024 + OWID/FAOSTAT 2025,"POBLACION,SUPERFICIE",EXCLUIR_INDICADOR,Se mantiene SEGUN_FUENTE; excluido temporalmente del agregado hasta resolver sin duplicidad.

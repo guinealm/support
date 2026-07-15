@@ -1,0 +1,10 @@
+﻿area_codigo,area_nombre,pib_usd,pib_mundial_pct,poblacion_2025,pib_por_habitante_usd,entidades_totales,entidades_con_pib,poblacion_cubierta_pct,anio_minimo,anio_maximo,observaciones
+AFR,África,2901688380908.8994,2.6227893470693373,1548737803.0,1873.5827170281189,59,52,98.8622112816084,2024,2024,Cobertura incompleta en entidades. Cobertura poblacional alta.
+APC,Asia-Pacífico,12178633494512.898,11.008070474219915,974613138.0,12495.864276470382,43,30,94.87268896225366,2024,2024,Cobertura incompleta en entidades. Cobertura poblacional aceptable.
+CHN,China,19187504377186.746,17.343275869467547,1424214186.0,13472.34465559996,3,3,100.0,2024,2024,Cobertura poblacional alta.
+EUR,Europa,25130676006233.324,22.715212890349694,591100715.0,42515.049243737296,51,45,99.96461482879445,2023,2024,Cobertura incompleta en entidades. Cobertura poblacional alta. Mezcla de anios 2023/2024 por faltantes.
+MDE,Oriente Medio,5094919796742.406,4.605215865007178,388187450.0,13124.895708870563,15,13,82.63872260682307,2024,2024,Cobertura incompleta en entidades. Cobertura poblacional condicionada.
+NAC,Norteamérica y Caribe,34176084923003.62,30.891212181962104,617312022.0,55362.739919235886,41,30,98.07749605109748,2023,2024,Cobertura incompleta en entidades. Cobertura poblacional alta. Mezcla de anios 2023/2024 por faltantes.
+RUE,Rusia y Eurasia postsoviética,2889297338831.945,2.6115892839018566,253749543.0,11386.413960288177,10,10,100.0,2024,2024,Cobertura poblacional alta.
+SAI,Subcontinente indio,4753781734288.453,4.296866670114016,1992790070.0,2385.4904768209994,8,8,100.0,2024,2024,Cobertura poblacional alta.
+SAM,Sudamérica,4321094237987.848,3.9057674179083532,438105416.0,9863.138140222964,14,12,99.92760692097904,2024,2024,Cobertura incompleta en entidades. Cobertura poblacional alta.

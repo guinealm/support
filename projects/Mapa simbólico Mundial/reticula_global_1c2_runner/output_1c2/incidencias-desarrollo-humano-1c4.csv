@@ -1,0 +1,206 @@
+﻿codigo_iso3,codigo_m49,pais,area_codigo,tipo_incidencia,indicador,detalle,estado
+AFG,004,Afghanistan,SAI,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+DZA,012,Algeria,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ASM,016,American Samoa,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+ASM,016,American Samoa,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+AND,020,Andorra,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+AGO,024,Angola,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+ATG,028,Antigua and Barbuda,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+AZE,031,Azerbaijan,RUE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BHS,044,Bahamas,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BHR,048,Bahrain,MDE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BRB,052,Barbados,NAC,GINI_ANTIGUO,HUM_GINI,Dato Gini 2016 (ventana 2015-2018).,REVISAR
+BMU,060,Bermuda,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+BMU,060,Bermuda,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BWA,072,Botswana,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2015 (ventana 2015-2018).,REVISAR
+BLZ,084,Belize,NAC,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+IOT,086,British Indian Ocean Territory,AFR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+IOT,086,British Indian Ocean Territory,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+IOT,086,British Indian Ocean Territory,AFR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+SLB,090,Solomon Islands,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+VGB,092,"Virgin Islands, British",NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+VGB,092,"Virgin Islands, British",NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BRN,096,Brunéi,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MMR,104,Myanmar,APC,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+KHM,116,Cambodia,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+CPV,132,Cabo Verde,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2015 (ventana 2015-2018).,REVISAR
+CYM,136,Cayman Islands,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+CYM,136,Cayman Islands,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+TWN,158,"Taiwan, Province of China",APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+TWN,158,"Taiwan, Province of China",APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+TWN,158,"Taiwan, Province of China",APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+CXR,162,Christmas Island,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+CXR,162,Christmas Island,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+CXR,162,Christmas Island,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+CCK,166,Cocos (Keeling) Islands,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+CCK,166,Cocos (Keeling) Islands,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+CCK,166,Cocos (Keeling) Islands,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+MYT,175,Mayotte,AFR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MYT,175,Mayotte,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MYT,175,Mayotte,AFR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+COG,178,Congo,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+COK,184,Cook Islands,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+COK,184,Cook Islands,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+COK,184,Cook Islands,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+CUB,192,Cuba,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+DMA,212,Dominica,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ERI,232,Eritrea,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+FRO,234,Faroe Islands,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+FRO,234,Faroe Islands,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+FLK,238,Falkland Islands (Malvinas),SAM,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+FLK,238,Falkland Islands (Malvinas),SAM,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+FLK,238,Falkland Islands (Malvinas),SAM,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+ALA,248,Åland Islands,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+ALA,248,Åland Islands,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ALA,248,Åland Islands,EUR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+GUF,254,French Guiana,SAM,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+GUF,254,French Guiana,SAM,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GUF,254,French Guiana,SAM,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+PYF,258,French Polynesia,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+PYF,258,French Polynesia,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+DJI,262,Djibouti,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+GAB,266,Gabon,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+GHA,288,Ghana,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2016 (ventana 2015-2018).,REVISAR
+GIB,292,Gibraltar,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+GIB,292,Gibraltar,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GRL,304,Greenland,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+GRL,304,Greenland,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GRD,308,Grenada,NAC,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+GLP,312,Guadeloupe,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+GLP,312,Guadeloupe,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GLP,312,Guadeloupe,NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+GUM,316,Guam,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+GUM,316,Guam,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GIN,324,Guinea,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+GUY,328,Guyana,SAM,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+HTI,332,Haiti,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+VAT,336,Holy See (Vatican City State),EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+VAT,336,Holy See (Vatican City State),EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+VAT,336,Holy See (Vatican City State),EUR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+HKG,344,Hong Kong,CHN,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+HUN,348,Hungary,EUR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+JOR,400,Jordan,MDE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+PRK,408,Corea del Norte,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+PRK,408,Corea del Norte,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+KWT,414,Kuwait,MDE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+LSO,426,Lesotho,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+LBR,430,Liberia,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2016 (ventana 2015-2018).,REVISAR
+LBY,434,Libya,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+LIE,438,Liechtenstein,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MAC,446,Macao,CHN,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MAC,446,Macao,CHN,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MTQ,474,Martinique,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MTQ,474,Martinique,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MTQ,474,Martinique,NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+MUS,480,Mauritius,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+MCO,492,Monaco,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MCO,492,Monaco,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MSR,500,Montserrat,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MSR,500,Montserrat,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+MSR,500,Montserrat,NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+MAR,504,Morocco,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+OMN,512,Oman,MDE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+NAM,516,Namibia,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2015 (ventana 2015-2018).,REVISAR
+NRU,520,Nauru,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+CUW,531,Curaçao,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+CUW,531,Curaçao,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ABW,533,Aruba,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+ABW,533,Aruba,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SXM,534,Sint Maarten (Dutch part),NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+SXM,534,Sint Maarten (Dutch part),NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BES,535,"Bonaire, Sint Eustatius and Saba",NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+BES,535,"Bonaire, Sint Eustatius and Saba",NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BES,535,"Bonaire, Sint Eustatius and Saba",NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+NCL,540,New Caledonia,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+NCL,540,New Caledonia,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+NZL,554,New Zealand,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+NIC,558,Nicaragua,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+NIU,570,Niue,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+NIU,570,Niue,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+NIU,570,Niue,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+NFK,574,Norfolk Island,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+NFK,574,Norfolk Island,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+NFK,574,Norfolk Island,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+MNP,580,Northern Mariana Islands,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MNP,580,Northern Mariana Islands,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+FSM,583,"Micronesia, Federated States of",APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+PLW,585,Palau,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+PNG,598,Papua New Guinea,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+PCN,612,Pitcairn,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+PCN,612,Pitcairn,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+PCN,612,Pitcairn,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+TLS,626,Timor Oriental,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+PRI,630,Puerto Rico,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+PRI,630,Puerto Rico,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+QAT,634,Qatar,MDE,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+REU,638,Réunion,AFR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+REU,638,Réunion,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+REU,638,Réunion,AFR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+BLM,652,Saint Barthélemy,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+BLM,652,Saint Barthélemy,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+BLM,652,Saint Barthélemy,NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+SHN,654,"Saint Helena, Ascension and Tristan da Cunha",AFR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+SHN,654,"Saint Helena, Ascension and Tristan da Cunha",AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SHN,654,"Saint Helena, Ascension and Tristan da Cunha",AFR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+KNA,659,Saint Kitts and Nevis,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+AIA,660,Anguilla,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+AIA,660,Anguilla,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+AIA,660,Anguilla,NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+LCA,662,Saint Lucia,NAC,GINI_ANTIGUO,HUM_GINI,Dato Gini 2015 (ventana 2015-2018).,REVISAR
+MAF,663,Saint Martin (French part),NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+MAF,663,Saint Martin (French part),NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SPM,666,Saint Pierre and Miquelon,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+SPM,666,Saint Pierre and Miquelon,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SPM,666,Saint Pierre and Miquelon,NAC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+VCT,670,Saint Vincent and the Grenadines,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SMR,674,San Marino,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+STP,678,Sao Tome and Principe,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2017 (ventana 2015-2018).,REVISAR
+SAU,682,Saudi Arabia,MDE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SYC,690,Seychelles,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+SLE,694,Sierra Leone,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+SGP,702,Singapore,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SOM,706,Somalia,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SSD,728,South Sudan,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2016 (ventana 2015-2018).,REVISAR
+SDN,729,Sudan,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ESH,732,Western Sahara,AFR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+ESH,732,Western Sahara,AFR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ESH,732,Western Sahara,AFR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+SJM,744,Svalbard and Jan Mayen,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+SJM,744,Svalbard and Jan Mayen,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+SJM,744,Svalbard and Jan Mayen,EUR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+SWZ,748,Esuatini,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2016 (ventana 2015-2018).,REVISAR
+TKL,772,Tokelau,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+TKL,772,Tokelau,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+TKL,772,Tokelau,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+TTO,780,Trinidad and Tobago,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+ARE,784,United Arab Emirates,MDE,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+TKM,795,Turkmenistan,RUE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+TCA,796,Turks and Caicos Islands,NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+TCA,796,Turks and Caicos Islands,NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+TUV,798,Tuvalu,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GGY,831,Guernsey,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+GGY,831,Guernsey,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+GGY,831,Guernsey,EUR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+JEY,832,Jersey,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+JEY,832,Jersey,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+JEY,832,Jersey,EUR,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+IMN,833,Isle of Man,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+IMN,833,Isle of Man,EUR,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+TZA,834,Tanzania,AFR,GINI_ANTIGUO,HUM_GINI,Dato Gini 2018 (ventana 2015-2018).,REVISAR
+VIR,850,"Virgin Islands, U.S.",NAC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+VIR,850,"Virgin Islands, U.S.",NAC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+VEN,862,Venezuela,SAM,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+WLF,876,Wallis and Futuna,APC,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+WLF,876,Wallis and Futuna,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+WLF,876,Wallis and Futuna,APC,SIN_DATO,HUM_EV,Entidad sin esperanza de vida 2023/2022.,REVISAR
+WSM,882,Samoa,APC,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+YEM,887,Yemen,MDE,SIN_DATO,HUM_GINI,Entidad sin Gini 2015-2024 utilizable.,REVISAR
+XKX,,Kosovo,EUR,SIN_DATO,HUM_IDH,Entidad sin IDH 2023 utilizable en PNUD HDR 2025.,REVISAR
+,,,AFR,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2015-2024 en la misma area.,REVISAR
+,,,APC,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2017-2024 en la misma area.,REVISAR
+,,,EUR,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2017-2023 en la misma area.,REVISAR
+,,,MDE,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2017-2023 en la misma area.,REVISAR
+,,,NAC,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2015-2024 en la misma area.,REVISAR
+,,,RUE,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2020-2024 en la misma area.,REVISAR
+,,,SAI,GINI_DISPERSION_TEMPORAL,HUM_GINI,Rango anual Gini 2019-2024 en la misma area.,REVISAR
+,,,,NOTA_FUENTE_GINI,HUM_GINI,La API WDI usada no explicita por observacion si la medicion es por ingreso o consumo; documentar limitacion metodologica.,REVISAR

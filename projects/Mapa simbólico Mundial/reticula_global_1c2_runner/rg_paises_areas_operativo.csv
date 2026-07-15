@@ -1,0 +1,245 @@
+﻿id_territorial,codigo_m49,codigo_iso2,codigo_iso3,nombre_m49,nombre_es,region_m49,subregion_m49,region_intermedia_m49,area_codigo,area_nombre,tipo_entidad,estado_soberania,es_excepcion_m49,motivo_excepcion,incluir_mapa,incluir_calculos,tratamiento_fuente,entidad_soberana_iso3,observaciones,fecha_revision
+1,004,AF,AFG,Afghanistan,Afghanistan,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+2,008,AL,ALB,Albania,Albania,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+4,012,DZ,DZA,Algeria,Algeria,Africa,Northern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+5,016,AS,ASM,American Samoa,American Samoa,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+6,020,AD,AND,Andorra,Andorra,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+7,024,AO,AGO,Angola,Angola,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+8,028,AG,ATG,Antigua and Barbuda,Antigua and Barbuda,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+9,031,AZ,AZE,Azerbaijan,Azerbaijan,Asia,Western Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,SI,Azerbaiyán se extrae de Asia occidental y se incorpora al Cáucaso postsoviético.,SI,SI,Incluir normalmente.,,,2026-07-15
+10,032,AR,ARG,Argentina,Argentina,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+11,036,AU,AUS,Australia,Australia,Oceania,Australia and New Zealand,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+12,040,AT,AUT,Austria,Austria,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+13,044,BS,BHS,Bahamas,Bahamas,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+14,048,BH,BHR,Bahrain,Bahrain,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+15,050,BD,BGD,Bangladesh,Bangladesh,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+16,051,AM,ARM,Armenia,Armenia,Asia,Western Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,SI,Armenia se extrae de Asia occidental y se incorpora al Cáucaso postsoviético.,SI,SI,Incluir normalmente.,,,2026-07-15
+17,052,BB,BRB,Barbados,Barbados,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+18,056,BE,BEL,Belgium,Belgium,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+19,060,BM,BMU,Bermuda,Bermuda,Americas,Northern America,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+20,064,BT,BTN,Bhutan,Bhutan,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+21,068,BO,BOL,"Bolivia, Plurinational State of",Bolivia,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+22,070,BA,BIH,Bosnia and Herzegovina,Bosnia and Herzegovina,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+23,072,BW,BWA,Botswana,Botswana,Africa,Southern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+25,076,BR,BRA,Brazil,Brazil,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+26,084,BZ,BLZ,Belize,Belize,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+27,086,IO,IOT,British Indian Ocean Territory,British Indian Ocean Territory,Africa,Eastern Africa,,AFR,África,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+28,090,SB,SLB,Solomon Islands,Solomon Islands,Oceania,Melanesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+29,092,VG,VGB,"Virgin Islands, British","Virgin Islands, British",Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+30,096,BN,BRN,Brunei Darussalam,Brunéi,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+31,100,BG,BGR,Bulgaria,Bulgaria,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+32,104,MM,MMR,Myanmar,Myanmar,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+33,108,BI,BDI,Burundi,Burundi,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+34,112,BY,BLR,Belarus,Belarus,Europe,Eastern Europe,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,SI,Bielorrusia se extrae de Europa y se incorpora a Rusia-Eurasia.,SI,SI,Incluir normalmente.,,,2026-07-15
+35,116,KH,KHM,Cambodia,Cambodia,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+36,120,CM,CMR,Cameroon,Cameroon,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+37,124,CA,CAN,Canada,Canada,Americas,Northern America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+38,132,CV,CPV,Cabo Verde,Cabo Verde,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+39,136,KY,CYM,Cayman Islands,Cayman Islands,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+40,140,CF,CAF,Central African Republic,Central African Republic,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+41,144,LK,LKA,Sri Lanka,Sri Lanka,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+42,148,TD,TCD,Chad,Chad,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+43,152,CL,CHL,Chile,Chile,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+44,156,CN,CHN,China,China,Asia,Eastern Asia,,CHN,China,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+45,158,TW,TWN,"Taiwan, Province of China","Taiwan, Province of China",Asia,Eastern Asia,,APC,Asia-Pacífico,ENTIDAD_ESTADISTICA,ESTADISTICA,SI,"Taiwán se incorpora estadísticamente a Asia-Pacífico, sin pronunciamiento diplomático.",SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+46,162,CX,CXR,Christmas Island,Christmas Island,Oceania,Australia and New Zealand,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+47,166,CC,CCK,Cocos (Keeling) Islands,Cocos (Keeling) Islands,Oceania,Australia and New Zealand,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+48,170,CO,COL,Colombia,Colombia,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+49,174,KM,COM,Comoros,Comoros,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+50,175,YT,MYT,Mayotte,Mayotte,Africa,Eastern Africa,,AFR,África,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+51,178,CG,COG,Congo,Congo,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+52,180,CD,COD,"Congo, The Democratic Republic of the","Congo, The Democratic Republic of the",Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+53,184,CK,COK,Cook Islands,Cook Islands,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+54,188,CR,CRI,Costa Rica,Costa Rica,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+55,191,HR,HRV,Croatia,Croatia,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+56,192,CU,CUB,Cuba,Cuba,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+57,196,CY,CYP,Cyprus,Cyprus,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,SI,Chipre se incorpora a Europa como excepción práctica e institucional.,SI,SI,Incluir normalmente.,,,2026-07-15
+58,203,CZ,CZE,Czechia,Chequia,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+59,204,BJ,BEN,Benin,Benin,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+60,208,DK,DNK,Denmark,Denmark,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+61,212,DM,DMA,Dominica,Dominica,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+62,214,DO,DOM,Dominican Republic,Dominican Republic,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+63,218,EC,ECU,Ecuador,Ecuador,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+64,222,SV,SLV,El Salvador,El Salvador,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+65,226,GQ,GNQ,Equatorial Guinea,Equatorial Guinea,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+66,231,ET,ETH,Ethiopia,Ethiopia,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+67,232,ER,ERI,Eritrea,Eritrea,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+68,233,EE,EST,Estonia,Estonia,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+69,234,FO,FRO,Faroe Islands,Faroe Islands,Europe,Northern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+70,238,FK,FLK,Falkland Islands (Malvinas),Falkland Islands (Malvinas),Americas,South America,,SAM,Sudamérica,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+72,242,FJ,FJI,Fiji,Fiji,Oceania,Melanesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+73,246,FI,FIN,Finland,Finland,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+74,248,AX,ALA,Åland Islands,Åland Islands,Europe,Northern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+75,250,FR,FRA,France,France,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+76,254,GF,GUF,French Guiana,French Guiana,Americas,South America,,SAM,Sudamérica,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+77,258,PF,PYF,French Polynesia,French Polynesia,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+79,262,DJ,DJI,Djibouti,Djibouti,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+80,266,GA,GAB,Gabon,Gabon,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+81,268,GE,GEO,Georgia,Georgia,Asia,Western Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,SI,Georgia se extrae de Asia occidental y se incorpora al Cáucaso postsoviético.,SI,SI,Incluir normalmente.,,,2026-07-15
+82,270,GM,GMB,Gambia,Gambia,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+83,275,PS,PSE,"Palestine, State of",Palestina,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+84,276,DE,DEU,Germany,Germany,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+85,288,GH,GHA,Ghana,Ghana,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+86,292,GI,GIB,Gibraltar,Gibraltar,Europe,Southern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+87,296,KI,KIR,Kiribati,Kiribati,Oceania,Micronesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+88,300,GR,GRC,Greece,Greece,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+89,304,GL,GRL,Greenland,Greenland,Americas,Northern America,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+90,308,GD,GRD,Grenada,Grenada,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+91,312,GP,GLP,Guadeloupe,Guadeloupe,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+92,316,GU,GUM,Guam,Guam,Oceania,Micronesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+93,320,GT,GTM,Guatemala,Guatemala,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+94,324,GN,GIN,Guinea,Guinea,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+95,328,GY,GUY,Guyana,Guyana,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+96,332,HT,HTI,Haiti,Haiti,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+98,336,VA,VAT,Holy See (Vatican City State),Holy See (Vatican City State),Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+99,340,HN,HND,Honduras,Honduras,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+100,344,HK,HKG,Hong Kong,Hong Kong,Asia,Eastern Asia,,CHN,China,REGION_ESPECIAL,ESPECIAL,SI,"Hong Kong se integra en el área China, manteniendo registro estadístico separado.",SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+101,348,HU,HUN,Hungary,Hungary,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+102,352,IS,ISL,Iceland,Iceland,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+103,356,IN,IND,India,India,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+104,360,ID,IDN,Indonesia,Indonesia,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+105,364,IR,IRN,"Iran, Islamic Republic of",Irán,Asia,Southern Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,SI,Irán se traslada de Asia meridional a Oriente Medio por coherencia geopolítica.,SI,SI,Incluir normalmente.,,,2026-07-15
+106,368,IQ,IRQ,Iraq,Iraq,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+107,372,IE,IRL,Ireland,Ireland,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+108,376,IL,ISR,Israel,Israel,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+109,380,IT,ITA,Italy,Italy,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+110,384,CI,CIV,Côte d'Ivoire,Côte d'Ivoire,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+111,388,JM,JAM,Jamaica,Jamaica,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+112,392,JP,JPN,Japan,Japan,Asia,Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+113,398,KZ,KAZ,Kazakhstan,Kazakhstan,Asia,Central Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+114,400,JO,JOR,Jordan,Jordan,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+115,404,KE,KEN,Kenya,Kenya,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+116,408,KP,PRK,"Korea, Democratic People's Republic of",Corea del Norte,Asia,Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+117,410,KR,KOR,"Korea, Republic of",Corea del Sur,Asia,Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+118,414,KW,KWT,Kuwait,Kuwait,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+119,417,KG,KGZ,Kyrgyzstan,Kyrgyzstan,Asia,Central Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+120,418,LA,LAO,Lao People's Democratic Republic,Lao People's Democratic Republic,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+121,422,LB,LBN,Lebanon,Lebanon,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+122,426,LS,LSO,Lesotho,Lesotho,Africa,Southern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+123,428,LV,LVA,Latvia,Latvia,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+124,430,LR,LBR,Liberia,Liberia,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+125,434,LY,LBY,Libya,Libya,Africa,Northern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+126,438,LI,LIE,Liechtenstein,Liechtenstein,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+127,440,LT,LTU,Lithuania,Lithuania,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+128,442,LU,LUX,Luxembourg,Luxembourg,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+129,446,MO,MAC,Macao,Macao,Asia,Eastern Asia,,CHN,China,REGION_ESPECIAL,ESPECIAL,SI,"Macao se integra en el área China, manteniendo registro estadístico separado.",SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+130,450,MG,MDG,Madagascar,Madagascar,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+131,454,MW,MWI,Malawi,Malawi,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+132,458,MY,MYS,Malaysia,Malaysia,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+133,462,MV,MDV,Maldives,Maldives,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+134,466,ML,MLI,Mali,Mali,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+135,470,MT,MLT,Malta,Malta,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+136,474,MQ,MTQ,Martinique,Martinique,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+137,478,MR,MRT,Mauritania,Mauritania,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+138,480,MU,MUS,Mauritius,Mauritius,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+139,484,MX,MEX,Mexico,Mexico,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+140,492,MC,MCO,Monaco,Monaco,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+141,496,MN,MNG,Mongolia,Mongolia,Asia,Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+142,498,MD,MDA,"Moldova, Republic of",Moldavia,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+143,499,ME,MNE,Montenegro,Montenegro,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+144,500,MS,MSR,Montserrat,Montserrat,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+145,504,MA,MAR,Morocco,Morocco,Africa,Northern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+146,508,MZ,MOZ,Mozambique,Mozambique,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+147,512,OM,OMN,Oman,Oman,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+148,516,NA,NAM,Namibia,Namibia,Africa,Southern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+149,520,NR,NRU,Nauru,Nauru,Oceania,Micronesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+150,524,NP,NPL,Nepal,Nepal,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+151,528,NL,NLD,Netherlands,Netherlands,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+152,531,CW,CUW,Curaçao,Curaçao,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+153,533,AW,ABW,Aruba,Aruba,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+154,534,SX,SXM,Sint Maarten (Dutch part),Sint Maarten (Dutch part),Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+155,535,BQ,BES,"Bonaire, Sint Eustatius and Saba","Bonaire, Sint Eustatius and Saba",Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+156,540,NC,NCL,New Caledonia,New Caledonia,Oceania,Melanesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+157,548,VU,VUT,Vanuatu,Vanuatu,Oceania,Melanesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+158,554,NZ,NZL,New Zealand,New Zealand,Oceania,Australia and New Zealand,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+159,558,NI,NIC,Nicaragua,Nicaragua,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+160,562,NE,NER,Niger,Niger,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+161,566,NG,NGA,Nigeria,Nigeria,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+162,570,NU,NIU,Niue,Niue,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+163,574,NF,NFK,Norfolk Island,Norfolk Island,Oceania,Australia and New Zealand,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+164,578,NO,NOR,Norway,Norway,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+165,580,MP,MNP,Northern Mariana Islands,Northern Mariana Islands,Oceania,Micronesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+167,583,FM,FSM,"Micronesia, Federated States of","Micronesia, Federated States of",Oceania,Micronesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+168,584,MH,MHL,Marshall Islands,Marshall Islands,Oceania,Micronesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+169,585,PW,PLW,Palau,Palau,Oceania,Micronesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+170,586,PK,PAK,Pakistan,Pakistan,Asia,Southern Asia,,SAI,Subcontinente indio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+171,591,PA,PAN,Panama,Panama,Americas,Central America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+172,598,PG,PNG,Papua New Guinea,Papua New Guinea,Oceania,Melanesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+173,600,PY,PRY,Paraguay,Paraguay,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+174,604,PE,PER,Peru,Peru,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+175,608,PH,PHL,Philippines,Philippines,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+176,612,PN,PCN,Pitcairn,Pitcairn,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+177,616,PL,POL,Poland,Poland,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+178,620,PT,PRT,Portugal,Portugal,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+179,624,GW,GNB,Guinea-Bissau,Guinea-Bissau,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+180,626,TL,TLS,Timor-Leste,Timor Oriental,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+181,630,PR,PRI,Puerto Rico,Puerto Rico,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+182,634,QA,QAT,Qatar,Qatar,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+183,638,RE,REU,Réunion,Réunion,Africa,Eastern Africa,,AFR,África,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+184,642,RO,ROU,Romania,Romania,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+185,643,RU,RUS,Russian Federation,Rusia,Europe,Eastern Europe,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,SI,Rusia se extrae de Europa y forma el núcleo de Rusia-Eurasia.,SI,SI,Incluir normalmente.,,,2026-07-15
+186,646,RW,RWA,Rwanda,Rwanda,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+187,652,BL,BLM,Saint Barthélemy,Saint Barthélemy,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+188,654,SH,SHN,"Saint Helena, Ascension and Tristan da Cunha","Saint Helena, Ascension and Tristan da Cunha",Africa,Western Africa,,AFR,África,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+189,659,KN,KNA,Saint Kitts and Nevis,Saint Kitts and Nevis,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+190,660,AI,AIA,Anguilla,Anguilla,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+191,662,LC,LCA,Saint Lucia,Saint Lucia,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+192,663,MF,MAF,Saint Martin (French part),Saint Martin (French part),Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+193,666,PM,SPM,Saint Pierre and Miquelon,Saint Pierre and Miquelon,Americas,Northern America,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+194,670,VC,VCT,Saint Vincent and the Grenadines,Saint Vincent and the Grenadines,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+195,674,SM,SMR,San Marino,San Marino,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+196,678,ST,STP,Sao Tome and Principe,Sao Tome and Principe,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+197,682,SA,SAU,Saudi Arabia,Saudi Arabia,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+198,686,SN,SEN,Senegal,Senegal,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+199,688,RS,SRB,Serbia,Serbia,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+200,690,SC,SYC,Seychelles,Seychelles,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+201,694,SL,SLE,Sierra Leone,Sierra Leone,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+202,702,SG,SGP,Singapore,Singapore,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+203,703,SK,SVK,Slovakia,Slovakia,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+204,704,VN,VNM,Viet Nam,Vietnam,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+205,705,SI,SVN,Slovenia,Slovenia,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+206,706,SO,SOM,Somalia,Somalia,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+207,710,ZA,ZAF,South Africa,South Africa,Africa,Southern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+208,716,ZW,ZWE,Zimbabwe,Zimbabwe,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+209,724,ES,ESP,Spain,Spain,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+210,728,SS,SSD,South Sudan,South Sudan,Africa,Middle Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+211,729,SD,SDN,Sudan,Sudan,Africa,Northern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+212,732,EH,ESH,Western Sahara,Western Sahara,Africa,Northern Africa,,AFR,África,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+213,740,SR,SUR,Suriname,Suriname,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+214,744,SJ,SJM,Svalbard and Jan Mayen,Svalbard and Jan Mayen,Europe,Northern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+215,748,SZ,SWZ,Eswatini,Esuatini,Africa,Southern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+216,752,SE,SWE,Sweden,Sweden,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+217,756,CH,CHE,Switzerland,Switzerland,Europe,Western Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+218,760,SY,SYR,Syrian Arab Republic,Siria,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+219,762,TJ,TJK,Tajikistan,Tajikistan,Asia,Central Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+220,764,TH,THA,Thailand,Thailand,Asia,South-Eastern Asia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+221,768,TG,TGO,Togo,Togo,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+222,772,TK,TKL,Tokelau,Tokelau,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+223,776,TO,TON,Tonga,Tonga,Oceania,Polynesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+224,780,TT,TTO,Trinidad and Tobago,Trinidad and Tobago,Americas,Caribbean,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+225,784,AE,ARE,United Arab Emirates,United Arab Emirates,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+226,788,TN,TUN,Tunisia,Tunisia,Africa,Northern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+227,792,TR,TUR,Türkiye,Turquía,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+228,795,TM,TKM,Turkmenistan,Turkmenistan,Asia,Central Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+229,796,TC,TCA,Turks and Caicos Islands,Turks and Caicos Islands,Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+230,798,TV,TUV,Tuvalu,Tuvalu,Oceania,Polynesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+231,800,UG,UGA,Uganda,Uganda,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+232,804,UA,UKR,Ukraine,Ukraine,Europe,Eastern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+233,807,MK,MKD,North Macedonia,North Macedonia,Europe,Southern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+234,818,EG,EGY,Egypt,Egypt,Africa,Northern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+235,826,GB,GBR,United Kingdom,Reino Unido,Europe,Northern Europe,,EUR,Europa,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+236,831,GG,GGY,Guernsey,Guernsey,Europe,Northern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+237,832,JE,JEY,Jersey,Jersey,Europe,Northern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+238,833,IM,IMN,Isle of Man,Isle of Man,Europe,Northern Europe,,EUR,Europa,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+239,834,TZ,TZA,"Tanzania, United Republic of",Tanzania,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+240,840,US,USA,United States,Estados Unidos,Americas,Northern America,,NAC,Norteamérica y Caribe,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+241,850,VI,VIR,"Virgin Islands, U.S.","Virgin Islands, U.S.",Americas,Caribbean,,NAC,Norteamérica y Caribe,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+242,854,BF,BFA,Burkina Faso,Burkina Faso,Africa,Western Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+243,858,UY,URY,Uruguay,Uruguay,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+244,860,UZ,UZB,Uzbekistan,Uzbekistan,Asia,Central Asia,,RUE,Rusia y Eurasia postsoviética,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+245,862,VE,VEN,"Venezuela, Bolivarian Republic of",Venezuela,Americas,South America,,SAM,Sudamérica,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+246,876,WF,WLF,Wallis and Futuna,Wallis and Futuna,Oceania,Polynesia,,APC,Asia-Pacífico,TERRITORIO_DEPENDIENTE,DEPENDIENTE,NO,,SI,SEGUN_FUENTE,Comprobar si la fuente lo publica separado y evitar duplicidad.,,,2026-07-15
+247,882,WS,WSM,Samoa,Samoa,Oceania,Polynesia,,APC,Asia-Pacífico,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+248,887,YE,YEM,Yemen,Yemen,Asia,Western Asia,,MDE,Oriente Medio,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+249,894,ZM,ZMB,Zambia,Zambia,Africa,Eastern Africa,,AFR,África,PAIS_SOBERANO,SOBERANO,NO,,SI,SI,Incluir normalmente.,,,2026-07-15
+250,,XK,XKX,Kosovo (auxiliary statistical entity),Kosovo,Europe,Southern Europe,,EUR,Europa,ENTIDAD_ESTADISTICA,ESTADISTICA,SI,Entidad auxiliar no incluida como entrada principal M49; se usa solo si la fuente aporta datos separados.,SI,SEGUN_FUENTE,No duplicar con Serbia; usar solo cuando la fuente aporte dato separado.,,"Código XKX de uso técnico interno, no ISO oficial.",2026-07-15
