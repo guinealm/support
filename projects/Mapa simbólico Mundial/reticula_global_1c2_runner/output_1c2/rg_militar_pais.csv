@@ -1,0 +1,245 @@
+codigo_iso3,codigo_m49,pais,area_codigo,gasto_militar_usd,gasto_militar_pct_pib,anio_gasto,fuente_gasto,estado_revision,observaciones
+AFG,004,Afghanistan,SAI,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+ALB,008,Albania,EUR,623614024.5729697,0.020325031435452803,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+DZA,012,Algeria,AFR,25438789692.334564,0.0883062559516761,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ASM,016,American Samoa,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+AND,020,Andorra,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+AGO,024,Angola,AFR,1459150446.303329,0.013968300022016407,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ATG,028,Antigua and Barbuda,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+AZE,031,Azerbaijan,RUE,4939000000.0,0.06465505956276998,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ARG,032,Argentina,SAM,3875750072.354246,0.005631741127021983,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+AUS,036,Australia,APC,35326559811.29522,0.01917873083691095,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+AUT,040,Austria,EUR,6353360557.723981,0.011006335138112954,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BHS,044,Bahamas,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BHR,048,Bahrain,MDE,1468151595.744681,0.031054670025549735,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BGD,050,Bangladesh,SAI,3826632299.58464,0.008105876769470378,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ARM,051,Armenia,RUE,1725213042.6808634,0.06093545985205533,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BRB,052,Barbados,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BEL,056,Belgium,EUR,14531958576.811136,0.02008893871208229,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BMU,060,Bermuda,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BTN,064,Bhutan,SAI,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BOL,068,Bolivia,SAM,688306801.7366136,0.01214532355175434,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BIH,070,Bosnia and Herzegovina,EUR,231395167.75581536,0.007283302900341615,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BWA,072,Botswana,AFR,614353516.2293174,0.031078158759045633,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BRA,076,Brazil,SAM,23949869705.559586,0.010544932096497133,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BLZ,084,Belize,NAC,33317349.999999996,0.009956591792927613,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+IOT,086,British Indian Ocean Territory,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SLB,090,Solomon Islands,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+VGB,092,"Virgin Islands, British",NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BRN,096,Brunéi,APC,560266733.7424988,0.03652133760216016,2024.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",ANIO_ANTERIOR_2024,SIPRI no publica 2025 para esta entidad; se conserva 2024 separado.
+BGR,100,Bulgaria,EUR,2589155424.306569,0.02006374577483869,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MMR,104,Myanmar,APC,5011272415.126733,0.06604805119117459,2024.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",ANIO_ANTERIOR_2024,SIPRI no publica 2025 para esta entidad; se conserva 2024 separado.
+BDI,108,Burundi,AFR,226615473.53087303,0.03242394814929607,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BLR,112,Belarus,RUE,1938589500.4900749,0.023973873975455792,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+KHM,116,Cambodia,APC,738950217.7180358,0.014501226624683072,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CMR,120,Cameroon,AFR,627467840.6823967,0.010582867226575213,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CAN,124,Canada,NAC,37494244642.3716,0.01627447396350995,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CPV,132,Cabo Verde,AFR,20076627.568532564,0.006575158855219908,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CYM,136,Cayman Islands,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+CAF,140,Central African Republic,AFR,74185526.58732888,0.023321331656720103,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LKA,144,Sri Lanka,SAI,1390730987.1518633,0.013111912838068854,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+TCD,148,Chad,AFR,648809933.2737154,0.031851802790340174,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CHL,152,Chile,SAM,5327885653.379976,0.015202086436351594,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CHN,156,China,CHN,335524155624.44,0.01724723316575711,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,CHN separado de HKG y MAC.
+TWN,158,"Taiwan, Province of China",APC,18187723316.285767,0.02098535636731983,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. TWN revisado expresamente; mantener separado si la fuente no publica serie comparable.
+CXR,162,Christmas Island,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+CCK,166,Cocos (Keeling) Islands,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+COL,170,Colombia,SAM,14502706852.6697,0.03202105085963565,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+COM,174,Comoros,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MYT,175,Mayotte,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+COG,178,Congo,AFR,204916764.11914426,0.013092720148724422,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+COD,180,"Congo, The Democratic Republic of the",AFR,1225252134.1519628,0.013751452231075286,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+COK,184,Cook Islands,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+CRI,188,Costa Rica,NAC,0.0,0.0,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+HRV,191,Croatia,EUR,2101617670.2840512,0.02018558343673175,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CUB,192,Cuba,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+CYP,196,Cyprus,EUR,663312501.4101031,0.01605310961570736,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CZE,203,Chequia,EUR,7051481133.0233755,0.01835646969402079,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BEN,204,Benin,AFR,216913737.3598404,0.008900779239346037,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+DNK,208,Denmark,EUR,14948790190.933384,0.03252852051205041,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+DMA,212,Dominica,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+DOM,214,Dominican Republic,NAC,1037253440.08817,0.008023020922876148,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ECU,218,Ecuador,SAM,2735600000.0,0.020957782267652623,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SLV,222,El Salvador,NAC,490000000.0,0.013392735124497773,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GNQ,226,Equatorial Guinea,AFR,120731065.55685492,0.0089763643005565,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ETH,231,Ethiopia,AFR,528111206.3192609,0.004937391634111991,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ERI,232,Eritrea,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+EST,233,Estonia,EUR,1575931232.0916905,0.03374417800792759,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+FRO,234,Faroe Islands,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+FLK,238,Falkland Islands (Malvinas),SAM,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+FJI,242,Fiji,APC,81159432.22357386,0.013300334824945277,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+FIN,246,Finland,EUR,8081582925.343501,0.02571170162367027,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ALA,248,Åland Islands,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+FRA,250,France,EUR,68007580714.301834,0.020266296920856373,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GUF,254,French Guiana,SAM,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+PYF,258,French Polynesia,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+DJI,262,Djibouti,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+GAB,266,Gabon,AFR,356111990.0942423,0.016619472806552956,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GEO,268,Georgia,RUE,657878727.0171082,0.01745828116359766,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GMB,270,Gambia,AFR,14738181.34045069,0.00569750931440142,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PSE,275,Palestina,MDE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+DEU,276,Germany,EUR,113585948604.56197,0.02268510925145227,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GHA,288,Ghana,AFR,506651717.200633,0.004768161807193156,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GIB,292,Gibraltar,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+KIR,296,Kiribati,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+GRC,300,Greece,EUR,8388421361.369943,0.029888142525625296,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GRL,304,Greenland,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+GRD,308,Grenada,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+GLP,312,Guadeloupe,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+GUM,316,Guam,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+GTM,320,Guatemala,NAC,632872273.9811586,0.005231496438573953,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GIN,324,Guinea,AFR,600539642.4306408,0.02027963292300796,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GUY,328,Guyana,SAM,247643803.40654925,0.009913924529825313,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+HTI,332,Haiti,NAC,39144696.97650407,0.0012116192286238739,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+VAT,336,Holy See (Vatican City State),EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+HND,340,Honduras,NAC,580246011.6353736,0.014634721943738289,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+HKG,344,Hong Kong,CHN,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+HUN,348,Hungary,EUR,5001983632.200585,0.02036801022463418,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ISL,352,Iceland,EUR,0.0,0.0,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+IND,356,India,SAI,92057013588.1601,0.022951791793515173,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+IDN,360,Indonesia,APC,15025416115.28609,0.010446886384200042,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+IRN,364,Irán,MDE,7396057109.81132,0.020915792291092736,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+IRQ,368,Iraq,MDE,6447958100.793245,0.024473493526667365,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+IRL,372,Ireland,EUR,1551113417.4130812,0.0021912979177091934,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ISR,376,Israel,MDE,48281256782.26126,0.07809064087959404,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ITA,380,Italy,EUR,48143627462.04002,0.018887272002891593,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CIV,384,Côte d'Ivoire,AFR,759441425.3284721,0.007748750663545787,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+JAM,388,Jamaica,NAC,286646045.6699049,0.013682967070821951,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+JPN,392,Japan,APC,62158093812.44194,0.014116699864430388,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+KAZ,398,Kazakhstan,RUE,1308552096.598493,0.004303384155314186,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+JOR,400,Jordan,MDE,2555352112.6760564,0.045568102032700626,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+KEN,404,Kenya,AFR,1469684195.8712654,0.010677992140784137,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PRK,408,Corea del Norte,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE_DOCUMENTADO,SIPRI no dispone de gasto militar reciente comparable para Corea del Norte; último dato histórico no utilizado por falta de comparabilidad temporal.
+KOR,410,Corea del Sur,APC,47770908937.46307,0.02601468951273027,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+KWT,414,Kuwait,MDE,8088284947.007522,0.04687972209290038,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+KGZ,417,Kyrgyzstan,RUE,601125601.9789898,0.029171251904690748,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LAO,418,Lao People's Democratic Republic,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+LBN,422,Lebanon,MDE,828299104.1556169,0.025096134166182504,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LSO,426,Lesotho,AFR,39909364.883225515,0.016290959098571717,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LVA,428,Latvia,EUR,1731606615.0756943,0.03607721000298902,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LBR,430,Liberia,AFR,44210000.0,0.00853145503666538,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LBY,434,Libya,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+LIE,438,Liechtenstein,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+LTU,440,Lithuania,EUR,2952191864.2691154,0.03079753664717059,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+LUX,442,Luxembourg,EUR,855409155.5174514,0.008510505050505051,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MAC,446,Macao,CHN,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MDG,450,Madagascar,AFR,119676668.15152624,0.006188718289447978,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MWI,454,Malawi,AFR,162819193.4042492,0.011454969663418304,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MYS,458,Malaysia,APC,4933177367.160248,0.010360232333830478,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MDV,462,Maldives,SAI,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MLI,466,Mali,AFR,952899497.8331155,0.038741279168859825,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MLT,470,Malta,EUR,124657626.96568373,0.004488288390428941,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MTQ,474,Martinique,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MRT,478,Mauritania,AFR,321759024.9932787,0.027484162249529907,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MUS,480,Mauritius,AFR,23839838.912924312,0.0014553642153844236,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MEX,484,Mexico,NAC,13647711360.169912,0.007368094923746284,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MCO,492,Monaco,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MNG,496,Mongolia,APC,221316703.29112354,0.008826504651376375,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MDA,498,Moldavia,EUR,113287334.34316091,0.005603007679420097,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MNE,499,Montenegro,EUR,176544908.96374342,0.01889984443151503,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MSR,500,Montserrat,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MAR,504,Morocco,AFR,6330727244.328332,0.035431055025931676,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MOZ,508,Mozambique,AFR,468062039.7932007,0.018654788323732446,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+OMN,512,Oman,MDE,5988296488.946684,0.05682376091700867,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NAM,516,Namibia,AFR,410522284.1614994,0.027663322168259792,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NRU,520,Nauru,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+NPL,524,Nepal,SAI,428290814.1303412,0.009657444785825284,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NLD,528,Netherlands,EUR,28944340410.17079,0.021945445152637934,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CUW,531,Curaçao,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+ABW,533,Aruba,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SXM,534,Sint Maarten (Dutch part),NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BES,535,"Bonaire, Sint Eustatius and Saba",NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+NCL,540,New Caledonia,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+VUT,548,Vanuatu,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+NZL,554,New Zealand,APC,2855732604.4604692,0.011022496023962065,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NIC,558,Nicaragua,NAC,116367344.16423084,0.0056480290286382824,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NER,562,Niger,AFR,488890417.555204,0.021357835044651524,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NGA,566,Nigeria,AFR,2101677527.9642794,0.009094449270720074,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+NIU,570,Niue,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+NFK,574,Norfolk Island,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+NOR,578,Norway,EUR,17033643852.490572,0.032784814370343564,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MNP,580,Northern Mariana Islands,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+FSM,583,"Micronesia, Federated States of",APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MHL,584,Marshall Islands,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+PLW,585,Palau,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+PAK,586,Pakistan,SAI,11871380866.105368,0.029136125148539926,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PAN,591,Panama,NAC,0.0,0.0,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PNG,598,Papua New Guinea,APC,106480682.7655668,0.0035026033136118665,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PRY,600,Paraguay,SAM,421095331.4693742,0.008755943179888046,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PER,604,Peru,SAM,2596241408.393085,0.008124447472562586,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PHL,608,Philippines,APC,6378758229.620545,0.01295336952280744,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PCN,612,Pitcairn,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+POL,616,Poland,EUR,46760133894.597916,0.044969375748071326,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PRT,620,Portugal,EUR,5861290977.596282,0.017112082110627345,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GNB,624,Guinea-Bissau,AFR,22360184.357157595,0.008870465553036184,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+TLS,626,Timor Oriental,APC,47916000.0,0.02254870588235294,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+PRI,630,Puerto Rico,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+QAT,634,Qatar,MDE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+REU,638,Réunion,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+ROU,642,Romania,EUR,9725350362.953861,0.02281166438721189,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+RUS,643,Rusia,RUE,190416640325.2106,0.07501484654936362,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,RUS asignado exclusivamente a RUE.
+RWA,646,Rwanda,AFR,191192499.02185458,0.012862046757969887,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+BLM,652,Saint Barthélemy,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SHN,654,"Saint Helena, Ascension and Tristan da Cunha",AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+KNA,659,Saint Kitts and Nevis,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+AIA,660,Anguilla,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+LCA,662,Saint Lucia,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+MAF,663,Saint Martin (French part),NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SPM,666,Saint Pierre and Miquelon,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+VCT,670,Saint Vincent and the Grenadines,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SMR,674,San Marino,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+STP,678,Sao Tome and Principe,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SAU,682,Saudi Arabia,MDE,83181333333.33333,0.06482319949446061,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SEN,686,Senegal,AFR,566873602.7515048,0.015554365077066411,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SRB,688,Serbia,EUR,2781295696.285387,0.027553912788627778,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SYC,690,Seychelles,AFR,28380338.884222656,0.012443069628920844,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SLE,694,Sierra Leone,AFR,32182766.10896686,0.0037026571772029063,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SGP,702,Singapore,APC,17438486492.276382,0.030462464248483066,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SVK,703,Slovakia,EUR,3118330513.254371,0.020319797041979115,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+VNM,704,Vietnam,APC,10487302148.867115,0.02153801933360168,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SVN,705,Slovenia,EUR,1221658206.42978,0.015441648249803949,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SOM,706,Somalia,AFR,199468000.0,0.015410074165636589,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ZAF,710,South Africa,AFR,3173874329.7418494,0.007373520085170768,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ZWE,716,Zimbabwe,AFR,159639292.7063351,0.005646127356810411,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ESP,724,Spain,EUR,40211754089.114494,0.02128921138284213,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SSD,728,South Sudan,AFR,178422465.6947426,0.03424746568970281,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SDN,729,Sudan,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+ESH,732,Western Sahara,AFR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SUR,740,Suriname,SAM,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SJM,744,Svalbard and Jan Mayen,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+SWZ,748,Esuatini,AFR,93361425.00097848,0.016021843061389714,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SWE,752,Sweden,EUR,16473477206.496712,0.024711848495400413,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+CHE,756,Switzerland,EUR,7591405901.0693865,0.007569245382939775,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+SYR,760,Siria,MDE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TJK,762,Tajikistan,RUE,246931888.3215365,0.014735834768823543,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+THA,764,Thailand,APC,5983978404.684055,0.010376759596338476,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+TGO,768,Togo,AFR,204947549.4411006,0.01873993929415102,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+TKL,772,Tokelau,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TON,776,Tonga,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TTO,780,Trinidad and Tobago,NAC,229899160.50605452,0.009393365273659585,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+ARE,784,United Arab Emirates,MDE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TUN,788,Tunisia,AFR,1484859113.7612534,0.024949611547812552,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+TUR,792,Turquía,MDE,29986711540.60079,0.0190825227714357,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+TKM,795,Turkmenistan,RUE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TCA,796,Turks and Caicos Islands,NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TUV,798,Tuvalu,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+UGA,800,Uganda,AFR,1296994464.2173004,0.019571287799143737,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+UKR,804,Ukraine,EUR,84109045741.85442,0.39561018358008804,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+MKD,807,North Macedonia,EUR,374751246.9719014,0.019664112754277915,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+EGY,818,Egypt,AFR,2501747815.2309613,0.006055802166128685,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GBR,826,Reino Unido,EUR,88977496940.39256,0.02353264154125178,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+GGY,831,Guernsey,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+JEY,832,Jersey,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+IMN,833,Isle of Man,EUR,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+TZA,834,Tanzania,AFR,1030461758.3207084,0.011567162118438742,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+USA,840,Estados Unidos,NAC,954387000000.0,0.031173079810605936,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,USA asignado exclusivamente a NAC.
+VIR,850,"Virgin Islands, U.S.",NAC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+BFA,854,Burkina Faso,AFR,891556029.4421132,0.03300299356452818,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+URY,858,Uruguay,SAM,1954316864.68679,0.02284444197592897,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+UZB,860,Uzbekistan,RUE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+VEN,862,Venezuela,SAM,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+WLF,876,Wallis and Futuna,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. Sin dato SIPRI usable para 2025/2024 en esta entidad.
+WSM,882,Samoa,APC,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+YEM,887,Yemen,MDE,,,,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",AUSENTE,Sin dato SIPRI usable para 2025/2024 en esta entidad.
+ZMB,894,Zambia,AFR,405858785.2056163,0.012601679088743102,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,
+XKX,,Kosovo,EUR,234500146.6507231,0.01852817265223786,2025.0,"SIPRI Military Expenditure Database, edición abril 2026 (v1.2), año 2025",OK_2025,Entidad SEGUN_FUENTE; no imputar cero si SIPRI no publica valor separado. XKX revisado expresamente; mantener sin duplicidad con SRB.

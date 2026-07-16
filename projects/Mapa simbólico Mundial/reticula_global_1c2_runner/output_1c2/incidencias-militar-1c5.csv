@@ -1,0 +1,4 @@
+tipo,codigo_iso3,detalle,severidad,accion_recomendada
+ANIO_ANTERIOR,BRN,Dato de gasto militar en 2024 por ausencia de 2025.,BAJA,Mantener marcado como anio anterior; no mezclar como 2025 pleno.
+ANIO_ANTERIOR,MMR,Dato de gasto militar en 2024 por ausencia de 2025.,BAJA,Mantener marcado como anio anterior; no mezclar como 2025 pleno.
+AUSENCIA_DOCUMENTADA,PRK,SIPRI no dispone de gasto militar reciente comparable para Corea del Norte; último dato histórico no utilizado por falta de comparabilidad temporal.,METODOLOGICA,Mantener PRK sin MIL_GASTO/MIL_PIB; incluir solo MIL_NUC.
