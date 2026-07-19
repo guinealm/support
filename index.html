@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-core.css">
   <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-layout.css">
   <link rel="stylesheet" href="https://common.jumalenin.com/assets/css/jumalenin-components.css">
+  <style>
+    .energy-actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem}
+    .energy-actions .btn-secondary,.energy-actions .btn-quiet{align-items:center;border:1px solid currentColor;border-radius:6px;display:inline-flex;justify-content:center;padding:.65rem .9rem;text-decoration:none}
+    .energy-actions .btn-secondary{color:#17677f}
+    .energy-actions .btn-quiet{border-color:transparent;color:#17677f;text-decoration:underline;text-underline-offset:3px}
+    @media (max-width:520px){.energy-actions{align-items:stretch;flex-direction:column}.energy-actions a{width:100%}}
+  </style>
 </head>
 <body class="site-shell">
   <header class="site-header">
@@ -46,6 +53,23 @@
             <h3>Retícula Global 2025</h3>
             <p>Atlas geopolítico interactivo para visualizar la asimetría entre población y poder económico en bloques estratégicos mundiales.</p>
             <a class="btn" href="projects/mapa_mundi.html">Ver proyecto</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Aplicaciones móviles</h2>
+        <div class="grid grid-2">
+          <article class="card project-card">
+            <h3>Simulador de balance energético 24 h</h3>
+            <p>Introduce la producción solar, el consumo doméstico, la carga del vehículo y el estado inicial de la batería. La aplicación calcula el uso de placas, batería, red y excedentes.</p>
+            <div class="energy-actions" aria-label="Acciones del simulador de balance energético">
+              <a class="btn" href="apps/energia/">Probar ahora</a>
+              <a class="btn-secondary" href="apps/energia/?accion=instalar">Instalar en el móvil</a>
+              <a class="btn-quiet" href="apps/energia/#como-funciona">Cómo funciona</a>
+            </div>
           </article>
         </div>
       </div>

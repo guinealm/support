@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17677f">
+  <meta name="description" content="Simulador de balance energético de 24 horas con placas solares, batería, red y excedentes.">
+  <title>Simulador de balance energético 24 h</title>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <style>
+    :root{--azul:#17677f;--azul-oscuro:#0f4f65;--verde:#16a34a;--verde-suave:#dcfce7;--naranja:#d97706;--naranja-suave:#ffedd5;--rojo:#dc2626;--rojo-suave:#fee2e2;--gris:#eef2f6;--gris2:#d8e0e8;--texto:#0f172a;--muted:#64748b;--borde:#d7dee8;--panel:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--texto);background:#f4f6f8}
+    header{background:linear-gradient(135deg,var(--azul),var(--azul-oscuro));color:#fff;padding:16px 18px 24px;text-align:center}
+    .app-tools{width:min(1120px,94vw);margin:0 auto 16px;display:flex;justify-content:space-between;gap:12px;text-align:left}
+    .app-tools a,.app-tools button{border:1px solid rgba(255,255,255,.56);border-radius:7px;padding:8px 11px;color:#fff;background:transparent;font:inherit;font-size:.88rem;text-decoration:none;cursor:pointer}
+    .app-tools button[hidden]{display:none}
+    header h1{margin:0;font-size:clamp(1.65rem,3vw,2.45rem);letter-spacing:.03em}
+    header p{margin:.55rem auto 0;max-width:760px;color:#dff4fb;line-height:1.45}
+    main{width:min(1120px,94vw);margin:24px auto 48px;display:grid;gap:24px}
+    .panel{background:var(--panel);border:1px solid var(--borde);border-radius:18px;box-shadow:0 10px 24px rgba(15,35,50,.08);overflow:hidden}
+    .panel h2{margin:0;padding:16px 20px;background:var(--azul);color:#fff;font-size:1.22rem}
+    .inputs{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:18px}
+    label{display:grid;gap:7px;font-weight:750} label span{font-size:.95rem}
+    input{width:100%;padding:11px 12px;border:1px solid #b8c2cc;border-radius:11px;font-size:1rem;background:#fff}
+    input:focus{outline:3px solid rgba(23,103,127,.18);border-color:var(--azul)}
+    .unit{color:var(--muted);font-weight:550;font-size:.85rem}.note{margin:0;padding:0 18px 18px;color:#334155;line-height:1.5}
+    .energy-board{padding:24px;display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:20px;align-items:stretch}.stack{display:grid;gap:16px}
+    .card{border:2px solid #e5eaf0;border-radius:18px;padding:18px;min-height:140px;display:grid;align-content:center;justify-items:center;text-align:center;background:#fff}
+    .card.solar{background:var(--verde-suave);border-color:#86efac}.card.grid{background:#e0f2fe;border-color:#93c5fd}.card.battery{background:var(--naranja-suave);border-color:#fdba74}.card.home{border:4px solid #12384a;min-height:296px;background:#fff}.card.export{background:#f8fafc}
+    .icon{font-size:3rem;line-height:1;margin-bottom:8px}.card strong{font-size:1.08rem}.value{margin-top:4px;font-size:2.05rem;line-height:1.1;font-weight:850;color:#111827}.value small{font-size:1rem;color:#7c8795;font-weight:600}.subtext{margin-top:8px;color:#475569;font-size:.95rem;line-height:1.35}
+    .home-grid{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center}.home-total{grid-column:1/3;padding-top:12px;border-top:1px solid #e5eaf0}.flow-summary{padding:0 24px 24px}.bar-wrap{display:grid;gap:12px}.bar-row{display:grid;grid-template-columns:170px 1fr 90px;gap:12px;align-items:center;font-size:.95rem}.bar-label{font-weight:750}.bar-track{height:28px;border-radius:999px;background:#edf2f7;overflow:hidden;border:1px solid #d7dee8}.bar{width:0%;min-width:0;height:100%;border-radius:999px;transition:width .2s ease}.bar.solar{background:var(--verde)}.bar.battery{background:var(--naranja)}.bar.grid{background:var(--azul)}.bar.export{background:#94a3b8}.bar-value{text-align:right;font-weight:800}
+    .status{margin-top:16px;padding:14px 16px;border-radius:14px;border:1px solid var(--borde);background:#f8fafc;line-height:1.45}.status.ok{background:var(--verde-suave);border-color:#86efac}.status.warn{background:var(--naranja-suave);border-color:#fdba74}.status.bad{background:var(--rojo-suave);border-color:#fca5a5}
+    .formula-wrap{overflow-x:auto}.formula{width:100%;min-width:680px;border-collapse:collapse;font-size:1rem}.formula th{background:var(--azul);color:#fff;text-align:left;padding:13px 14px;font-size:1.02rem}.formula td{padding:12px 14px;border:2px solid #fff;background:var(--gris);vertical-align:top}.formula tr:nth-child(even) td{background:var(--gris2)}.formula code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:rgba(255,255,255,.78);padding:2px 5px;border-radius:5px}
+    .install-help{margin:0;color:var(--muted);font-size:.88rem;text-align:center}.install-help[hidden]{display:none}.install-help.is-action{color:#334155;font-size:.95rem}
+    @media (max-width:850px){main{width:min(96vw,720px);gap:18px;margin-top:18px}.inputs{grid-template-columns:1fr 1fr;padding:16px}.energy-board{grid-template-columns:1fr;padding:16px;gap:16px}.stack{grid-template-columns:1fr 1fr}.card{min-height:126px;padding:14px}.card.home{min-height:230px}.icon{font-size:2.35rem}.value{font-size:1.65rem}.flow-summary{padding:0 16px 16px}.bar-row{grid-template-columns:1fr;gap:6px}.bar-value{text-align:left}}
+    @media (max-width:520px){.app-tools{width:100%;margin-bottom:14px}.inputs,.stack,.home-grid{grid-template-columns:1fr}.home-total{grid-column:1}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="app-tools"><a href="../../" aria-label="Volver a la portada de Support">Volver a Support</a><button id="installButton" type="button" hidden>Instalar aplicación</button></div>
+    <h1>CONTROL · ENERGÍA 24 h</h1>
+    <p>Balance diario en kWh. Las placas cubren primero el consumo; si falta energía, la batería inicial aporta hasta agotarse; el resto se importa de la red.</p>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Datos discrecionales · 24 horas</h2>
+      <div class="inputs">
+        <label><span>PS24 · Energía de placas <span class="unit">(kWh)</span></span><input id="ps" type="number" min="0" step="0.1" value="18"></label>
+        <label><span>DO24 · Consumo doméstico <span class="unit">(kWh)</span></span><input id="do" type="number" min="0" step="0.1" value="11"></label>
+        <label><span>VE24 · Tesla / coche <span class="unit">(kWh)</span></span><input id="ve" type="number" min="0" step="0.1" value="14"></label>
+        <label><span>BAmax · Capacidad máxima batería <span class="unit">(kWh)</span></span><input id="baMax" type="number" min="0" step="0.1" value="10"></label>
+        <label><span>BAi · Carga inicial batería <span class="unit">(kWh)</span></span><input id="ba" type="number" min="0" max="10" step="0.1" value="6"></label>
+      </div>
+      <p class="note">Modelo simplificado de balance diario: la capacidad máxima de la batería se indica en BAmax. Si sobra energía solar y ya no cabe en la batería, el excedente se exporta a la red.</p>
+    </section>
+    <section class="panel">
+      <h2>Balance energético acumulado</h2>
+      <div class="energy-board">
+        <div class="stack">
+          <div class="card solar"><div class="icon">☀️</div><strong>Placas solares</strong><div class="value" id="psOut">0 <small>kWh</small></div><div class="subtext" id="solarText">Energía generada en 24 h</div></div>
+          <div class="card grid"><div class="icon">🔌</div><strong>Importación de red</strong><div class="value" id="imOut">0 <small>kWh</small></div><div class="subtext">Energía necesaria si placas + batería no bastan</div></div>
+        </div>
+        <div class="card home"><div class="home-grid"><div><div class="icon">🏠</div><strong>Doméstico</strong><div class="value" id="doOut">0 <small>kWh</small></div></div><div><div class="icon">🚗</div><strong>Tesla</strong><div class="value" id="veOut">0 <small>kWh</small></div></div><div class="home-total"><strong>Consumo total 24 h</strong><div class="value" id="ctOut">0 <small>kWh</small></div><div class="subtext" id="balanceText">Balance diario</div></div></div></div>
+        <div class="stack">
+          <div class="card battery"><div class="icon">🔋</div><strong>Batería</strong><div class="subtext" id="batCapText">Capacidad máxima: 10 kWh</div><div class="value" id="batOut">0 <small>kWh</small></div><div class="subtext" id="batText">Carga final</div></div>
+          <div class="card export"><div class="icon">💶</div><strong>Exportación a red</strong><div class="value" id="exOut">0 <small>kWh</small></div><div class="subtext">Excedente que no cabe en batería</div></div>
+        </div>
+      </div>
+      <div class="flow-summary"><div class="bar-wrap" aria-label="Reparto de energía">
+        <div class="bar-row"><div class="bar-label">A consumo desde placas</div><div class="bar-track"><div class="bar solar" id="barSolarUse"></div></div><div class="bar-value" id="solarUseOut">0 kWh</div></div>
+        <div class="bar-row"><div class="bar-label">A consumo desde batería</div><div class="bar-track"><div class="bar battery" id="barBatteryUse"></div></div><div class="bar-value" id="batteryUseOut">0 kWh</div></div>
+        <div class="bar-row"><div class="bar-label">A consumo desde red</div><div class="bar-track"><div class="bar grid" id="barGridUse"></div></div><div class="bar-value" id="gridUseOut">0 kWh</div></div>
+        <div class="bar-row"><div class="bar-label">Carga solar a batería</div><div class="bar-track"><div class="bar export" id="barBatteryCharge"></div></div><div class="bar-value" id="batteryChargeOut">0 kWh</div></div>
+      </div><div class="status" id="statusBox">Introduce valores para calcular el balance.</div></div>
+    </section>
+    <section class="panel" id="como-funciona"><h2>Cómo funciona</h2><p class="note">Introduce la producción de las placas, el consumo doméstico, el consumo del vehículo y la carga inicial de la batería. El simulador calcula qué parte procede de las placas, la batería o la red y cuánto se exporta como excedente.</p></section>
+    <section class="panel"><h2>Cálculo</h2><div class="formula-wrap"><table class="formula"><thead><tr><th>Variable</th><th>Concepto</th><th>Cálculo</th></tr></thead><tbody>
+      <tr><td>PS24</td><td>Energía diaria procedente de placas solares</td><td>Discrecional, en <code>kWh/24 h</code></td></tr><tr><td>DO24</td><td>Consumo doméstico diario</td><td>Discrecional, en <code>kWh/24 h</code></td></tr><tr><td>VE24</td><td>Consumo diario del Tesla / vehículo eléctrico</td><td>Discrecional, en <code>kWh/24 h</code></td></tr><tr><td>CT24</td><td>Consumo total diario</td><td><code>CT24 = DO24 + VE24</code></td></tr><tr><td>BAmax</td><td>Capacidad máxima de batería</td><td>Discrecional, en <code>kWh</code></td></tr><tr><td>BAi</td><td>Carga inicial de batería</td><td>Discrecional, limitada por <code>BAmax</code></td></tr><tr><td>DBA</td><td>Descarga útil de batería</td><td><code>DBA = min(BAi, max(0, CT24 - PS24))</code></td></tr><tr><td>IM24</td><td>Importación desde red eléctrica</td><td><code>IM24 = max(0, CT24 - PS24 - DBA)</code></td></tr><tr><td>CBA</td><td>Carga solar añadida a batería</td><td><code>CBA = min(max(0, PS24 - CT24), BAmax - BAi)</code></td></tr><tr><td>BAf</td><td>Carga final de batería</td><td><code>BAf = min(BAmax, BAi - DBA + CBA)</code></td></tr><tr><td>EX24</td><td>Exportación hacia red eléctrica</td><td><code>EX24 = max(0, PS24 - CT24 - CBA)</code></td></tr>
+    </tbody></table></div></section>
+    <p class="install-help" id="installHelp" hidden aria-live="polite"></p>
+  </main>
+  <script>
+    const ids = ["ps", "do", "ve", "baMax", "ba"];
+    const f = new Intl.NumberFormat("es-ES", {maximumFractionDigits: 2});
+    function n(id){ return Math.max(0, Number(document.getElementById(id).value) || 0); }
+    function setHtml(id, value, unit = "kWh"){ document.getElementById(id).innerHTML = `${f.format(value)} <small>${unit}</small>`; }
+    function setText(id, value){ document.getElementById(id).textContent = `${f.format(value)} kWh`; }
+    function setBar(id, value, max){ document.getElementById(id).style.width = `${max > 0 ? Math.max(0, Math.min(100, value / max * 100)) : 0}%`; }
+    function calc(){
+      const ps = n("ps"), dom = n("do"), ve = n("ve"), baMax = n("baMax"); let bai = n("ba");
+      const baInput = document.getElementById("ba"); baInput.max = baMax;
+      if (bai > baMax){ bai = baMax; baInput.value = baMax; }
+      const ct = dom + ve, solarToLoad = Math.min(ps, ct), deficitAfterSolar = Math.max(0, ct - ps), batteryToLoad = Math.min(bai, deficitAfterSolar), im = Math.max(0, ct - solarToLoad - batteryToLoad), solarSurplus = Math.max(0, ps - ct), batteryFree = Math.max(0, baMax - bai), solarToBattery = Math.min(solarSurplus, batteryFree), ex = Math.max(0, solarSurplus - solarToBattery), baf = Math.min(baMax, bai - batteryToLoad + solarToBattery);
+      setHtml("psOut", ps); setHtml("doOut", dom); setHtml("veOut", ve); setHtml("ctOut", ct); setHtml("imOut", im); setHtml("exOut", ex); setHtml("batOut", baf); document.getElementById("batCapText").textContent = `Capacidad máxima: ${f.format(baMax)} kWh`;
+      document.getElementById("balanceText").textContent = ps >= ct ? `Sobra energía solar: ${f.format(ps - ct)} kWh. A batería: ${f.format(solarToBattery)} kWh; exportación: ${f.format(ex)} kWh.` : `Faltan ${f.format(ct - ps)} kWh tras usar las placas.`;
+      document.getElementById("batText").textContent = batteryToLoad > 0 ? `Inicial: ${f.format(bai)} · Aporta: ${f.format(batteryToLoad)} · Final: ${f.format(baf)} kWh` : `Inicial: ${f.format(bai)} · Carga solar: ${f.format(solarToBattery)} · Final: ${f.format(baf)} kWh`;
+      document.getElementById("solarText").textContent = solarToBattery > 0 ? `A consumo: ${f.format(solarToLoad)} · A batería: ${f.format(solarToBattery)} · A red: ${f.format(ex)} kWh` : `A consumo: ${f.format(solarToLoad)} kWh`;
+      const maxFlow = Math.max(ct, ps, solarToLoad, batteryToLoad, im, solarToBattery, ex, 1); setBar("barSolarUse", solarToLoad, maxFlow); setBar("barBatteryUse", batteryToLoad, maxFlow); setBar("barGridUse", im, maxFlow); setBar("barBatteryCharge", solarToBattery, maxFlow); setText("solarUseOut", solarToLoad); setText("batteryUseOut", batteryToLoad); setText("gridUseOut", im); setText("batteryChargeOut", solarToBattery);
+      const status = document.getElementById("statusBox"); status.className = "status";
+      if (ct === 0){ status.classList.add("ok"); status.textContent = `Sin consumo en 24 h. La batería carga ${f.format(solarToBattery)} kWh y se exportan ${f.format(ex)} kWh.`; } else if (im === 0 && baf > 0){ status.classList.add("ok"); status.textContent = `Autonomía completa: placas + batería cubren los ${f.format(ct)} kWh de consumo. No se importa energía de la red. Exportación: ${f.format(ex)} kWh.`; } else if (im === 0 && baf === 0){ status.classList.add("warn"); status.textContent = "Balance justo: se cubre el consumo, pero la batería termina a 0 kWh."; } else { status.classList.add("bad"); status.textContent = `Déficit: la batería se agota y todavía hay que importar ${f.format(im)} kWh de la red.`; }
+    }
+    ids.forEach(id => document.getElementById(id).addEventListener("input", calc)); calc();
+    const installButton = document.getElementById("installButton");
+    const installHelp = document.getElementById("installHelp");
+    const installRequested = new URLSearchParams(window.location.search).get("accion") === "instalar";
+    let installPrompt;
+    const isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+    const isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    function showInstallHelp(message){ installHelp.textContent = message; installHelp.hidden = false; }
+    async function promptInstall(){
+      if (!installPrompt) return false;
+      try { installPrompt.prompt(); await installPrompt.userChoice; } catch (error) { showInstallHelp("Para instalarla, abre el menú del navegador y elige Instalar aplicación o Añadir a pantalla de inicio."); }
+      installPrompt = null;
+      installButton.hidden = true;
+      return true;
+    }
+    if (isIos && !isStandalone) showInstallHelp("En Safari: Compartir → Añadir a pantalla de inicio");
+    else if (installRequested && !isStandalone) showInstallHelp("Para instalarla, abre el menú del navegador y elige Instalar aplicación o Añadir a pantalla de inicio.");
+    window.addEventListener("beforeinstallprompt", async event => { event.preventDefault(); installPrompt = event; installButton.hidden = false; if (installRequested) await promptInstall(); });
+    installButton.addEventListener("click", promptInstall);
+    window.addEventListener("appinstalled", () => { installPrompt = null; installButton.hidden = true; });
+    if ("serviceWorker" in navigator) window.addEventListener("load", () => navigator.serviceWorker.register("service-worker.js"));
+  </script>
+</body>
+</html>
