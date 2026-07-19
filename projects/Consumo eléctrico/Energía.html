@@ -76,7 +76,7 @@
 
     .inputs{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(5,1fr);
       gap:14px;
       padding:18px;
     }
@@ -320,11 +320,15 @@
           <input id="ve" type="number" min="0" step="0.1" value="14">
         </label>
         <label>
+          <span>BAmax · Capacidad máxima batería <span class="unit">(kWh)</span></span>
+          <input id="baMax" type="number" min="0" step="0.1" value="10">
+        </label>
+        <label>
           <span>BAi · Carga inicial batería <span class="unit">(kWh)</span></span>
           <input id="ba" type="number" min="0" max="10" step="0.1" value="6">
         </label>
       </div>
-      <p class="note">Modelo simplificado de balance diario: la batería tiene una capacidad fija de 10 kWh. Si sobra energía solar y ya no cabe en la batería, el excedente se exporta a la red.</p>
+      <p class="note">Modelo simplificado de balance diario: la capacidad máxima de la batería se indica en BAmax. Si sobra energía solar y ya no cabe en la batería, el excedente se exporta a la red.</p>
     </section>
 
     <section class="panel">
@@ -424,7 +428,8 @@
           <tr><td>DO24</td><td>Consumo doméstico diario</td><td>Discrecional, en <code>kWh/24 h</code></td></tr>
           <tr><td>VE24</td><td>Consumo diario del Tesla / vehículo eléctrico</td><td>Discrecional, en <code>kWh/24 h</code></td></tr>
           <tr><td>CT24</td><td>Consumo total diario</td><td><code>CT24 = DO24 + VE24</code></td></tr>
-          <tr><td>BAi</td><td>Carga inicial de batería</td><td>Discrecional, limitada por <code>BAmax = 10 kWh</code></td></tr>
+          <tr><td>BAmax</td><td>Capacidad máxima de batería</td><td>Discrecional, en <code>kWh</code></td></tr>
+          <tr><td>BAi</td><td>Carga inicial de batería</td><td>Discrecional, limitada por <code>BAmax</code></td></tr>
           <tr><td>DBA</td><td>Descarga útil de batería</td><td><code>DBA = min(BAi, max(0, CT24 - PS24))</code></td></tr>
           <tr><td>IM24</td><td>Importación desde red eléctrica</td><td><code>IM24 = max(0, CT24 - PS24 - DBA)</code></td></tr>
           <tr><td>CBA</td><td>Carga solar añadida a batería</td><td><code>CBA = min(max(0, PS24 - CT24), BAmax - BAi)</code></td></tr>
@@ -436,8 +441,7 @@
   </main>
 
   <script>
-    const ids = ["ps","do","ve","ba"];
-    const BA_MAX = 10; // Capacidad fija de batería en kWh. Cambiar aquí si se instala otra capacidad.
+    const ids = ["ps","do","ve","baMax","ba"];
     const f = new Intl.NumberFormat("es-ES",{maximumFractionDigits:2});
 
     function n(id){
@@ -461,10 +465,13 @@
       const ps = n("ps");
       const dom = n("do");
       const ve = n("ve");
+      const baMax = n("baMax");
       let bai = n("ba");
-      if (bai > BA_MAX){
-        bai = BA_MAX;
-        document.getElementById("ba").value = BA_MAX;
+      const baInput = document.getElementById("ba");
+      baInput.max = baMax;
+      if (bai > baMax){
+        bai = baMax;
+        baInput.value = baMax;
       }
 
       const ct = dom + ve;
@@ -473,10 +480,10 @@
       const batteryToLoad = Math.min(bai, deficitAfterSolar);
       const im = Math.max(0, ct - solarToLoad - batteryToLoad);
       const solarSurplus = Math.max(0, ps - ct);
-      const batteryFree = Math.max(0, BA_MAX - bai);
+      const batteryFree = Math.max(0, baMax - bai);
       const solarToBattery = Math.min(solarSurplus, batteryFree);
       const ex = Math.max(0, solarSurplus - solarToBattery);
-      const baf = Math.min(BA_MAX, bai - batteryToLoad + solarToBattery);
+      const baf = Math.min(baMax, bai - batteryToLoad + solarToBattery);
 
       setHtml("psOut", ps);
       setHtml("doOut", dom);
@@ -485,6 +492,7 @@
       setHtml("imOut", im);
       setHtml("exOut", ex);
       setHtml("batOut", baf);
+      document.getElementById("batCapText").textContent = `Capacidad máxima: ${f.format(baMax)} kWh`;
 
       document.getElementById("balanceText").textContent = ps >= ct
         ? `Sobra energía solar: ${f.format(ps - ct)} kWh. A batería: ${f.format(solarToBattery)} kWh; exportación: ${f.format(ex)} kWh.`
