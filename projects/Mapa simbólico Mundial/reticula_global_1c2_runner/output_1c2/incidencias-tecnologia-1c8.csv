@@ -1,0 +1,35 @@
+tipo,codigo_iso3,detalle,severidad,accion_recomendada
+TEC_NET_AUSENTE,IOT,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,CXR,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,CCK,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,MYT,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,COK,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,FLK,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,ALA,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,GUF,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,GLP,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,MTQ,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,MSR,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,SXM,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,BES,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,NIU,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,NFK,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,PCN,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,REU,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,BLM,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,SHN,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,AIA,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,MAF,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,SPM,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,ESH,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,SJM,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,TKL,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,GGY,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,JEY,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,IMN,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_AUSENTE,WLF,Sin dato oficial comparable.,COBERTURA,Mantener ausencia; no imputar ni convertir en cero.
+TEC_NET_CERO_PUBLICADO,ASM,La fuente publica cero en 1990.,DOCUMENTAL,Conservar como cero real y distinguirlo de ausencia.
+TEC_NET_CERO_PUBLICADO,PRK,La fuente publica cero en 2004.,DOCUMENTAL,Conservar como cero real y distinguirlo de ausencia.
+TEC_NET_CERO_PUBLICADO,MNP,La fuente publica cero en 1990.,DOCUMENTAL,Conservar como cero real y distinguirlo de ausencia.
+TEC_NET_CERO_PUBLICADO,TCA,La fuente publica cero en 1990.,DOCUMENTAL,Conservar como cero real y distinguirlo de ausencia.
+POBLACION_2025_AUSENTE,XKX,Tiene TEC_NET pero no poblacion 2025 para ponderar.,AGREGACION,Conservar dato nacional y excluirlo del agregado.
