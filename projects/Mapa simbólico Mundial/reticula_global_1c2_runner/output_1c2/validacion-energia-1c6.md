@@ -29,17 +29,22 @@
 
 ## Cobertura por area
 
-| Area | Consumo-pop % | Nivel | Dep-consumo % | Nivel | Fosil-consumo % | Nivel | Elec-generacion % | Nivel |
-|---|---:|---|---:|---|---:|---|---:|---|
-| AFR | 17.37 | insuficiente | 100.00 | alta | 100.00 | alta | 100.00 | alta |
-| APC | 86.98 | condicionada | 93.90 | aceptable | 100.00 | alta | 100.00 | alta |
-| CHN | 99.95 | alta | 100.00 | alta | 100.00 | alta | 100.00 | alta |
-| EUR | 97.07 | alta | 99.68 | alta | 100.00 | alta | 100.00 | alta |
-| MDE | 76.30 | insuficiente | 100.00 | alta | 100.00 | alta | 100.00 | alta |
-| NAC | 84.38 | condicionada | 100.00 | alta | 100.00 | alta | 100.00 | alta |
-| RUE | 90.21 | aceptable | 100.00 | alta | 100.00 | alta | 100.00 | alta |
-| SAI | 96.25 | alta | 100.00 | alta | 100.00 | alta | 100.00 | alta |
-| SAM | 94.35 | aceptable | 100.00 | alta | 100.00 | alta | 100.00 | alta |
+1C.6D publica cinco indicadores. ENE_FOS se aplaza por cobertura insuficiente y falta de fuente complementaria comparable para cuatro areas. Sus datos permanecen como material de trabajo, pero no se catalogan ni se cargan en MySQL.
 
-## Decision preliminar
-- GO condicionado a revision de incidencias y comprobaciones SQL en MySQL (sin ejecutar en esta fase).
+| Area | ENE_CONS antes % | ENE_CONS despues % | ENE_FOS antes % | ENE_FOS despues % | Fosil sobre consumo cubierto % |
+|---|---:|---:|---:|---:|---:|
+| AFR | 17.37 | 99.92 | 17.37 | 17.37 | 61.17 |
+| APC | 86.98 | 97.26 | 86.98 | 86.98 | 97.50 |
+| CHN | 99.95 | 100.00 | 99.95 | 99.95 | 99.97 |
+| EUR | 97.07 | 99.92 | 97.07 | 97.07 | 98.12 |
+| MDE | 76.30 | 100.00 | 76.30 | 76.30 | 95.43 |
+| NAC | 84.38 | 99.83 | 84.38 | 84.38 | 97.62 |
+| RUE | 90.21 | 100.00 | 90.21 | 90.21 | 98.04 |
+| SAI | 96.25 | 100.00 | 96.25 | 96.25 | 99.09 |
+| SAM | 94.35 | 99.93 | 94.35 | 94.35 | 96.69 |
+
+## Decision 1C.6D
+- ENE_FOS queda fuera de la primera edicion y deja de ser condicion de bloqueo.
+- Umbral operativo de ENE_CONS: cobertura poblacional >=90% en cada area.
+- Areas bajo el umbral: ninguna.
+- Decision: GO documental para ejecutar 17/18/19_rg_*_energia.sql en el orden previsto. MySQL no se ejecuta en esta fase.

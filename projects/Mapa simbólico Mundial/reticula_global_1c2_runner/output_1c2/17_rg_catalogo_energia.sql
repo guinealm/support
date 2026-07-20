@@ -29,10 +29,6 @@ SELECT (@next_indicador := @next_indicador + 1), 'ENE_AUTO', @bloque_ene, 'Autos
 FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM rg_indicadores WHERE codigo='ENE_AUTO');
 
 INSERT INTO rg_indicadores (id,codigo,bloque_id,nombre,unidad,descripcion,activo)
-SELECT (@next_indicador := @next_indicador + 1), 'ENE_FOS', @bloque_ene, 'Combustibles fosiles en energia primaria', 'porcentaje', 'Participacion de carbon, petroleo y gas en energia primaria', 1
-FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM rg_indicadores WHERE codigo='ENE_FOS');
-
-INSERT INTO rg_indicadores (id,codigo,bloque_id,nombre,unidad,descripcion,activo)
 SELECT (@next_indicador := @next_indicador + 1), 'ENE_ELEC_LC', @bloque_ene, 'Electricidad baja en carbono', 'porcentaje', 'Porcentaje de generacion electrica de fuentes bajas en carbono', 1
 FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM rg_indicadores WHERE codigo='ENE_ELEC_LC');
 
@@ -53,5 +49,9 @@ FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM rg_fuentes WHERE codigo='WB_IEA_ENEDEP
 INSERT INTO rg_fuentes (id,codigo,nombre,tipo_fuente,url,activo)
 SELECT (@next_fuente := @next_fuente + 1), 'OWID_ENERGY_PROC', 'Our World in Data energy dataset (processor)', 'procesado', 'https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv', 1
 FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM rg_fuentes WHERE codigo='OWID_ENERGY_PROC');
+
+INSERT INTO rg_fuentes (id,codigo,nombre,tipo_fuente,url,activo)
+SELECT (@next_fuente := @next_fuente + 1), 'OWID_EIA_PRIMARY2024', 'U.S. EIA 2026 y Energy Institute 2025, procesados por Our World in Data: energia primaria', 'procesado', 'https://ourworldindata.org/grapher/primary-energy-cons', 1
+FROM DUAL WHERE NOT EXISTS (SELECT 1 FROM rg_fuentes WHERE codigo='OWID_EIA_PRIMARY2024');
 
 COMMIT;

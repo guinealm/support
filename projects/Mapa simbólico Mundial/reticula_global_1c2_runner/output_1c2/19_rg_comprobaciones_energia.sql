@@ -5,34 +5,63 @@ SET NAMES utf8mb4;
 SELECT COUNT(*) AS bloques_activos FROM rg_bloques WHERE activo=1;
 SELECT COUNT(*) AS indicadores_activos FROM rg_indicadores WHERE activo=1;
 SELECT COUNT(*) AS bloques_ene FROM rg_bloques WHERE codigo='ENE' AND activo=1;
-SELECT COUNT(*) AS indicadores_ene FROM rg_indicadores WHERE codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND activo=1;
+SELECT COUNT(*) AS indicadores_ene FROM rg_indicadores WHERE codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND activo=1;
+
+-- Resumen de aceptacion 1C.6D: todos deben devolver OK
+SELECT CASE WHEN COUNT(*)=6 THEN 'OK' ELSE 'NO_OK' END AS bloques_activos_esperados_6 FROM rg_bloques WHERE activo=1;
+SELECT CASE WHEN COUNT(*)=24 THEN 'OK' ELSE 'NO_OK' END AS indicadores_activos_esperados_24 FROM rg_indicadores WHERE activo=1;
 
 -- Registros nacionales por indicador ENE
 SELECT i.codigo, COUNT(*) AS registros
 FROM rg_datos_pais dp
 JOIN rg_indicadores i ON i.id=dp.indicador_id
-WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND dp.activo=1
+WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND dp.activo=1
 GROUP BY i.codigo
 ORDER BY i.codigo;
 
--- 54 nuevos registros de area y total esperado
+-- Cobertura nacional esperada desde los no nulos del CSV: todos deben devolver OK.
+-- Esta comprobacion distingue ceros publicados validos de ausencias, que no generan fila.
+SELECT e.codigo, e.esperados, COUNT(dp.id) AS cargados,
+       CASE WHEN COUNT(dp.id)=e.esperados THEN 'OK' ELSE 'NO_OK' END AS estado
+FROM (
+    SELECT 'ENE_CONS' AS codigo, 209 AS esperados
+    UNION ALL SELECT 'ENE_PC', 209
+    UNION ALL SELECT 'ENE_DEP', 138
+    UNION ALL SELECT 'ENE_AUTO', 138
+    UNION ALL SELECT 'ENE_ELEC_LC', 194
+) e
+LEFT JOIN rg_indicadores i ON i.codigo=e.codigo AND i.activo=1
+LEFT JOIN rg_datos_pais dp ON dp.indicador_id=i.id AND dp.activo=1
+GROUP BY e.codigo, e.esperados
+ORDER BY e.codigo;
+
+-- 45 nuevos registros de area y total esperado: 216
 SELECT COUNT(*) AS datos_area_ene
 FROM rg_datos_area da
 JOIN rg_indicadores i ON i.id=da.indicador_id
-WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND da.activo=1;
+WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND da.activo=1;
 
 SELECT COUNT(*) AS total_datos_area_activos FROM rg_datos_area WHERE activo=1;
+
+SELECT CASE WHEN COUNT(*)=45 THEN 'OK' ELSE 'NO_OK' END AS datos_area_ene_esperados_45
+FROM rg_datos_area da JOIN rg_indicadores i ON i.id=da.indicador_id
+WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND da.activo=1;
+SELECT CASE WHEN COUNT(*)=216 THEN 'OK' ELSE 'NO_OK' END AS datos_area_activos_esperados_216 FROM rg_datos_area WHERE activo=1;
 
 SELECT COUNT(*) AS datos_area_no_ene
 FROM rg_datos_area da
 JOIN rg_indicadores i ON i.id=da.indicador_id
-WHERE i.codigo NOT IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND da.activo=1;
+WHERE i.codigo NOT IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND da.activo=1;
+
+SELECT CASE WHEN COUNT(*)=171 THEN 'OK' ELSE 'NO_OK' END AS datos_area_anteriores_esperados_171
+FROM rg_datos_area da JOIN rg_indicadores i ON i.id=da.indicador_id
+WHERE i.codigo NOT IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND da.activo=1;
 
 -- Nueve filas por indicador
 SELECT i.codigo, COUNT(*) AS filas_por_indicador
 FROM rg_datos_area da
 JOIN rg_indicadores i ON i.id=da.indicador_id
-WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND da.activo=1
+WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND da.activo=1
 GROUP BY i.codigo
 ORDER BY i.codigo;
 
@@ -93,13 +122,13 @@ SELECT p.codigo_iso3, i.codigo, dp.valor
 FROM rg_datos_pais dp
 JOIN rg_indicadores i ON i.id=dp.indicador_id
 JOIN rg_paises p ON p.id=dp.pais_id
-WHERE i.codigo IN ('ENE_FOS','ENE_ELEC_LC') AND dp.activo=1 AND (dp.valor < 0 OR dp.valor > 100);
+WHERE i.codigo='ENE_ELEC_LC' AND dp.activo=1 AND (dp.valor < 0 OR dp.valor > 100);
 
 -- Anios, datos 2024 y duplicidades
 SELECT i.codigo, MIN(dp.anio) AS anio_min, MAX(dp.anio) AS anio_max
 FROM rg_datos_pais dp
 JOIN rg_indicadores i ON i.id=dp.indicador_id
-WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND dp.activo=1
+WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND dp.activo=1
 GROUP BY i.codigo
 ORDER BY i.codigo;
 
@@ -112,7 +141,7 @@ SELECT p.codigo_iso3, i.codigo, dp.anio, COUNT(*) AS repeticiones
 FROM rg_datos_pais dp
 JOIN rg_indicadores i ON i.id=dp.indicador_id
 JOIN rg_paises p ON p.id=dp.pais_id
-WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_FOS','ENE_ELEC_LC') AND dp.activo=1
+WHERE i.codigo IN ('ENE_CONS','ENE_PC','ENE_DEP','ENE_AUTO','ENE_ELEC_LC') AND dp.activo=1
 GROUP BY p.codigo_iso3, i.codigo, dp.anio
 HAVING COUNT(*) > 1;
 
