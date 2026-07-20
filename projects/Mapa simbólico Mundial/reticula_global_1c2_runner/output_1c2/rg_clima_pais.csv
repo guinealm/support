@@ -1,0 +1,245 @@
+codigo_iso3,codigo_m49,pais,area_codigo,anio,co2_t,co2_per_capita_t,poblacion_2025,fuente,estado_revision,observaciones
+AFG,004,Afghanistan,SAI,2024.0,10825998.0,0.24692020247369112,43844116.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ALB,008,Albania,EUR,2024.0,4444448.0,1.6036214232906503,2771507.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+DZA,012,Algeria,AFR,2024.0,198203180.0,4.178389052374698,47435310.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ASM,016,American Samoa,APC,,,,46053.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+AND,020,Andorra,EUR,2024.0,424663.0,5.1213579353593826,82920.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+AGO,024,Angola,AFR,2024.0,22333584.0,0.5720687640794575,39040034.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ATG,028,Antigua and Barbuda,NAC,2024.0,665140.0,7.059285517182824,94222.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+AZE,031,Azerbaijan,RUE,2024.0,39830140.0,3.830663899904133,10397712.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ARG,032,Argentina,SAM,2024.0,171059260.0,3.7307331585381545,45851379.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+AUS,036,Australia,APC,2024.0,386732380.0,14.337214944273795,26974024.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+AUT,040,Austria,EUR,2024.0,56367656.0,6.185019319525218,9113578.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BHS,044,Bahamas,NAC,2024.0,3069679.0,7.6163135172687575,403040.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BHR,048,Bahrain,MDE,2024.0,39003456.0,23.734287164296084,1643338.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BGD,050,Bangladesh,SAI,2024.0,108317880.0,0.616539295381971,175686904.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ARM,051,Armenia,RUE,2024.0,7430715.0,2.5168772048076873,2952355.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BRB,052,Barbados,NAC,2024.0,1365171.0,4.8302751319756005,282628.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BEL,056,Belgium,EUR,2024.0,85456200.0,7.267548239794853,11758601.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BMU,060,Bermuda,NAC,2024.0,550001.0,8.517375414253415,64574.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+BTN,064,Bhutan,SAI,2024.0,1657416.0,2.0803801734428364,796689.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BOL,068,Bolivia,SAM,2024.0,28708664.0,2.281752750609668,12581847.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BIH,070,Bosnia and Herzegovina,EUR,2024.0,19425932.0,6.186409468749065,3140098.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BWA,072,Botswana,AFR,2024.0,7461599.0,2.912269698004586,2562125.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BRA,076,Brazil,SAM,2024.0,483011550.0,2.2696588958584023,212812397.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BLZ,084,Belize,NAC,2024.0,796027.0,1.8821853416783512,422927.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+IOT,086,British Indian Ocean Territory,AFR,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+SLB,090,Solomon Islands,APC,2024.0,294648.0,0.35133398119608183,838655.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+VGB,092,"Virgin Islands, British",NAC,2024.0,192507.0,4.842943396226415,39750.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+BRN,096,Brunéi,APC,2024.0,12052463.0,25.844908628505504,466338.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BGR,100,Bulgaria,EUR,2024.0,31621824.0,4.7094437815396875,6714556.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MMR,104,Myanmar,APC,2024.0,31603438.0,0.5761725549714564,54850648.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BDI,108,Burundi,AFR,2024.0,916664.0,0.06370139294503863,14390015.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BLR,112,Belarus,RUE,2024.0,55818416.0,6.203699852883007,8997601.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+KHM,116,Cambodia,APC,2024.0,21882690.0,1.2260596870872957,17847981.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CMR,120,Cameroon,AFR,2024.0,9631583.0,0.3223492445834063,29879341.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CAN,124,Canada,NAC,2024.0,533340100.0,13.29139270961739,40126728.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CPV,132,Cabo Verde,AFR,2024.0,593786.0,1.126017146660649,527333.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CYM,136,Cayman Islands,NAC,,,,75861.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero.
+CAF,140,Central African Republic,AFR,2024.0,394681.0,0.07158725304654974,5513286.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LKA,144,Sri Lanka,SAI,2024.0,20825544.0,0.8965137996667509,23229474.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TCD,148,Chad,AFR,2024.0,2831401.0,0.13480486129563546,21003701.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CHL,152,Chile,SAM,2024.0,78725544.0,3.96404154518455,19859919.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CHN,156,China,CHN,2024.0,12289037000.0,8.67810952995829,1416096093.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TWN,158,"Taiwan, Province of China",APC,2024.0,262344820.0,11.350630561935018,23112797.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+CXR,162,Christmas Island,APC,2024.0,0.0,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,Cero publicado por la fuente; no es una ausencia. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+CCK,166,Cocos (Keeling) Islands,APC,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+COL,170,Colombia,SAM,2024.0,92659384.0,1.7343620605758334,53425629.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+COM,174,Comoros,AFR,2024.0,551650.0,0.62485062598332,882851.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MYT,175,Mayotte,AFR,,,,337019.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+COG,178,Congo,AFR,2024.0,8839770.0,1.3632286041178285,6484437.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+COD,180,"Congo, The Democratic Republic of the",AFR,2024.0,5904451.0,0.052329358192311215,112832475.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+COK,184,Cook Islands,APC,2024.0,80083.0,6.030346385542169,13280.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+CRI,188,Costa Rica,NAC,2024.0,8760451.0,1.700084941651858,5152949.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+HRV,191,Croatia,EUR,2024.0,18464850.0,4.798353188689464,3848164.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CUB,192,Cuba,NAC,2024.0,24440234.0,2.234596358867985,10937203.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CYP,196,Cyprus,EUR,2024.0,7299328.0,5.325045923630352,1370754.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CZE,203,Chequia,EUR,2024.0,75623000.0,7.128031119285536,10609241.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BEN,204,Benin,AFR,2024.0,6066339.0,0.409487689730169,14814460.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+DNK,208,Denmark,EUR,2024.0,28369162.0,4.72621259588689,6002515.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+DMA,212,Dominica,NAC,2024.0,170858.0,2.5930006677593638,65892.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+DOM,214,Dominican Republic,NAC,2024.0,33130818.0,2.8758184878186097,11520483.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ECU,218,Ecuador,SAM,2024.0,45979548.0,2.5139313516127864,18289898.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SLV,222,El Salvador,NAC,2024.0,8972291.0,1.4095173266665681,6365506.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GNQ,226,Equatorial Guinea,AFR,2024.0,7010352.0,3.6164990745116166,1938436.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ETH,231,Ethiopia,AFR,2024.0,17837292.0,0.13166769280700621,135472048.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ERI,232,Eritrea,AFR,2024.0,742647.0,0.20589031947020836,3607003.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+EST,233,Estonia,EUR,2024.0,8306777.0,6.1795525488083936,1344236.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+FRO,234,Faroe Islands,EUR,2024.0,725388.0,12.948039198186459,56023.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+FLK,238,Falkland Islands (Malvinas),SAM,,,,3493.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+FJI,242,Fiji,APC,2024.0,1445316.0,1.5488421587317918,933159.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+FIN,246,Finland,EUR,2024.0,29775000.0,5.294907215086867,5623328.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ALA,248,Åland Islands,EUR,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+FRA,250,France,EUR,2024.0,264155620.0,3.9632773222060456,66650804.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GUF,254,French Guiana,SAM,,,,313665.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+PYF,258,French Polynesia,APC,2024.0,922867.0,3.2671559256269735,282468.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+DJI,262,Djibouti,AFR,2024.0,564084.0,0.4763893041191404,1184082.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GAB,266,Gabon,AFR,2024.0,5398794.0,2.0819596079025704,2593131.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GEO,268,Georgia,RUE,2024.0,11784258.0,3.0956875945872886,3806669.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GMB,270,Gambia,AFR,2024.0,802774.0,0.2844604042246644,2822094.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PSE,275,Palestina,MDE,2024.0,4780046.0,0.8551629159128902,5589632.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+DEU,276,Germany,EUR,2024.0,572319170.0,6.807239482093831,84075075.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GHA,288,Ghana,AFR,2024.0,21021874.0,0.599523954251217,35064277.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GIB,292,Gibraltar,EUR,,,,40152.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+KIR,296,Kiribati,APC,2024.0,72456.0,0.5307937438189078,136505.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GRC,300,Greece,EUR,2024.0,53360840.0,5.368916535288248,9938847.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GRL,304,Greenland,NAC,2024.0,618963.0,11.099090860186132,55767.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+GRD,308,Grenada,NAC,2024.0,376971.0,3.213323104462345,117315.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GLP,312,Guadeloupe,NAC,,,,373796.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+GUM,316,Guam,APC,,,,169014.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+GTM,320,Guatemala,NAC,2024.0,19880430.0,1.063814030065795,18687881.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GIN,324,Guinea,AFR,2024.0,4026185.0,0.2666395182801601,15099731.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GUY,328,Guyana,SAM,2024.0,4510330.0,5.395189661132716,835991.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+HTI,332,Haiti,NAC,2024.0,2970693.0,0.24951029279627726,11906094.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+VAT,336,Holy See (Vatican City State),EUR,,,,510.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero.
+HND,340,Honduras,NAC,2024.0,12854842.0,1.1680006236682086,11005852.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+HKG,344,Hong Kong,CHN,2024.0,33323918.0,4.50562196840892,7396075.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+HUN,348,Hungary,EUR,2024.0,40017292.0,4.154495827885509,9632286.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ISL,352,Iceland,EUR,2024.0,3803011.0,9.548826173199085,398270.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+IND,356,India,SAI,2024.0,3193478100.0,2.1815378811089388,1463865527.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+IDN,360,Indonesia,APC,2024.0,812220200.0,2.842701608137414,285721230.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+IRN,364,Irán,MDE,2024.0,792631200.0,8.576618301752726,92417684.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+IRQ,368,Iraq,MDE,2024.0,233635500.0,4.968771465244577,47020778.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+IRL,372,Ireland,EUR,2024.0,33310624.0,6.275509487032395,5308035.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ISR,376,Israel,MDE,2024.0,52637136.0,5.530748072276016,9517182.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ITA,380,Italy,EUR,2024.0,301929760.0,5.104798590571986,59146263.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CIV,384,Côte d'Ivoire,AFR,2024.0,14828585.0,0.45331348753739736,32711546.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+JAM,388,Jamaica,NAC,2024.0,8401763.0,2.9614120856655433,2837080.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+JPN,392,Japan,APC,2024.0,961867300.0,7.813485857589079,123103480.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+KAZ,398,Kazakhstan,RUE,2024.0,287005950.0,13.769395614744711,20843758.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+JOR,400,Jordan,MDE,2024.0,23219138.0,2.015429982604336,11520687.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+KEN,404,Kenya,AFR,2024.0,21225434.0,0.36892951497615495,57532491.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PRK,408,Corea del Norte,APC,2024.0,62550270.0,2.3540765787778826,26571043.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+KOR,410,Corea del Sur,APC,2024.0,583679170.0,11.29693565732967,51667035.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+KWT,414,Kuwait,MDE,2024.0,129518650.0,25.769322368390945,5026079.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+KGZ,417,Kyrgyzstan,RUE,2024.0,11770158.0,1.613447334125927,7295037.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LAO,418,Lao People's Democratic Republic,APC,2024.0,24399926.0,3.0991715025743525,7873048.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LBN,422,Lebanon,MDE,2024.0,15649973.0,2.6754729483574704,5849423.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LSO,426,Lesotho,AFR,2024.0,2571767.0,1.0881963162148325,2363330.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LVA,428,Latvia,EUR,2024.0,6461889.0,3.4862043850752067,1853560.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LBR,430,Liberia,AFR,2024.0,859369.0,0.14994557864435512,5731206.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LBY,434,Libya,AFR,2024.0,65260070.0,8.749694645905896,7458554.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LIE,438,Liechtenstein,EUR,2024.0,131624.0,3.2779797778552573,40154.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LTU,440,Lithuania,EUR,2024.0,12541509.0,4.431393742381146,2830150.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+LUX,442,Luxembourg,EUR,2024.0,7039783.0,10.345714772784053,680454.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MAC,446,Macao,CHN,2024.0,1056328.0,1.4630216975200063,722018.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+MDG,450,Madagascar,AFR,2024.0,4528381.0,0.13831052755712298,32740682.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MWI,454,Malawi,AFR,2024.0,1881479.0,0.084689818446229,22216118.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MYS,458,Malaysia,APC,2024.0,290223840.0,8.066740204538162,35977834.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MDV,462,Maldives,SAI,2024.0,2306210.0,4.353968433771334,529680.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MLI,466,Mali,AFR,2024.0,6978840.0,0.2769510745721853,25198819.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MLT,470,Malta,EUR,2024.0,1728766.0,3.1696864354260863,545406.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MTQ,474,Martinique,NAC,,,,340451.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+MRT,478,Mauritania,AFR,2024.0,5238679.0,0.9856270996893363,5315072.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MUS,480,Mauritius,AFR,2024.0,4673616.0,3.6849887840666726,1268285.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MEX,484,Mexico,NAC,2024.0,460987650.0,3.493736196009217,131946897.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MCO,492,Monaco,EUR,,,,38367.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero.
+MNG,496,Mongolia,APC,2024.0,44693890.0,12.707608007399283,3517097.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MDA,498,Moldavia,EUR,2024.0,5326843.0,1.7779232630108968,2996104.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MNE,499,Montenegro,EUR,2024.0,2376258.0,3.7555639846379973,632730.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MSR,500,Montserrat,NAC,2024.0,26579.0,6.064111339265343,4383.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+MAR,504,Morocco,AFR,2024.0,69062344.0,1.7970583678590497,38430774.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MOZ,508,Mozambique,AFR,2024.0,8612630.0,0.24171286785792756,35631657.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+OMN,512,Oman,MDE,2024.0,82661976.0,15.043958027887257,5494696.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NAM,516,Namibia,AFR,2024.0,3469112.0,1.1216659483364864,3092821.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NRU,520,Nauru,APC,2024.0,61390.0,5.093760371722536,12052.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NPL,524,Nepal,SAI,2024.0,18776082.0,0.6339390211127512,29618120.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NLD,528,Netherlands,EUR,2024.0,114784730.0,6.2563818269789815,18346823.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CUW,531,Curaçao,NAC,2024.0,2289628.0,12.343340790856896,185495.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+ABW,533,Aruba,NAC,2024.0,920644.0,8.512107399428608,108157.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+SXM,534,Sint Maarten (Dutch part),NAC,2024.0,717645.0,16.33015519046102,43946.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+BES,535,"Bonaire, Sint Eustatius and Saba",NAC,2024.0,151882.0,4.842558347149598,31364.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+NCL,540,New Caledonia,APC,2024.0,5286637.0,17.90053634190442,295334.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+VUT,548,Vanuatu,APC,2024.0,197079.0,0.5879795930544782,335180.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NZL,554,New Zealand,APC,2024.0,32479432.0,6.184323873830732,5251897.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NIC,558,Nicaragua,NAC,2024.0,5630346.0,0.8034734749462256,7007507.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NER,562,Niger,AFR,2024.0,3169958.0,0.11354599861285786,27917831.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NGA,566,Nigeria,AFR,2024.0,135824000.0,0.5718236217482058,237527788.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+NIU,570,Niue,APC,2024.0,7627.0,4.140608034744843,1842.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+NFK,574,Norfolk Island,APC,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+NOR,578,Norway,EUR,2024.0,37183000.0,6.612575256879066,5623074.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MNP,580,Northern Mariana Islands,APC,,,,43564.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+FSM,583,"Micronesia, Federated States of",APC,2024.0,150626.0,1.3247902337771993,113698.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MHL,584,Marshall Islands,APC,2024.0,154480.0,4.255061286324198,36305.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PLW,585,Palau,APC,2024.0,226099.0,12.783343698761803,17687.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PAK,586,Pakistan,SAI,2024.0,179800380.0,0.7044929471706636,255219560.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PAN,591,Panama,NAC,2024.0,12664428.0,2.770485785551871,4571194.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PNG,598,Papua New Guinea,APC,2024.0,8345442.0,0.7753954098093799,10762821.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PRY,600,Paraguay,SAM,2024.0,7936718.0,1.1317023521337775,7013079.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PER,604,Peru,SAM,2024.0,70246650.0,2.031619699211662,34576673.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PHL,608,Philippines,APC,2024.0,174878000.0,1.497410327317365,116786960.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PCN,612,Pitcairn,APC,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+POL,616,Poland,EUR,2024.0,272861820.0,7.154045316115008,38140913.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PRT,620,Portugal,EUR,2024.0,35538852.0,3.413314334433588,10411831.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GNB,624,Guinea-Bissau,AFR,2024.0,342189.0,0.1521163838879477,2249521.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TLS,626,Timor Oriental,APC,2024.0,668112.0,0.4709923018357161,1418520.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+PRI,630,Puerto Rico,NAC,,,,3235290.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+QAT,634,Qatar,MDE,2024.0,125812260.0,40.3776191144042,3115891.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+REU,638,Réunion,AFR,,,,882411.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+ROU,642,Romania,EUR,2024.0,68551400.0,3.625397998958678,18908655.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+RUS,643,Rusia,RUE,2024.0,1780524400.0,12.364976635375614,143997393.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+RWA,646,Rwanda,AFR,2024.0,2033550.0,0.13957727280745352,14569349.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+BLM,652,Saint Barthélemy,NAC,,,,11442.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+SHN,654,"Saint Helena, Ascension and Tristan da Cunha",AFR,2024.0,11391.0,2.182183908045977,5220.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+KNA,659,Saint Kitts and Nevis,NAC,2024.0,259757.02,5.533220151240814,46945.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+AIA,660,Anguilla,NAC,2024.0,148085.0,10.039661016949152,14750.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+LCA,662,Saint Lucia,NAC,2024.0,536909.0,2.980228356378048,180157.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MAF,663,Saint Martin (French part),NAC,,,,24964.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+SPM,666,Saint Pierre and Miquelon,NAC,2024.0,55322.0,9.889524490525563,5594.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+VCT,670,Saint Vincent and the Grenadines,NAC,2024.0,255656.98,2.558258250445294,99934.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SMR,674,San Marino,EUR,,,,33599.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero.
+STP,678,Sao Tome and Principe,AFR,2024.0,141779.0,0.5900991829786526,240263.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SAU,682,Saudi Arabia,MDE,2024.0,692133500.0,20.023345263151622,34566327.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SEN,686,Senegal,AFR,2024.0,14091846.0,0.7443412779727243,18931969.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SRB,688,Serbia,EUR,2024.0,42019440.0,6.281836042791205,6689038.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SYC,690,Seychelles,AFR,2024.0,652571.0,4.914086267658664,132796.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SLE,694,Sierra Leone,AFR,2024.0,1434283.0,0.16262088148070544,8819796.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SGP,702,Singapore,APC,2024.0,53919460.0,9.18442604171972,5870749.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SVK,703,Slovakia,EUR,2024.0,29090958.0,5.3135392704928,5474874.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+VNM,704,Vietnam,APC,2024.0,370931330.0,3.650951741132475,101598530.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SVN,705,Slovenia,EUR,2024.0,12751194.0,6.023038444642832,2117070.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SOM,706,Somalia,AFR,2024.0,1319185.0,0.06711789617396677,19654743.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ZAF,710,South Africa,AFR,2024.0,439830500.0,6.793030302922658,64747319.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ZWE,716,Zimbabwe,AFR,2024.0,13701154.0,0.8082896156275357,16950798.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ESP,724,Spain,EUR,2024.0,220341280.0,4.60099110544256,47889960.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SSD,728,South Sudan,AFR,2024.0,1695552.0,0.13910740008982017,12188798.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SDN,729,Sudan,AFR,2024.0,17794800.0,0.3444456017499388,51662149.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ESH,732,Western Sahara,AFR,,,,600913.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+SUR,740,Suriname,SAM,2024.0,2987768.0,4.669408933204139,639860.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SJM,744,Svalbard and Jan Mayen,EUR,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+SWZ,748,Esuatini,AFR,2024.0,1044644.0,0.8316050750769397,1256178.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SWE,752,Sweden,EUR,2024.0,38096652.0,3.5749228931156134,10656636.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+CHE,756,Switzerland,EUR,2024.0,32071708.0,3.576472724073264,8967413.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+SYR,760,Siria,MDE,2024.0,31778448.0,1.2403562955000853,25620419.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TJK,762,Tajikistan,RUE,2024.0,10739768.0,0.9956455788580385,10786738.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+THA,764,Thailand,APC,2024.0,267760200.0,3.7386302845079324,71619866.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TGO,768,Togo,AFR,2024.0,2753585.0,0.3204962271419975,8591630.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TKL,772,Tokelau,APC,,,,2632.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+TON,776,Tonga,APC,2024.0,152540.0,1.4701375302383408,103759.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TTO,780,Trinidad and Tobago,NAC,2024.0,34576280.0,22.880560945072805,1511164.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ARE,784,United Arab Emirates,MDE,2024.0,221988080.0,19.56530606453055,11346006.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TUN,788,Tunisia,AFR,2024.0,32663696.0,2.645138678338296,12348576.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TUR,792,Turquía,MDE,2024.0,513034600.0,5.850853642989045,87685427.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TKM,795,Turkmenistan,RUE,2024.0,81005550.0,10.632251420555223,7618852.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+TCA,796,Turks and Caicos Islands,NAC,2024.0,378842.0,8.081100682593856,46880.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+TUV,798,Tuvalu,APC,2024.0,11440.0,1.2021857923497268,9516.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+UGA,800,Uganda,AFR,2024.0,6333810.0,0.12326210351357547,51384893.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+UKR,804,Ukraine,EUR,2024.0,142497860.0,3.655630345317311,38980380.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+MKD,807,North Macedonia,EUR,2024.0,6619636.0,3.6496114218168345,1813792.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+EGY,818,Egypt,AFR,2024.0,258367860.0,2.1827878859971563,118365995.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GBR,826,Reino Unido,EUR,2024.0,312905540.0,4.498915002838047,69551334.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+GGY,831,Guernsey,EUR,,,,64498.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+JEY,832,Jersey,EUR,,,,104002.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+IMN,833,Isle of Man,EUR,,,,84135.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+TZA,834,Tanzania,AFR,2024.0,20018364.0,0.2837638260942389,70545863.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+USA,840,Estados Unidos,NAC,2024.0,4904120000.0,14.121686201298289,347275809.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+VIR,850,"Virgin Islands, U.S.",NAC,,,,84151.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+BFA,854,Burkina Faso,AFR,2024.0,6507663.0,0.2703126060506471,24074582.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+URY,858,Uruguay,SAM,2024.0,7973270.0,2.3556897153827565,3384686.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+UZB,860,Uzbekistan,RUE,2024.0,139234180.0,3.7576598850719023,37053428.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+VEN,862,Venezuela,SAM,2024.0,116042424.0,4.069251005544081,28516900.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+WLF,876,Wallis and Futuna,APC,2024.0,30508.0,2.718588486900731,11222.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK, Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.
+WSM,882,Samoa,APC,2024.0,245587.0,1.1197911679547683,219315.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+YEM,887,Yemen,MDE,2024.0,10123090.0,0.24233060844885349,41773881.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+ZMB,894,Zambia,AFR,2024.0,12043299.0,0.5495740644353319,21913878.0,"Global Carbon Budget (2025), con procesamiento de Our World in Data",OK,
+XKX,,Kosovo,EUR,,,,,"Global Carbon Budget (2025), con procesamiento de Our World in Data",AUSENTE_DOCUMENTADO,Sin dato territorial comparable en 2024; no estimar ni convertir en cero. Entidad SEGUN_FUENTE; evitar duplicidad con el Estado soberano.

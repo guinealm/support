@@ -1,0 +1,32 @@
+tipo,codigo_iso3,detalle,severidad,accion_recomendada
+CO2_2024_AUSENTE,ASM,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,IOT,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,CYM,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,CCK,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,MYT,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,FLK,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,ALA,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,GUF,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,GIB,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,GLP,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,GUM,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,VAT,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,MTQ,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,MCO,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,NFK,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,MNP,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,PCN,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,PRI,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,REU,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,BLM,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,MAF,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,SMR,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,ESH,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,SJM,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,TKL,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,GGY,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,JEY,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,IMN,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,VIR,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_2024_AUSENTE,XKX,Sin emisiones territoriales comparables de CO2 en 2024.,COBERTURA,Mantener ausencia; no estimar ni convertir en cero.
+CO2_CERO_PUBLICADO,CXR,La fuente publica 0 toneladas en 2024.,DOCUMENTAL,Conservar como cero real y distinguirlo de ausencia.
