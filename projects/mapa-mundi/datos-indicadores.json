@@ -1,0 +1,495 @@
+{
+  "edicion": {
+    "codigo": "RG2025_V1",
+    "estado": "congelado"
+  },
+  "generado_desde": [
+    "../reticula_global_1c2_runner/output_1c2/rg_agregados_territorio_poblacion.csv",
+    "../reticula_global_1c2_runner/output_1c2/rg_agregados_economia.csv",
+    "../reticula_global_1c2_runner/output_1c2/rg_agregados_militar.csv"
+  ],
+  "indicadores": {
+    "POB_TOTAL": {
+      "anio": 2025,
+      "unidad": "personas",
+      "fuente_codigo": "UN_WPP_2024",
+      "fuente": "ONU World Population Prospects 2024"
+    },
+    "TERR_SUP": {
+      "anio": 2023,
+      "unidad": "km2",
+      "fuente_codigo": "FAOSTAT_2025",
+      "fuente": "FAOSTAT"
+    },
+    "ECO_PIB": {
+      "anio": 2024,
+      "unidad": "USD_corrientes",
+      "fuente_codigo": "WB_WDI",
+      "fuente": "Banco Mundial — World Development Indicators"
+    },
+    "MIL_GASTO": {
+      "anio": 2025,
+      "unidad": "usd_corrientes",
+      "fuente_codigo": "SIPRI_MILEX_2026",
+      "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)"
+    },
+    "MIL_NUC": {
+      "anio": 2026,
+      "unidad": "ojivas",
+      "fuente_codigo": "SIPRI_YB26_NUC",
+      "fuente": "SIPRI Yearbook 2026 — World nuclear forces"
+    }
+  },
+  "areas": [
+    {
+      "codigo": "AFR",
+      "nombre": "África",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 1548737803.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 29933500.54,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 2901688380908.8994,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura incompleta en entidades. Cobertura poblacional alta."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 59039714638.15033,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Area sin Estado con arsenal nuclear identificado por SIPRI (cero real)."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 0,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Area sin Estado con arsenal nuclear identificado por SIPRI (cero real)."
+        }
+      }
+    },
+    {
+      "codigo": "APC",
+      "nombre": "Asia-Pacífico",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 974613138.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 15096874.54,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 12178633494512.898,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura incompleta en entidades. Cobertura poblacional aceptable."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 233313499424.70847,
+          "anio_minimo": 2024,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Incluye entidades con ultimo dato 2024 separado y marcado. Gasto militar conocido y comparable de los paises cubiertos por SIPRI."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 50,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Incluye entidades con ultimo dato 2024 separado y marcado. Gasto militar conocido y comparable de los paises cubiertos por SIPRI."
+        }
+      }
+    },
+    {
+      "codigo": "CHN",
+      "nombre": "China",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 1424214186.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 9389293.0,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 19187504377186.746,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura poblacional alta."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 335524155624.44,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 620,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        }
+      }
+    },
+    {
+      "codigo": "EUR",
+      "nombre": "Europa",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 591100715.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 5551185.4242,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 25130676006233.324,
+          "anio_minimo": 2023,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura incompleta en entidades. Cobertura poblacional alta. Mezcla de anios 2023/2024 por faltantes."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 662803047287.608,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 515,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        }
+      }
+    },
+    {
+      "codigo": "MDE",
+      "nombre": "Oriente Medio",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 388187450.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 6224869.0,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 5094919796742.406,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura incompleta en entidades. Cobertura poblacional condicionada."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 194221701115.33054,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Cobertura PIB condicionada para el calculo aproximado."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 90,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Cobertura PIB condicionada para el calculo aproximado."
+        }
+      }
+    },
+    {
+      "codigo": "NAC",
+      "nombre": "Norteamérica, Centroamérica y Caribe",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 617312022.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 21022192.02,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 34176084923003.62,
+          "anio_minimo": 2023,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura incompleta en entidades. Cobertura poblacional alta. Mezcla de anios 2023/2024 por faltantes."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 1008974702325.5629,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 5132,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        }
+      }
+    },
+    {
+      "codigo": "RUE",
+      "nombre": "Rusia-Eurasia",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 253749543.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 20701062.44,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 2889297338831.945,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura poblacional alta."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 201833931182.29767,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 5430,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        }
+      }
+    },
+    {
+      "codigo": "SAI",
+      "nombre": "Subcontinente indio",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 1992790070.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 4769928.0,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 4753781734288.453,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura poblacional alta."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 109574048555.13231,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 350,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales."
+        }
+      }
+    },
+    {
+      "codigo": "SAM",
+      "nombre": "Sudamérica",
+      "indicadores": {
+        "POB_TOTAL": {
+          "anio": 2025,
+          "unidad": "personas",
+          "fuente_codigo": "UN_WPP_2024",
+          "fuente": "ONU World Population Prospects 2024",
+          "valor": 438105416.0,
+          "observaciones": ""
+        },
+        "TERR_SUP": {
+          "anio": 2023,
+          "unidad": "km2",
+          "fuente_codigo": "FAOSTAT_2025",
+          "fuente": "FAOSTAT",
+          "valor": 17478531.349999998,
+          "observaciones": ""
+        },
+        "ECO_PIB": {
+          "anio": 2024,
+          "unidad": "USD_corrientes",
+          "fuente_codigo": "WB_WDI",
+          "fuente": "Banco Mundial — World Development Indicators",
+          "valor": 4321094237987.848,
+          "anio_minimo": 2024,
+          "anio_maximo": 2024,
+          "observaciones": "Cobertura incompleta en entidades. Cobertura poblacional alta."
+        },
+        "MIL_GASTO": {
+          "anio": 2025,
+          "unidad": "usd_corrientes",
+          "fuente_codigo": "SIPRI_MILEX_2026",
+          "fuente": "SIPRI Military Expenditure Database 2025 (edición 2026)",
+          "valor": 56299416493.655914,
+          "anio_minimo": 2025,
+          "anio_maximo": 2025,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Area sin Estado con arsenal nuclear identificado por SIPRI (cero real)."
+        },
+        "MIL_NUC": {
+          "anio": 2026,
+          "unidad": "ojivas",
+          "fuente_codigo": "SIPRI_YB26_NUC",
+          "fuente": "SIPRI Yearbook 2026 — World nuclear forces",
+          "valor": 0,
+          "observaciones": "MIL_PIB calculado como gasto agregado / PIB agregado comparable cubierto. No se usa media simple de porcentajes nacionales. Area sin Estado con arsenal nuclear identificado por SIPRI (cero real)."
+        }
+      }
+    }
+  ]
+}

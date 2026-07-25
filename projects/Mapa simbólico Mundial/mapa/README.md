@@ -23,6 +23,15 @@ modifica MySQL ni la Tabla de Datos Consolidados.
 - `generar_datos.py`: regeneración de territorio y geometrías.
 - `generar_indicadores.py`: regeneración de los indicadores comparativos.
 
+Esta carpeta es la **fuente de trabajo**. `areas.json`, `world.geojson`,
+`informe-correspondencias.json`, `correspondencias-cartograficas.json` y
+`datos-indicadores.json` son **salidas generadas**.
+
+La **salida pública** se mantiene en `../../mapa-mundi/` y contiene únicamente
+los recursos necesarios en el navegador. La URL histórica
+`../mapa_mundi.html` redirige a esa ruta canónica. Los generadores, fuentes CSV
+y documentación interna no se duplican en la salida pública.
+
 ## Ejecutar
 
 Desde `projects/Mapa simbólico Mundial/mapa/`:

@@ -135,3 +135,31 @@ python -m http.server 8088 --bind 127.0.0.1
 - Posible ajuste posterior de la paleta.
 
 La primera versión visual queda cerrada con estado **GO**.
+
+## Decisión de publicación en Support
+
+La página pública antigua `projects/mapa_mundi.html` se sustituye por una
+redirección inmediata, accesible y relativa hacia la ruta canónica:
+
+`projects/mapa-mundi/`
+
+La aplicación pública contiene únicamente:
+
+- `index.html`
+- `mapa.css`
+- `mapa.js`
+- `world.geojson`
+- `areas.json`
+- `paleta.json`
+- `correspondencias-cartograficas.json`
+- `datos-indicadores.json`
+
+Los generadores, CSV, cartografía fuente y documentos técnicos permanecen en
+`projects/Mapa simbólico Mundial/` como fuente de trabajo y no se duplican en
+la salida pública.
+
+Esta decisión conserva los enlaces históricos, evita dos versiones públicas
+competidoras y elimina espacios y caracteres acentuados de la URL técnica.
+
+- **URL histórica:** `https://support.jumalenin.com/projects/mapa_mundi.html`
+- **URL canónica:** `https://support.jumalenin.com/projects/mapa-mundi/`
