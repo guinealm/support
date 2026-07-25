@@ -1,0 +1,481 @@
+{
+  "criterio": "Relación diagnóstica; no contiene equivalencias aplicadas. Toda diferencia permanece neutral hasta una decisión editorial explícita.",
+  "cartografia_sin_correspondencia_en_areas": [
+    {
+      "nombre_cartografia": "Dekelia",
+      "codigos_cartografia": [
+        "ESB",
+        "GB1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Somalilandia",
+      "codigos_cartografia": [
+        "SOL"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Kosovo",
+      "codigos_cartografia": [
+        "KOS"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Base Naval de la Bahía de Guantánamo",
+      "codigos_cartografia": [
+        "USG",
+        "CU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Brasilera",
+      "codigos_cartografia": [
+        "BRI"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "República Turca del Norte de Chipre",
+      "codigos_cartografia": [
+        "CYN"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Línea Verde",
+      "codigos_cartografia": [
+        "CNM"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Glaciar de Siachen",
+      "codigos_cartografia": [
+        "KAS"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Baikonur",
+      "codigos_cartografia": [
+        "KAB",
+        "KA1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Akrotiri",
+      "codigos_cartografia": [
+        "WSB",
+        "GB1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Campo de hielo Patagónico Sur",
+      "codigos_cartografia": [
+        "SPI"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Bir Tawil",
+      "codigos_cartografia": [
+        "BRT"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Antártida",
+      "codigos_cartografia": [
+        "ATA"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Tierras Australes y Antárticas Francesas",
+      "codigos_cartografia": [
+        "ATF",
+        "FR1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas ultramarinas de Estados Unidos",
+      "codigos_cartografia": [
+        "UMI",
+        "US1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas Heard y McDonald",
+      "codigos_cartografia": [
+        "HMD",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Territorios Australianos del Océano Índico",
+      "codigos_cartografia": [
+        "IOA",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas Georgias del Sur y Sandwich del Sur",
+      "codigos_cartografia": [
+        "SGS",
+        "GB1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "islas del mar del Coral",
+      "codigos_cartografia": [
+        "CSI",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Wake",
+      "codigos_cartografia": [
+        "PGA"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Clipperton",
+      "codigos_cartografia": [
+        "CLP",
+        "FR1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas Ashmore y Cartier",
+      "codigos_cartografia": [
+        "ATC",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Bajo Nuevo",
+      "codigos_cartografia": [
+        "BJN"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Serranilla",
+      "codigos_cartografia": [
+        "SER"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Bajo de Masinloc",
+      "codigos_cartografia": [
+        "SCR"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    }
+  ],
+  "maestro_territorial_sin_geometria_independiente": [
+    {
+      "iso3": "BES",
+      "nombre": "Bonaire, Sint Eustatius and Saba",
+      "area": "NAC",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "CCK",
+      "nombre": "Cocos (Keeling) Islands",
+      "area": "APC",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "CXR",
+      "nombre": "Christmas Island",
+      "area": "APC",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "GLP",
+      "nombre": "Guadeloupe",
+      "area": "NAC",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "GUF",
+      "nombre": "French Guiana",
+      "area": "SAM",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "MTQ",
+      "nombre": "Martinique",
+      "area": "NAC",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "MYT",
+      "nombre": "Mayotte",
+      "area": "AFR",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "REU",
+      "nombre": "Réunion",
+      "area": "AFR",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "SJM",
+      "nombre": "Svalbard and Jan Mayen",
+      "area": "EUR",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "TKL",
+      "nombre": "Tokelau",
+      "area": "APC",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    },
+    {
+      "iso3": "XKX",
+      "nombre": "Kosovo",
+      "area": "EUR",
+      "observacion": "No se encontró una geometría independiente con correspondencia ISO3 en Natural Earth Admin 0 Countries 1:10m."
+    }
+  ],
+  "codigos_cartograficos_no_iso3_estandar": [
+    {
+      "nombre_cartografia": "Dekelia",
+      "codigos": [
+        "ESB",
+        "GB1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Somalilandia",
+      "codigos": [
+        "SOL"
+      ]
+    },
+    {
+      "nombre_cartografia": "Kosovo",
+      "codigos": [
+        "KOS"
+      ]
+    },
+    {
+      "nombre_cartografia": "Base Naval de la Bahía de Guantánamo",
+      "codigos": [
+        "USG",
+        "CU1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Isla Brasilera",
+      "codigos": [
+        "BRI"
+      ]
+    },
+    {
+      "nombre_cartografia": "República Turca del Norte de Chipre",
+      "codigos": [
+        "CYN"
+      ]
+    },
+    {
+      "nombre_cartografia": "Línea Verde",
+      "codigos": [
+        "CNM"
+      ]
+    },
+    {
+      "nombre_cartografia": "Glaciar de Siachen",
+      "codigos": [
+        "KAS"
+      ]
+    },
+    {
+      "nombre_cartografia": "Baikonur",
+      "codigos": [
+        "KAB",
+        "KA1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Akrotiri",
+      "codigos": [
+        "WSB",
+        "GB1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Campo de hielo Patagónico Sur",
+      "codigos": [
+        "SPI"
+      ]
+    },
+    {
+      "nombre_cartografia": "Bir Tawil",
+      "codigos": [
+        "BRT"
+      ]
+    },
+    {
+      "nombre_cartografia": "Antártida",
+      "codigos": [
+        "ATA"
+      ]
+    },
+    {
+      "nombre_cartografia": "Tierras Australes y Antárticas Francesas",
+      "codigos": [
+        "ATF",
+        "FR1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Islas ultramarinas de Estados Unidos",
+      "codigos": [
+        "UMI",
+        "US1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Islas Heard y McDonald",
+      "codigos": [
+        "HMD",
+        "AU1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Territorios Australianos del Océano Índico",
+      "codigos": [
+        "IOA",
+        "AU1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Islas Georgias del Sur y Sandwich del Sur",
+      "codigos": [
+        "SGS",
+        "GB1"
+      ]
+    },
+    {
+      "nombre_cartografia": "islas del mar del Coral",
+      "codigos": [
+        "CSI",
+        "AU1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Isla Wake",
+      "codigos": [
+        "PGA"
+      ]
+    },
+    {
+      "nombre_cartografia": "Isla Clipperton",
+      "codigos": [
+        "CLP",
+        "FR1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Islas Ashmore y Cartier",
+      "codigos": [
+        "ATC",
+        "AU1"
+      ]
+    },
+    {
+      "nombre_cartografia": "Bajo Nuevo",
+      "codigos": [
+        "BJN"
+      ]
+    },
+    {
+      "nombre_cartografia": "Isla Serranilla",
+      "codigos": [
+        "SER"
+      ]
+    },
+    {
+      "nombre_cartografia": "Bajo de Masinloc",
+      "codigos": [
+        "SCR"
+      ]
+    }
+  ],
+  "territorios_demasiado_pequenos_o_integrados_en_otra_geometria": [
+    {
+      "iso3": "BES",
+      "nombre": "Bonaire, Sint Eustatius and Saba",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "CCK",
+      "nombre": "Cocos (Keeling) Islands",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "CXR",
+      "nombre": "Christmas Island",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "GLP",
+      "nombre": "Guadeloupe",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "GUF",
+      "nombre": "French Guiana",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "MTQ",
+      "nombre": "Martinique",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "MYT",
+      "nombre": "Mayotte",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "REU",
+      "nombre": "Réunion",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "SJM",
+      "nombre": "Svalbard and Jan Mayen",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "TKL",
+      "nombre": "Tokelau",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    },
+    {
+      "iso3": "XKX",
+      "nombre": "Kosovo",
+      "estado": "Pendiente de distinguir entre tamaño insuficiente e integración cartográfica."
+    }
+  ]
+}

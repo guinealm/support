@@ -1,0 +1,224 @@
+{
+  "fuente_territorial": "reticula_global_1c2_runner/rg_paises_areas_operativo.csv",
+  "fuente_cartografica": "Natural Earth Admin 0 Countries 1:10m, versión 5.1.1, dominio público",
+  "entidades_csv": 244,
+  "entidades_cartograficas": 258,
+  "iso3_coloreados": 233,
+  "iso3_csv_sin_geometria": [
+    "BES",
+    "CCK",
+    "CXR",
+    "GLP",
+    "GUF",
+    "MTQ",
+    "MYT",
+    "REU",
+    "SJM",
+    "TKL",
+    "XKX"
+  ],
+  "entidades_cartograficas_sin_correspondencia": [
+    {
+      "nombre_cartografia": "Dekelia",
+      "codigos_cartografia": [
+        "ESB",
+        "GB1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Somalilandia",
+      "codigos_cartografia": [
+        "SOL"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Kosovo",
+      "codigos_cartografia": [
+        "KOS"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Base Naval de la Bahía de Guantánamo",
+      "codigos_cartografia": [
+        "USG",
+        "CU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Brasilera",
+      "codigos_cartografia": [
+        "BRI"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "República Turca del Norte de Chipre",
+      "codigos_cartografia": [
+        "CYN"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Línea Verde",
+      "codigos_cartografia": [
+        "CNM"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Glaciar de Siachen",
+      "codigos_cartografia": [
+        "KAS"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Baikonur",
+      "codigos_cartografia": [
+        "KAB",
+        "KA1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Akrotiri",
+      "codigos_cartografia": [
+        "WSB",
+        "GB1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Campo de hielo Patagónico Sur",
+      "codigos_cartografia": [
+        "SPI"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Bir Tawil",
+      "codigos_cartografia": [
+        "BRT"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Antártida",
+      "codigos_cartografia": [
+        "ATA"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Tierras Australes y Antárticas Francesas",
+      "codigos_cartografia": [
+        "ATF",
+        "FR1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas ultramarinas de Estados Unidos",
+      "codigos_cartografia": [
+        "UMI",
+        "US1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas Heard y McDonald",
+      "codigos_cartografia": [
+        "HMD",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Territorios Australianos del Océano Índico",
+      "codigos_cartografia": [
+        "IOA",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas Georgias del Sur y Sandwich del Sur",
+      "codigos_cartografia": [
+        "SGS",
+        "GB1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "islas del mar del Coral",
+      "codigos_cartografia": [
+        "CSI",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Wake",
+      "codigos_cartografia": [
+        "PGA"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Clipperton",
+      "codigos_cartografia": [
+        "CLP",
+        "FR1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Islas Ashmore y Cartier",
+      "codigos_cartografia": [
+        "ATC",
+        "AU1"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Bajo Nuevo",
+      "codigos_cartografia": [
+        "BJN"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Isla Serranilla",
+      "codigos_cartografia": [
+        "SER"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    },
+    {
+      "nombre_cartografia": "Bajo de Masinloc",
+      "codigos_cartografia": [
+        "SCR"
+      ],
+      "motivo": "Sin correspondencia ISO3 exacta en el CSV o excluir del mapa."
+    }
+  ],
+  "verificaciones_solicitadas": {
+    "MEX": "NAC",
+    "RUS": "RUE",
+    "BLR": "RUE",
+    "GEO": "RUE",
+    "ARM": "RUE",
+    "AZE": "RUE",
+    "IRN": "MDE",
+    "CYP": "EUR",
+    "CHN": "CHN",
+    "HKG": "CHN",
+    "MAC": "CHN",
+    "TWN": "APC",
+    "IND": "SAI"
+  }
+}
