@@ -211,7 +211,8 @@ function renderLegend() {
 }
 
 function showTooltip(props) {
-  tooltip.innerHTML = `<strong>${props.name}</strong><span>${props.iso3} · ${props.area_name}</span>`;
+  const areaName = areaData.find(area => area.codigo === props.area)?.nombre || props.area_name;
+  tooltip.innerHTML = `<strong>${props.name}</strong><span>${props.iso3} · ${areaName}</span>`;
   tooltip.hidden = false;
 }
 
@@ -247,7 +248,8 @@ function renderMap(geojson) {
     path.setAttribute("class", "country");
     path.setAttribute("tabindex", "0");
     path.setAttribute("role", "img");
-    path.setAttribute("aria-label", `${props.name}, ${props.iso3}, ${props.area_name}`);
+    const areaName = areaData.find(area => area.codigo === props.area)?.nombre || props.area_name;
+    path.setAttribute("aria-label", `${props.name}, ${props.iso3}, ${areaName}`);
     path.dataset.iso3 = props.iso3;
     path.dataset.area = props.area || "";
     path.style.fill = props.area ? palette[props.area] : "url(#neutral-pattern)";
@@ -366,7 +368,10 @@ function selectAreaFromTable(area) {
   const nextArea = filter.value === area ? "" : area;
   filter.value = nextArea;
   applyFilter(nextArea);
-  if (nextArea) mapWrap.scrollIntoView({ behavior: "smooth", block: "center" });
+  if (nextArea) {
+    const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    mapWrap.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "center" });
+  }
 }
 
 function renderComparison() {

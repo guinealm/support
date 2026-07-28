@@ -27,7 +27,7 @@
 
     <section class="workspace" aria-label="Mapa mundial interactivo">
       <div class="map-panel">
-        <div class="map-toolbar">
+        <div class="map-toolbar" role="group" aria-label="Controles del mapa">
           <label class="switch">
             <input id="toggle-borders" type="checkbox" checked>
             <span>Fronteras</span>
@@ -85,6 +85,7 @@
       <p id="data-fallback-notice" class="data-notice" role="status" hidden>Se muestran datos de respaldo de la edición RG2025_V1.</p>
       <div class="table-scroll" tabindex="0" aria-label="Tabla comparativa; en pantallas pequeñas se desplaza horizontalmente">
         <table class="comparison-table">
+          <caption class="visually-hidden">Comparación de las nueve macroáreas por población, superficie, PIB, gasto militar y ojivas nucleares.</caption>
           <thead>
             <tr>
               <th scope="col" class="sticky-column"><button class="sort-button" type="button" data-sort="nombre">Área <span aria-hidden="true">↕</span></button></th>

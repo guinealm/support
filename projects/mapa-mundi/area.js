@@ -158,7 +158,7 @@ async function initialize() {
   const militaryGdp = value(records, "MIL_PIB") ?? percentage(military, gdp);
   const militaryShare = value(records, "MIL_PCT") ?? percentage(military, totals("MIL_GASTO"));
   const score = metric => scoreFor(fallback.areas, code, metric, value(records, metric));
-  const areaName = records.values().next().value.area.nombre || fallbackArea.nombre;
+  const areaName = fallbackArea.nombre;
   const currentIndex = AREA_ORDER.indexOf(code);
   const previousCode = AREA_ORDER[(currentIndex - 1 + AREA_ORDER.length) % AREA_ORDER.length];
   const nextCode = AREA_ORDER[(currentIndex + 1) % AREA_ORDER.length];
