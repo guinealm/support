@@ -10,6 +10,7 @@ const mapWrap = document.querySelector("#map-wrap");
 const comparisonBody = document.querySelector("#comparison-body");
 const sortStatus = document.querySelector("#sort-status");
 const fallbackNotice = document.querySelector("#data-fallback-notice");
+const viewAreaLink = document.querySelector("#view-area-link");
 
 let defaultPalette = {};
 let palette = {};
@@ -214,6 +215,18 @@ function showTooltip(props) {
   tooltip.hidden = false;
 }
 
+function updateAreaLink(area) {
+  viewAreaLink.hidden = !area;
+  if (area) {
+    const areaName = areaData.find(item => item.codigo === area)?.nombre || area;
+    viewAreaLink.href = `area.html?codigo=${encodeURIComponent(area)}`;
+    viewAreaLink.textContent = `Ver ficha de ${areaName}`;
+    viewAreaLink.setAttribute("aria-label", `Ver ficha de ${areaName}`);
+  } else {
+    viewAreaLink.removeAttribute("aria-label");
+  }
+}
+
 function renderMap(geojson) {
   const bounds = projectionBounds(geojson);
   const width = 1200, height = 650, padding = 24;
@@ -239,7 +252,13 @@ function renderMap(geojson) {
     path.dataset.area = props.area || "";
     path.style.fill = props.area ? palette[props.area] : "url(#neutral-pattern)";
     path.addEventListener("pointerenter", () => showTooltip(props));
-    path.addEventListener("pointerup", () => showTooltip(props));
+    path.addEventListener("pointerup", () => {
+      showTooltip(props);
+      if (props.area) {
+        filter.value = props.area;
+        applyFilter(props.area);
+      }
+    });
     path.addEventListener("pointerleave", () => { tooltip.hidden = true; });
     path.addEventListener("focus", () => showTooltip(props));
     path.addEventListener("blur", () => { tooltip.hidden = true; });
@@ -251,6 +270,7 @@ function renderMap(geojson) {
 }
 
 function applyFilter(area) {
+  updateAreaLink(area);
   document.querySelectorAll(".country").forEach(path => {
     path.classList.toggle("is-muted", Boolean(area) && path.dataset.area !== area);
     path.classList.toggle("is-active", Boolean(area) && path.dataset.area === area);
@@ -366,12 +386,19 @@ function renderComparison() {
     const areaLabel = document.createElement("span");
     areaLabel.className = "area-cell";
     areaLabel.innerHTML = `<span><strong>${area.nombre}</strong><span>${area.codigo}</span></span>`;
+    const sheetLink = document.createElement("a");
+    sheetLink.className = "table-sheet-link";
+    sheetLink.href = `area.html?codigo=${encodeURIComponent(area.codigo)}`;
+    sheetLink.textContent = "Ver ficha";
+    sheetLink.setAttribute("aria-label", `Ver ficha de ${area.nombre}`);
+    sheetLink.addEventListener("click", event => event.stopPropagation());
+    areaLabel.append(sheetLink);
     areaCell.append(areaLabel);
     row.append(areaCell);
     for (const metric of METRICS) row.append(createMetricCell(area, metric));
     row.addEventListener("click", () => selectAreaFromTable(area.codigo));
     row.addEventListener("keydown", event => {
-      if (event.key === "Enter" || event.key === " ") {
+      if (event.target === row && (event.key === "Enter" || event.key === " ")) {
         event.preventDefault();
         selectAreaFromTable(area.codigo);
       }

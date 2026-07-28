@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de macroárea · Retícula Global 2025</title>
+  <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="area.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="./">← Volver al mapa</a>
+    <span>Retícula Global 2025 · Support</span>
+  </header>
+
+  <main id="area-sheet" class="sheet" aria-busy="true">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Ficha de macroárea · Edición RG2025_V1</p>
+        <h1 id="area-name">Cargando…</h1>
+        <p id="area-code" class="area-code"></p>
+        <nav class="area-navigation" aria-label="Navegación entre macroáreas">
+          <a id="previous-area" href="#"></a>
+          <a id="next-area" href="#"></a>
+        </nav>
+      </div>
+      <svg id="area-map" viewBox="0 0 600 300" role="img" aria-label="Silueta territorial de la macroárea"></svg>
+    </section>
+
+    <p id="data-notice" class="notice" role="status" hidden>Se muestran datos de respaldo de la edición RG2025_V1.</p>
+    <p id="loading" class="loading" role="status">Cargando datos de la ficha…</p>
+
+    <div id="content" hidden>
+      <section class="data-section" aria-labelledby="territory-title">
+        <div class="section-heading"><p>01</p><h2 id="territory-title">Territorio</h2></div>
+        <div class="metrics" id="territory-metrics"></div>
+        <details class="territories">
+          <summary><span id="territory-count"></span> países y territorios asignados</summary>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Entidad</th><th>ISO3</th><th>Tipo</th><th>Cálculos</th></tr></thead>
+              <tbody id="territory-list"></tbody>
+            </table>
+          </div>
+        </details>
+      </section>
+
+      <section class="data-section" aria-labelledby="population-title">
+        <div class="section-heading"><p>02</p><h2 id="population-title">Demografía</h2></div>
+        <div class="metrics" id="population-metrics"></div>
+      </section>
+
+      <section class="data-section" aria-labelledby="economy-title">
+        <div class="section-heading"><p>03</p><h2 id="economy-title">Economía</h2></div>
+        <div class="metrics" id="economy-metrics"></div>
+      </section>
+
+      <section class="data-section" aria-labelledby="military-title">
+        <div class="section-heading"><p>04</p><h2 id="military-title">Dimensión militar</h2></div>
+        <div class="metrics" id="military-metrics"></div>
+        <p class="caveat">Los componentes se presentan por separado. No se calcula un índice militar compuesto y TEC_NET no se utiliza como tecnología militar.</p>
+      </section>
+
+      <section class="data-section sources" aria-labelledby="sources-title">
+        <div class="section-heading"><p>05</p><h2 id="sources-title">Fuentes y método</h2></div>
+        <div id="sources"></div>
+        <details>
+          <summary>Fórmulas de los valores derivados</summary>
+          <ul>
+            <li>Densidad = población ÷ superficie terrestre.</li>
+            <li>PIB por habitante = PIB nominal ÷ población.</li>
+            <li>Porcentaje = valor del área ÷ suma de las nueve áreas × 100.</li>
+            <li>Gasto respecto al PIB = gasto militar ÷ PIB nominal × 100.</li>
+          </ul>
+        </details>
+      </section>
+    </div>
+  </main>
+
+  <footer><a href="./">Volver al mapa simbólico mundial</a><span id="footer-area">Ficha de macroárea</span></footer>
+  <script src="area.js"></script>
+</body>
+</html>

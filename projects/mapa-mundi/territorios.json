@@ -1,0 +1,2491 @@
+{
+  "edicion": "RG2025_V1",
+  "fuente": "../reticula_global_1c2_runner/rg_paises_areas_operativo.csv",
+  "areas": [
+    {
+      "codigo": "AFR",
+      "entidades": [
+        {
+          "iso3": "DZA",
+          "nombre": "Algeria",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "AGO",
+          "nombre": "Angola",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BEN",
+          "nombre": "Benin",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BWA",
+          "nombre": "Botswana",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IOT",
+          "nombre": "British Indian Ocean Territory",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BFA",
+          "nombre": "Burkina Faso",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BDI",
+          "nombre": "Burundi",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CPV",
+          "nombre": "Cabo Verde",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CMR",
+          "nombre": "Cameroon",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CAF",
+          "nombre": "Central African Republic",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TCD",
+          "nombre": "Chad",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "COM",
+          "nombre": "Comoros",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "COG",
+          "nombre": "Congo",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "COD",
+          "nombre": "Congo, The Democratic Republic of the",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CIV",
+          "nombre": "Côte d'Ivoire",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "DJI",
+          "nombre": "Djibouti",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "EGY",
+          "nombre": "Egypt",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GNQ",
+          "nombre": "Equatorial Guinea",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ERI",
+          "nombre": "Eritrea",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SWZ",
+          "nombre": "Esuatini",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ETH",
+          "nombre": "Ethiopia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GAB",
+          "nombre": "Gabon",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GMB",
+          "nombre": "Gambia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GHA",
+          "nombre": "Ghana",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GIN",
+          "nombre": "Guinea",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GNB",
+          "nombre": "Guinea-Bissau",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KEN",
+          "nombre": "Kenya",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LSO",
+          "nombre": "Lesotho",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LBR",
+          "nombre": "Liberia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LBY",
+          "nombre": "Libya",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MDG",
+          "nombre": "Madagascar",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MWI",
+          "nombre": "Malawi",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MLI",
+          "nombre": "Mali",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MRT",
+          "nombre": "Mauritania",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MUS",
+          "nombre": "Mauritius",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MYT",
+          "nombre": "Mayotte",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MAR",
+          "nombre": "Morocco",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MOZ",
+          "nombre": "Mozambique",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NAM",
+          "nombre": "Namibia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NER",
+          "nombre": "Niger",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NGA",
+          "nombre": "Nigeria",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "RWA",
+          "nombre": "Rwanda",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "REU",
+          "nombre": "Réunion",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SHN",
+          "nombre": "Saint Helena, Ascension and Tristan da Cunha",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "STP",
+          "nombre": "Sao Tome and Principe",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SEN",
+          "nombre": "Senegal",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SYC",
+          "nombre": "Seychelles",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SLE",
+          "nombre": "Sierra Leone",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SOM",
+          "nombre": "Somalia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ZAF",
+          "nombre": "South Africa",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SSD",
+          "nombre": "South Sudan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SDN",
+          "nombre": "Sudan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TZA",
+          "nombre": "Tanzania",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TGO",
+          "nombre": "Togo",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TUN",
+          "nombre": "Tunisia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "UGA",
+          "nombre": "Uganda",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ESH",
+          "nombre": "Western Sahara",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ZMB",
+          "nombre": "Zambia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ZWE",
+          "nombre": "Zimbabwe",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "APC",
+      "entidades": [
+        {
+          "iso3": "ASM",
+          "nombre": "American Samoa",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "AUS",
+          "nombre": "Australia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BRN",
+          "nombre": "Brunéi",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KHM",
+          "nombre": "Cambodia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CXR",
+          "nombre": "Christmas Island",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CCK",
+          "nombre": "Cocos (Keeling) Islands",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "COK",
+          "nombre": "Cook Islands",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PRK",
+          "nombre": "Corea del Norte",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KOR",
+          "nombre": "Corea del Sur",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "FJI",
+          "nombre": "Fiji",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PYF",
+          "nombre": "French Polynesia",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GUM",
+          "nombre": "Guam",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IDN",
+          "nombre": "Indonesia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "JPN",
+          "nombre": "Japan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KIR",
+          "nombre": "Kiribati",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LAO",
+          "nombre": "Lao People's Democratic Republic",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MYS",
+          "nombre": "Malaysia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MHL",
+          "nombre": "Marshall Islands",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "FSM",
+          "nombre": "Micronesia, Federated States of",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MNG",
+          "nombre": "Mongolia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MMR",
+          "nombre": "Myanmar",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NRU",
+          "nombre": "Nauru",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NCL",
+          "nombre": "New Caledonia",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NZL",
+          "nombre": "New Zealand",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NIU",
+          "nombre": "Niue",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NFK",
+          "nombre": "Norfolk Island",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MNP",
+          "nombre": "Northern Mariana Islands",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PLW",
+          "nombre": "Palau",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PNG",
+          "nombre": "Papua New Guinea",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PHL",
+          "nombre": "Philippines",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PCN",
+          "nombre": "Pitcairn",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "WSM",
+          "nombre": "Samoa",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SGP",
+          "nombre": "Singapore",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SLB",
+          "nombre": "Solomon Islands",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TWN",
+          "nombre": "Taiwan, Province of China",
+          "tipo": "ENTIDAD_ESTADISTICA",
+          "soberania": "ESTADISTICA",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "THA",
+          "nombre": "Thailand",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TLS",
+          "nombre": "Timor Oriental",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TKL",
+          "nombre": "Tokelau",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TON",
+          "nombre": "Tonga",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TUV",
+          "nombre": "Tuvalu",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VUT",
+          "nombre": "Vanuatu",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VNM",
+          "nombre": "Vietnam",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "WLF",
+          "nombre": "Wallis and Futuna",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "CHN",
+      "entidades": [
+        {
+          "iso3": "CHN",
+          "nombre": "China",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "HKG",
+          "nombre": "Hong Kong",
+          "tipo": "REGION_ESPECIAL",
+          "soberania": "ESPECIAL",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MAC",
+          "nombre": "Macao",
+          "tipo": "REGION_ESPECIAL",
+          "soberania": "ESPECIAL",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "EUR",
+      "entidades": [
+        {
+          "iso3": "ALB",
+          "nombre": "Albania",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "AND",
+          "nombre": "Andorra",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "AUT",
+          "nombre": "Austria",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BEL",
+          "nombre": "Belgium",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BIH",
+          "nombre": "Bosnia and Herzegovina",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BGR",
+          "nombre": "Bulgaria",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CZE",
+          "nombre": "Chequia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "HRV",
+          "nombre": "Croatia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CYP",
+          "nombre": "Cyprus",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "DNK",
+          "nombre": "Denmark",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "EST",
+          "nombre": "Estonia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "FRO",
+          "nombre": "Faroe Islands",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "FIN",
+          "nombre": "Finland",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "FRA",
+          "nombre": "France",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "DEU",
+          "nombre": "Germany",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GIB",
+          "nombre": "Gibraltar",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GRC",
+          "nombre": "Greece",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GGY",
+          "nombre": "Guernsey",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VAT",
+          "nombre": "Holy See (Vatican City State)",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "HUN",
+          "nombre": "Hungary",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ISL",
+          "nombre": "Iceland",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IRL",
+          "nombre": "Ireland",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IMN",
+          "nombre": "Isle of Man",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ITA",
+          "nombre": "Italy",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "JEY",
+          "nombre": "Jersey",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "XKX",
+          "nombre": "Kosovo",
+          "tipo": "ENTIDAD_ESTADISTICA",
+          "soberania": "ESTADISTICA",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": "Código XKX de uso técnico interno, no ISO oficial."
+        },
+        {
+          "iso3": "LVA",
+          "nombre": "Latvia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LIE",
+          "nombre": "Liechtenstein",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LTU",
+          "nombre": "Lithuania",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LUX",
+          "nombre": "Luxembourg",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MLT",
+          "nombre": "Malta",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MDA",
+          "nombre": "Moldavia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MCO",
+          "nombre": "Monaco",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MNE",
+          "nombre": "Montenegro",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NLD",
+          "nombre": "Netherlands",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MKD",
+          "nombre": "North Macedonia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NOR",
+          "nombre": "Norway",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "POL",
+          "nombre": "Poland",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PRT",
+          "nombre": "Portugal",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GBR",
+          "nombre": "Reino Unido",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ROU",
+          "nombre": "Romania",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SMR",
+          "nombre": "San Marino",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SRB",
+          "nombre": "Serbia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SVK",
+          "nombre": "Slovakia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SVN",
+          "nombre": "Slovenia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ESP",
+          "nombre": "Spain",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SJM",
+          "nombre": "Svalbard and Jan Mayen",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SWE",
+          "nombre": "Sweden",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CHE",
+          "nombre": "Switzerland",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "UKR",
+          "nombre": "Ukraine",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ALA",
+          "nombre": "Åland Islands",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "MDE",
+      "entidades": [
+        {
+          "iso3": "BHR",
+          "nombre": "Bahrain",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IRQ",
+          "nombre": "Iraq",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IRN",
+          "nombre": "Irán",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ISR",
+          "nombre": "Israel",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "JOR",
+          "nombre": "Jordan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KWT",
+          "nombre": "Kuwait",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LBN",
+          "nombre": "Lebanon",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "OMN",
+          "nombre": "Oman",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PSE",
+          "nombre": "Palestina",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "QAT",
+          "nombre": "Qatar",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SAU",
+          "nombre": "Saudi Arabia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SYR",
+          "nombre": "Siria",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TUR",
+          "nombre": "Turquía",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ARE",
+          "nombre": "United Arab Emirates",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "YEM",
+          "nombre": "Yemen",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "NAC",
+      "entidades": [
+        {
+          "iso3": "AIA",
+          "nombre": "Anguilla",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ATG",
+          "nombre": "Antigua and Barbuda",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ABW",
+          "nombre": "Aruba",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BHS",
+          "nombre": "Bahamas",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BRB",
+          "nombre": "Barbados",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BLZ",
+          "nombre": "Belize",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BMU",
+          "nombre": "Bermuda",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BES",
+          "nombre": "Bonaire, Sint Eustatius and Saba",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CAN",
+          "nombre": "Canada",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CYM",
+          "nombre": "Cayman Islands",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CRI",
+          "nombre": "Costa Rica",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CUB",
+          "nombre": "Cuba",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CUW",
+          "nombre": "Curaçao",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "DMA",
+          "nombre": "Dominica",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "DOM",
+          "nombre": "Dominican Republic",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SLV",
+          "nombre": "El Salvador",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "USA",
+          "nombre": "Estados Unidos",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GRL",
+          "nombre": "Greenland",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GRD",
+          "nombre": "Grenada",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GLP",
+          "nombre": "Guadeloupe",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GTM",
+          "nombre": "Guatemala",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "HTI",
+          "nombre": "Haiti",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "HND",
+          "nombre": "Honduras",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "JAM",
+          "nombre": "Jamaica",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MTQ",
+          "nombre": "Martinique",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MEX",
+          "nombre": "Mexico",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MSR",
+          "nombre": "Montserrat",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NIC",
+          "nombre": "Nicaragua",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PAN",
+          "nombre": "Panama",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PRI",
+          "nombre": "Puerto Rico",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BLM",
+          "nombre": "Saint Barthélemy",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KNA",
+          "nombre": "Saint Kitts and Nevis",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LCA",
+          "nombre": "Saint Lucia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MAF",
+          "nombre": "Saint Martin (French part)",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SPM",
+          "nombre": "Saint Pierre and Miquelon",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VCT",
+          "nombre": "Saint Vincent and the Grenadines",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SXM",
+          "nombre": "Sint Maarten (Dutch part)",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TTO",
+          "nombre": "Trinidad and Tobago",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TCA",
+          "nombre": "Turks and Caicos Islands",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VGB",
+          "nombre": "Virgin Islands, British",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VIR",
+          "nombre": "Virgin Islands, U.S.",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "RUE",
+      "entidades": [
+        {
+          "iso3": "ARM",
+          "nombre": "Armenia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "AZE",
+          "nombre": "Azerbaijan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BLR",
+          "nombre": "Belarus",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GEO",
+          "nombre": "Georgia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KAZ",
+          "nombre": "Kazakhstan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "KGZ",
+          "nombre": "Kyrgyzstan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "RUS",
+          "nombre": "Rusia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TJK",
+          "nombre": "Tajikistan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "TKM",
+          "nombre": "Turkmenistan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "UZB",
+          "nombre": "Uzbekistan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "SAI",
+      "entidades": [
+        {
+          "iso3": "AFG",
+          "nombre": "Afghanistan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BGD",
+          "nombre": "Bangladesh",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BTN",
+          "nombre": "Bhutan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "IND",
+          "nombre": "India",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "MDV",
+          "nombre": "Maldives",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "NPL",
+          "nombre": "Nepal",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PAK",
+          "nombre": "Pakistan",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "LKA",
+          "nombre": "Sri Lanka",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    },
+    {
+      "codigo": "SAM",
+      "entidades": [
+        {
+          "iso3": "ARG",
+          "nombre": "Argentina",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BOL",
+          "nombre": "Bolivia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "BRA",
+          "nombre": "Brazil",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "CHL",
+          "nombre": "Chile",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "COL",
+          "nombre": "Colombia",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "ECU",
+          "nombre": "Ecuador",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "FLK",
+          "nombre": "Falkland Islands (Malvinas)",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GUF",
+          "nombre": "French Guiana",
+          "tipo": "TERRITORIO_DEPENDIENTE",
+          "soberania": "DEPENDIENTE",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SEGUN_FUENTE",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "GUY",
+          "nombre": "Guyana",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PRY",
+          "nombre": "Paraguay",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "PER",
+          "nombre": "Peru",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "SUR",
+          "nombre": "Suriname",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "URY",
+          "nombre": "Uruguay",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        },
+        {
+          "iso3": "VEN",
+          "nombre": "Venezuela",
+          "tipo": "PAIS_SOBERANO",
+          "soberania": "SOBERANO",
+          "incluir_mapa": "SI",
+          "incluir_calculos": "SI",
+          "entidad_soberana_iso3": null,
+          "observaciones": null
+        }
+      ]
+    }
+  ]
+}

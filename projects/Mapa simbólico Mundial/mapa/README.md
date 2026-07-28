@@ -15,18 +15,21 @@ respaldo. El navegador no modifica MySQL ni la Tabla de Datos Consolidados.
 - `index.html`: interfaz del mapa y tabla comparativa.
 - `mapa.css`: diseño editorial y adaptación móvil.
 - `mapa.js`: proyección, interacción, puntuaciones, ordenación y descarga SVG.
+- `area.html`, `area.css`, `area.js`: plantilla única de fichas de macroárea.
 - `world.geojson`: geometrías Natural Earth simplificadas para navegador.
 - `areas.json`: asignación territorial generada desde el maestro operativo.
+- `territorios.json`: listado territorial detallado para las fichas.
 - `paleta.json`: colores iniciales de las nueve macroáreas.
 - `datos-indicadores.json`: cinco indicadores agregados de `RG2025_V1`.
 - `correspondencias-cartograficas.json`: diferencias ISO3 documentadas.
 - `informe-correspondencias.json`: resumen de cobertura cartográfica.
 - `generar_datos.py`: regeneración de territorio y geometrías.
 - `generar_indicadores.py`: regeneración de los indicadores comparativos.
+- `generar_territorios.py`: regeneración del listado territorial de las fichas.
 
 Esta carpeta es la **fuente de trabajo**. `areas.json`, `world.geojson`,
 `informe-correspondencias.json`, `correspondencias-cartograficas.json` y
-`datos-indicadores.json` son **salidas generadas**.
+`datos-indicadores.json` y `territorios.json` son **salidas generadas**.
 
 La **salida pública** se mantiene en `../../mapa-mundi/` y contiene únicamente
 los recursos necesarios en el navegador. La URL histórica
@@ -108,6 +111,34 @@ de la edición RG2025_V1».
 La ruta pública estable es un puente hacia la implementación existente del
 proyecto. No duplica la lógica de consulta ni contiene credenciales.
 
+## Fichas de macroárea
+
+Las nueve fichas reutilizan una sola plantilla:
+
+`area.html?codigo=AFR`
+
+Los códigos válidos son `AFR`, `APC`, `CHN`, `EUR`, `MDE`, `NAC`, `RUE`,
+`SAI` y `SAM`. Cada ficha consulta todos los datos disponibles del área mediante
+`/api/reticula/v1/datos.php?area=CODIGO`. Si la API no está disponible utiliza
+los cinco indicadores principales de `datos-indicadores.json` y muestra el
+aviso de respaldo.
+
+La lista de países y territorios procede de `territorios.json`, generado de
+forma reproducible desde `rg_paises_areas_operativo.csv`:
+
+```powershell
+python generar_territorios.py
+```
+
+Los porcentajes de población, superficie, PIB y gasto, la densidad y el PIB por
+habitante se calculan en el navegador a partir de RG2025_V1. Para gasto militar
+se prefieren `MIL_PC`, `MIL_PIB` y `MIL_PCT` de la API por su tratamiento de
+cobertura comparable.
+
+El mapa y la primera columna de la tabla ofrecen enlaces a la ficha del área
+seleccionada sin sustituir el comportamiento de resaltado. Cada ficha incluye
+retorno al mapa y navegación anterior/siguiente en el orden de la leyenda.
+
 ## Cartografía y licencia
 
 - **Fuente:** Natural Earth, `Admin 0 – Countries`, escala 1:10m, versión 5.1.1.
@@ -142,7 +173,8 @@ militar y ojivas se presentan por separado.
   ante un fallo se presenta la edición congelada del respaldo local.
 - No se calcula un índice militar compuesto: falta una medida validada de
   tecnología y capacidad de proyección.
-- No hay fichas individuales de macroárea.
+- Las fichas comparten una plantilla; no existen nueve documentos HTML
+  independientes.
 - La exportación disponible es SVG del mapa; no incluye PNG ni PDF.
 - Las correspondencias cartográficas pendientes permanecen neutrales y
   documentadas, sin equivalencias silenciosas.

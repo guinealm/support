@@ -146,6 +146,15 @@ select {
 
 .button-dark { color: #fff; background: var(--ink); }
 .button-light { color: var(--ink); background: #fff; }
+.area-sheet-link {
+  color: var(--ink);
+  background: #fff;
+  font-size: .875rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+}
+.area-sheet-link[hidden] { display: none; }
 .button:hover { filter: brightness(.92); }
 
 .map-wrap {
@@ -293,7 +302,7 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.8re
   padding: .65rem 1rem;
   border-bottom: 1px solid var(--line);
   color: var(--muted);
-  font-size: .68rem;
+  font-size: .875rem;
 }
 
 .table-scroll {
@@ -394,6 +403,17 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.8re
 
 .area-cell strong { display: block; font-size: .78rem; }
 .area-cell span { color: var(--muted); font-size: .64rem; letter-spacing: .08em; }
+.table-sheet-link {
+  grid-column: 2;
+  display: inline-block;
+  width: max-content;
+  margin-top: .35rem;
+  color: var(--ink);
+  font-size: .68rem;
+  font-weight: 800;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
 
 .metric-value {
   min-height: 2.1em;
@@ -517,6 +537,7 @@ footer {
   .map-toolbar { align-items: stretch; flex-wrap: wrap; }
   .area-filter { width: 100%; margin: 0; justify-content: space-between; }
   .area-filter select { flex: 1; }
+  .area-sheet-link { width: 100%; }
   .button-dark { margin-left: auto; }
   .map-wrap { min-height: 320px; padding: .25rem; }
   .tooltip { top: .5rem; left: .5rem; min-width: 150px; }
