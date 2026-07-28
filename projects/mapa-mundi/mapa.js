@@ -9,6 +9,7 @@ const tooltip = document.querySelector("#tooltip");
 const mapWrap = document.querySelector("#map-wrap");
 const comparisonBody = document.querySelector("#comparison-body");
 const sortStatus = document.querySelector("#sort-status");
+const fallbackNotice = document.querySelector("#data-fallback-notice");
 
 let defaultPalette = {};
 let palette = {};
@@ -18,6 +19,10 @@ let scores = {};
 let sortState = { key: "orden", direction: "asc" };
 
 const METRICS = ["POB_TOTAL", "TERR_SUP", "ECO_PIB", "MIL_GASTO", "MIL_NUC"];
+const EXPECTED_AREAS = ["AFR", "APC", "CHN", "EUR", "MDE", "NAC", "RUE", "SAI", "SAM"];
+const EXPECTED_EDITION = "RG2025_V1";
+const API_URL = "/api/reticula/v1/datos.php";
+const API_TIMEOUT_MS = 5000;
 const SORT_LABELS = {
   nombre: "nombre del área",
   POB_TOTAL: "población",
@@ -29,6 +34,91 @@ const SORT_LABELS = {
 const decimalOne = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const decimalTwo = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const integerFormat = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 0 });
+
+function requireJson(response) {
+  if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.url}`);
+  return response.json();
+}
+
+function validateApiPayload(payload, metric) {
+  if (!payload || payload.ok !== true || payload.meta?.edicion?.codigo !== EXPECTED_EDITION || !Array.isArray(payload.data)) {
+    throw new Error(`Respuesta no válida para ${metric}`);
+  }
+  const records = new Map();
+  for (const record of payload.data) {
+    const area = record?.area?.codigo;
+    if (!EXPECTED_AREAS.includes(area) || record?.indicador?.codigo !== metric || records.has(area)) {
+      throw new Error(`Cobertura no válida para ${metric}`);
+    }
+    records.set(area, record);
+  }
+  return records;
+}
+
+async function fetchApiIndicator(metric, signal) {
+  const response = await fetch(`${API_URL}?indicador=${encodeURIComponent(metric)}`, {
+    headers: { Accept: "application/json" },
+    signal
+  });
+  return validateApiPayload(await requireJson(response), metric);
+}
+
+function apiIndicator(record, editorialFallback) {
+  return {
+    valor: record.valor,
+    anio: record.anio_referencia,
+    anio_minimo: record.anio_minimo,
+    anio_maximo: record.anio_maximo,
+    unidad: record.indicador?.unidad ?? null,
+    fuente_codigo: record.fuente_principal?.codigo ?? null,
+    fuente: record.fuente_principal?.nombre ?? null,
+    fuente_url: record.fuente_principal?.url ?? null,
+    cobertura: record.cobertura ?? null,
+    metodo: record.metodo_calculo ?? null,
+    estado: record.estado_dato ?? null,
+    observaciones: record.observaciones || editorialFallback?.observaciones || "",
+    observaciones_editoriales: editorialFallback?.observaciones || "",
+    procedencia: "api"
+  };
+}
+
+function mergeIndicatorData(fallbackData, apiResults) {
+  if (fallbackData?.edicion?.codigo !== EXPECTED_EDITION || !Array.isArray(fallbackData.areas)) {
+    throw new Error("El archivo de respaldo no corresponde a RG2025_V1");
+  }
+  let usedFallback = false;
+  const areas = fallbackData.areas.map(area => {
+    const indicadores = {};
+    for (const metric of METRICS) {
+      const fallback = area.indicadores?.[metric];
+      const record = apiResults[metric]?.get(area.codigo);
+      if (record && record.valor !== null && record.valor !== undefined && Number.isFinite(Number(record.valor))) {
+        indicadores[metric] = apiIndicator({ ...record, valor: Number(record.valor) }, fallback);
+      } else {
+        usedFallback = true;
+        indicadores[metric] = { ...fallback, procedencia: "respaldo" };
+      }
+    }
+    return { ...area, indicadores };
+  });
+  return { areas, usedFallback };
+}
+
+async function loadIndicatorData() {
+  const fallbackPromise = fetch("datos-indicadores.json").then(requireJson);
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), API_TIMEOUT_MS);
+  const settled = await Promise.allSettled(
+    METRICS.map(metric => fetchApiIndicator(metric, controller.signal))
+  );
+  clearTimeout(timeout);
+  const fallbackData = await fallbackPromise;
+  const apiResults = {};
+  METRICS.forEach((metric, index) => {
+    apiResults[metric] = settled[index].status === "fulfilled" ? settled[index].value : null;
+  });
+  return mergeIndicatorData(fallbackData, apiResults);
+}
 
 function equalEarth([longitude, latitude]) {
   const lambda = longitude * Math.PI / 180;
@@ -341,15 +431,16 @@ document.querySelector("#download-svg").addEventListener("click", () => {
 });
 
 Promise.all([
-  fetch("paleta.json").then(response => response.json()),
-  fetch("areas.json").then(response => response.json()),
-  fetch("world.geojson").then(response => response.json()),
-  fetch("datos-indicadores.json").then(response => response.json())
+  fetch("paleta.json").then(requireJson),
+  fetch("areas.json").then(requireJson),
+  fetch("world.geojson").then(requireJson),
+  loadIndicatorData()
 ]).then(([loadedPalette, areas, world, indicators]) => {
   defaultPalette = loadedPalette;
   palette = currentPalette();
   areaData = areas.areas;
   indicatorAreas = indicators.areas;
+  fallbackNotice.hidden = !indicators.usedFallback;
   scores = calculateScores(indicatorAreas);
   renderLegend();
   renderMap(world);

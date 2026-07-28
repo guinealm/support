@@ -6,8 +6,9 @@ permite explorar y personalizar el mapa y añade una comparación de población,
 superficie, PIB nominal, gasto militar y ojivas de la edición congelada
 `RG2025_V1`.
 
-La aplicación funciona con archivos estáticos generados. No consulta ni
-modifica MySQL ni la Tabla de Datos Consolidados.
+La aplicación consulta la API pública de Retícula Global en
+`/api/reticula/v1/datos.php` y conserva los archivos estáticos generados como
+respaldo. El navegador no modifica MySQL ni la Tabla de Datos Consolidados.
 
 ## Estructura
 
@@ -85,6 +86,28 @@ El generador lee los CSV de territorio y población, economía y fuerza militar
 de `../reticula_global_1c2_runner/output_1c2/`. No consulta MySQL ni contiene
 valores transcritos en JavaScript.
 
+## API y respaldo
+
+La fuente principal de los cinco indicadores es:
+
+`/api/reticula/v1/datos.php`
+
+El mapa solicita en paralelo `POB_TOTAL`, `TERR_SUP`, `ECO_PIB`, `MIL_GASTO` y
+`MIL_NUC`. Cada respuesta debe tener HTTP 200, JSON válido, `ok === true`,
+edición `RG2025_V1`, códigos territoriales válidos, ausencia de duplicados y el
+indicador solicitado. Las solicitudes tienen un tiempo máximo de cinco
+segundos.
+
+`datos-indicadores.json` es el respaldo local. Si falla toda la API se utiliza
+completo; si falta un valor concreto, solamente esa celda procede del respaldo.
+Una ausencia nunca se convierte en cero. Cada indicador conserva internamente
+la procedencia `api` o `respaldo`, junto con sus metadatos disponibles. Cuando
+interviene cualquier dato local aparece el aviso «Se muestran datos de respaldo
+de la edición RG2025_V1».
+
+La ruta pública estable es un puente hacia la implementación existente del
+proyecto. No duplica la lógica de consulta ni contiene credenciales.
+
 ## Cartografía y licencia
 
 - **Fuente:** Natural Earth, `Admin 0 – Countries`, escala 1:10m, versión 5.1.1.
@@ -115,8 +138,8 @@ militar y ojivas se presentan por separado.
 
 ## Limitaciones actuales
 
-- No existe todavía integración directa con `datos.php`; el servidor estático
-  utiliza `datos-indicadores.json`.
+- La disponibilidad en tiempo real de la API depende del servidor de Support;
+  ante un fallo se presenta la edición congelada del respaldo local.
 - No se calcula un índice militar compuesto: falta una medida validada de
   tecnología y capacidad de proyección.
 - No hay fichas individuales de macroárea.

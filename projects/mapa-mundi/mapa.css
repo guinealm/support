@@ -432,6 +432,17 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.8re
   text-align: right;
 }
 
+.data-notice {
+  margin: 0;
+  padding: .65rem 1rem;
+  border-top: 1px solid #d8cda8;
+  color: #5c4b16;
+  background: #fff9e8;
+  font-size: .72rem;
+}
+
+.data-notice[hidden] { display: none; }
+
 .military-note {
   margin: 0;
   padding: 1rem;
