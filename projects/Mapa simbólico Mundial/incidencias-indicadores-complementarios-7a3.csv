@@ -1,0 +1,388 @@
+codigo_indicador,codigo_pais,codigo_area,tipo_incidencia,descripcion,accion_propuesta
+TERR_DENS,IOT,AFR,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,CXR,APC,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,CCK,APC,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,NFK,APC,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,PCN,APC,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,ALA,EUR,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,SJM,EUR,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,GGY,EUR,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,JEY,EUR,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+TERR_DENS,XKX,EUR,DATO_AUSENTE,Falta superficie terrestre 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_URB,DZA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AGO,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BWA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IOT,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BDI,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CMR,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CPV,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CAF,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TCD,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,COM,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MYT,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,COG,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,COD,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BEN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GNQ,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ETH,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ERI,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,DJI,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GAB,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GMB,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GHA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GIN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CIV,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KEN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LSO,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LBR,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LBY,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MDG,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MWI,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MLI,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MRT,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MUS,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MAR,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MOZ,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NAM,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NER,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NGA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GNB,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,REU,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,RWA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SHN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,STP,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SEN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SYC,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SLE,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SOM,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ZAF,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ZWE,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SSD,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SDN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ESH,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SWZ,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TGO,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TUN,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,UGA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,EGY,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TZA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BFA,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ZMB,AFR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ASM,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AUS,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SLB,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BRN,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MMR,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KHM,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TWN,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CXR,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CCK,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,COK,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,FJI,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PYF,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KIR,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GUM,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IDN,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,JPN,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PRK,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KOR,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LAO,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MYS,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MNG,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NRU,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NCL,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VUT,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NZL,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NIU,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NFK,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MNP,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,FSM,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MHL,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PLW,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PNG,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PHL,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PCN,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TLS,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SGP,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VNM,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,THA,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TKL,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TON,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TUV,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,WLF,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,WSM,APC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CHN,CHN,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,HKG,CHN,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MAC,CHN,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ALB,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AND,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AUT,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BEL,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BIH,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BGR,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,HRV,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CYP,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CZE,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,DNK,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,EST,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,FRO,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,FIN,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ALA,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,FRA,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,DEU,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GIB,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GRC,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VAT,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,HUN,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ISL,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IRL,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ITA,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LVA,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LIE,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LTU,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LUX,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MLT,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MCO,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MDA,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MNE,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NLD,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NOR,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,POL,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PRT,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ROU,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SMR,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SRB,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SVK,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SVN,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ESP,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SJM,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SWE,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CHE,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,UKR,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MKD,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GBR,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GGY,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,JEY,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IMN,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,XKX,EUR,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BHR,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PSE,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IRN,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IRQ,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ISR,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,JOR,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KWT,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LBN,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,OMN,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,QAT,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SAU,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SYR,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ARE,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TUR,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,YEM,MDE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ATG,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BHS,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BRB,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BMU,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BLZ,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VGB,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CAN,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CYM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CRI,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CUB,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,DMA,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,DOM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SLV,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GRL,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GRD,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GLP,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GTM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,HTI,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,HND,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,JAM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MTQ,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MEX,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MSR,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CUW,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ABW,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SXM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BES,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NIC,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PAN,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PRI,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BLM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KNA,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AIA,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LCA,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MAF,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SPM,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VCT,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TTO,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TCA,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,USA,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VIR,NAC,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AZE,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ARM,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BLR,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GEO,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KAZ,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,KGZ,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,RUS,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TJK,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,TKM,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,UZB,RUE,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,AFG,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BGD,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BTN,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,LKA,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,IND,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,MDV,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,NPL,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PAK,SAI,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ARG,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BOL,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,BRA,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,CHL,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,COL,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,ECU,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,FLK,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GUF,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,GUY,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PRY,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,PER,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,SUR,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,URY,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_URB,VEN,SAM,DATO_NO_INCORPORADO,No existe serie nacional de poblacion urbana incorporada,Incorporar una fuente nacional comparable antes de calcular
+POB_EDAD,IOT,AFR,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,CXR,APC,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,CCK,APC,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,NFK,APC,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,PCN,APC,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,ALA,EUR,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,SJM,EUR,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+POB_EDAD,XKX,EUR,DATO_AUSENTE,Falta edad mediana nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,IOT,AFR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,MYT,AFR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,REU,AFR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,SHN,AFR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,ESH,AFR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,TWN,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,CXR,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,CCK,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,COK,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,NIU,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,NFK,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,PCN,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,TKL,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,WLF,APC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,ALA,EUR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,VAT,EUR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,SJM,EUR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,GGY,EUR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,JEY,EUR,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,XKX,EUR,DATO_AUSENTE,Falta poblacion nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,GLP,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,MTQ,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,MSR,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,BES,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,BLM,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,AIA,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,SPM,NAC,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,FLK,SAM,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_EV,GUF,SAM,DATO_AUSENTE,Falta esperanza de vida nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,IOT,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,MYT,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,ERI,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,REU,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,SHN,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,SSD,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,ESH,AFR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,ASM,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,TWN,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,CXR,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,CCK,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,COK,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,GUM,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,PRK,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,NIU,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,NFK,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,MNP,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,PCN,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,TKL,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,WLF,APC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,ALA,EUR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,GIB,EUR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,VAT,EUR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,SMR,EUR,PERIODO_INCOMPATIBLE,PIB disponible solo para 2023.0; se exige 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,SJM,EUR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,GGY,EUR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,JEY,EUR,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,IMN,EUR,PERIODO_INCOMPATIBLE,PIB disponible solo para 2023.0; se exige 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,XKX,EUR,DATO_AUSENTE,Falta poblacion nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,SYR,MDE,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,YEM,MDE,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,VGB,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,CUB,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,GRL,NAC,PERIODO_INCOMPATIBLE,PIB disponible solo para 2023.0; se exige 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,GLP,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,MTQ,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,MSR,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,BES,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,BLM,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,AIA,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,MAF,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,SPM,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,VIR,NAC,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,FLK,SAM,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+ECO_PC,GUF,SAM,DATO_AUSENTE,Falta PIB nominal nacional 2024,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,IOT,AFR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MYT,AFR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,REU,AFR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,SHN,AFR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,ESH,AFR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,ASM,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,TWN,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,CXR,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,CCK,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,COK,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,PYF,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,GUM,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,PRK,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,NCL,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,NIU,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,NFK,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MNP,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,PCN,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,TKL,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,WLF,APC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MAC,CHN,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,FRO,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,ALA,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,GIB,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,VAT,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MCO,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,SJM,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,GGY,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,JEY,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,IMN,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,XKX,EUR,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,BMU,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,VGB,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,CYM,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,GRL,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,GLP,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MTQ,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MSR,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,CUW,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,ABW,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,SXM,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,BES,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,PRI,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,BLM,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,AIA,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,MAF,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,SPM,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,TCA,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,VIR,NAC,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,FLK,SAM,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo
+HUM_IDH,GUF,SAM,DATO_AUSENTE,Falta IDH nacional 2023,Mantener ausente; localizar dato comparable del mismo periodo

@@ -1,0 +1,4 @@
+codigo_pais,codigo_indicador,valor,unidad,anio,codigo_fuente,url,observaciones
+TWN,ECO_PC,34040,USD_corrientes_por_hab,2024,TW_DGBAS_YEARBOOK,https://ws.dgbas.gov.tw/001/Upload/466/relfile/11503/235329/yearbook2024.pdf,Anuario estadístico oficial 2024; PIB por habitante en dólares estadounidenses.
+YEM,ECO_PC,199.590110906311,USD_corrientes_por_hab,2024,IMF_CR_26_80,https://www.imf.org/en/news/articles/2026/04/02/pr-26106-yemen-imf-executive-board-concludes-2025-article-iv-consult,PIB nominal 2024 de 8.100 millones USD publicado por el FMI dividido por población UN WPP 2024 de 40.583.173.
+TWN,HUM_IDH,0.934,indice_0_1,2023,TW_DGBAS_HDI,https://data.gov.tw/en/datasets/25711,Calculado y publicado por DGBAS conforme a la fórmula del PNUD; Taiwán no figura como país en la tabla PNUD.

@@ -1,0 +1,11 @@
+-- FASE 7A.7. CONSULTAS DE PREFLIGHT/VALIDACIÓN. NO EJECUTADAS.
+USE `u794456529_map_sim_Mund`;
+SELECT codigo,COUNT(*) AS coincidencias FROM rg_indicadores WHERE codigo IN ('TERR_DENS','POB_URB','POB_EDAD','HUM_EV','ECO_PC','HUM_IDH') GROUP BY codigo;
+SELECT i.codigo,COUNT(*) AS activos,COUNT(DISTINCT a.codigo) AS areas,SUM(da.valor IS NULL) AS nulos
+FROM rg_datos_area da JOIN rg_indicadores i ON i.id=da.indicador_id JOIN rg_areas a ON a.id=da.area_id JOIN rg_periodos p ON p.id=da.periodo_id
+WHERE da.activo=1 AND p.codigo='RG2025_V1' AND i.codigo IN ('TERR_DENS','POB_URB','POB_EDAD','HUM_EV','ECO_PC','HUM_IDH') GROUP BY i.codigo;
+SELECT a.codigo,i.codigo,p.codigo,COUNT(*) AS repeticiones FROM rg_datos_area da JOIN rg_areas a ON a.id=da.area_id JOIN rg_indicadores i ON i.id=da.indicador_id JOIN rg_periodos p ON p.id=da.periodo_id WHERE da.activo=1 AND p.codigo='RG2025_V1' GROUP BY a.codigo,i.codigo,p.codigo HAVING COUNT(*)<>1;
+SELECT COUNT(*) AS total_activos FROM rg_datos_area da JOIN rg_periodos p ON p.id=da.periodo_id WHERE da.activo=1 AND p.codigo='RG2025_V1' AND da.indicador_id IN (SELECT id FROM rg_indicadores WHERE codigo IN ('TERR_DENS','POB_URB','POB_EDAD','HUM_EV','ECO_PC','HUM_IDH'));
+SELECT COUNT(*) AS total_filas_esperadas_7a7 FROM rg_datos_area da JOIN rg_periodos p ON p.id=da.periodo_id WHERE da.activo=1 AND p.codigo='RG2025_V1' AND da.indicador_id IN (SELECT id FROM rg_indicadores WHERE codigo IN ('TERR_DENS','POB_URB','POB_EDAD','HUM_EV','ECO_PC','HUM_IDH'));
+SELECT COUNT(*) AS eco_pc_mde_activos FROM rg_datos_area da JOIN rg_areas a ON a.id=da.area_id JOIN rg_indicadores i ON i.id=da.indicador_id JOIN rg_periodos p ON p.id=da.periodo_id WHERE p.codigo='RG2025_V1' AND a.codigo='MDE' AND i.codigo='ECO_PC' AND da.activo=1;
+SELECT a.codigo,i.codigo,da.valor FROM rg_datos_area da JOIN rg_areas a ON a.id=da.area_id JOIN rg_indicadores i ON i.id=da.indicador_id JOIN rg_periodos p ON p.id=da.periodo_id WHERE da.activo=1 AND p.codigo='RG2025_V1' AND ((i.codigo='TERR_DENS' AND da.valor<=0) OR (i.codigo='POB_URB' AND (da.valor<0 OR da.valor>100)) OR (i.codigo='POB_EDAD' AND (da.valor<10 OR da.valor>60)) OR (i.codigo='HUM_EV' AND (da.valor<40 OR da.valor>90)) OR (i.codigo='ECO_PC' AND da.valor<=0) OR (i.codigo='HUM_IDH' AND (da.valor<0 OR da.valor>1)));

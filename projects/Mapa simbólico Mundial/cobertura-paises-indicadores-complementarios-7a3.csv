@@ -1,0 +1,1465 @@
+codigo_indicador,codigo_pais,codigo_area,incluido,motivo
+TERR_DENS,DZA,AFR,SI,
+TERR_DENS,AGO,AFR,SI,
+TERR_DENS,BWA,AFR,SI,
+TERR_DENS,IOT,AFR,NO,Falta superficie terrestre 2023
+TERR_DENS,BDI,AFR,SI,
+TERR_DENS,CMR,AFR,SI,
+TERR_DENS,CPV,AFR,SI,
+TERR_DENS,CAF,AFR,SI,
+TERR_DENS,TCD,AFR,SI,
+TERR_DENS,COM,AFR,SI,
+TERR_DENS,MYT,AFR,SI,
+TERR_DENS,COG,AFR,SI,
+TERR_DENS,COD,AFR,SI,
+TERR_DENS,BEN,AFR,SI,
+TERR_DENS,GNQ,AFR,SI,
+TERR_DENS,ETH,AFR,SI,
+TERR_DENS,ERI,AFR,SI,
+TERR_DENS,DJI,AFR,SI,
+TERR_DENS,GAB,AFR,SI,
+TERR_DENS,GMB,AFR,SI,
+TERR_DENS,GHA,AFR,SI,
+TERR_DENS,GIN,AFR,SI,
+TERR_DENS,CIV,AFR,SI,
+TERR_DENS,KEN,AFR,SI,
+TERR_DENS,LSO,AFR,SI,
+TERR_DENS,LBR,AFR,SI,
+TERR_DENS,LBY,AFR,SI,
+TERR_DENS,MDG,AFR,SI,
+TERR_DENS,MWI,AFR,SI,
+TERR_DENS,MLI,AFR,SI,
+TERR_DENS,MRT,AFR,SI,
+TERR_DENS,MUS,AFR,SI,
+TERR_DENS,MAR,AFR,SI,
+TERR_DENS,MOZ,AFR,SI,
+TERR_DENS,NAM,AFR,SI,
+TERR_DENS,NER,AFR,SI,
+TERR_DENS,NGA,AFR,SI,
+TERR_DENS,GNB,AFR,SI,
+TERR_DENS,REU,AFR,SI,
+TERR_DENS,RWA,AFR,SI,
+TERR_DENS,SHN,AFR,SI,
+TERR_DENS,STP,AFR,SI,
+TERR_DENS,SEN,AFR,SI,
+TERR_DENS,SYC,AFR,SI,
+TERR_DENS,SLE,AFR,SI,
+TERR_DENS,SOM,AFR,SI,
+TERR_DENS,ZAF,AFR,SI,
+TERR_DENS,ZWE,AFR,SI,
+TERR_DENS,SSD,AFR,SI,
+TERR_DENS,SDN,AFR,SI,
+TERR_DENS,ESH,AFR,SI,
+TERR_DENS,SWZ,AFR,SI,
+TERR_DENS,TGO,AFR,SI,
+TERR_DENS,TUN,AFR,SI,
+TERR_DENS,UGA,AFR,SI,
+TERR_DENS,EGY,AFR,SI,
+TERR_DENS,TZA,AFR,SI,
+TERR_DENS,BFA,AFR,SI,
+TERR_DENS,ZMB,AFR,SI,
+TERR_DENS,ASM,APC,SI,
+TERR_DENS,AUS,APC,SI,
+TERR_DENS,SLB,APC,SI,
+TERR_DENS,BRN,APC,SI,
+TERR_DENS,MMR,APC,SI,
+TERR_DENS,KHM,APC,SI,
+TERR_DENS,TWN,APC,SI,
+TERR_DENS,CXR,APC,NO,Falta superficie terrestre 2023
+TERR_DENS,CCK,APC,NO,Falta superficie terrestre 2023
+TERR_DENS,COK,APC,SI,
+TERR_DENS,FJI,APC,SI,
+TERR_DENS,PYF,APC,SI,
+TERR_DENS,KIR,APC,SI,
+TERR_DENS,GUM,APC,SI,
+TERR_DENS,IDN,APC,SI,
+TERR_DENS,JPN,APC,SI,
+TERR_DENS,PRK,APC,SI,
+TERR_DENS,KOR,APC,SI,
+TERR_DENS,LAO,APC,SI,
+TERR_DENS,MYS,APC,SI,
+TERR_DENS,MNG,APC,SI,
+TERR_DENS,NRU,APC,SI,
+TERR_DENS,NCL,APC,SI,
+TERR_DENS,VUT,APC,SI,
+TERR_DENS,NZL,APC,SI,
+TERR_DENS,NIU,APC,SI,
+TERR_DENS,NFK,APC,NO,Falta superficie terrestre 2023
+TERR_DENS,MNP,APC,SI,
+TERR_DENS,FSM,APC,SI,
+TERR_DENS,MHL,APC,SI,
+TERR_DENS,PLW,APC,SI,
+TERR_DENS,PNG,APC,SI,
+TERR_DENS,PHL,APC,SI,
+TERR_DENS,PCN,APC,NO,Falta superficie terrestre 2023
+TERR_DENS,TLS,APC,SI,
+TERR_DENS,SGP,APC,SI,
+TERR_DENS,VNM,APC,SI,
+TERR_DENS,THA,APC,SI,
+TERR_DENS,TKL,APC,SI,
+TERR_DENS,TON,APC,SI,
+TERR_DENS,TUV,APC,SI,
+TERR_DENS,WLF,APC,SI,
+TERR_DENS,WSM,APC,SI,
+TERR_DENS,CHN,CHN,SI,
+TERR_DENS,HKG,CHN,SI,
+TERR_DENS,MAC,CHN,SI,
+TERR_DENS,ALB,EUR,SI,
+TERR_DENS,AND,EUR,SI,
+TERR_DENS,AUT,EUR,SI,
+TERR_DENS,BEL,EUR,SI,
+TERR_DENS,BIH,EUR,SI,
+TERR_DENS,BGR,EUR,SI,
+TERR_DENS,HRV,EUR,SI,
+TERR_DENS,CYP,EUR,SI,
+TERR_DENS,CZE,EUR,SI,
+TERR_DENS,DNK,EUR,SI,
+TERR_DENS,EST,EUR,SI,
+TERR_DENS,FRO,EUR,SI,
+TERR_DENS,FIN,EUR,SI,
+TERR_DENS,ALA,EUR,NO,Falta superficie terrestre 2023
+TERR_DENS,FRA,EUR,SI,
+TERR_DENS,DEU,EUR,SI,
+TERR_DENS,GIB,EUR,SI,
+TERR_DENS,GRC,EUR,SI,
+TERR_DENS,VAT,EUR,SI,
+TERR_DENS,HUN,EUR,SI,
+TERR_DENS,ISL,EUR,SI,
+TERR_DENS,IRL,EUR,SI,
+TERR_DENS,ITA,EUR,SI,
+TERR_DENS,LVA,EUR,SI,
+TERR_DENS,LIE,EUR,SI,
+TERR_DENS,LTU,EUR,SI,
+TERR_DENS,LUX,EUR,SI,
+TERR_DENS,MLT,EUR,SI,
+TERR_DENS,MCO,EUR,SI,
+TERR_DENS,MDA,EUR,SI,
+TERR_DENS,MNE,EUR,SI,
+TERR_DENS,NLD,EUR,SI,
+TERR_DENS,NOR,EUR,SI,
+TERR_DENS,POL,EUR,SI,
+TERR_DENS,PRT,EUR,SI,
+TERR_DENS,ROU,EUR,SI,
+TERR_DENS,SMR,EUR,SI,
+TERR_DENS,SRB,EUR,SI,
+TERR_DENS,SVK,EUR,SI,
+TERR_DENS,SVN,EUR,SI,
+TERR_DENS,ESP,EUR,SI,
+TERR_DENS,SJM,EUR,NO,Falta superficie terrestre 2023
+TERR_DENS,SWE,EUR,SI,
+TERR_DENS,CHE,EUR,SI,
+TERR_DENS,UKR,EUR,SI,
+TERR_DENS,MKD,EUR,SI,
+TERR_DENS,GBR,EUR,SI,
+TERR_DENS,GGY,EUR,NO,Falta superficie terrestre 2023
+TERR_DENS,JEY,EUR,NO,Falta superficie terrestre 2023
+TERR_DENS,IMN,EUR,SI,
+TERR_DENS,XKX,EUR,NO,Falta superficie terrestre 2023
+TERR_DENS,BHR,MDE,SI,
+TERR_DENS,PSE,MDE,SI,
+TERR_DENS,IRN,MDE,SI,
+TERR_DENS,IRQ,MDE,SI,
+TERR_DENS,ISR,MDE,SI,
+TERR_DENS,JOR,MDE,SI,
+TERR_DENS,KWT,MDE,SI,
+TERR_DENS,LBN,MDE,SI,
+TERR_DENS,OMN,MDE,SI,
+TERR_DENS,QAT,MDE,SI,
+TERR_DENS,SAU,MDE,SI,
+TERR_DENS,SYR,MDE,SI,
+TERR_DENS,ARE,MDE,SI,
+TERR_DENS,TUR,MDE,SI,
+TERR_DENS,YEM,MDE,SI,
+TERR_DENS,ATG,NAC,SI,
+TERR_DENS,BHS,NAC,SI,
+TERR_DENS,BRB,NAC,SI,
+TERR_DENS,BMU,NAC,SI,
+TERR_DENS,BLZ,NAC,SI,
+TERR_DENS,VGB,NAC,SI,
+TERR_DENS,CAN,NAC,SI,
+TERR_DENS,CYM,NAC,SI,
+TERR_DENS,CRI,NAC,SI,
+TERR_DENS,CUB,NAC,SI,
+TERR_DENS,DMA,NAC,SI,
+TERR_DENS,DOM,NAC,SI,
+TERR_DENS,SLV,NAC,SI,
+TERR_DENS,GRL,NAC,SI,
+TERR_DENS,GRD,NAC,SI,
+TERR_DENS,GLP,NAC,SI,
+TERR_DENS,GTM,NAC,SI,
+TERR_DENS,HTI,NAC,SI,
+TERR_DENS,HND,NAC,SI,
+TERR_DENS,JAM,NAC,SI,
+TERR_DENS,MTQ,NAC,SI,
+TERR_DENS,MEX,NAC,SI,
+TERR_DENS,MSR,NAC,SI,
+TERR_DENS,CUW,NAC,SI,
+TERR_DENS,ABW,NAC,SI,
+TERR_DENS,SXM,NAC,SI,
+TERR_DENS,BES,NAC,SI,
+TERR_DENS,NIC,NAC,SI,
+TERR_DENS,PAN,NAC,SI,
+TERR_DENS,PRI,NAC,SI,
+TERR_DENS,BLM,NAC,SI,
+TERR_DENS,KNA,NAC,SI,
+TERR_DENS,AIA,NAC,SI,
+TERR_DENS,LCA,NAC,SI,
+TERR_DENS,MAF,NAC,SI,
+TERR_DENS,SPM,NAC,SI,
+TERR_DENS,VCT,NAC,SI,
+TERR_DENS,TTO,NAC,SI,
+TERR_DENS,TCA,NAC,SI,
+TERR_DENS,USA,NAC,SI,
+TERR_DENS,VIR,NAC,SI,
+TERR_DENS,AZE,RUE,SI,
+TERR_DENS,ARM,RUE,SI,
+TERR_DENS,BLR,RUE,SI,
+TERR_DENS,GEO,RUE,SI,
+TERR_DENS,KAZ,RUE,SI,
+TERR_DENS,KGZ,RUE,SI,
+TERR_DENS,RUS,RUE,SI,
+TERR_DENS,TJK,RUE,SI,
+TERR_DENS,TKM,RUE,SI,
+TERR_DENS,UZB,RUE,SI,
+TERR_DENS,AFG,SAI,SI,
+TERR_DENS,BGD,SAI,SI,
+TERR_DENS,BTN,SAI,SI,
+TERR_DENS,LKA,SAI,SI,
+TERR_DENS,IND,SAI,SI,
+TERR_DENS,MDV,SAI,SI,
+TERR_DENS,NPL,SAI,SI,
+TERR_DENS,PAK,SAI,SI,
+TERR_DENS,ARG,SAM,SI,
+TERR_DENS,BOL,SAM,SI,
+TERR_DENS,BRA,SAM,SI,
+TERR_DENS,CHL,SAM,SI,
+TERR_DENS,COL,SAM,SI,
+TERR_DENS,ECU,SAM,SI,
+TERR_DENS,FLK,SAM,SI,
+TERR_DENS,GUF,SAM,SI,
+TERR_DENS,GUY,SAM,SI,
+TERR_DENS,PRY,SAM,SI,
+TERR_DENS,PER,SAM,SI,
+TERR_DENS,SUR,SAM,SI,
+TERR_DENS,URY,SAM,SI,
+TERR_DENS,VEN,SAM,SI,
+POB_URB,DZA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AGO,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BWA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IOT,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BDI,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CMR,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CPV,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CAF,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TCD,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,COM,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MYT,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,COG,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,COD,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BEN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GNQ,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ETH,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ERI,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,DJI,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GAB,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GMB,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GHA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GIN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CIV,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KEN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LSO,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LBR,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LBY,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MDG,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MWI,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MLI,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MRT,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MUS,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MAR,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MOZ,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NAM,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NER,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NGA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GNB,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,REU,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,RWA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SHN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,STP,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SEN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SYC,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SLE,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SOM,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ZAF,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ZWE,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SSD,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SDN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ESH,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SWZ,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TGO,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TUN,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,UGA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,EGY,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TZA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BFA,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ZMB,AFR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ASM,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AUS,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SLB,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BRN,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MMR,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KHM,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TWN,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CXR,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CCK,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,COK,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,FJI,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PYF,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KIR,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GUM,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IDN,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,JPN,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PRK,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KOR,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LAO,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MYS,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MNG,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NRU,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NCL,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VUT,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NZL,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NIU,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NFK,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MNP,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,FSM,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MHL,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PLW,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PNG,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PHL,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PCN,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TLS,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SGP,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VNM,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,THA,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TKL,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TON,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TUV,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,WLF,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,WSM,APC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CHN,CHN,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,HKG,CHN,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MAC,CHN,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ALB,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AND,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AUT,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BEL,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BIH,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BGR,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,HRV,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CYP,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CZE,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,DNK,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,EST,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,FRO,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,FIN,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ALA,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,FRA,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,DEU,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GIB,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GRC,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VAT,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,HUN,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ISL,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IRL,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ITA,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LVA,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LIE,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LTU,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LUX,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MLT,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MCO,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MDA,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MNE,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NLD,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NOR,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,POL,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PRT,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ROU,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SMR,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SRB,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SVK,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SVN,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ESP,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SJM,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SWE,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CHE,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,UKR,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MKD,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GBR,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GGY,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,JEY,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IMN,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,XKX,EUR,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BHR,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PSE,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IRN,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IRQ,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ISR,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,JOR,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KWT,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LBN,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,OMN,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,QAT,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SAU,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SYR,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ARE,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TUR,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,YEM,MDE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ATG,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BHS,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BRB,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BMU,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BLZ,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VGB,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CAN,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CYM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CRI,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CUB,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,DMA,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,DOM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SLV,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GRL,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GRD,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GLP,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GTM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,HTI,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,HND,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,JAM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MTQ,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MEX,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MSR,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CUW,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ABW,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SXM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BES,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NIC,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PAN,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PRI,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BLM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KNA,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AIA,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LCA,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MAF,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SPM,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VCT,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TTO,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TCA,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,USA,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VIR,NAC,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AZE,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ARM,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BLR,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GEO,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KAZ,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,KGZ,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,RUS,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TJK,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,TKM,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,UZB,RUE,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,AFG,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BGD,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BTN,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,LKA,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,IND,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,MDV,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,NPL,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PAK,SAI,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ARG,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BOL,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,BRA,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,CHL,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,COL,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,ECU,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,FLK,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GUF,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,GUY,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PRY,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,PER,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,SUR,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,URY,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_URB,VEN,SAM,NO,No existe serie nacional de poblacion urbana incorporada
+POB_EDAD,DZA,AFR,SI,
+POB_EDAD,AGO,AFR,SI,
+POB_EDAD,BWA,AFR,SI,
+POB_EDAD,IOT,AFR,NO,Falta edad mediana nacional 2023
+POB_EDAD,BDI,AFR,SI,
+POB_EDAD,CMR,AFR,SI,
+POB_EDAD,CPV,AFR,SI,
+POB_EDAD,CAF,AFR,SI,
+POB_EDAD,TCD,AFR,SI,
+POB_EDAD,COM,AFR,SI,
+POB_EDAD,MYT,AFR,SI,
+POB_EDAD,COG,AFR,SI,
+POB_EDAD,COD,AFR,SI,
+POB_EDAD,BEN,AFR,SI,
+POB_EDAD,GNQ,AFR,SI,
+POB_EDAD,ETH,AFR,SI,
+POB_EDAD,ERI,AFR,SI,
+POB_EDAD,DJI,AFR,SI,
+POB_EDAD,GAB,AFR,SI,
+POB_EDAD,GMB,AFR,SI,
+POB_EDAD,GHA,AFR,SI,
+POB_EDAD,GIN,AFR,SI,
+POB_EDAD,CIV,AFR,SI,
+POB_EDAD,KEN,AFR,SI,
+POB_EDAD,LSO,AFR,SI,
+POB_EDAD,LBR,AFR,SI,
+POB_EDAD,LBY,AFR,SI,
+POB_EDAD,MDG,AFR,SI,
+POB_EDAD,MWI,AFR,SI,
+POB_EDAD,MLI,AFR,SI,
+POB_EDAD,MRT,AFR,SI,
+POB_EDAD,MUS,AFR,SI,
+POB_EDAD,MAR,AFR,SI,
+POB_EDAD,MOZ,AFR,SI,
+POB_EDAD,NAM,AFR,SI,
+POB_EDAD,NER,AFR,SI,
+POB_EDAD,NGA,AFR,SI,
+POB_EDAD,GNB,AFR,SI,
+POB_EDAD,REU,AFR,SI,
+POB_EDAD,RWA,AFR,SI,
+POB_EDAD,SHN,AFR,SI,
+POB_EDAD,STP,AFR,SI,
+POB_EDAD,SEN,AFR,SI,
+POB_EDAD,SYC,AFR,SI,
+POB_EDAD,SLE,AFR,SI,
+POB_EDAD,SOM,AFR,SI,
+POB_EDAD,ZAF,AFR,SI,
+POB_EDAD,ZWE,AFR,SI,
+POB_EDAD,SSD,AFR,SI,
+POB_EDAD,SDN,AFR,SI,
+POB_EDAD,ESH,AFR,SI,
+POB_EDAD,SWZ,AFR,SI,
+POB_EDAD,TGO,AFR,SI,
+POB_EDAD,TUN,AFR,SI,
+POB_EDAD,UGA,AFR,SI,
+POB_EDAD,EGY,AFR,SI,
+POB_EDAD,TZA,AFR,SI,
+POB_EDAD,BFA,AFR,SI,
+POB_EDAD,ZMB,AFR,SI,
+POB_EDAD,ASM,APC,SI,
+POB_EDAD,AUS,APC,SI,
+POB_EDAD,SLB,APC,SI,
+POB_EDAD,BRN,APC,SI,
+POB_EDAD,MMR,APC,SI,
+POB_EDAD,KHM,APC,SI,
+POB_EDAD,TWN,APC,SI,
+POB_EDAD,CXR,APC,NO,Falta edad mediana nacional 2023
+POB_EDAD,CCK,APC,NO,Falta edad mediana nacional 2023
+POB_EDAD,COK,APC,SI,
+POB_EDAD,FJI,APC,SI,
+POB_EDAD,PYF,APC,SI,
+POB_EDAD,KIR,APC,SI,
+POB_EDAD,GUM,APC,SI,
+POB_EDAD,IDN,APC,SI,
+POB_EDAD,JPN,APC,SI,
+POB_EDAD,PRK,APC,SI,
+POB_EDAD,KOR,APC,SI,
+POB_EDAD,LAO,APC,SI,
+POB_EDAD,MYS,APC,SI,
+POB_EDAD,MNG,APC,SI,
+POB_EDAD,NRU,APC,SI,
+POB_EDAD,NCL,APC,SI,
+POB_EDAD,VUT,APC,SI,
+POB_EDAD,NZL,APC,SI,
+POB_EDAD,NIU,APC,SI,
+POB_EDAD,NFK,APC,NO,Falta edad mediana nacional 2023
+POB_EDAD,MNP,APC,SI,
+POB_EDAD,FSM,APC,SI,
+POB_EDAD,MHL,APC,SI,
+POB_EDAD,PLW,APC,SI,
+POB_EDAD,PNG,APC,SI,
+POB_EDAD,PHL,APC,SI,
+POB_EDAD,PCN,APC,NO,Falta edad mediana nacional 2023
+POB_EDAD,TLS,APC,SI,
+POB_EDAD,SGP,APC,SI,
+POB_EDAD,VNM,APC,SI,
+POB_EDAD,THA,APC,SI,
+POB_EDAD,TKL,APC,SI,
+POB_EDAD,TON,APC,SI,
+POB_EDAD,TUV,APC,SI,
+POB_EDAD,WLF,APC,SI,
+POB_EDAD,WSM,APC,SI,
+POB_EDAD,CHN,CHN,SI,
+POB_EDAD,HKG,CHN,SI,
+POB_EDAD,MAC,CHN,SI,
+POB_EDAD,ALB,EUR,SI,
+POB_EDAD,AND,EUR,SI,
+POB_EDAD,AUT,EUR,SI,
+POB_EDAD,BEL,EUR,SI,
+POB_EDAD,BIH,EUR,SI,
+POB_EDAD,BGR,EUR,SI,
+POB_EDAD,HRV,EUR,SI,
+POB_EDAD,CYP,EUR,SI,
+POB_EDAD,CZE,EUR,SI,
+POB_EDAD,DNK,EUR,SI,
+POB_EDAD,EST,EUR,SI,
+POB_EDAD,FRO,EUR,SI,
+POB_EDAD,FIN,EUR,SI,
+POB_EDAD,ALA,EUR,NO,Falta edad mediana nacional 2023
+POB_EDAD,FRA,EUR,SI,
+POB_EDAD,DEU,EUR,SI,
+POB_EDAD,GIB,EUR,SI,
+POB_EDAD,GRC,EUR,SI,
+POB_EDAD,VAT,EUR,SI,
+POB_EDAD,HUN,EUR,SI,
+POB_EDAD,ISL,EUR,SI,
+POB_EDAD,IRL,EUR,SI,
+POB_EDAD,ITA,EUR,SI,
+POB_EDAD,LVA,EUR,SI,
+POB_EDAD,LIE,EUR,SI,
+POB_EDAD,LTU,EUR,SI,
+POB_EDAD,LUX,EUR,SI,
+POB_EDAD,MLT,EUR,SI,
+POB_EDAD,MCO,EUR,SI,
+POB_EDAD,MDA,EUR,SI,
+POB_EDAD,MNE,EUR,SI,
+POB_EDAD,NLD,EUR,SI,
+POB_EDAD,NOR,EUR,SI,
+POB_EDAD,POL,EUR,SI,
+POB_EDAD,PRT,EUR,SI,
+POB_EDAD,ROU,EUR,SI,
+POB_EDAD,SMR,EUR,SI,
+POB_EDAD,SRB,EUR,SI,
+POB_EDAD,SVK,EUR,SI,
+POB_EDAD,SVN,EUR,SI,
+POB_EDAD,ESP,EUR,SI,
+POB_EDAD,SJM,EUR,NO,Falta edad mediana nacional 2023
+POB_EDAD,SWE,EUR,SI,
+POB_EDAD,CHE,EUR,SI,
+POB_EDAD,UKR,EUR,SI,
+POB_EDAD,MKD,EUR,SI,
+POB_EDAD,GBR,EUR,SI,
+POB_EDAD,GGY,EUR,SI,
+POB_EDAD,JEY,EUR,SI,
+POB_EDAD,IMN,EUR,SI,
+POB_EDAD,XKX,EUR,NO,Falta edad mediana nacional 2023
+POB_EDAD,BHR,MDE,SI,
+POB_EDAD,PSE,MDE,SI,
+POB_EDAD,IRN,MDE,SI,
+POB_EDAD,IRQ,MDE,SI,
+POB_EDAD,ISR,MDE,SI,
+POB_EDAD,JOR,MDE,SI,
+POB_EDAD,KWT,MDE,SI,
+POB_EDAD,LBN,MDE,SI,
+POB_EDAD,OMN,MDE,SI,
+POB_EDAD,QAT,MDE,SI,
+POB_EDAD,SAU,MDE,SI,
+POB_EDAD,SYR,MDE,SI,
+POB_EDAD,ARE,MDE,SI,
+POB_EDAD,TUR,MDE,SI,
+POB_EDAD,YEM,MDE,SI,
+POB_EDAD,ATG,NAC,SI,
+POB_EDAD,BHS,NAC,SI,
+POB_EDAD,BRB,NAC,SI,
+POB_EDAD,BMU,NAC,SI,
+POB_EDAD,BLZ,NAC,SI,
+POB_EDAD,VGB,NAC,SI,
+POB_EDAD,CAN,NAC,SI,
+POB_EDAD,CYM,NAC,SI,
+POB_EDAD,CRI,NAC,SI,
+POB_EDAD,CUB,NAC,SI,
+POB_EDAD,DMA,NAC,SI,
+POB_EDAD,DOM,NAC,SI,
+POB_EDAD,SLV,NAC,SI,
+POB_EDAD,GRL,NAC,SI,
+POB_EDAD,GRD,NAC,SI,
+POB_EDAD,GLP,NAC,SI,
+POB_EDAD,GTM,NAC,SI,
+POB_EDAD,HTI,NAC,SI,
+POB_EDAD,HND,NAC,SI,
+POB_EDAD,JAM,NAC,SI,
+POB_EDAD,MTQ,NAC,SI,
+POB_EDAD,MEX,NAC,SI,
+POB_EDAD,MSR,NAC,SI,
+POB_EDAD,CUW,NAC,SI,
+POB_EDAD,ABW,NAC,SI,
+POB_EDAD,SXM,NAC,SI,
+POB_EDAD,BES,NAC,SI,
+POB_EDAD,NIC,NAC,SI,
+POB_EDAD,PAN,NAC,SI,
+POB_EDAD,PRI,NAC,SI,
+POB_EDAD,BLM,NAC,SI,
+POB_EDAD,KNA,NAC,SI,
+POB_EDAD,AIA,NAC,SI,
+POB_EDAD,LCA,NAC,SI,
+POB_EDAD,MAF,NAC,SI,
+POB_EDAD,SPM,NAC,SI,
+POB_EDAD,VCT,NAC,SI,
+POB_EDAD,TTO,NAC,SI,
+POB_EDAD,TCA,NAC,SI,
+POB_EDAD,USA,NAC,SI,
+POB_EDAD,VIR,NAC,SI,
+POB_EDAD,AZE,RUE,SI,
+POB_EDAD,ARM,RUE,SI,
+POB_EDAD,BLR,RUE,SI,
+POB_EDAD,GEO,RUE,SI,
+POB_EDAD,KAZ,RUE,SI,
+POB_EDAD,KGZ,RUE,SI,
+POB_EDAD,RUS,RUE,SI,
+POB_EDAD,TJK,RUE,SI,
+POB_EDAD,TKM,RUE,SI,
+POB_EDAD,UZB,RUE,SI,
+POB_EDAD,AFG,SAI,SI,
+POB_EDAD,BGD,SAI,SI,
+POB_EDAD,BTN,SAI,SI,
+POB_EDAD,LKA,SAI,SI,
+POB_EDAD,IND,SAI,SI,
+POB_EDAD,MDV,SAI,SI,
+POB_EDAD,NPL,SAI,SI,
+POB_EDAD,PAK,SAI,SI,
+POB_EDAD,ARG,SAM,SI,
+POB_EDAD,BOL,SAM,SI,
+POB_EDAD,BRA,SAM,SI,
+POB_EDAD,CHL,SAM,SI,
+POB_EDAD,COL,SAM,SI,
+POB_EDAD,ECU,SAM,SI,
+POB_EDAD,FLK,SAM,SI,
+POB_EDAD,GUF,SAM,SI,
+POB_EDAD,GUY,SAM,SI,
+POB_EDAD,PRY,SAM,SI,
+POB_EDAD,PER,SAM,SI,
+POB_EDAD,SUR,SAM,SI,
+POB_EDAD,URY,SAM,SI,
+POB_EDAD,VEN,SAM,SI,
+HUM_EV,DZA,AFR,SI,
+HUM_EV,AGO,AFR,SI,
+HUM_EV,BWA,AFR,SI,
+HUM_EV,IOT,AFR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,BDI,AFR,SI,
+HUM_EV,CMR,AFR,SI,
+HUM_EV,CPV,AFR,SI,
+HUM_EV,CAF,AFR,SI,
+HUM_EV,TCD,AFR,SI,
+HUM_EV,COM,AFR,SI,
+HUM_EV,MYT,AFR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,COG,AFR,SI,
+HUM_EV,COD,AFR,SI,
+HUM_EV,BEN,AFR,SI,
+HUM_EV,GNQ,AFR,SI,
+HUM_EV,ETH,AFR,SI,
+HUM_EV,ERI,AFR,SI,
+HUM_EV,DJI,AFR,SI,
+HUM_EV,GAB,AFR,SI,
+HUM_EV,GMB,AFR,SI,
+HUM_EV,GHA,AFR,SI,
+HUM_EV,GIN,AFR,SI,
+HUM_EV,CIV,AFR,SI,
+HUM_EV,KEN,AFR,SI,
+HUM_EV,LSO,AFR,SI,
+HUM_EV,LBR,AFR,SI,
+HUM_EV,LBY,AFR,SI,
+HUM_EV,MDG,AFR,SI,
+HUM_EV,MWI,AFR,SI,
+HUM_EV,MLI,AFR,SI,
+HUM_EV,MRT,AFR,SI,
+HUM_EV,MUS,AFR,SI,
+HUM_EV,MAR,AFR,SI,
+HUM_EV,MOZ,AFR,SI,
+HUM_EV,NAM,AFR,SI,
+HUM_EV,NER,AFR,SI,
+HUM_EV,NGA,AFR,SI,
+HUM_EV,GNB,AFR,SI,
+HUM_EV,REU,AFR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,RWA,AFR,SI,
+HUM_EV,SHN,AFR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,STP,AFR,SI,
+HUM_EV,SEN,AFR,SI,
+HUM_EV,SYC,AFR,SI,
+HUM_EV,SLE,AFR,SI,
+HUM_EV,SOM,AFR,SI,
+HUM_EV,ZAF,AFR,SI,
+HUM_EV,ZWE,AFR,SI,
+HUM_EV,SSD,AFR,SI,
+HUM_EV,SDN,AFR,SI,
+HUM_EV,ESH,AFR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,SWZ,AFR,SI,
+HUM_EV,TGO,AFR,SI,
+HUM_EV,TUN,AFR,SI,
+HUM_EV,UGA,AFR,SI,
+HUM_EV,EGY,AFR,SI,
+HUM_EV,TZA,AFR,SI,
+HUM_EV,BFA,AFR,SI,
+HUM_EV,ZMB,AFR,SI,
+HUM_EV,ASM,APC,SI,
+HUM_EV,AUS,APC,SI,
+HUM_EV,SLB,APC,SI,
+HUM_EV,BRN,APC,SI,
+HUM_EV,MMR,APC,SI,
+HUM_EV,KHM,APC,SI,
+HUM_EV,TWN,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,CXR,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,CCK,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,COK,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,FJI,APC,SI,
+HUM_EV,PYF,APC,SI,
+HUM_EV,KIR,APC,SI,
+HUM_EV,GUM,APC,SI,
+HUM_EV,IDN,APC,SI,
+HUM_EV,JPN,APC,SI,
+HUM_EV,PRK,APC,SI,
+HUM_EV,KOR,APC,SI,
+HUM_EV,LAO,APC,SI,
+HUM_EV,MYS,APC,SI,
+HUM_EV,MNG,APC,SI,
+HUM_EV,NRU,APC,SI,
+HUM_EV,NCL,APC,SI,
+HUM_EV,VUT,APC,SI,
+HUM_EV,NZL,APC,SI,
+HUM_EV,NIU,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,NFK,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,MNP,APC,SI,
+HUM_EV,FSM,APC,SI,
+HUM_EV,MHL,APC,SI,
+HUM_EV,PLW,APC,SI,
+HUM_EV,PNG,APC,SI,
+HUM_EV,PHL,APC,SI,
+HUM_EV,PCN,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,TLS,APC,SI,
+HUM_EV,SGP,APC,SI,
+HUM_EV,VNM,APC,SI,
+HUM_EV,THA,APC,SI,
+HUM_EV,TKL,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,TON,APC,SI,
+HUM_EV,TUV,APC,SI,
+HUM_EV,WLF,APC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,WSM,APC,SI,
+HUM_EV,CHN,CHN,SI,
+HUM_EV,HKG,CHN,SI,
+HUM_EV,MAC,CHN,SI,
+HUM_EV,ALB,EUR,SI,
+HUM_EV,AND,EUR,SI,
+HUM_EV,AUT,EUR,SI,
+HUM_EV,BEL,EUR,SI,
+HUM_EV,BIH,EUR,SI,
+HUM_EV,BGR,EUR,SI,
+HUM_EV,HRV,EUR,SI,
+HUM_EV,CYP,EUR,SI,
+HUM_EV,CZE,EUR,SI,
+HUM_EV,DNK,EUR,SI,
+HUM_EV,EST,EUR,SI,
+HUM_EV,FRO,EUR,SI,
+HUM_EV,FIN,EUR,SI,
+HUM_EV,ALA,EUR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,FRA,EUR,SI,
+HUM_EV,DEU,EUR,SI,
+HUM_EV,GIB,EUR,SI,
+HUM_EV,GRC,EUR,SI,
+HUM_EV,VAT,EUR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,HUN,EUR,SI,
+HUM_EV,ISL,EUR,SI,
+HUM_EV,IRL,EUR,SI,
+HUM_EV,ITA,EUR,SI,
+HUM_EV,LVA,EUR,SI,
+HUM_EV,LIE,EUR,SI,
+HUM_EV,LTU,EUR,SI,
+HUM_EV,LUX,EUR,SI,
+HUM_EV,MLT,EUR,SI,
+HUM_EV,MCO,EUR,SI,
+HUM_EV,MDA,EUR,SI,
+HUM_EV,MNE,EUR,SI,
+HUM_EV,NLD,EUR,SI,
+HUM_EV,NOR,EUR,SI,
+HUM_EV,POL,EUR,SI,
+HUM_EV,PRT,EUR,SI,
+HUM_EV,ROU,EUR,SI,
+HUM_EV,SMR,EUR,SI,
+HUM_EV,SRB,EUR,SI,
+HUM_EV,SVK,EUR,SI,
+HUM_EV,SVN,EUR,SI,
+HUM_EV,ESP,EUR,SI,
+HUM_EV,SJM,EUR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,SWE,EUR,SI,
+HUM_EV,CHE,EUR,SI,
+HUM_EV,UKR,EUR,SI,
+HUM_EV,MKD,EUR,SI,
+HUM_EV,GBR,EUR,SI,
+HUM_EV,GGY,EUR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,JEY,EUR,NO,Falta esperanza de vida nacional 2023
+HUM_EV,IMN,EUR,SI,
+HUM_EV,XKX,EUR,NO,Falta poblacion 2023
+HUM_EV,BHR,MDE,SI,
+HUM_EV,PSE,MDE,SI,
+HUM_EV,IRN,MDE,SI,
+HUM_EV,IRQ,MDE,SI,
+HUM_EV,ISR,MDE,SI,
+HUM_EV,JOR,MDE,SI,
+HUM_EV,KWT,MDE,SI,
+HUM_EV,LBN,MDE,SI,
+HUM_EV,OMN,MDE,SI,
+HUM_EV,QAT,MDE,SI,
+HUM_EV,SAU,MDE,SI,
+HUM_EV,SYR,MDE,SI,
+HUM_EV,ARE,MDE,SI,
+HUM_EV,TUR,MDE,SI,
+HUM_EV,YEM,MDE,SI,
+HUM_EV,ATG,NAC,SI,
+HUM_EV,BHS,NAC,SI,
+HUM_EV,BRB,NAC,SI,
+HUM_EV,BMU,NAC,SI,
+HUM_EV,BLZ,NAC,SI,
+HUM_EV,VGB,NAC,SI,
+HUM_EV,CAN,NAC,SI,
+HUM_EV,CYM,NAC,SI,
+HUM_EV,CRI,NAC,SI,
+HUM_EV,CUB,NAC,SI,
+HUM_EV,DMA,NAC,SI,
+HUM_EV,DOM,NAC,SI,
+HUM_EV,SLV,NAC,SI,
+HUM_EV,GRL,NAC,SI,
+HUM_EV,GRD,NAC,SI,
+HUM_EV,GLP,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,GTM,NAC,SI,
+HUM_EV,HTI,NAC,SI,
+HUM_EV,HND,NAC,SI,
+HUM_EV,JAM,NAC,SI,
+HUM_EV,MTQ,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,MEX,NAC,SI,
+HUM_EV,MSR,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,CUW,NAC,SI,
+HUM_EV,ABW,NAC,SI,
+HUM_EV,SXM,NAC,SI,
+HUM_EV,BES,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,NIC,NAC,SI,
+HUM_EV,PAN,NAC,SI,
+HUM_EV,PRI,NAC,SI,
+HUM_EV,BLM,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,KNA,NAC,SI,
+HUM_EV,AIA,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,LCA,NAC,SI,
+HUM_EV,MAF,NAC,SI,
+HUM_EV,SPM,NAC,NO,Falta esperanza de vida nacional 2023
+HUM_EV,VCT,NAC,SI,
+HUM_EV,TTO,NAC,SI,
+HUM_EV,TCA,NAC,SI,
+HUM_EV,USA,NAC,SI,
+HUM_EV,VIR,NAC,SI,
+HUM_EV,AZE,RUE,SI,
+HUM_EV,ARM,RUE,SI,
+HUM_EV,BLR,RUE,SI,
+HUM_EV,GEO,RUE,SI,
+HUM_EV,KAZ,RUE,SI,
+HUM_EV,KGZ,RUE,SI,
+HUM_EV,RUS,RUE,SI,
+HUM_EV,TJK,RUE,SI,
+HUM_EV,TKM,RUE,SI,
+HUM_EV,UZB,RUE,SI,
+HUM_EV,AFG,SAI,SI,
+HUM_EV,BGD,SAI,SI,
+HUM_EV,BTN,SAI,SI,
+HUM_EV,LKA,SAI,SI,
+HUM_EV,IND,SAI,SI,
+HUM_EV,MDV,SAI,SI,
+HUM_EV,NPL,SAI,SI,
+HUM_EV,PAK,SAI,SI,
+HUM_EV,ARG,SAM,SI,
+HUM_EV,BOL,SAM,SI,
+HUM_EV,BRA,SAM,SI,
+HUM_EV,CHL,SAM,SI,
+HUM_EV,COL,SAM,SI,
+HUM_EV,ECU,SAM,SI,
+HUM_EV,FLK,SAM,NO,Falta esperanza de vida nacional 2023
+HUM_EV,GUF,SAM,NO,Falta esperanza de vida nacional 2023
+HUM_EV,GUY,SAM,SI,
+HUM_EV,PRY,SAM,SI,
+HUM_EV,PER,SAM,SI,
+HUM_EV,SUR,SAM,SI,
+HUM_EV,URY,SAM,SI,
+HUM_EV,VEN,SAM,SI,
+ECO_PC,DZA,AFR,SI,
+ECO_PC,AGO,AFR,SI,
+ECO_PC,BWA,AFR,SI,
+ECO_PC,IOT,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,BDI,AFR,SI,
+ECO_PC,CMR,AFR,SI,
+ECO_PC,CPV,AFR,SI,
+ECO_PC,CAF,AFR,SI,
+ECO_PC,TCD,AFR,SI,
+ECO_PC,COM,AFR,SI,
+ECO_PC,MYT,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,COG,AFR,SI,
+ECO_PC,COD,AFR,SI,
+ECO_PC,BEN,AFR,SI,
+ECO_PC,GNQ,AFR,SI,
+ECO_PC,ETH,AFR,SI,
+ECO_PC,ERI,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,DJI,AFR,SI,
+ECO_PC,GAB,AFR,SI,
+ECO_PC,GMB,AFR,SI,
+ECO_PC,GHA,AFR,SI,
+ECO_PC,GIN,AFR,SI,
+ECO_PC,CIV,AFR,SI,
+ECO_PC,KEN,AFR,SI,
+ECO_PC,LSO,AFR,SI,
+ECO_PC,LBR,AFR,SI,
+ECO_PC,LBY,AFR,SI,
+ECO_PC,MDG,AFR,SI,
+ECO_PC,MWI,AFR,SI,
+ECO_PC,MLI,AFR,SI,
+ECO_PC,MRT,AFR,SI,
+ECO_PC,MUS,AFR,SI,
+ECO_PC,MAR,AFR,SI,
+ECO_PC,MOZ,AFR,SI,
+ECO_PC,NAM,AFR,SI,
+ECO_PC,NER,AFR,SI,
+ECO_PC,NGA,AFR,SI,
+ECO_PC,GNB,AFR,SI,
+ECO_PC,REU,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,RWA,AFR,SI,
+ECO_PC,SHN,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,STP,AFR,SI,
+ECO_PC,SEN,AFR,SI,
+ECO_PC,SYC,AFR,SI,
+ECO_PC,SLE,AFR,SI,
+ECO_PC,SOM,AFR,SI,
+ECO_PC,ZAF,AFR,SI,
+ECO_PC,ZWE,AFR,SI,
+ECO_PC,SSD,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,SDN,AFR,SI,
+ECO_PC,ESH,AFR,NO,Falta PIB nominal nacional 2024
+ECO_PC,SWZ,AFR,SI,
+ECO_PC,TGO,AFR,SI,
+ECO_PC,TUN,AFR,SI,
+ECO_PC,UGA,AFR,SI,
+ECO_PC,EGY,AFR,SI,
+ECO_PC,TZA,AFR,SI,
+ECO_PC,BFA,AFR,SI,
+ECO_PC,ZMB,AFR,SI,
+ECO_PC,ASM,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,AUS,APC,SI,
+ECO_PC,SLB,APC,SI,
+ECO_PC,BRN,APC,SI,
+ECO_PC,MMR,APC,SI,
+ECO_PC,KHM,APC,SI,
+ECO_PC,TWN,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,CXR,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,CCK,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,COK,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,FJI,APC,SI,
+ECO_PC,PYF,APC,SI,
+ECO_PC,KIR,APC,SI,
+ECO_PC,GUM,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,IDN,APC,SI,
+ECO_PC,JPN,APC,SI,
+ECO_PC,PRK,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,KOR,APC,SI,
+ECO_PC,LAO,APC,SI,
+ECO_PC,MYS,APC,SI,
+ECO_PC,MNG,APC,SI,
+ECO_PC,NRU,APC,SI,
+ECO_PC,NCL,APC,SI,
+ECO_PC,VUT,APC,SI,
+ECO_PC,NZL,APC,SI,
+ECO_PC,NIU,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,NFK,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,MNP,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,FSM,APC,SI,
+ECO_PC,MHL,APC,SI,
+ECO_PC,PLW,APC,SI,
+ECO_PC,PNG,APC,SI,
+ECO_PC,PHL,APC,SI,
+ECO_PC,PCN,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,TLS,APC,SI,
+ECO_PC,SGP,APC,SI,
+ECO_PC,VNM,APC,SI,
+ECO_PC,THA,APC,SI,
+ECO_PC,TKL,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,TON,APC,SI,
+ECO_PC,TUV,APC,SI,
+ECO_PC,WLF,APC,NO,Falta PIB nominal nacional 2024
+ECO_PC,WSM,APC,SI,
+ECO_PC,CHN,CHN,SI,
+ECO_PC,HKG,CHN,SI,
+ECO_PC,MAC,CHN,SI,
+ECO_PC,ALB,EUR,SI,
+ECO_PC,AND,EUR,SI,
+ECO_PC,AUT,EUR,SI,
+ECO_PC,BEL,EUR,SI,
+ECO_PC,BIH,EUR,SI,
+ECO_PC,BGR,EUR,SI,
+ECO_PC,HRV,EUR,SI,
+ECO_PC,CYP,EUR,SI,
+ECO_PC,CZE,EUR,SI,
+ECO_PC,DNK,EUR,SI,
+ECO_PC,EST,EUR,SI,
+ECO_PC,FRO,EUR,SI,
+ECO_PC,FIN,EUR,SI,
+ECO_PC,ALA,EUR,NO,Falta PIB nominal nacional 2024
+ECO_PC,FRA,EUR,SI,
+ECO_PC,DEU,EUR,SI,
+ECO_PC,GIB,EUR,NO,Falta PIB nominal nacional 2024
+ECO_PC,GRC,EUR,SI,
+ECO_PC,VAT,EUR,NO,Falta PIB nominal nacional 2024
+ECO_PC,HUN,EUR,SI,
+ECO_PC,ISL,EUR,SI,
+ECO_PC,IRL,EUR,SI,
+ECO_PC,ITA,EUR,SI,
+ECO_PC,LVA,EUR,SI,
+ECO_PC,LIE,EUR,SI,
+ECO_PC,LTU,EUR,SI,
+ECO_PC,LUX,EUR,SI,
+ECO_PC,MLT,EUR,SI,
+ECO_PC,MCO,EUR,SI,
+ECO_PC,MDA,EUR,SI,
+ECO_PC,MNE,EUR,SI,
+ECO_PC,NLD,EUR,SI,
+ECO_PC,NOR,EUR,SI,
+ECO_PC,POL,EUR,SI,
+ECO_PC,PRT,EUR,SI,
+ECO_PC,ROU,EUR,SI,
+ECO_PC,SMR,EUR,NO,PIB disponible solo para 2023.0; se exige 2024
+ECO_PC,SRB,EUR,SI,
+ECO_PC,SVK,EUR,SI,
+ECO_PC,SVN,EUR,SI,
+ECO_PC,ESP,EUR,SI,
+ECO_PC,SJM,EUR,NO,Falta PIB nominal nacional 2024
+ECO_PC,SWE,EUR,SI,
+ECO_PC,CHE,EUR,SI,
+ECO_PC,UKR,EUR,SI,
+ECO_PC,MKD,EUR,SI,
+ECO_PC,GBR,EUR,SI,
+ECO_PC,GGY,EUR,NO,Falta PIB nominal nacional 2024
+ECO_PC,JEY,EUR,NO,Falta PIB nominal nacional 2024
+ECO_PC,IMN,EUR,NO,PIB disponible solo para 2023.0; se exige 2024
+ECO_PC,XKX,EUR,NO,Falta poblacion 2024
+ECO_PC,BHR,MDE,SI,
+ECO_PC,PSE,MDE,SI,
+ECO_PC,IRN,MDE,SI,
+ECO_PC,IRQ,MDE,SI,
+ECO_PC,ISR,MDE,SI,
+ECO_PC,JOR,MDE,SI,
+ECO_PC,KWT,MDE,SI,
+ECO_PC,LBN,MDE,SI,
+ECO_PC,OMN,MDE,SI,
+ECO_PC,QAT,MDE,SI,
+ECO_PC,SAU,MDE,SI,
+ECO_PC,SYR,MDE,NO,Falta PIB nominal nacional 2024
+ECO_PC,ARE,MDE,SI,
+ECO_PC,TUR,MDE,SI,
+ECO_PC,YEM,MDE,NO,Falta PIB nominal nacional 2024
+ECO_PC,ATG,NAC,SI,
+ECO_PC,BHS,NAC,SI,
+ECO_PC,BRB,NAC,SI,
+ECO_PC,BMU,NAC,SI,
+ECO_PC,BLZ,NAC,SI,
+ECO_PC,VGB,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,CAN,NAC,SI,
+ECO_PC,CYM,NAC,SI,
+ECO_PC,CRI,NAC,SI,
+ECO_PC,CUB,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,DMA,NAC,SI,
+ECO_PC,DOM,NAC,SI,
+ECO_PC,SLV,NAC,SI,
+ECO_PC,GRL,NAC,NO,PIB disponible solo para 2023.0; se exige 2024
+ECO_PC,GRD,NAC,SI,
+ECO_PC,GLP,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,GTM,NAC,SI,
+ECO_PC,HTI,NAC,SI,
+ECO_PC,HND,NAC,SI,
+ECO_PC,JAM,NAC,SI,
+ECO_PC,MTQ,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,MEX,NAC,SI,
+ECO_PC,MSR,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,CUW,NAC,SI,
+ECO_PC,ABW,NAC,SI,
+ECO_PC,SXM,NAC,SI,
+ECO_PC,BES,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,NIC,NAC,SI,
+ECO_PC,PAN,NAC,SI,
+ECO_PC,PRI,NAC,SI,
+ECO_PC,BLM,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,KNA,NAC,SI,
+ECO_PC,AIA,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,LCA,NAC,SI,
+ECO_PC,MAF,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,SPM,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,VCT,NAC,SI,
+ECO_PC,TTO,NAC,SI,
+ECO_PC,TCA,NAC,SI,
+ECO_PC,USA,NAC,SI,
+ECO_PC,VIR,NAC,NO,Falta PIB nominal nacional 2024
+ECO_PC,AZE,RUE,SI,
+ECO_PC,ARM,RUE,SI,
+ECO_PC,BLR,RUE,SI,
+ECO_PC,GEO,RUE,SI,
+ECO_PC,KAZ,RUE,SI,
+ECO_PC,KGZ,RUE,SI,
+ECO_PC,RUS,RUE,SI,
+ECO_PC,TJK,RUE,SI,
+ECO_PC,TKM,RUE,SI,
+ECO_PC,UZB,RUE,SI,
+ECO_PC,AFG,SAI,SI,
+ECO_PC,BGD,SAI,SI,
+ECO_PC,BTN,SAI,SI,
+ECO_PC,LKA,SAI,SI,
+ECO_PC,IND,SAI,SI,
+ECO_PC,MDV,SAI,SI,
+ECO_PC,NPL,SAI,SI,
+ECO_PC,PAK,SAI,SI,
+ECO_PC,ARG,SAM,SI,
+ECO_PC,BOL,SAM,SI,
+ECO_PC,BRA,SAM,SI,
+ECO_PC,CHL,SAM,SI,
+ECO_PC,COL,SAM,SI,
+ECO_PC,ECU,SAM,SI,
+ECO_PC,FLK,SAM,NO,Falta PIB nominal nacional 2024
+ECO_PC,GUF,SAM,NO,Falta PIB nominal nacional 2024
+ECO_PC,GUY,SAM,SI,
+ECO_PC,PRY,SAM,SI,
+ECO_PC,PER,SAM,SI,
+ECO_PC,SUR,SAM,SI,
+ECO_PC,URY,SAM,SI,
+ECO_PC,VEN,SAM,SI,
+HUM_IDH,DZA,AFR,SI,
+HUM_IDH,AGO,AFR,SI,
+HUM_IDH,BWA,AFR,SI,
+HUM_IDH,IOT,AFR,NO,Falta IDH nacional 2023
+HUM_IDH,BDI,AFR,SI,
+HUM_IDH,CMR,AFR,SI,
+HUM_IDH,CPV,AFR,SI,
+HUM_IDH,CAF,AFR,SI,
+HUM_IDH,TCD,AFR,SI,
+HUM_IDH,COM,AFR,SI,
+HUM_IDH,MYT,AFR,NO,Falta IDH nacional 2023
+HUM_IDH,COG,AFR,SI,
+HUM_IDH,COD,AFR,SI,
+HUM_IDH,BEN,AFR,SI,
+HUM_IDH,GNQ,AFR,SI,
+HUM_IDH,ETH,AFR,SI,
+HUM_IDH,ERI,AFR,SI,
+HUM_IDH,DJI,AFR,SI,
+HUM_IDH,GAB,AFR,SI,
+HUM_IDH,GMB,AFR,SI,
+HUM_IDH,GHA,AFR,SI,
+HUM_IDH,GIN,AFR,SI,
+HUM_IDH,CIV,AFR,SI,
+HUM_IDH,KEN,AFR,SI,
+HUM_IDH,LSO,AFR,SI,
+HUM_IDH,LBR,AFR,SI,
+HUM_IDH,LBY,AFR,SI,
+HUM_IDH,MDG,AFR,SI,
+HUM_IDH,MWI,AFR,SI,
+HUM_IDH,MLI,AFR,SI,
+HUM_IDH,MRT,AFR,SI,
+HUM_IDH,MUS,AFR,SI,
+HUM_IDH,MAR,AFR,SI,
+HUM_IDH,MOZ,AFR,SI,
+HUM_IDH,NAM,AFR,SI,
+HUM_IDH,NER,AFR,SI,
+HUM_IDH,NGA,AFR,SI,
+HUM_IDH,GNB,AFR,SI,
+HUM_IDH,REU,AFR,NO,Falta IDH nacional 2023
+HUM_IDH,RWA,AFR,SI,
+HUM_IDH,SHN,AFR,NO,Falta IDH nacional 2023
+HUM_IDH,STP,AFR,SI,
+HUM_IDH,SEN,AFR,SI,
+HUM_IDH,SYC,AFR,SI,
+HUM_IDH,SLE,AFR,SI,
+HUM_IDH,SOM,AFR,SI,
+HUM_IDH,ZAF,AFR,SI,
+HUM_IDH,ZWE,AFR,SI,
+HUM_IDH,SSD,AFR,SI,
+HUM_IDH,SDN,AFR,SI,
+HUM_IDH,ESH,AFR,NO,Falta IDH nacional 2023
+HUM_IDH,SWZ,AFR,SI,
+HUM_IDH,TGO,AFR,SI,
+HUM_IDH,TUN,AFR,SI,
+HUM_IDH,UGA,AFR,SI,
+HUM_IDH,EGY,AFR,SI,
+HUM_IDH,TZA,AFR,SI,
+HUM_IDH,BFA,AFR,SI,
+HUM_IDH,ZMB,AFR,SI,
+HUM_IDH,ASM,APC,NO,Falta IDH nacional 2023
+HUM_IDH,AUS,APC,SI,
+HUM_IDH,SLB,APC,SI,
+HUM_IDH,BRN,APC,SI,
+HUM_IDH,MMR,APC,SI,
+HUM_IDH,KHM,APC,SI,
+HUM_IDH,TWN,APC,NO,Falta IDH nacional 2023
+HUM_IDH,CXR,APC,NO,Falta IDH nacional 2023
+HUM_IDH,CCK,APC,NO,Falta IDH nacional 2023
+HUM_IDH,COK,APC,NO,Falta IDH nacional 2023
+HUM_IDH,FJI,APC,SI,
+HUM_IDH,PYF,APC,NO,Falta IDH nacional 2023
+HUM_IDH,KIR,APC,SI,
+HUM_IDH,GUM,APC,NO,Falta IDH nacional 2023
+HUM_IDH,IDN,APC,SI,
+HUM_IDH,JPN,APC,SI,
+HUM_IDH,PRK,APC,NO,Falta IDH nacional 2023
+HUM_IDH,KOR,APC,SI,
+HUM_IDH,LAO,APC,SI,
+HUM_IDH,MYS,APC,SI,
+HUM_IDH,MNG,APC,SI,
+HUM_IDH,NRU,APC,SI,
+HUM_IDH,NCL,APC,NO,Falta IDH nacional 2023
+HUM_IDH,VUT,APC,SI,
+HUM_IDH,NZL,APC,SI,
+HUM_IDH,NIU,APC,NO,Falta IDH nacional 2023
+HUM_IDH,NFK,APC,NO,Falta IDH nacional 2023
+HUM_IDH,MNP,APC,NO,Falta IDH nacional 2023
+HUM_IDH,FSM,APC,SI,
+HUM_IDH,MHL,APC,SI,
+HUM_IDH,PLW,APC,SI,
+HUM_IDH,PNG,APC,SI,
+HUM_IDH,PHL,APC,SI,
+HUM_IDH,PCN,APC,NO,Falta IDH nacional 2023
+HUM_IDH,TLS,APC,SI,
+HUM_IDH,SGP,APC,SI,
+HUM_IDH,VNM,APC,SI,
+HUM_IDH,THA,APC,SI,
+HUM_IDH,TKL,APC,NO,Falta IDH nacional 2023
+HUM_IDH,TON,APC,SI,
+HUM_IDH,TUV,APC,SI,
+HUM_IDH,WLF,APC,NO,Falta IDH nacional 2023
+HUM_IDH,WSM,APC,SI,
+HUM_IDH,CHN,CHN,SI,
+HUM_IDH,HKG,CHN,SI,
+HUM_IDH,MAC,CHN,NO,Falta IDH nacional 2023
+HUM_IDH,ALB,EUR,SI,
+HUM_IDH,AND,EUR,SI,
+HUM_IDH,AUT,EUR,SI,
+HUM_IDH,BEL,EUR,SI,
+HUM_IDH,BIH,EUR,SI,
+HUM_IDH,BGR,EUR,SI,
+HUM_IDH,HRV,EUR,SI,
+HUM_IDH,CYP,EUR,SI,
+HUM_IDH,CZE,EUR,SI,
+HUM_IDH,DNK,EUR,SI,
+HUM_IDH,EST,EUR,SI,
+HUM_IDH,FRO,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,FIN,EUR,SI,
+HUM_IDH,ALA,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,FRA,EUR,SI,
+HUM_IDH,DEU,EUR,SI,
+HUM_IDH,GIB,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,GRC,EUR,SI,
+HUM_IDH,VAT,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,HUN,EUR,SI,
+HUM_IDH,ISL,EUR,SI,
+HUM_IDH,IRL,EUR,SI,
+HUM_IDH,ITA,EUR,SI,
+HUM_IDH,LVA,EUR,SI,
+HUM_IDH,LIE,EUR,SI,
+HUM_IDH,LTU,EUR,SI,
+HUM_IDH,LUX,EUR,SI,
+HUM_IDH,MLT,EUR,SI,
+HUM_IDH,MCO,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,MDA,EUR,SI,
+HUM_IDH,MNE,EUR,SI,
+HUM_IDH,NLD,EUR,SI,
+HUM_IDH,NOR,EUR,SI,
+HUM_IDH,POL,EUR,SI,
+HUM_IDH,PRT,EUR,SI,
+HUM_IDH,ROU,EUR,SI,
+HUM_IDH,SMR,EUR,SI,
+HUM_IDH,SRB,EUR,SI,
+HUM_IDH,SVK,EUR,SI,
+HUM_IDH,SVN,EUR,SI,
+HUM_IDH,ESP,EUR,SI,
+HUM_IDH,SJM,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,SWE,EUR,SI,
+HUM_IDH,CHE,EUR,SI,
+HUM_IDH,UKR,EUR,SI,
+HUM_IDH,MKD,EUR,SI,
+HUM_IDH,GBR,EUR,SI,
+HUM_IDH,GGY,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,JEY,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,IMN,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,XKX,EUR,NO,Falta IDH nacional 2023
+HUM_IDH,BHR,MDE,SI,
+HUM_IDH,PSE,MDE,SI,
+HUM_IDH,IRN,MDE,SI,
+HUM_IDH,IRQ,MDE,SI,
+HUM_IDH,ISR,MDE,SI,
+HUM_IDH,JOR,MDE,SI,
+HUM_IDH,KWT,MDE,SI,
+HUM_IDH,LBN,MDE,SI,
+HUM_IDH,OMN,MDE,SI,
+HUM_IDH,QAT,MDE,SI,
+HUM_IDH,SAU,MDE,SI,
+HUM_IDH,SYR,MDE,SI,
+HUM_IDH,ARE,MDE,SI,
+HUM_IDH,TUR,MDE,SI,
+HUM_IDH,YEM,MDE,SI,
+HUM_IDH,ATG,NAC,SI,
+HUM_IDH,BHS,NAC,SI,
+HUM_IDH,BRB,NAC,SI,
+HUM_IDH,BMU,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,BLZ,NAC,SI,
+HUM_IDH,VGB,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,CAN,NAC,SI,
+HUM_IDH,CYM,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,CRI,NAC,SI,
+HUM_IDH,CUB,NAC,SI,
+HUM_IDH,DMA,NAC,SI,
+HUM_IDH,DOM,NAC,SI,
+HUM_IDH,SLV,NAC,SI,
+HUM_IDH,GRL,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,GRD,NAC,SI,
+HUM_IDH,GLP,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,GTM,NAC,SI,
+HUM_IDH,HTI,NAC,SI,
+HUM_IDH,HND,NAC,SI,
+HUM_IDH,JAM,NAC,SI,
+HUM_IDH,MTQ,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,MEX,NAC,SI,
+HUM_IDH,MSR,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,CUW,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,ABW,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,SXM,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,BES,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,NIC,NAC,SI,
+HUM_IDH,PAN,NAC,SI,
+HUM_IDH,PRI,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,BLM,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,KNA,NAC,SI,
+HUM_IDH,AIA,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,LCA,NAC,SI,
+HUM_IDH,MAF,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,SPM,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,VCT,NAC,SI,
+HUM_IDH,TTO,NAC,SI,
+HUM_IDH,TCA,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,USA,NAC,SI,
+HUM_IDH,VIR,NAC,NO,Falta IDH nacional 2023
+HUM_IDH,AZE,RUE,SI,
+HUM_IDH,ARM,RUE,SI,
+HUM_IDH,BLR,RUE,SI,
+HUM_IDH,GEO,RUE,SI,
+HUM_IDH,KAZ,RUE,SI,
+HUM_IDH,KGZ,RUE,SI,
+HUM_IDH,RUS,RUE,SI,
+HUM_IDH,TJK,RUE,SI,
+HUM_IDH,TKM,RUE,SI,
+HUM_IDH,UZB,RUE,SI,
+HUM_IDH,AFG,SAI,SI,
+HUM_IDH,BGD,SAI,SI,
+HUM_IDH,BTN,SAI,SI,
+HUM_IDH,LKA,SAI,SI,
+HUM_IDH,IND,SAI,SI,
+HUM_IDH,MDV,SAI,SI,
+HUM_IDH,NPL,SAI,SI,
+HUM_IDH,PAK,SAI,SI,
+HUM_IDH,ARG,SAM,SI,
+HUM_IDH,BOL,SAM,SI,
+HUM_IDH,BRA,SAM,SI,
+HUM_IDH,CHL,SAM,SI,
+HUM_IDH,COL,SAM,SI,
+HUM_IDH,ECU,SAM,SI,
+HUM_IDH,FLK,SAM,NO,Falta IDH nacional 2023
+HUM_IDH,GUF,SAM,NO,Falta IDH nacional 2023
+HUM_IDH,GUY,SAM,SI,
+HUM_IDH,PRY,SAM,SI,
+HUM_IDH,PER,SAM,SI,
+HUM_IDH,SUR,SAM,SI,
+HUM_IDH,URY,SAM,SI,
+HUM_IDH,VEN,SAM,SI,

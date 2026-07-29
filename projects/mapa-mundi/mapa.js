@@ -11,6 +11,8 @@ const comparisonBody = document.querySelector("#comparison-body");
 const sortStatus = document.querySelector("#sort-status");
 const fallbackNotice = document.querySelector("#data-fallback-notice");
 const viewAreaLink = document.querySelector("#view-area-link");
+const profileGrid = document.querySelector("#profile-grid");
+const profileLoading = document.querySelector("#profile-loading");
 
 let defaultPalette = {};
 let palette = {};
@@ -35,6 +37,38 @@ const SORT_LABELS = {
 const decimalOne = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 const decimalTwo = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const integerFormat = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 0 });
+const PROFILE_METRICS = ["TERR_DENS", "POB_EDAD", "HUM_EV", "ECO_PC", "HUM_IDH"];
+const profileOne = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 1 });
+const profileThree = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+
+function profileValue(area, metric) {
+  const item = area.indicadores?.[metric];
+  const value = Number(item?.valor);
+  if (!item || item.valor === null || item.valor === undefined || !Number.isFinite(value)) return "Dato no disponible";
+  if (metric === "HUM_IDH") return profileThree.format(value);
+  if (metric === "ECO_PC") return `${integerFormat.format(value)} USD/hab.`;
+  return `${profileOne.format(value)} ${metric === "TERR_DENS" ? "hab./km²" : "años"}`;
+}
+
+function renderPopulationProfile(areas) {
+  profileGrid.replaceChildren();
+  for (const area of [...areas].sort((a, b) => (a.orden_visual ?? 99) - (b.orden_visual ?? 99))) {
+    const card = document.createElement("article");
+    card.className = "profile-card";
+    card.style.setProperty("--area-color", palette[area.codigo] || "#888");
+    const title = document.createElement("h3"); title.textContent = area.nombre; card.append(title);
+    const list = document.createElement("dl");
+    const labels = [["TERR_DENS", "Densidad"], ["POB_EDAD", "Edad mediana"], ["HUM_EV", "Esperanza de vida"], ["ECO_PC", "PIB por habitante"], ["HUM_IDH", "IDH"], ["POB_URB", "Urbanización"]];
+    for (const [metric, label] of labels) { const dt = document.createElement("dt"); dt.textContent = label; const dd = document.createElement("dd"); dd.textContent = metric === "POB_URB" ? "Pendiente de incorporación" : profileValue(area, metric); list.append(dt, dd); }
+    card.append(list);
+    const notes = document.createElement("details"); const summary = document.createElement("summary"); summary.textContent = "Fuente, año y observaciones"; notes.append(summary);
+    for (const metric of PROFILE_METRICS) { const item = area.indicadores?.[metric]; if (!item) continue; const p = document.createElement("p"); p.textContent = `${metric}: ${item.fuente || "Fuente no disponible"} · ${item.anio || "Año no disponible"}${item.observaciones ? ` · ${item.observaciones}` : ""}`; notes.append(p); }
+    const limited = area.indicadores?.ECO_PC?.estado === "LIMITACION" || area.codigo === "MDE";
+    if (limited) { const warning = document.createElement("p"); warning.className = "profile-warning"; warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada."; notes.prepend(warning); }
+    card.append(notes); profileGrid.append(card);
+  }
+  profileLoading.hidden = true;
+}
 
 function requireJson(response) {
   if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.url}`);
@@ -477,7 +511,9 @@ Promise.all([
   renderLegend();
   renderMap(world);
   renderComparison();
+  renderPopulationProfile(indicators.areas);
 }).catch(error => {
+  profileLoading.textContent = "No ha sido posible cargar el perfil medio de la población.";
   document.querySelector("#loading").textContent = "No se pudo cargar el mapa. Ábrelo mediante el servidor local indicado en README.";
   console.error(error);
 });
