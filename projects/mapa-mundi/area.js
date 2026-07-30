@@ -2,8 +2,11 @@ const EDITION = "RG2025_V1";
 const AREA_ORDER = ["AFR", "APC", "CHN", "EUR", "MDE", "NAC", "RUE", "SAI", "SAM"];
 const API_TIMEOUT = 5000;
 const CORE_METRICS = ["POB_TOTAL", "TERR_SUP", "ECO_PIB", "MIL_GASTO", "MIL_NUC"];
+const PROFILE_METRICS = ["TERR_DENS", "POB_EDAD", "HUM_EV", "ECO_PC", "HUM_IDH"];
 const formatter = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 1 });
 const compact = new Intl.NumberFormat("es-ES", { notation: "compact", maximumFractionDigits: 2 });
+const profileThree = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
+const profileInteger = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 0 });
 
 function jsonResponse(response) {
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -88,6 +91,69 @@ function metricCard(label, display, meta, score) {
 function addCards(target, cards) {
   const container = document.querySelector(target);
   cards.forEach(card => container.append(metricCard(...card)));
+}
+
+function profileDisplay(record, metric) {
+  const number = Number(record?.valor);
+  if (record?.valor === null || record?.valor === undefined || !Number.isFinite(number)) return "Dato no disponible";
+  if (metric === "HUM_IDH") return profileThree.format(number);
+  if (metric === "ECO_PC") return `${profileInteger.format(number)} USD/hab.`;
+  return `${formatter.format(number)} ${metric === "TERR_DENS" ? "hab./km²" : "años"}`;
+}
+
+function renderAreaPopulationProfile(records, areaCode) {
+  const target = document.querySelector("#area-profile-content");
+  const labels = [
+    ["TERR_DENS", "Densidad"],
+    ["POB_EDAD", "Edad mediana"],
+    ["HUM_EV", "Esperanza de vida"],
+    ["ECO_PC", "PIB por habitante"],
+    ["HUM_IDH", "IDH"],
+    ["POB_URB", "Urbanización"]
+  ];
+  const list = document.createElement("dl");
+  list.className = "area-profile-grid";
+  for (const [metric, label] of labels) {
+    const dt = document.createElement("dt");
+    const dd = document.createElement("dd");
+    dt.textContent = label;
+    dd.textContent = metric === "POB_URB"
+      ? "Pendiente de incorporación"
+      : profileDisplay(records.get(metric), metric);
+    list.append(dt, dd);
+  }
+  target.append(list);
+
+  const details = document.createElement("details");
+  details.className = "area-profile-details";
+  const summary = document.createElement("summary");
+  summary.textContent = "Fuente, año y observaciones";
+  const content = document.createElement("div");
+  content.className = "area-profile-details-content";
+  for (const metric of PROFILE_METRICS) {
+    const record = records.get(metric);
+    if (!record) continue;
+    if (metric === "ECO_PC" && (areaCode === "MDE" || record.estado_dato === "LIMITACION")) {
+      const warning = document.createElement("p");
+      warning.className = "area-profile-warning";
+      warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada.";
+      content.append(warning);
+    }
+    const coverage = Number(record.cobertura?.porcentaje);
+    const parts = [
+      `${record.indicador?.nombre || metric}:`,
+      record.fuente_principal?.nombre || "Fuente no disponible",
+      record.anio_referencia || "Año no disponible"
+    ];
+    if (Number.isFinite(coverage)) parts.push(`cobertura ${formatter.format(coverage)} %`);
+    if (record.estado_dato) parts.push(`estado ${record.estado_dato}`);
+    if (record.observaciones) parts.push(record.observaciones);
+    const note = document.createElement("p");
+    note.textContent = parts.join(" · ");
+    content.append(note);
+  }
+  details.append(summary, content);
+  target.append(details);
 }
 
 function formatType(value) {
@@ -186,6 +252,7 @@ async function initialize() {
     ["Población de las nueve áreas", `${formatter.format(percentage(population, totals("POB_TOTAL")))} %`, "Cálculo en navegador", null],
     ["Densidad", `${formatter.format(population / surface)} hab./km²`, "Población ÷ superficie", null]
   ]);
+  renderAreaPopulationProfile(records, code);
   addCards("#economy-metrics", [
     ["PIB nominal", `${compact.format(gdp)} USD`, `${records.get("ECO_PIB").anio_referencia} · USD corrientes`, score("ECO_PIB")],
     ["PIB por habitante", `${compact.format(gdp / population)} USD`, "PIB ÷ población", null],

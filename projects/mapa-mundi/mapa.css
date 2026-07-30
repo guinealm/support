@@ -524,6 +524,7 @@ footer {
 .profile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .profile-card { border: 1px solid var(--line); border-top: 4px solid var(--area-color); background: #fff; padding: 1rem; }
 .profile-card h3 { margin: 0 0 .8rem; font-size: 1.35rem; }
+.profile-card h3 a { text-decoration-thickness: 1px; }
 .profile-card dl { display: grid; grid-template-columns: 1fr auto; margin: 0; }
 .profile-card dt, .profile-card dd { border-top: 1px solid var(--line); padding: .45rem 0; }
 .profile-card dt { color: var(--muted); }
@@ -532,6 +533,7 @@ footer {
 .profile-card details p { color: var(--muted); margin: .5rem 0 0; }
 .profile-warning { color: #8a4b00 !important; font-weight: 700; }
 .profile-status { color: var(--muted); }
+.profile-sheet-link { display: inline-block; margin-top: .9rem; font-size: .9rem; font-weight: 800; }
 
 .visually-hidden {
   position: absolute;

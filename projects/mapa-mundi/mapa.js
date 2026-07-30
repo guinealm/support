@@ -56,7 +56,12 @@ function renderPopulationProfileCards(areas) {
     const card = document.createElement("article");
     card.className = "profile-card";
     card.style.setProperty("--area-color", palette[area.codigo] || "#888");
-    const title = document.createElement("h3"); title.textContent = area.nombre; card.append(title);
+    const title = document.createElement("h3");
+    const titleLink = document.createElement("a");
+    titleLink.href = `area.html?codigo=${encodeURIComponent(area.codigo)}`;
+    titleLink.textContent = area.nombre;
+    title.append(titleLink);
+    card.append(title);
     const list = document.createElement("dl");
     const labels = [["TERR_DENS", "Densidad"], ["POB_EDAD", "Edad mediana"], ["HUM_EV", "Esperanza de vida"], ["ECO_PC", "PIB por habitante"], ["HUM_IDH", "IDH"], ["POB_URB", "Urbanización"]];
     for (const [metric, label] of labels) { const dt = document.createElement("dt"); dt.textContent = label; const dd = document.createElement("dd"); dd.textContent = metric === "POB_URB" ? "Pendiente de incorporación" : profileValue(area, metric); list.append(dt, dd); }
@@ -65,7 +70,14 @@ function renderPopulationProfileCards(areas) {
     for (const metric of PROFILE_METRICS) { const item = area.indicadores?.[metric]; if (!item) continue; const p = document.createElement("p"); p.textContent = `${metric}: ${item.fuente || "Fuente no disponible"} · ${item.anio || "Año no disponible"}${item.observaciones ? ` · ${item.observaciones}` : ""}`; notes.append(p); }
     const limited = area.indicadores?.ECO_PC?.estado === "LIMITACION" || area.codigo === "MDE";
     if (limited) { const warning = document.createElement("p"); warning.className = "profile-warning"; warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada."; notes.prepend(warning); }
-    card.append(notes); profileGrid.append(card);
+    card.append(notes);
+    const sheetLink = document.createElement("a");
+    sheetLink.className = "profile-sheet-link";
+    sheetLink.href = `area.html?codigo=${encodeURIComponent(area.codigo)}`;
+    sheetLink.textContent = "Ver ficha";
+    sheetLink.setAttribute("aria-label", `Ver ficha de ${area.nombre}`);
+    card.append(sheetLink);
+    profileGrid.append(card);
   }
   profileLoading.hidden = true;
 }
@@ -179,22 +191,6 @@ async function loadIndicatorData() {
     apiResults[metric] = settled[index].status === "fulfilled" ? settled[index].value : null;
   });
   return mergeIndicatorData(fallbackData, apiResults);
-}
-
-async function loadProfileRecords() {
-  const response = await fetch(API_URL, { headers: { Accept: "application/json" } });
-  const payload = await requireJson(response);
-  if (!payload || payload.ok !== true || !Array.isArray(payload.data)) throw new Error("Respuesta general no válida para el perfil");
-  const records = payload.data.filter(record => PROFILE_METRICS.includes(record?.indicador?.codigo));
-  const areas = new Map();
-  for (const record of records) {
-    const code = record.area?.codigo;
-    if (!EXPECTED_AREAS.includes(code)) continue;
-    if (!areas.has(code)) areas.set(code, { codigo: code, nombre: record.area.nombre, orden_visual: record.area.orden_visual, indicadores: {} });
-    const metric = record.indicador.codigo;
-    areas.get(code).indicadores[metric] = apiIndicator(record);
-  }
-  return [...areas.values()];
 }
 
 function equalEarth([longitude, latitude]) {

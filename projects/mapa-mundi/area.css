@@ -57,6 +57,17 @@ th { color: var(--muted); background: var(--soft); text-transform: uppercase; fo
 .source strong, .source span { display: block; }
 .source span { margin-top: .35rem; color: var(--muted); font-size: .8125rem; line-height: 1.5; }
 .sources details { border-top: 1px solid var(--line); }
+.area-profile-content { padding: 1.25rem clamp(1rem, 4vw, 3.5rem); }
+.area-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--line); }
+.area-profile-grid dt,
+.area-profile-grid dd { margin: 0; padding: .75rem 1rem; border-bottom: 1px solid var(--line); }
+.area-profile-grid dt { color: var(--muted); }
+.area-profile-grid dd { text-align: right; font-weight: 800; }
+.area-profile-details { margin-top: 1rem; border: 1px solid var(--line); }
+.area-profile-details summary { padding: .85rem 1rem; }
+.area-profile-details-content { padding: 0 1rem 1rem; }
+.area-profile-details-content p { margin: .55rem 0; color: var(--muted); font-size: .875rem; }
+.area-profile-warning { color: #8a4b00 !important; font-weight: 800; }
 .sources ul { margin: 0; padding: 0 clamp(2.5rem, 6vw, 6rem) 1.5rem; color: var(--muted); font-size: .9rem; line-height: 1.7; }
 footer { border-top: 0; border-bottom: 0; color: var(--muted); font-weight: 400; }
 .visually-hidden {
@@ -75,5 +86,7 @@ footer { border-top: 0; border-bottom: 0; color: var(--muted); font-weight: 400;
   .metric { min-height: 140px; padding: 1.15rem; border-right: 0; border-bottom: 1px solid var(--line); }
   .metric:last-child { border-bottom: 0; }
   .sources > #sources { grid-template-columns: 1fr; }
+  .area-profile-grid { grid-template-columns: 1fr; }
+  .area-profile-grid dd { text-align: left; padding-top: 0; }
   footer { align-items: flex-start; flex-direction: column; }
 }
