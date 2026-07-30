@@ -57,6 +57,8 @@ function renderPopulationProfileCards(areas) {
     card.className = "profile-card";
     card.style.setProperty("--area-color", palette[area.codigo] || "#888");
     const title = document.createElement("h3");
+    title.id = `profile-title-${area.codigo}`;
+    card.setAttribute("aria-labelledby", title.id);
     const titleLink = document.createElement("a");
     titleLink.href = `area.html?codigo=${encodeURIComponent(area.codigo)}`;
     titleLink.textContent = area.nombre;
@@ -64,12 +66,49 @@ function renderPopulationProfileCards(areas) {
     card.append(title);
     const list = document.createElement("dl");
     const labels = [["TERR_DENS", "Densidad"], ["POB_EDAD", "Edad mediana"], ["HUM_EV", "Esperanza de vida"], ["ECO_PC", "PIB por habitante"], ["HUM_IDH", "IDH"], ["POB_URB", "Urbanización"]];
-    for (const [metric, label] of labels) { const dt = document.createElement("dt"); dt.textContent = label; const dd = document.createElement("dd"); dd.textContent = metric === "POB_URB" ? "Pendiente de incorporación" : profileValue(area, metric); list.append(dt, dd); }
+    for (const [metric, label] of labels) {
+      const dt = document.createElement("dt");
+      const dd = document.createElement("dd");
+      const item = area.indicadores?.[metric];
+      dt.textContent = label;
+      dd.textContent = metric === "POB_URB" ? "Pendiente de incorporación" : profileValue(area, metric);
+      if (metric === "ECO_PC" && item?.estado === "LIMITACION") {
+        const warning = document.createElement("p");
+        warning.className = "profile-warning";
+        warning.setAttribute("role", "note");
+        warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada.";
+        dd.append(warning);
+      }
+      list.append(dt, dd);
+    }
     card.append(list);
-    const notes = document.createElement("details"); const summary = document.createElement("summary"); summary.textContent = "Fuente, año y observaciones"; notes.append(summary);
-    for (const metric of PROFILE_METRICS) { const item = area.indicadores?.[metric]; if (!item) continue; const p = document.createElement("p"); p.textContent = `${metric}: ${item.fuente || "Fuente no disponible"} · ${item.anio || "Año no disponible"}${item.observaciones ? ` · ${item.observaciones}` : ""}`; notes.append(p); }
-    const limited = area.indicadores?.ECO_PC?.estado === "LIMITACION" || area.codigo === "MDE";
-    if (limited) { const warning = document.createElement("p"); warning.className = "profile-warning"; warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada."; notes.prepend(warning); }
+    const notes = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = "Fuente, año y observaciones";
+    summary.setAttribute("aria-label", `Fuente, año y observaciones de ${area.nombre}`);
+    notes.append(summary);
+    for (const metric of PROFILE_METRICS) {
+      const item = area.indicadores?.[metric];
+      if (!item) continue;
+      const p = document.createElement("p");
+      const heading = document.createElement("strong");
+      heading.textContent = `${metric}: `;
+      p.append(heading);
+      if (item.fuente_url) {
+        const source = document.createElement("a");
+        source.href = item.fuente_url;
+        source.textContent = item.fuente || "Fuente";
+        p.append(source);
+      } else {
+        p.append(item.fuente || "Fuente no disponible");
+      }
+      p.append(` · ${item.anio || "Año no disponible"}`);
+      const coverage = Number(item.cobertura?.porcentaje);
+      if (Number.isFinite(coverage)) p.append(` · cobertura ${profileOne.format(coverage)} %`);
+      if (item.estado) p.append(` · estado ${item.estado}`);
+      if (item.observaciones) p.append(` · ${item.observaciones}`);
+      notes.append(p);
+    }
     card.append(notes);
     const sheetLink = document.createElement("a");
     sheetLink.className = "profile-sheet-link";
@@ -89,12 +128,22 @@ async function renderPopulationProfile() {
     const response = await fetch("/api/reticula/v1/datos.php", { headers: { Accept: "application/json" } });
     const payload = await requireJson(response);
     const records = Array.isArray(payload?.data) ? payload.data : [];
-    const areas = new Map();
+    const areas = new Map(EXPECTED_AREAS.map((code, index) => {
+      const territorialArea = areaData.find(area => area.codigo === code);
+      return [code, {
+        codigo: code,
+        nombre: territorialArea?.nombre || code,
+        orden_visual: index + 1,
+        indicadores: {}
+      }];
+    }));
     for (const record of records) {
       const areaCode = record?.area?.codigo;
       const indicatorCode = record?.indicador?.codigo;
       if (!EXPECTED_AREAS.includes(areaCode) || !PROFILE_METRICS.includes(indicatorCode)) continue;
-      if (!areas.has(areaCode)) areas.set(areaCode, { codigo: areaCode, nombre: record.area.nombre, orden_visual: record.area.orden_visual, indicadores: {} });
+      const area = areas.get(areaCode);
+      area.nombre = record.area.nombre || area.nombre;
+      area.orden_visual = record.area.orden_visual ?? area.orden_visual;
       areas.get(areaCode).indicadores[indicatorCode] = apiIndicator(record);
     }
     renderPopulationProfileCards([...areas.values()]);
@@ -103,6 +152,7 @@ async function renderPopulationProfile() {
   } catch (error) {
     profileGrid.replaceChildren();
     profileLoading.hidden = false;
+    profileLoading.setAttribute("role", "alert");
     profileLoading.textContent = "No ha sido posible cargar el perfil medio de la población.";
     console.warn("No se pudo cargar el perfil medio", error);
   }

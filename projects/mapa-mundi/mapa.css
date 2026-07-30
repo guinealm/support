@@ -522,16 +522,18 @@ footer {
 
 .population-profile { margin: 2rem clamp(1rem, 4vw, 4rem); }
 .profile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.profile-card { border: 1px solid var(--line); border-top: 4px solid var(--area-color); background: #fff; padding: 1rem; }
+.profile-card { min-width: 0; border: 1px solid var(--line); border-top: 4px solid var(--area-color); background: #fff; padding: 1rem; }
 .profile-card h3 { margin: 0 0 .8rem; font-size: 1.35rem; }
 .profile-card h3 a { text-decoration-thickness: 1px; }
-.profile-card dl { display: grid; grid-template-columns: 1fr auto; margin: 0; }
+.profile-card dl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(8rem, auto); margin: 0; }
 .profile-card dt, .profile-card dd { border-top: 1px solid var(--line); padding: .45rem 0; }
 .profile-card dt { color: var(--muted); }
-.profile-card dd { margin: 0; font-weight: 700; text-align: right; }
+.profile-card dd { min-width: 0; margin: 0; padding-left: .75rem; overflow-wrap: anywhere; font-weight: 700; text-align: right; }
 .profile-card details { margin-top: .8rem; font-size: .85rem; }
-.profile-card details p { color: var(--muted); margin: .5rem 0 0; }
-.profile-warning { color: #8a4b00 !important; font-weight: 700; }
+.profile-card summary { padding: .35rem 0; font-weight: 700; cursor: pointer; }
+.profile-card details p { color: var(--muted); margin: .5rem 0 0; overflow-wrap: anywhere; }
+.profile-card details a { overflow-wrap: anywhere; }
+.profile-warning { margin: .4rem 0 0; color: #713d00 !important; font-size: .8125rem; font-weight: 700; line-height: 1.35; text-align: left; }
 .profile-status { color: var(--muted); }
 .profile-sheet-link { display: inline-block; margin-top: .9rem; font-size: .9rem; font-weight: 800; }
 
@@ -547,7 +549,8 @@ footer {
   border: 0;
 }
 
-:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+summary:focus-visible { border-radius: 2px; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -583,5 +586,11 @@ footer {
   .table-scroll { scrollbar-width: thin; }
   .methodology-grid { grid-template-columns: 1fr; }
   .profile-grid { grid-template-columns: 1fr; }
+  .profile-card dl { grid-template-columns: minmax(0, 1fr) minmax(7.5rem, auto); }
   footer { flex-direction: column; }
+}
+
+@media (max-width: 390px) {
+  .profile-card dl { grid-template-columns: 1fr; }
+  .profile-card dd { padding-top: 0; padding-left: 0; text-align: left; }
 }

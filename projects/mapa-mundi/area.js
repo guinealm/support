@@ -120,6 +120,14 @@ function renderAreaPopulationProfile(records, areaCode) {
     dd.textContent = metric === "POB_URB"
       ? "Pendiente de incorporación"
       : profileDisplay(records.get(metric), metric);
+    const record = records.get(metric);
+    if (metric === "ECO_PC" && record?.estado_dato === "LIMITACION") {
+      const warning = document.createElement("p");
+      warning.className = "area-profile-warning";
+      warning.setAttribute("role", "note");
+      warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada.";
+      dd.append(warning);
+    }
     list.append(dt, dd);
   }
   target.append(list);
@@ -128,28 +136,29 @@ function renderAreaPopulationProfile(records, areaCode) {
   details.className = "area-profile-details";
   const summary = document.createElement("summary");
   summary.textContent = "Fuente, año y observaciones";
+  summary.setAttribute("aria-label", "Fuente, año y observaciones del perfil medio de la población");
   const content = document.createElement("div");
   content.className = "area-profile-details-content";
   for (const metric of PROFILE_METRICS) {
     const record = records.get(metric);
     if (!record) continue;
-    if (metric === "ECO_PC" && (areaCode === "MDE" || record.estado_dato === "LIMITACION")) {
-      const warning = document.createElement("p");
-      warning.className = "area-profile-warning";
-      warning.textContent = "Dato con cobertura incompleta. Comparabilidad limitada.";
-      content.append(warning);
-    }
     const coverage = Number(record.cobertura?.porcentaje);
-    const parts = [
-      `${record.indicador?.nombre || metric}:`,
-      record.fuente_principal?.nombre || "Fuente no disponible",
-      record.anio_referencia || "Año no disponible"
-    ];
-    if (Number.isFinite(coverage)) parts.push(`cobertura ${formatter.format(coverage)} %`);
-    if (record.estado_dato) parts.push(`estado ${record.estado_dato}`);
-    if (record.observaciones) parts.push(record.observaciones);
     const note = document.createElement("p");
-    note.textContent = parts.join(" · ");
+    const heading = document.createElement("strong");
+    heading.textContent = `${record.indicador?.nombre || metric}: `;
+    note.append(heading);
+    if (record.fuente_principal?.url) {
+      const source = document.createElement("a");
+      source.href = record.fuente_principal.url;
+      source.textContent = record.fuente_principal.nombre || "Fuente";
+      note.append(source);
+    } else {
+      note.append(record.fuente_principal?.nombre || "Fuente no disponible");
+    }
+    note.append(` · ${record.anio_referencia || "Año no disponible"}`);
+    if (Number.isFinite(coverage)) note.append(` · cobertura ${formatter.format(coverage)} %`);
+    if (record.estado_dato) note.append(` · estado ${record.estado_dato}`);
+    if (record.observaciones) note.append(` · ${record.observaciones}`);
     content.append(note);
   }
   details.append(summary, content);
@@ -283,6 +292,8 @@ async function initialize() {
 }
 
 initialize().catch(error => {
-  document.querySelector("#loading").textContent = error.message;
+  const loading = document.querySelector("#loading");
+  loading.setAttribute("role", "alert");
+  loading.textContent = `No ha sido posible cargar la ficha. ${error.message}`;
   document.querySelector("#area-sheet").setAttribute("aria-busy", "false");
 });

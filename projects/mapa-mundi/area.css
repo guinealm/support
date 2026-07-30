@@ -66,15 +66,17 @@ th { color: var(--muted); background: var(--soft); text-transform: uppercase; fo
 .area-profile-details { margin-top: 1rem; border: 1px solid var(--line); }
 .area-profile-details summary { padding: .85rem 1rem; }
 .area-profile-details-content { padding: 0 1rem 1rem; }
-.area-profile-details-content p { margin: .55rem 0; color: var(--muted); font-size: .875rem; }
-.area-profile-warning { color: #8a4b00 !important; font-weight: 800; }
+.area-profile-details-content p { margin: .55rem 0; overflow-wrap: anywhere; color: var(--muted); font-size: .875rem; }
+.area-profile-details-content a { overflow-wrap: anywhere; }
+.area-profile-warning { margin: .45rem 0 0; padding: .65rem .75rem; border-left: 4px solid #8a4b00; color: #713d00 !important; background: #fff8ee; font-size: .875rem; font-weight: 800; line-height: 1.4; text-align: left; }
 .sources ul { margin: 0; padding: 0 clamp(2.5rem, 6vw, 6rem) 1.5rem; color: var(--muted); font-size: .9rem; line-height: 1.7; }
 footer { border-top: 0; border-bottom: 0; color: var(--muted); font-weight: 400; }
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
-:focus-visible { outline: 2px solid var(--area); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+summary:focus-visible { border-radius: 2px; }
 
 @media (max-width: 760px) {
   .site-header span { display: none; }
