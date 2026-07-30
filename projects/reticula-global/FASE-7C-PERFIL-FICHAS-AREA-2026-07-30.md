@@ -31,3 +31,16 @@ Para `ECO_PC/MDE` se detecta el código del área o `estado_dato === 'LIMITACION
 ## Resultado
 
 **GO CON OBSERVACIONES** técnico. Queda pendiente la validación visual en escritorio y móvil antes de crear el commit.
+
+## Validación visual pública y cierre
+
+- URL pública validada: https://support.jumalenin.com/projects/mapa-mundi/
+- Fichas comprobadas: África y Oriente Medio.
+- Los cinco indicadores (`TERR_DENS`, `POB_EDAD`, `HUM_EV`, `ECO_PC` y `HUM_IDH`) muestran sus valores.
+- `POB_URB` se presenta como «Pendiente de incorporación».
+- `ECO_PC/MDE` conserva la advertencia de cobertura incompleta y comparabilidad limitada, junto con sus metadatos desplegables.
+- El bloque mantiene el diseño de la ficha en escritorio, sin desbordamientos ni errores visuales.
+- Las fuentes, años y observaciones permanecen disponibles mediante `<details>`.
+- No se modificaron API, MySQL, SQL ni metodología.
+
+**GO — Fase 7C cerrada.**
