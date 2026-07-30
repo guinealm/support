@@ -98,3 +98,17 @@ El navegador controlable no está disponible en este entorno. Queda pendiente la
 ## 15. Resultado
 
 **GO CON OBSERVACIONES** — Las comprobaciones técnicas disponibles son correctas. El cierre definitivo queda condicionado a la validación visual y de teclado indicada.
+
+## Validación pública y cierre
+
+- URL principal validada: https://support.jumalenin.com/projects/mapa-mundi/
+- Ficha de Oriente Medio validada: https://support.jumalenin.com/projects/mapa-mundi/area.html?codigo=MDE
+- La presentación en escritorio y el comportamiento responsive se consideran correctos, sin desbordamientos ni roturas visuales.
+- El foco visible permite identificar con claridad los controles activos.
+- La navegación por teclado mantiene controles nativos y un orden lógico.
+- Los elementos `<details>` y `<summary>` funcionan correctamente y conservan desplegables los datos de fuente, año, cobertura, estado y observaciones.
+- La advertencia «Dato con cobertura incompleta. Comparabilidad limitada.» de `ECO_PC/MDE` permanece visible con el desplegable cerrado y asociada a la fila «PIB por habitante».
+- `POB_URB` continúa presentándose como «Pendiente de incorporación».
+- No se modificaron API, PHP, MySQL, SQL, JSON ni metodología.
+
+**GO — Fase 7D cerrada.**
