@@ -50,7 +50,7 @@ function profileValue(area, metric) {
   return `${profileOne.format(value)} ${metric === "TERR_DENS" ? "hab./km²" : "años"}`;
 }
 
-function renderPopulationProfile(areas) {
+function renderPopulationProfileCards(areas) {
   profileGrid.replaceChildren();
   for (const area of [...areas].sort((a, b) => (a.orden_visual ?? 99) - (b.orden_visual ?? 99))) {
     const card = document.createElement("article");
@@ -68,6 +68,32 @@ function renderPopulationProfile(areas) {
     card.append(notes); profileGrid.append(card);
   }
   profileLoading.hidden = true;
+}
+
+async function renderPopulationProfile() {
+  profileLoading.hidden = false;
+  profileLoading.textContent = "Cargando perfil medio de la población…";
+  try {
+    const response = await fetch("/api/reticula/v1/datos.php", { headers: { Accept: "application/json" } });
+    const payload = await requireJson(response);
+    const records = Array.isArray(payload?.data) ? payload.data : [];
+    const areas = new Map();
+    for (const record of records) {
+      const areaCode = record?.area?.codigo;
+      const indicatorCode = record?.indicador?.codigo;
+      if (!EXPECTED_AREAS.includes(areaCode) || !PROFILE_METRICS.includes(indicatorCode)) continue;
+      if (!areas.has(areaCode)) areas.set(areaCode, { codigo: areaCode, nombre: record.area.nombre, orden_visual: record.area.orden_visual, indicadores: {} });
+      areas.get(areaCode).indicadores[indicatorCode] = apiIndicator(record);
+    }
+    renderPopulationProfileCards([...areas.values()]);
+    const counts = Object.fromEntries(PROFILE_METRICS.map(code => [code, records.filter(record => record?.indicador?.codigo === code).length]));
+    if (Object.values(counts).some(count => count !== 9)) console.warn("Cobertura incompleta del perfil", counts);
+  } catch (error) {
+    profileGrid.replaceChildren();
+    profileLoading.hidden = false;
+    profileLoading.textContent = "No ha sido posible cargar el perfil medio de la población.";
+    console.warn("No se pudo cargar el perfil medio", error);
+  }
 }
 
 function requireJson(response) {
@@ -153,6 +179,22 @@ async function loadIndicatorData() {
     apiResults[metric] = settled[index].status === "fulfilled" ? settled[index].value : null;
   });
   return mergeIndicatorData(fallbackData, apiResults);
+}
+
+async function loadProfileRecords() {
+  const response = await fetch(API_URL, { headers: { Accept: "application/json" } });
+  const payload = await requireJson(response);
+  if (!payload || payload.ok !== true || !Array.isArray(payload.data)) throw new Error("Respuesta general no válida para el perfil");
+  const records = payload.data.filter(record => PROFILE_METRICS.includes(record?.indicador?.codigo));
+  const areas = new Map();
+  for (const record of records) {
+    const code = record.area?.codigo;
+    if (!EXPECTED_AREAS.includes(code)) continue;
+    if (!areas.has(code)) areas.set(code, { codigo: code, nombre: record.area.nombre, orden_visual: record.area.orden_visual, indicadores: {} });
+    const metric = record.indicador.codigo;
+    areas.get(code).indicadores[metric] = apiIndicator(record);
+  }
+  return [...areas.values()];
 }
 
 function equalEarth([longitude, latitude]) {
@@ -511,7 +553,7 @@ Promise.all([
   renderLegend();
   renderMap(world);
   renderComparison();
-  renderPopulationProfile(indicators.areas);
+  renderPopulationProfile();
 }).catch(error => {
   profileLoading.textContent = "No ha sido posible cargar el perfil medio de la población.";
   document.querySelector("#loading").textContent = "No se pudo cargar el mapa. Ábrelo mediante el servidor local indicado en README.";

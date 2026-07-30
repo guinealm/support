@@ -14,4 +14,6 @@ Se incorporó un bloque visible después del mapa y antes de la tabla comparativ
 
 No se modificaron API, MySQL, SQL ni datos de origen. No se realizaron pruebas visuales con navegador controlable en este entorno.
 
-Resultado técnico: **GO CON OBSERVACIONES**; requiere validación visual de escritorio y móvil.
+Corrección posterior: el perfil no podía usar `indicatorAreas`, porque esa colección solo contenía las métricas principales solicitadas por `mapa.js`. Se añadió una única petición general sin parámetro `indicador`, normalizada desde `payload.data`, para obtener expresamente los cinco códigos del perfil. No se añadieron valores al JSON local.
+
+La corrección requiere validación visual en navegador para confirmar nueve registros por indicador y el caso `ECO_PC/MDE`. Resultado técnico provisional: **NO-GO hasta completar esa verificación visual**.
