@@ -383,6 +383,12 @@ function activateMapGeometry(props) {
   }
 }
 
+function setMapFocusedArea(area) {
+  document.querySelectorAll(".country").forEach(path => {
+    path.classList.toggle("is-map-focused", Boolean(area) && path.dataset.area === area);
+  });
+}
+
 function handleMapKeydown(event, path, props) {
   if (event.key === "Enter" || event.key === " ") {
     event.preventDefault();
@@ -439,8 +445,14 @@ function renderMap(geojson) {
     path.addEventListener("pointerenter", () => showTooltip(props));
     path.addEventListener("pointerup", () => activateMapGeometry(props));
     path.addEventListener("pointerleave", () => { tooltip.hidden = true; });
-    path.addEventListener("focus", () => showTooltip(props));
-    path.addEventListener("blur", () => { tooltip.hidden = true; });
+    path.addEventListener("focus", () => {
+      setMapFocusedArea(props.area);
+      showTooltip(props);
+    });
+    path.addEventListener("blur", () => {
+      setMapFocusedArea(null);
+      tooltip.hidden = true;
+    });
     path.addEventListener("keydown", event => handleMapKeydown(event, path, props));
     fragment.append(path);
   }

@@ -189,14 +189,19 @@ select {
 }
 
 .no-borders .country { stroke: transparent; }
-.country:focus-visible,
-.no-borders .country:focus-visible {
+.country.is-map-focused,
+.no-borders .country.is-map-focused {
   stroke: #111;
   stroke-width: 2.4;
   filter: brightness(.82) drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #111);
 }
 .country.is-muted { opacity: .14; }
 .country.is-active { opacity: 1; stroke: #161816; stroke-width: 1; }
+.country.is-active.is-map-focused,
+.no-borders .country.is-active.is-map-focused {
+  stroke: #111;
+  stroke-width: 2.4;
+}
 
 .tooltip {
   position: absolute;

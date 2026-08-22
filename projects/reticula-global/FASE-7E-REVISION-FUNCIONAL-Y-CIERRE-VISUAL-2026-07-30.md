@@ -758,3 +758,56 @@ URL:
 `http://127.0.0.1:8088/projects/mapa-mundi/`
 
 La selección y el proxy afectan únicamente a localhost. La ruta y el comportamiento públicos permanecen sin cambios. No se modificaron la API, PHP, MySQL, SQL, JSON, datos, indicadores ni metodología.
+
+## Corrección 7E4-02 — Foco visual de la macroárea completa
+
+### Incidencia y causa
+
+Al entrar en el mapa con Tab, el foco DOM recaía correctamente en la geometría representativa de África, pero el selector `:focus-visible` solo podía dibujar el indicador sobre esa geometría concreta. Por ello Etiopía recibía trazo y sombra, mientras el resto de África no mostraba el mismo estado visual.
+
+### Archivos modificados
+
+- `projects/mapa-mundi/mapa.js`
+- `projects/mapa-mundi/mapa.css`
+- `projects/reticula-global/FASE-7E-REVISION-FUNCIONAL-Y-CIERRE-VISUAL-2026-07-30.md`
+
+### Solución
+
+Los eventos `focus` y `blur` de la geometría representativa aplican y retiran la clase `is-map-focused` en todas las geometrías cuyo `data-area` coincide con la macroárea enfocada. El estado utiliza trazo oscuro de 2,4 px y doble sombra clara/oscura, incluso con fronteras ocultas y cuando el área está seleccionada. La selección conserva su trazo propio de 1 px cuando no existe foco.
+
+La única geometría con `tabindex="0"` mantiene `role="button"` y la etiqueta accesible `Seleccionar {macroárea} en el mapa`; no se expone el país representante como nombre del control. Flechas, Inicio y Fin trasladan el foco DOM, por lo que los eventos actualizan también el estado visual de toda la macroárea.
+
+### Pruebas y resultado
+
+- Tab entra una sola vez en el mapa y enfoca visualmente África completa.
+- Flechas recorren las nueve macroáreas y trasladan el estado visual.
+- Inicio y Fin enfocan respectivamente la primera y la última macroárea.
+- Enter y Espacio seleccionan el área; Espacio evita el desplazamiento de página.
+- Tab sale al siguiente control y Shift+Tab vuelve al anterior.
+- Se conserva un elemento con `tabindex="0"` y 257 con `tabindex="-1"`.
+- Los eventos de puntero para ratón y táctil permanecen sin cambios.
+- El foco completo se distingue de la selección mediante mayor grosor y doble sombra de contraste.
+
+Resultado: **APTO PARA VALIDACIÓN VISUAL**.
+
+No se modificaron API, PHP, MySQL, SQL, JSON, datos, `POB_URB` ni `ECO_PC/MDE`. No se realizó commit ni publicación.
+
+## Cierre final de la Fase 7E
+
+La validación visual real de 7E.4 fue completada por el usuario con resultado conforme. Se comprobaron el foco de la macroárea completa, el recorrido con flechas, Inicio y Fin, la selección mediante Enter y Espacio, la salida directa del mapa con Tab y la visibilidad del foco en las filas comparativas. No se detectaron problemas visuales importantes.
+
+| Fase | Resultado |
+|---|---|
+| 7E.1 — Inventario | **GO** |
+| 7E.2 — Revisión funcional | **GO** |
+| 7E.3 — Correcciones limitadas | **GO** |
+| 7E.4 — Validación visual | **GO** |
+
+- `7E4-01`: corregida.
+- `7E4-02`: corregida y validada visualmente.
+- API, PHP, MySQL, SQL, JSON y datos permanecen sin modificaciones.
+- `POB_URB` permanece pendiente de incorporación y queda fuera de este cierre.
+- `ECO_PC/MDE` conserva su advertencia de comparabilidad limitada.
+- No quedan defectos bloqueantes conocidos.
+
+**GO — Fase 7E cerrada. Retícula Global 2025, versión funcional actual, preparada para publicación y cierre.**
