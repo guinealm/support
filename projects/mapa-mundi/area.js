@@ -3,6 +3,10 @@ const AREA_ORDER = ["AFR", "APC", "CHN", "EUR", "MDE", "NAC", "RUE", "SAI", "SAM
 const API_TIMEOUT = 5000;
 const CORE_METRICS = ["POB_TOTAL", "TERR_SUP", "ECO_PIB", "MIL_GASTO", "MIL_NUC"];
 const PROFILE_METRICS = ["TERR_DENS", "POB_EDAD", "HUM_EV", "ECO_PC", "HUM_IDH"];
+const LOCAL_HOSTNAMES = new Set(["127.0.0.1", "localhost"]);
+const API_URL = LOCAL_HOSTNAMES.has(location.hostname)
+  ? "/__reticula_api__/datos.php"
+  : "/api/reticula/v1/datos.php";
 const formatter = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 1 });
 const compact = new Intl.NumberFormat("es-ES", { notation: "compact", maximumFractionDigits: 2 });
 const profileThree = new Intl.NumberFormat("es-ES", { minimumFractionDigits: 3, maximumFractionDigits: 3 });
@@ -33,7 +37,7 @@ async function loadApi(code) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), API_TIMEOUT);
   try {
-    const response = await fetch(`/api/reticula/v1/datos.php?area=${encodeURIComponent(code)}`, {
+    const response = await fetch(`${API_URL}?area=${encodeURIComponent(code)}`, {
       headers: { Accept: "application/json" },
       signal: controller.signal
     });

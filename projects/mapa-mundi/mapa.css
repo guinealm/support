@@ -189,6 +189,12 @@ select {
 }
 
 .no-borders .country { stroke: transparent; }
+.country:focus-visible,
+.no-borders .country:focus-visible {
+  stroke: #111;
+  stroke-width: 2.4;
+  filter: brightness(.82) drop-shadow(0 0 2px #fff) drop-shadow(0 0 2px #111);
+}
 .country.is-muted { opacity: .14; }
 .country.is-active { opacity: 1; stroke: #161816; stroke-width: 1; }
 
@@ -370,7 +376,11 @@ h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.8re
 }
 
 .comparison-table tbody tr:hover,
-.comparison-table tbody tr:focus-visible { background: #fafaf7; outline: 0; }
+.comparison-table tbody tr:focus-visible {
+  background: #fafaf7;
+  outline: 3px solid var(--focus);
+  outline-offset: -3px;
+}
 
 .comparison-table tbody tr.is-selected {
   background: color-mix(in srgb, var(--area-color) 10%, white);

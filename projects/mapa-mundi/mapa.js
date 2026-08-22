@@ -20,11 +20,15 @@ let areaData = [];
 let indicatorAreas = [];
 let scores = {};
 let sortState = { key: "orden", direction: "asc" };
+let mapNavigationPaths = [];
 
 const METRICS = ["POB_TOTAL", "TERR_SUP", "ECO_PIB", "MIL_GASTO", "MIL_NUC"];
 const EXPECTED_AREAS = ["AFR", "APC", "CHN", "EUR", "MDE", "NAC", "RUE", "SAI", "SAM"];
 const EXPECTED_EDITION = "RG2025_V1";
-const API_URL = "/api/reticula/v1/datos.php";
+const LOCAL_HOSTNAMES = new Set(["127.0.0.1", "localhost"]);
+const API_URL = LOCAL_HOSTNAMES.has(location.hostname)
+  ? "/__reticula_api__/datos.php"
+  : "/api/reticula/v1/datos.php";
 const API_TIMEOUT_MS = 5000;
 const SORT_LABELS = {
   nombre: "nombre del área",
@@ -123,10 +127,19 @@ function renderPopulationProfileCards(areas) {
 
 async function renderPopulationProfile() {
   profileLoading.hidden = false;
+  profileLoading.setAttribute("role", "status");
   profileLoading.textContent = "Cargando perfil medio de la población…";
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), API_TIMEOUT_MS);
   try {
-    const response = await fetch("/api/reticula/v1/datos.php", { headers: { Accept: "application/json" } });
+    const response = await fetch(API_URL, {
+      headers: { Accept: "application/json" },
+      signal: controller.signal
+    });
     const payload = await requireJson(response);
+    if (payload?.ok !== true || payload?.meta?.edicion?.codigo !== EXPECTED_EDITION || !Array.isArray(payload.data)) {
+      throw new Error("Respuesta no válida para el perfil medio");
+    }
     const records = Array.isArray(payload?.data) ? payload.data : [];
     const areas = new Map(EXPECTED_AREAS.map((code, index) => {
       const territorialArea = areaData.find(area => area.codigo === code);
@@ -142,19 +155,31 @@ async function renderPopulationProfile() {
       const indicatorCode = record?.indicador?.codigo;
       if (!EXPECTED_AREAS.includes(areaCode) || !PROFILE_METRICS.includes(indicatorCode)) continue;
       const area = areas.get(areaCode);
+      if (area.indicadores[indicatorCode]) throw new Error("Respuesta duplicada para el perfil medio");
       area.nombre = record.area.nombre || area.nombre;
       area.orden_visual = record.area.orden_visual ?? area.orden_visual;
       areas.get(areaCode).indicadores[indicatorCode] = apiIndicator(record);
     }
     renderPopulationProfileCards([...areas.values()]);
-    const counts = Object.fromEntries(PROFILE_METRICS.map(code => [code, records.filter(record => record?.indicador?.codigo === code).length]));
-    if (Object.values(counts).some(count => count !== 9)) console.warn("Cobertura incompleta del perfil", counts);
+    const counts = Object.fromEntries(PROFILE_METRICS.map(code => [
+      code,
+      [...areas.values()].filter(area => area.indicadores[code]).length
+    ]));
+    if (Object.values(counts).some(count => count !== EXPECTED_AREAS.length)) {
+      profileLoading.hidden = false;
+      profileLoading.textContent = "El perfil está incompleto. Los datos ausentes se indican en cada tarjeta.";
+      console.warn("Cobertura incompleta del perfil", counts);
+    }
   } catch (error) {
     profileGrid.replaceChildren();
     profileLoading.hidden = false;
     profileLoading.setAttribute("role", "alert");
-    profileLoading.textContent = "No ha sido posible cargar el perfil medio de la población.";
+    profileLoading.textContent = error?.name === "AbortError"
+      ? "La carga del perfil medio ha superado el tiempo de espera de 5 segundos."
+      : "No ha sido posible cargar el perfil medio de la población.";
     console.warn("No se pudo cargar el perfil medio", error);
+  } finally {
+    clearTimeout(timeout);
   }
 }
 
@@ -350,6 +375,38 @@ function updateAreaLink(area) {
   }
 }
 
+function activateMapGeometry(props) {
+  showTooltip(props);
+  if (props.area) {
+    filter.value = props.area;
+    applyFilter(props.area);
+  }
+}
+
+function handleMapKeydown(event, path, props) {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    activateMapGeometry(props);
+    return;
+  }
+
+  const currentIndex = mapNavigationPaths.indexOf(path);
+  if (currentIndex < 0) return;
+  const lastIndex = mapNavigationPaths.length - 1;
+  let nextIndex = null;
+  if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (currentIndex + 1) % mapNavigationPaths.length;
+  if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (currentIndex - 1 + mapNavigationPaths.length) % mapNavigationPaths.length;
+  if (event.key === "Home") nextIndex = 0;
+  if (event.key === "End") nextIndex = lastIndex;
+  if (nextIndex === null) return;
+
+  event.preventDefault();
+  path.setAttribute("tabindex", "-1");
+  const nextPath = mapNavigationPaths[nextIndex];
+  nextPath.setAttribute("tabindex", "0");
+  nextPath.focus();
+}
+
 function renderMap(geojson) {
   const bounds = projectionBounds(geojson);
   const width = 1200, height = 650, padding = 24;
@@ -363,31 +420,40 @@ function renderMap(geojson) {
   ];
 
   const fragment = document.createDocumentFragment();
+  const representativePaths = new Map();
   for (const feature of geojson.features) {
     const path = document.createElementNS(SVG_NS, "path");
     const props = feature.properties;
     path.setAttribute("d", geometryPath(feature.geometry, transform));
     path.setAttribute("class", "country");
-    path.setAttribute("tabindex", "0");
+    path.setAttribute("tabindex", "-1");
     path.setAttribute("role", "img");
     const areaName = areaData.find(area => area.codigo === props.area)?.nombre || props.area_name;
     path.setAttribute("aria-label", `${props.name}, ${props.iso3}, ${areaName}`);
     path.dataset.iso3 = props.iso3;
     path.dataset.area = props.area || "";
+    if (props.area && EXPECTED_AREAS.includes(props.area) && !representativePaths.has(props.area)) {
+      representativePaths.set(props.area, path);
+    }
     path.style.fill = props.area ? palette[props.area] : "url(#neutral-pattern)";
     path.addEventListener("pointerenter", () => showTooltip(props));
-    path.addEventListener("pointerup", () => {
-      showTooltip(props);
-      if (props.area) {
-        filter.value = props.area;
-        applyFilter(props.area);
-      }
-    });
+    path.addEventListener("pointerup", () => activateMapGeometry(props));
     path.addEventListener("pointerleave", () => { tooltip.hidden = true; });
     path.addEventListener("focus", () => showTooltip(props));
     path.addEventListener("blur", () => { tooltip.hidden = true; });
+    path.addEventListener("keydown", event => handleMapKeydown(event, path, props));
     fragment.append(path);
   }
+  mapNavigationPaths = EXPECTED_AREAS.map(area => representativePaths.get(area)).filter(Boolean);
+  mapNavigationPaths.forEach((path, index) => {
+    const areaCode = path.dataset.area;
+    const areaName = areaData.find(area => area.codigo === areaCode)?.nombre || areaCode;
+    path.dataset.mapNavigation = "area";
+    path.setAttribute("tabindex", index === 0 ? "0" : "-1");
+    path.setAttribute("role", "button");
+    path.setAttribute("aria-label", `Seleccionar ${areaName} en el mapa`);
+    path.setAttribute("aria-keyshortcuts", "ArrowLeft ArrowRight ArrowUp ArrowDown Home End Enter Space");
+  });
   countriesGroup.append(fragment);
   document.querySelector("#loading").remove();
   mapWrap.setAttribute("aria-busy", "false");
