@@ -74,7 +74,7 @@
 
     .inputs{
       display:grid;
-      grid-template-columns:repeat(4,1fr);
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
       gap:14px;
       padding:18px;
     }
@@ -349,6 +349,10 @@
           <input id="do" type="number" min="0" step="0.1" value="1.2" inputmode="decimal">
         </label>
         <label>
+          <span>BC · Bomba de Calor <span class="unit">(kW)</span></span>
+          <input id="bc" type="number" min="0" step="0.1" value="0" inputmode="decimal">
+        </label>
+        <label>
           <span>VE · Tesla / coche <span class="unit">(kW)</span></span>
           <input id="ve" type="number" min="0" step="0.1" value="2.0" inputmode="decimal">
         </label>
@@ -386,8 +390,9 @@
             <div class="value" id="doOut">0 <small>kW</small></div>
           </div>
           <div>
-            <strong>Consumo total</strong>
-            <div class="value" id="ctOut">0 <small>kW</small></div>
+            <div class="icon">♨️</div>
+            <strong>Bomba de Calor</strong>
+            <div class="value" id="bcOut">0 <small>kW</small></div>
           </div>
           <div>
             <div class="icon">🚗</div>
@@ -395,6 +400,8 @@
             <div class="value" id="veOut">0 <small>kW</small></div>
           </div>
           <div class="total">
+            <strong>Consumo total</strong>
+            <div class="value" id="ctOut">0 <small>kW</small></div>
             <strong>Balance instantáneo</strong>
             <div id="balanceText">Equilibrado</div>
           </div>
@@ -429,8 +436,9 @@
           <tbody>
             <tr><td>PS</td><td>Paneles solares</td><td>Discrecional, máximo <code>5 kW</code></td></tr>
             <tr><td>DO</td><td>Consumo doméstico</td><td>Discrecional</td></tr>
+            <tr><td>BC</td><td>Bomba de Calor</td><td>Discrecional</td></tr>
             <tr><td>VE</td><td>Tesla / vehículo eléctrico</td><td>Discrecional</td></tr>
-            <tr><td>CT</td><td>Consumo total</td><td><code>CT = DO + VE</code></td></tr>
+            <tr><td>CT</td><td>Consumo total</td><td><code>CT = DO + BC + VE</code></td></tr>
             <tr><td>BA</td><td>Estado de batería</td><td>Discrecional: Vacía, Operativa y Llena</td></tr>
             <tr><td>IM</td><td>Importaciones desde red eléctrica</td><td><code>IM = max(0, CT - PS - descarga batería)</code></td></tr>
             <tr><td>EX</td><td>Exportaciones hacia red eléctrica</td><td><code>EX = max(0, PS - CT - carga batería)</code></td></tr>
@@ -441,7 +449,7 @@
   </main>
 
   <script>
-    const ids = ["ps","do","ve","ba"];
+    const ids = ["ps","do","bc","ve","ba"];
     const f = new Intl.NumberFormat("es-ES",{maximumFractionDigits:2});
     const estadoTexto = {vacia:"Vacía", operativa:"Operativa", llena:"Llena"};
 
@@ -456,12 +464,13 @@
     function calc(){
       let ps = Math.min(n("ps"), 5);
       const dom = n("do");
+      const bc = n("bc");
       const ve = n("ve");
       const ba = document.getElementById("ba").value;
 
       document.getElementById("ps").value = ps;
 
-      const ct = dom + ve;
+      const ct = dom + bc + ve;
       const saldo = ps - ct;
 
       let im = 0, ex = 0, cargaBat = 0, descargaBat = 0;
@@ -482,6 +491,7 @@
 
       set("psOut", ps, "kW");
       set("doOut", dom, "kW");
+      set("bcOut", bc, "kW");
       set("veOut", ve, "kW");
       set("ctOut", ct, "kW");
       set("imOut", im, "kW");

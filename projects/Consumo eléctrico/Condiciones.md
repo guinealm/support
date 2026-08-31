@@ -1,0 +1,1 @@
+Introducir un nuevo consumo. Bomba de Calor. Ahora hay 2 consumos (tesla y domestico) y dividimos el doméstico en Bomba de Calor y doméstico 
