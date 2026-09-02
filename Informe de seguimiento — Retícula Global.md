@@ -1,7 +1,9 @@
 # Informe de seguimiento — Retícula Global 2025
 
-**Estado reconciliado:** 2 de septiembre de 2026  
-**Informe histórico de referencia:** 30 de julio de 2026  
+**Estado reconciliado:** 2 de septiembre de 2026
+
+**Informe histórico de referencia:** 30 de julio de 2026
+
 **Edición de datos:** `RG2025_V1` congelada
 
 ## Estado vigente
