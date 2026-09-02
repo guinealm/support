@@ -42,7 +42,7 @@ Revisar y mejorar la accesibilidad, el funcionamiento y la adaptación responsiv
 - `projects/mapa-mundi/mapa.css`
 - `projects/mapa-mundi/area.js`
 - `projects/mapa-mundi/area.css`
-- `projects/reticula-global/FASE-7D-ACCESIBILIDAD-PERFIL-2026-07-30.md`
+- `projects/mapa-mundi/docs/historico/FASE-7D-ACCESIBILIDAD-PERFIL-2026-07-30.md`
 
 ## 6. Navegación por teclado
 

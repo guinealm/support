@@ -605,7 +605,7 @@ Resultado técnico correcto. La interacción real con Tab/Shift+Tab, lector de p
 - `projects/mapa-mundi/index.html`
 - `projects/mapa-mundi/mapa.js`
 - `projects/mapa-mundi/mapa.css`
-- `projects/reticula-global/FASE-7E-REVISION-FUNCIONAL-Y-CIERRE-VISUAL-2026-07-30.md`
+- `projects/mapa-mundi/docs/historico/FASE-7E-REVISION-FUNCIONAL-Y-CIERRE-VISUAL-2026-07-30.md`
 
 ### Decisión final de 7E.3
 
@@ -743,14 +743,14 @@ Para permitir la comprobación local sin modificar la API, `mapa.js` y `area.js`
 - `127.0.0.1` o `localhost`: `/__reticula_api__/datos.php`;
 - cualquier otro hostname, incluida producción: `/api/reticula/v1/datos.php`.
 
-La API pública no devuelve `Access-Control-Allow-Origin`, por lo que un `fetch` directo desde localhost sería bloqueado por el navegador. El script interno `projects/reticula-global/servidor_validacion_local.py` resuelve `/__reticula_api__/datos.php` mediante un proxy GET de solo lectura hacia:
+La API pública no devuelve `Access-Control-Allow-Origin`, por lo que un `fetch` directo desde localhost sería bloqueado por el navegador. El script interno `projects/mapa-mundi/tools/validacion/servidor_validacion_local.py` resuelve `/__reticula_api__/datos.php` mediante un proxy GET de solo lectura hacia:
 
 `https://support.jumalenin.com/api/reticula/v1/datos.php`
 
 Procedimiento:
 
 ```powershell
-python projects\reticula-global\servidor_validacion_local.py
+python projects\mapa-mundi\tools\validacion\servidor_validacion_local.py
 ```
 
 URL:
@@ -769,7 +769,7 @@ Al entrar en el mapa con Tab, el foco DOM recaía correctamente en la geometría
 
 - `projects/mapa-mundi/mapa.js`
 - `projects/mapa-mundi/mapa.css`
-- `projects/reticula-global/FASE-7E-REVISION-FUNCIONAL-Y-CIERRE-VISUAL-2026-07-30.md`
+- `projects/mapa-mundi/docs/historico/FASE-7E-REVISION-FUNCIONAL-Y-CIERRE-VISUAL-2026-07-30.md`
 
 ### Solución
 

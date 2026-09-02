@@ -32,6 +32,6 @@ El avance del **78 %** y la estimación de **25–39 horas** pertenecen a la fot
 
 **Fase 8 — Consolidación de versión y preparación de publicación.**
 
-Su objetivo, alcance, exclusiones, evidencia y criterio de cierre se registran en `projects/reticula-global/FASE-8-CONSOLIDACION-Y-PREPARACION-PUBLICACION-2026-09-02.md`.
+Su objetivo, alcance, exclusiones, evidencia y criterio de cierre se registran en `projects/mapa-mundi/docs/seguimiento/FASE-8-CONSOLIDACION-Y-PREPARACION-PUBLICACION-2026-09-02.md`.
 
 No se autoriza por este informe ningún cambio de datos, SQL, commit, push ni despliegue.

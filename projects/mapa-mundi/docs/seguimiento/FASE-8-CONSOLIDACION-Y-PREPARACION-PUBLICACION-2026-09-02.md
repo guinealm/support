@@ -11,11 +11,11 @@ Convertir el GO funcional de la Fase 7E en una versión local identificable y un
 ## 2. Rutas incluidas
 
 - `Informe de seguimiento — Retícula Global.md`.
-- `projects/reticula-global/INFORME-SEGUIMIENTO-RETICULA-GLOBAL-2026-07-30.md`.
+- `projects/mapa-mundi/docs/seguimiento/INFORME-SEGUIMIENTO-RETICULA-GLOBAL-2026-07-30.md`.
 - Informes de 7D y 7E como evidencia de solo lectura.
 - `projects/mapa-mundi/` únicamente para inventario local de archivos y futuras comprobaciones estáticas o de navegador local autorizadas por el alcance.
 
-La aplicación canónica continúa en `projects/mapa-mundi/`. Los informes continúan en `projects/reticula-global/`.
+La aplicación canónica continúa en `projects/mapa-mundi/`. Los informes se organizan ahora dentro de `projects/mapa-mundi/docs/`.
 
 ## 3. Exclusiones
 

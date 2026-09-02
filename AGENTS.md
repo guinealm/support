@@ -20,8 +20,9 @@ La autorización debe nombrar la operación y su alcance. Una petición general 
 ## Topología de Retícula Global
 
 - `projects/mapa-mundi/`: aplicación web activa de Retícula Global. Es la ruta funcional principal.
-- `projects/reticula-global/`: informes de seguimiento, revisión y soporte de validación local.
-- `projects/Mapa simbólico Mundial/`: archivo histórico, metodológico, documental y de preparación de datos. Trátalo como material de referencia; no lo reorganices ni lo conviertas en aplicación activa por iniciativa propia.
+- `projects/mapa-mundi/docs/`: informes de seguimiento y revisión de Retícula Global.
+- `projects/mapa-mundi/tools/validacion/`: soporte de validación local; no ejecutar el proxy sin autorización expresa.
+- `projects/Mapa simbólico Mundial/`: archivo histórico, metodológico, documental y de preparación de datos. La API ya fue consolidada en su ruta canónica mediante A1. Trátalo como material de referencia; no lo reorganices ni lo conviertas en aplicación activa por iniciativa propia.
 - `api/reticula/`: API del proyecto. Inspección de código permitida; ejecución, cambios de SQL, base de datos o datos requieren autorización expresa conforme a estas reglas.
 
 No dupliques cambios entre estas zonas. Antes de editar, identifica cuál es la fuente canónica del elemento afectado.
@@ -36,7 +37,7 @@ No dupliques cambios entre estas zonas. Antes de editar, identifica cuál es la 
 
 ## Forma de trabajo específica
 
-- Empieza por leer `docs/MIGRACION-CODEX-RETICULA-GLOBAL.md` y el informe de fase relacionado con la tarea.
+- Empieza por leer `docs/MIGRACION-CODEX-RETICULA-GLOBAL.md` y el informe de fase relacionado en `projects/mapa-mundi/docs/seguimiento/`.
 - Prioriza cambios pequeños y comprobables en navegador local.
 - Preserva navegación por teclado, foco visible, semántica, mensajes de error, comportamiento responsive y `prefers-reduced-motion`.
 - No uses la web pública como objetivo de escritura ni como sustituto de una validación local controlada.

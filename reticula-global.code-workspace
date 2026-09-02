@@ -1,0 +1,20 @@
+{
+  "folders": [
+    { "name": "Support", "path": "." },
+    { "name": "Aplicación activa", "path": "projects/mapa-mundi" },
+    { "name": "Seguimiento", "path": "projects/mapa-mundi/docs/seguimiento" },
+    { "name": "Guía Jumalenin", "path": "../.." }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/*.pyc": true
+    },
+    "search.exclude": {
+      "**/world.geojson": true
+    }
+  },
+  "extensions": {
+    "recommendations": []
+  }
+}

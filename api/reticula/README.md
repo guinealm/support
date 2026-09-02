@@ -1,6 +1,6 @@
 # API Retícula Global — entorno de trabajo
 
-Estado: Fase 1D.3–1D.4. Están implementados el endpoint de estado y la consulta consolidada necesaria para la primera página conectada.
+Estado: implementación canónica consolidada mediante el lote A1. Están implementados el endpoint de estado y la consulta consolidada necesaria para la primera página conectada.
 
 ## Requisitos
 
@@ -70,7 +70,7 @@ GET /api/reticula/v1/datos.php?bloque=TEC
 GET /api/reticula/v1/datos.php?indicador=TEC_NET
 ```
 
-La primera interfaz consumidora es `tabla-datos-consolidados.html`. La página carga los datos mediante la API, permite filtrarlos en el navegador y exportar la selección visible como CSV. No contiene una copia estática de los valores de producción.
+La interfaz histórica consumidora es `projects/Mapa simbólico Mundial/tabla-datos-consolidados.html`. La página carga los datos mediante la API, permite filtrarlos en el navegador y exportar la selección visible como CSV. No contiene una copia estática de los valores de producción.
 
 ## Errores controlados
 

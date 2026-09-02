@@ -22,7 +22,7 @@ Leer en este orden:
 1. `AGENTS.md` de la raíz del ecosistema.
 2. `sites/support/AGENTS.md`.
 3. `sites/support/Informe de seguimiento — Retícula Global.md`.
-4. `sites/support/projects/reticula-global/INFORME-SEGUIMIENTO-RETICULA-GLOBAL-2026-07-30.md`.
+4. `sites/support/projects/mapa-mundi/docs/seguimiento/INFORME-SEGUIMIENTO-RETICULA-GLOBAL-2026-07-30.md`.
 5. El informe de la fase concreta que se vaya a continuar.
 
 Consultar `projects/Mapa simbólico Mundial/` solo cuando la tarea necesite antecedentes metodológicos o históricos. No cargar todo ese archivo como contexto inicial.
@@ -32,7 +32,7 @@ Consultar `projects/Mapa simbólico Mundial/` solo cuando la tarea necesite ante
 | Zona | Función | Tratamiento inicial |
 |---|---|---|
 | `projects/mapa-mundi/` | Aplicación activa | Fuente canónica del frontend |
-| `projects/reticula-global/` | Seguimiento y validación | Consultar el informe de fase pertinente |
+| `projects/mapa-mundi/docs/` | Seguimiento y validación | Consultar el informe de fase pertinente |
 | `projects/Mapa simbólico Mundial/` | Archivo histórico y metodológico | Solo lectura salvo encargo específico |
 | `api/reticula/` | API | No ejecutar ni modificar sin autorización específica |
 

@@ -78,9 +78,24 @@ function require_get_without_parameters(): void
 function load_database_config(): array
 {
     $externalPath = getenv('RETICULA_DB_CONFIG');
-    $configPath = is_string($externalPath) && trim($externalPath) !== ''
-        ? trim($externalPath)
-        : dirname(__DIR__, 3) . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'reticula-db.local.php';
+    if (is_string($externalPath) && trim($externalPath) !== '') {
+        $configPath = trim($externalPath);
+    } else {
+        $documentRoot = $_SERVER['DOCUMENT_ROOT'] ?? '';
+        $privateConfig = is_string($documentRoot) && $documentRoot !== ''
+            ? dirname($documentRoot, 3)
+                . DIRECTORY_SEPARATOR . '.config'
+                . DIRECTORY_SEPARATOR . 'reticula-global'
+                . DIRECTORY_SEPARATOR . 'support'
+                . DIRECTORY_SEPARATOR . 'reticula-db.php'
+            : '';
+
+        $configPath = $privateConfig !== '' && is_file($privateConfig) && is_readable($privateConfig)
+            ? $privateConfig
+            : dirname(__DIR__, 2)
+                . DIRECTORY_SEPARATOR . 'config'
+                . DIRECTORY_SEPARATOR . 'reticula-db.local.php';
+    }
 
     if (!is_file($configPath) || !is_readable($configPath)) {
         throw new ApiException(

@@ -1,3 +1,4 @@
 # Retícula Global: secretos locales y volcado MySQL de trabajo.
 /projects/Mapa simbólico Mundial/config/reticula-db.local.php
+/api/reticula/config/reticula-db.local.php
 /projects/Mapa simbólico Mundial/reticula_global_1c2_runner/output_1c2/u794456529_map_sim_Mund.sql

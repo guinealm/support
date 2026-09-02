@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Retícula: estado local",
+      "type": "shell",
+      "command": "git status --short",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Retícula: inventario de archivos",
+      "type": "shell",
+      "command": "rg --files projects/mapa-mundi projects/reticula-global \"projects/Mapa simbólico Mundial\" api/reticula",
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "Retícula: servidor estático",
+      "type": "shell",
+      "command": "python -m http.server 8088 --bind 127.0.0.1",
+      "options": { "cwd": "${workspaceFolder}" },
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

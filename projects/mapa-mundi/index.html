@@ -3,131 +3,70 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Primera versión interactiva del mapa de áreas de Retícula Global 2025.">
-  <title>Mapa simbólico mundial — Retícula Global 2025</title>
+  <meta name="description" content="Retícula Global 2025: nueve espacios para interpretar un mundo interdependiente.">
+  <title>Retícula Global 2025 — Portada didáctica</title>
   <link rel="icon" href="https://common.jumalenin.com/assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="mapa.css">
+  <link rel="stylesheet" href="portada.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="back-link" href="../../index.html" aria-label="Volver a Support">
-      <span aria-hidden="true">←</span> Support
-    </a>
-    <p>Jumalenin · Laboratorio cartográfico</p>
+  <header class="landing-header">
+    <a href="../../index.html" class="support-link"><span aria-hidden="true">←</span> Support</a>
+    <p>Jumalenin · Atlas estratégico</p>
   </header>
 
   <main>
-    <section class="intro">
-      <div>
-        <p class="eyebrow">Nueve macroáreas · Proyección Equal Earth</p>
-        <h1>Mapa simbólico<br>mundial</h1>
+    <section class="hero" aria-labelledby="landing-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Una lectura del orden mundial · 2025</p>
+        <h1 id="landing-title">Retícula<br>Global</h1>
+        <p class="lead">Nueve espacios para interpretar un mundo interdependiente. Una mirada conjunta a territorio, población, economía y capacidad estratégica.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="explorar.html">Explorar datos y comparaciones <span aria-hidden="true">→</span></a>
+          <a class="secondary-action" href="explorar.html#comparison-title">Comparación y metodología</a>
+        </div>
       </div>
-      <p class="dek">Una lectura territorial del orden mundial contemporáneo. Explora los países, aísla una macroárea y ajusta su lenguaje cromático.</p>
+
+      <div class="hero-map" aria-label="Las nueve macroáreas de Retícula Global">
+        <div class="map-heading">
+          <p>El mundo en nueve macroáreas</p>
+          <span>Proyección Equal Earth</span>
+        </div>
+        <svg id="landing-map" viewBox="0 0 1200 650" role="img" aria-labelledby="landing-map-title landing-map-desc">
+          <title id="landing-map-title">Mapa de las nueve macroáreas</title>
+          <desc id="landing-map-desc">Mapa mundial coloreado según la clasificación territorial de Retícula Global 2025.</desc>
+          <defs>
+            <pattern id="landing-neutral" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+              <rect width="8" height="8" fill="#deded8"></rect>
+              <line y2="8" stroke="#bdbdb6" stroke-width="2"></line>
+            </pattern>
+          </defs>
+          <g id="landing-countries"></g>
+        </svg>
+        <p id="map-status" class="map-status" role="status">Preparando el mapa…</p>
+      </div>
     </section>
 
-    <section class="workspace" aria-label="Mapa mundial interactivo">
-      <div class="map-panel">
-        <div class="map-toolbar" role="group" aria-label="Controles del mapa">
-          <label class="switch">
-            <input id="toggle-borders" type="checkbox" checked>
-            <span>Fronteras</span>
-          </label>
-          <label class="area-filter">
-            <span>Resaltar</span>
-            <select id="area-filter">
-              <option value="">Todas las macroáreas</option>
-            </select>
-          </label>
-          <a id="view-area-link" class="button area-sheet-link" href="area.html?codigo=AFR" hidden>Ver ficha</a>
-          <button id="download-svg" class="button button-dark" type="button">Descargar SVG</button>
-        </div>
-
-        <div id="map-wrap" class="map-wrap" aria-busy="true">
-          <svg id="world-map" role="group" aria-roledescription="mapa interactivo" aria-labelledby="map-title map-desc" viewBox="0 0 1200 650">
-            <title id="map-title">Mapa simbólico mundial</title>
-            <desc id="map-desc">Países coloreados según las nueve macroáreas de Retícula Global. Al entrar en el mapa con Tab, usa las flechas para recorrer las áreas y Enter o Espacio para seleccionarlas.</desc>
-            <defs>
-              <pattern id="neutral-pattern" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                <rect width="8" height="8" fill="#e9e9e6"></rect>
-                <line y2="8" stroke="#c8c8c2" stroke-width="2"></line>
-              </pattern>
-            </defs>
-            <g id="countries"></g>
-          </svg>
-          <div id="tooltip" class="tooltip" role="status" aria-live="polite" hidden></div>
-          <div id="loading" class="loading">Preparando el mapa…</div>
-        </div>
-        <p class="map-note">Territorios sin población permanente o fuera de cálculo se muestran en gris tramado. La asignación territorial procede del CSV operativo.</p>
+    <section class="areas" aria-labelledby="areas-title">
+      <div class="section-heading">
+        <p class="eyebrow">La retícula</p>
+        <h2 id="areas-title">Nueve áreas, nueve posiciones</h2>
+        <p>Selecciona una macroárea para consultar su ficha territorial y sus indicadores.</p>
       </div>
-
-      <aside class="legend-panel" aria-labelledby="legend-title">
-        <div class="legend-heading">
-          <div>
-            <p class="eyebrow">Sistema cromático</p>
-            <h2 id="legend-title">Macroáreas</h2>
-          </div>
-          <button id="restore-colors" class="button button-light" type="button">Restaurar colores</button>
-        </div>
-        <div id="legend" class="legend"></div>
-      </aside>
+      <div id="area-list" class="area-list"></div>
     </section>
 
-    <section id="population-profile" class="population-profile" aria-labelledby="population-profile-title">
-      <div class="comparison-heading">
-        <div><p class="eyebrow">Indicadores disponibles · RG2025_V1</p><h2 id="population-profile-title">Perfil medio de la población</h2></div>
-        <p class="comparison-intro">Valores agregados por macroárea. Las fuentes, años y observaciones están disponibles en cada tarjeta.</p>
-      </div>
-      <p id="profile-loading" class="profile-status" role="status" aria-live="polite">Cargando perfil medio de la población…</p>
-      <div id="profile-grid" class="profile-grid"></div>
-    </section>
-
-    <section class="comparison" aria-labelledby="comparison-title">
-      <div class="comparison-heading">
-        <div>
-          <p class="eyebrow">Edición congelada RG2025_V1</p>
-          <h2 id="comparison-title">Comparación de macroáreas</h2>
-        </div>
-        <p class="comparison-intro">Valores naturales y magnitud relativa dentro de las nueve áreas. Selecciona una fila para localizarla en el mapa.</p>
-      </div>
-
-      <p id="sort-status" class="sort-status" aria-live="polite">Orden: áreas según la leyenda.</p>
-      <p id="data-fallback-notice" class="data-notice" role="status" hidden>Se muestran datos de respaldo de la edición RG2025_V1.</p>
-      <div class="table-scroll" tabindex="0" aria-label="Tabla comparativa; en pantallas pequeñas se desplaza horizontalmente">
-        <table class="comparison-table">
-          <caption class="visually-hidden">Comparación de las nueve macroáreas por población, superficie, PIB, gasto militar y ojivas nucleares.</caption>
-          <thead>
-            <tr>
-              <th scope="col" class="sticky-column"><button class="sort-button" type="button" data-sort="nombre">Área <span aria-hidden="true">↕</span></button></th>
-              <th scope="col"><button class="sort-button" type="button" data-sort="POB_TOTAL">Población <span aria-hidden="true">↕</span></button></th>
-              <th scope="col"><button class="sort-button" type="button" data-sort="TERR_SUP">Superficie <span aria-hidden="true">↕</span></button></th>
-              <th scope="col"><button class="sort-button" type="button" data-sort="ECO_PIB">PIB nominal <span aria-hidden="true">↕</span></button></th>
-              <th scope="col"><button class="sort-button" type="button" data-sort="MIL_GASTO">Gasto militar <span aria-hidden="true">↕</span></button></th>
-              <th scope="col"><button class="sort-button" type="button" data-sort="MIL_NUC">Ojivas nucleares <span aria-hidden="true">↕</span></button></th>
-            </tr>
-          </thead>
-          <tbody id="comparison-body"></tbody>
-        </table>
-      </div>
-      <p class="military-note">Todavía no se calcula un índice militar único. Falta incorporar una medida validada de tecnología y capacidad de proyección.</p>
-
-      <details class="methodology">
-        <summary>Datos y metodología</summary>
-        <div class="methodology-grid">
-          <p><strong>Población</strong><span>2025 · ONU WPP 2024</span></p>
-          <p><strong>Superficie terrestre</strong><span>2023 · FAOSTAT</span></p>
-          <p><strong>PIB nominal</strong><span>2024 · Banco Mundial WDI</span></p>
-          <p><strong>Gasto militar</strong><span>2025 · SIPRI 2026</span></p>
-          <p><strong>Ojivas</strong><span>2026 · SIPRI Yearbook 2026</span></p>
-        </div>
-        <p>EUR y NAC incluyen algunos datos de PIB de 2023. APC incluye algunos datos militares de 2024. Las puntuaciones son comparaciones logarítmicas internas entre las nueve áreas; expresan magnitud relativa, no una valoración positiva o negativa.</p>
-      </details>
+    <section class="bridge" aria-labelledby="bridge-title">
+      <p class="eyebrow">Del panorama al detalle</p>
+      <h2 id="bridge-title">La portada orienta.<br>El explorador compara.</h2>
+      <a class="primary-action inverse" href="explorar.html">Entrar al explorador <span aria-hidden="true">→</span></a>
     </section>
   </main>
 
   <footer>
-    <p>Fuente cartográfica: Natural Earth 1:10m · Dominio público</p>
-    <p>Retícula Global 2025 · Primera versión visual</p>
+    <p>Retícula Global 2025 · Edición RG2025_V1</p>
+    <p>Cartografía Natural Earth · Dominio público</p>
   </footer>
-  <script src="mapa.js" defer></script>
+
+  <script src="portada.js" defer></script>
 </body>
 </html>
