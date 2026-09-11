@@ -22,7 +22,7 @@ La autorización debe nombrar la operación y su alcance. Una petición general 
 - `projects/mapa-mundi/`: aplicación web activa de Retícula Global. Es la ruta funcional principal.
 - `projects/mapa-mundi/docs/`: informes de seguimiento y revisión de Retícula Global.
 - `projects/mapa-mundi/tools/validacion/`: soporte de validación local; no ejecutar el proxy sin autorización expresa.
-- `projects/Mapa simbólico Mundial/`: archivo histórico, metodológico, documental y de preparación de datos. La API ya fue consolidada en su ruta canónica mediante A1. Trátalo como material de referencia; no lo reorganices ni lo conviertas en aplicación activa por iniciativa propia.
+- `C:\jumalenin-ecosistema\archivo\reticula-global-2025\`: archivo histórico, metodológico, documental y de preparación de datos, fuera de la ruta pública. Trátalo como material de referencia de solo lectura salvo encargo específico.
 - `api/reticula/`: API del proyecto. Inspección de código permitida; ejecución, cambios de SQL, base de datos o datos requieren autorización expresa conforme a estas reglas.
 
 No dupliques cambios entre estas zonas. Antes de editar, identifica cuál es la fuente canónica del elemento afectado.

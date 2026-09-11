@@ -92,7 +92,7 @@ function load_database_config(): array
 
         $configPath = $privateConfig !== '' && is_file($privateConfig) && is_readable($privateConfig)
             ? $privateConfig
-            : dirname(__DIR__, 2)
+            : dirname(__DIR__)
                 . DIRECTORY_SEPARATOR . 'config'
                 . DIRECTORY_SEPARATOR . 'reticula-db.local.php';
     }

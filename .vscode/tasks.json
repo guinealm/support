@@ -11,7 +11,7 @@
     {
       "label": "Retícula: inventario de archivos",
       "type": "shell",
-      "command": "rg --files projects/mapa-mundi projects/reticula-global \"projects/Mapa simbólico Mundial\" api/reticula",
+      "command": "rg --files projects/mapa-mundi api/reticula",
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },

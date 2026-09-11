@@ -1,9 +1,9 @@
 # Plan de reorganización por lotes
 
-> Estado al 2 de septiembre de 2026: L1, L2, W1 y A1 están ejecutados. G1 y H1 permanecen pendientes de autorización específica.
+> Estado al 11 de septiembre de 2026: L1, L2, W1, A1, G1 y H1 están ejecutados. El archivo histórico reside en `C:\jumalenin-ecosistema\archivo\reticula-global-2025\`; las seis copias JSON/GeoJSON idénticas fueron retiradas.
 
 **Fase:** RG-04  
-**Estado:** ejecución parcial autorizada: L1, L2 y W1 cerrados  
+**Estado:** lotes documentados ejecutados; entrega Git pendiente de autorización
 **Principio:** una ubicación canónica por función y ningún borrado sin evidencia
 
 ## 1. Resultado buscado

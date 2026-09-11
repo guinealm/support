@@ -1,6 +1,6 @@
 # Estado del programa — Retícula Global y Codex Windows
 
-**Actualizado:** 2 de septiembre de 2026  
+**Actualizado:** 11 de septiembre de 2026
 **Dirección:** Codex  
 **Presupuesto:** 30 horas
 
@@ -15,8 +15,10 @@
 | Dirección de portada | Completada | Dirección única y especificación reducida | Terminar reorganización |
 | Limpieza material | L1 completado | Tres residuos retirados; 4,73 MB recuperados | Verificación final |
 | Construcción de portada | Completada | Portada local integrada como entrada | Ninguna |
-| Integración y QA esencial | W1 conforme | Navegación y recursos validados por HTTP local; conformidad recibida | Decidir G1 y H1 |
-| Consolidación API | A1 completado | Implementación canónica en `api/reticula/`; sin dependencia histórica | Decidir G1 y H1 |
+| Integración y QA esencial | W1 conforme | Navegación y recursos validados por HTTP local; conformidad recibida | Revisión final |
+| Consolidación API | A1 completado | Implementación canónica en `api/reticula/`; sin dependencia histórica | Validar `php -l` cuando haya PHP |
+| Generadores y cartografía | G1 completado | Tres generadores y Natural Earth bajo `tools/generacion/` | Ninguna |
+| Archivo histórico | H1 completado | 243 archivos conservados fuera de la ruta pública; seis duplicados retirados | Revisión y eventual commit |
 
 ## Documentos principales
 
@@ -36,12 +38,12 @@
 - `projects/mapa-mundi/` es la aplicación activa.
 - No se creará otra aplicación paralela.
 - La portada será didáctica y el explorador conservará la carga analítica.
-- Los documentos narrativos se archivarán para una fase posterior; no se borran.
+- Los documentos narrativos están archivados fuera de la ruta pública; no se borraron.
 - La retirada se hace por lotes exactos y autorizados.
-- La API ya no impide archivar el directorio histórico; los generadores y fuentes de G1 siguen pendientes.
+- A1, G1 y H1 están completados: la API y los generadores tienen rutas canónicas, y el archivo histórico reside fuera de la ruta pública.
 - No se incorporan iconos humanos dentro de las 30 horas.
 
-## Operaciones no realizadas
+## Operaciones no realizadas en esta actualización documental
 
 - SQL o conexiones a bases de datos;
 - modificaciones de API/PHP;

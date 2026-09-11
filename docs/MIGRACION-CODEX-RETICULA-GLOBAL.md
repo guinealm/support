@@ -25,7 +25,7 @@ Leer en este orden:
 4. `sites/support/projects/mapa-mundi/docs/seguimiento/INFORME-SEGUIMIENTO-RETICULA-GLOBAL-2026-07-30.md`.
 5. El informe de la fase concreta que se vaya a continuar.
 
-Consultar `projects/Mapa simbólico Mundial/` solo cuando la tarea necesite antecedentes metodológicos o históricos. No cargar todo ese archivo como contexto inicial.
+Consultar `C:\jumalenin-ecosistema\archivo\reticula-global-2025\` solo cuando la tarea necesite antecedentes metodológicos o históricos. No cargar todo ese archivo como contexto inicial.
 
 ## Mapa de trabajo
 
@@ -33,7 +33,7 @@ Consultar `projects/Mapa simbólico Mundial/` solo cuando la tarea necesite ante
 |---|---|---|
 | `projects/mapa-mundi/` | Aplicación activa | Fuente canónica del frontend |
 | `projects/mapa-mundi/docs/` | Seguimiento y validación | Consultar el informe de fase pertinente |
-| `projects/Mapa simbólico Mundial/` | Archivo histórico y metodológico | Solo lectura salvo encargo específico |
+| `C:\jumalenin-ecosistema\archivo\reticula-global-2025\` | Archivo histórico y metodológico no público | Solo lectura salvo encargo específico |
 | `api/reticula/` | API | No ejecutar ni modificar sin autorización específica |
 
 ## Estado heredado

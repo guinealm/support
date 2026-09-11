@@ -41,6 +41,12 @@ La tarea `Retícula: servidor estático` de `.vscode/tasks.json` sirve únicamen
 
 No debe ejecutarse `projects/mapa-mundi/tools/validacion/servidor_validacion_local.py` sin una autorización que incluya expresamente el proxy local y sus consultas HTTP.
 
+## Generación reproducible
+
+Los generadores canónicos están en `tools/generacion/` y la fuente Natural Earth utilizada por el mapa en `tools/generacion/fuentes/natural-earth-source/`. El maestro territorial y los agregados congelados permanecen referenciados desde el archivo histórico porque también alimentan otros procesos trazables.
+
+Mover o revisar estos scripts no autoriza su ejecución. Ejecutarlos puede sobrescribir JSON y GeoJSON de la aplicación y requiere una autorización específica para generación de datos.
+
 ## Límites vigentes
 
 - `RG2025_V1` permanece congelada.

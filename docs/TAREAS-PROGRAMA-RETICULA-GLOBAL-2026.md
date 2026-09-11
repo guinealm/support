@@ -23,7 +23,7 @@
 | RG-04 | Definir topología final | 2 | Cerrada | RG-03 | Árbol final y mapa de movimientos |
 | RG-05 | Reubicar documentación y herramientas | 4 | Cerrada | RG-04 y autorización | Una ruta funcional principal |
 | RG-06 | Consolidar dependencia de API | 2 | Cerrada | autorización API/PHP | Directorio histórico sin dependencia viva |
-| RG-07 | Retirar duplicados restantes | 2 | Pendiente | RG-05 y RG-06 | Copias redundantes eliminadas |
+| RG-07 | Reorganizar generadores y retirar duplicados | 2 | Cerrada | RG-05 y RG-06 | Generadores canónicos; seis copias retiradas |
 | RG-08 | Definir portada mínima | 2 | Cerrada | — | Dirección y wireframe único |
 | RG-09 | Construir portada y conservar explorador | 6 | Cerrada | RG-05 | Portada local y explorador separado |
 | RG-10 | Integrar portada, explorador y fichas | 2 | Cerrada | RG-09 | Navegación coherente |
@@ -47,7 +47,7 @@ Conformidad: **otorgada por el usuario el 2 de septiembre de 2026**.
 ### Puerta L2 — reorganización
 
 Alcance: movimientos de informes, herramienta de validación, generadores y archivo histórico.  
-Estado: **lote documental y herramienta de validación ejecutados; referencias actualizadas**. A1 está cerrado; G1 y H1 siguen pendientes y requieren sus autorizaciones específicas.
+Estado: **lote documental y herramienta de validación ejecutados; referencias actualizadas**. A1, G1 y H1 están cerrados.
 
 Conformidad L2 y W1: **otorgada por el usuario el 2 de septiembre de 2026**.
 
