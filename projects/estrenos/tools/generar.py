@@ -21,7 +21,8 @@ def render(source, fecha):
             i += 1
             continue
         # El registro operativo del correo no forma parte de la pagina publica.
-        if line.startswith("El correo de la semana"):
+        if line.startswith(("El correo de la semana", "Informe preparado para publicar en este chat.",
+                            "Confirmación posterior: enviado")):
             i += 1
             continue
         if line.startswith("|"):
@@ -31,8 +32,8 @@ def render(source, fecha):
                 if not all(re.fullmatch(r"[-: ]+", c) for c in cells):
                     rows.append(cells)
                 i += 1
-            is_titles = rows[0][0] == "Título"
-            caption = group if is_titles else "Matriz de evaluación"
+            is_titles = rows[0][0] in ("Título", "Película")
+            caption = (group or "Películas del informe") if is_titles else "Matriz de evaluación"
             chunks.append('<div class="table-scroll" role="region" tabindex="0" aria-label="'+html.escape(caption)+'"><table><caption>'+html.escape(caption)+'</caption><thead><tr>')
             if is_titles:
                 chunks.append('<th scope="col">Vista</th>')
@@ -51,7 +52,7 @@ def render(source, fecha):
                     # La misma pelicula en varias plataformas comparte marca.
                     season = re.search(r"\[T(\d+)(?:[^\]]*)\]", title)
                     key = "fa:" + match[1] + (":t"+season[1] if season else "")
-                    is_selected = row[-1].strip() in ("Seleccionada", "Seleccionado")
+                    is_selected = bool(re.fullmatch(r"Seleccionad[ao]|Cumple(?:;.*)?", row[-1].strip().strip("*")))
                     selected += int(is_selected)
                     count += 1
                     attrs = ' data-title-key="'+key+'" class="'+("selected" if is_selected else "")+'"'
@@ -61,8 +62,8 @@ def render(source, fecha):
                 chunks.append('</tr>')
             chunks.append('</tbody></table></div>')
             continue
-        if line.startswith("**") and line.endswith("**"):
-            title = line[2:-2]
+        if (line.startswith("**") and line.endswith("**")) or line.startswith("#"):
+            title = line[2:-2] if line.startswith("**") else line.lstrip("# ")
             if title.startswith("Seguimiento de estrenos"):
                 chunks.append('<p class="report-title">'+html.escape(title)+'</p>')
             else:
@@ -116,6 +117,52 @@ def render(source, fecha):
 <footer class="site-footer"><div class="container"><p>Jumalenin Support · Estrenos. Disponibilidad orientativa a la fecha del informe.</p><a href="#informe">Volver al informe</a></div></footer>
 </body></html>''', count, selected
 
+def report_selector(fecha, dates):
+    display = datetime.date.fromisoformat(fecha).strftime("%d/%m/%Y")
+    label = "Última versión del informe" if fecha == max(dates) else "Informe seleccionado"
+    links = []
+    for date in sorted(dates, reverse=True):
+        text = datetime.date.fromisoformat(date).strftime("%d/%m/%Y")
+        current = ' aria-current="page"' if date == fecha else ''
+        latest = " · Último" if date == max(dates) else ""
+        links.append(f'<li><a href="informe-{date}.html"{current}>Viernes {text}{latest}</a></li>')
+    return (f'<details class="version report-history"><summary>{label}: '
+            f'<time datetime="{fecha}">{display}</time> · Elegir informe</summary>'
+            '<nav aria-label="Informes semanales"><p>Informes por viernes de referencia</p><ul>'
+            + ''.join(links) + '</ul></nav></details>')
+
+
+def update_archive(root, fecha, content):
+    if datetime.date.fromisoformat(fecha).weekday() != 4:
+        raise ValueError("La fecha de referencia del informe debe ser un viernes")
+    pages = {p.stem.removeprefix("informe-"): p.read_text(encoding="utf-8")
+             for p in root.glob("informe-????-??-??.html")}
+    # Conserva también la instantánea inicial al actualizar por primera vez.
+    index = root / "index.html"
+    if index.exists():
+        previous = index.read_text(encoding="utf-8")
+        match = re.search(r'<time datetime="(\d{4}-\d{2}-\d{2})">', previous)
+        if match:
+            pages.setdefault(match[1], previous)
+    pages[fecha] = content
+    for date in pages:
+        if datetime.date.fromisoformat(date).weekday() != 4:
+            raise ValueError("Fecha archivada no válida: " + date)
+    prepared = {}
+    for date, page in pages.items():
+        page, matches = re.subn(
+            r'<p class="version">.*?</p>|<details class="version report-history">.*?</details>',
+            lambda _: report_selector(date, pages), page, count=1, flags=re.S)
+        if matches != 1:
+            raise ValueError("Falta la fecha del informe: " + date)
+        prepared[root / f"informe-{date}.html"] = page
+    prepared[index] = prepared[root / f"informe-{max(pages)}.html"]
+    for target, page in prepared.items():
+        temp = target.with_suffix(".html.tmp")
+        temp.write_text(page, encoding="utf-8")
+        temp.replace(target)
+
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--informe", required=True, type=Path)
@@ -124,9 +171,7 @@ def main():
     datetime.date.fromisoformat(args.fecha)
     content, count, selected = render(args.informe.read_text(encoding="utf-8-sig"), args.fecha)
     target = Path(__file__).resolve().parents[1] / "index.html"
-    temp = target.with_suffix(".html.tmp")
-    temp.write_text(content, encoding="utf-8")
-    temp.replace(target)
+    update_archive(target.parent, args.fecha, content)
     print(f"Generado: {count} registros, {selected} seleccionados. {target}")
 
 if __name__ == "__main__":

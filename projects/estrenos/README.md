@@ -7,7 +7,8 @@ El generador convierte el mismo informe Markdown utilizado para el correo en HTM
 Conserva textos, tablas, enlaces, advertencias y cifras, sin consultar ni recalcular FilmAffinity.
 Sólo omite el párrafo operativo sobre el envío anterior y su identificador Gmail, que no pertenece al contenido público.
 No se publica estado.json: contiene historial operativo y datos del destinatario.
-La página es una instantánea semanal, no un catálogo acumulado. El histórico original permanece en la carpeta seguimiento-estrenos.
+Cada informe es una instantánea semanal, no un catálogo acumulado. El histórico original permanece en la carpeta seguimiento-estrenos. El desplegable «Última versión del informe / Elegir informe» permite abrir las copias HTML semanales, también sin JavaScript.
+El archivo local incluye los viernes 25/09, 02/10, 09/10 y 16/10/2026; el primero contiene la recuperación del 14 al 25/09. La fecha del selector identifica el viernes de referencia: la fecha efectiva de consulta, cuando es distinta, se conserva dentro del informe.
 
 ## Actualización local
 Desde esta carpeta:
@@ -15,7 +16,8 @@ python tools/generar.py --informe "RUTA/informe-YYYY-MM-DD.md" --fecha YYYY-MM-D
 Validar que el número de filas, seleccionados y matriz coincide con el informe.
 La fecha es la del informe comprobado, no la fecha del reloj al abrir la página.
 Si falla la investigación, conservar versión anterior o publicar expresamente la cobertura parcial; nunca anunciar una revisión completa.
-El generador escribe de forma atómica index.html y no toca las marcas personales.
+El generador conserva informe-YYYY-MM-DD.html, actualiza el selector de todos los informes e index.html y no toca las marcas personales. index.html siempre muestra la fecha más reciente, aunque se incorpore después una semana anterior. Cada archivo se sustituye de forma atómica; el conjunto no constituye una transacción. Hay que conservar los HTML históricos al actualizar la carpeta.
+También reconoce las cabeceras y estados de selección de los primeros informes, sin recalcular sus valoraciones ni cambiar sus advertencias.
 
 ## Marcas Vista
 localStorage por origen y navegador, sin cuentas ni servidor.
