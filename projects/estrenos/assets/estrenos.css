@@ -1,0 +1,32 @@
+/* Complemento local de la identidad common; sin modificar la biblioteca. */
+body {margin:0;background:var(--jm-bg,#f5f7f8);color:var(--jm-text,#1f2933);font-family:var(--jm-font-base,system-ui,sans-serif);line-height:1.65}
+.container {max-width:1280px;margin-inline:auto;padding-inline:clamp(1rem,3vw,2rem)}
+.hero {padding-block:3rem;background:var(--jm-primary-soft,#d9e8e9)}
+.eyebrow {font-size:.8rem;letter-spacing:.15em;font-weight:700;color:var(--jm-primary,#245b5f)}
+.version {display:inline-block;padding:.4rem .8rem;border:1px solid var(--jm-border-strong,#b8c4ca);border-radius:6px;background:white}
+.report-container {padding-block:2rem}
+.reading-note {padding:1.3rem;border-left:4px solid var(--jm-accent,#c28f2c);background:var(--jm-surface,#fff)}
+.reading-note p:last-child {margin-bottom:0}
+.report-nav {display:flex;gap:.6rem;flex-wrap:wrap;margin-block:1.5rem 2rem}
+.report-nav a {padding:.4rem .75rem;background:var(--jm-surface,#fff);border:1px solid var(--jm-border,#d7dee2);border-radius:6px}
+#informe h2 {margin-top:3rem;scroll-margin-top:1rem}
+.report-title {font-size:1.2rem;font-weight:700}
+.table-scroll {overflow-x:auto;max-width:100%;margin-block:1.5rem;border:1px solid var(--jm-border,#d7dee2);border-radius:10px;background:white}
+table {width:100%;border-collapse:collapse;font-size:.9rem}
+caption {text-align:left;padding:1rem;font-weight:700;color:var(--jm-primary,#245b5f)}
+th,td {padding:.8rem .85rem;text-align:left;border-bottom:1px solid var(--jm-border,#d7dee2);vertical-align:top}
+thead {background:var(--jm-primary,#245b5f);color:white}
+tbody tr:nth-child(even) {background:var(--jm-surface-soft,#f8fafb)}
+tbody tr:last-child td {border-bottom:0}
+tr[data-title-key] td {font-weight:400}
+tr.selected:not(.seen) td,tr.selected:not(.seen) td a {font-weight:750}
+tr.selected.seen td,tr.selected.seen td a {font-weight:400}
+.seen-cell {text-align:center}
+input[type=checkbox] {width:22px;height:22px;margin:0;accent-color:var(--jm-primary,#245b5f);cursor:pointer}
+a {color:var(--jm-primary,#245b5f)}
+:focus-visible {outline:3px solid var(--jm-accent,#c28f2c);outline-offset:3px}
+.skip-link {position:absolute;left:1rem;top:-100px;background:white;padding:.5rem;z-index:20}
+.skip-link:focus {top:1rem}
+.site-brand img {max-width:220px}
+@media(max-width:600px) {th,td {padding:.6rem}.hero{padding-block:2rem}.table-scroll{border-radius:4px}h1{font-size:2rem}table{min-width:850px}}
+@media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto}}
