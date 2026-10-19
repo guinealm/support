@@ -9,6 +9,7 @@ Sólo omite el párrafo operativo sobre el envío anterior y su identificador Gm
 No se publica estado.json: contiene historial operativo y datos del destinatario.
 Cada informe es una instantánea semanal, no un catálogo acumulado. El histórico original permanece en la carpeta seguimiento-estrenos. El desplegable «Última versión del informe / Elegir informe» permite abrir las copias HTML semanales, también sin JavaScript.
 El archivo local incluye los viernes 25/09, 02/10, 09/10 y 16/10/2026; el primero contiene la recuperación del 14 al 25/09. La fecha del selector identifica el viernes de referencia: la fecha efectiva de consulta, cuando es distinta, se conserva dentro del informe.
+Desde el 19/10/2026 incluye también el 18/09 como reconstrucción retrospectiva parcial: 39 registros del 14 al 18/09 extraídos sin alterar sus celdas del informe del 25/09 (consulta del 26/09). No es un informe generado el 18/09 ni acredita valoraciones o disponibilidad a esa fecha. Fuente reproducible: docs/informe-2026-09-18.md; 5 seleccionados, 18 no cumplen y 16 pendientes. Se genera con el mismo comando, usando --fecha 2026-09-18.
 
 ## Actualización local
 Desde esta carpeta:
