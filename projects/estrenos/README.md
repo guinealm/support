@@ -12,6 +12,8 @@ El archivo local incluye los viernes 25/09, 02/10, 09/10 y 16/10/2026; el primer
 Desde el 19/10/2026 incluye también el 18/09 como reconstrucción retrospectiva parcial: 39 registros del 14 al 18/09 extraídos sin alterar sus celdas del informe del 25/09 (consulta del 26/09). No es un informe generado el 18/09 ni acredita valoraciones o disponibilidad a esa fecha. Fuente reproducible: docs/informe-2026-09-18.md; 5 seleccionados, 18 no cumplen y 16 pendientes. Se genera con el mismo comando, usando --fecha 2026-09-18.
 
 ## Actualización local
+Ampliación del 20/10/2026: los informes del 18/09, 25/09, 02/10 y 09/10 incorporan series con el formato y los filtros del 16/10. Las fuentes completas actualizadas están en `docs/informe-YYYY-MM-DD.md`; para regenerar estas cuatro páginas se deben usar esas copias locales. Las películas conservan sus cifras originales. Las series se evalúan retrospectivamente con consulta del 20/10 y balance separado: 10, 20, 8 y 14 registros, respectivamente. El 25/09 conserva su periodo acumulado 14–25/09, por lo que incluye también las series del 18/09. Cobertura parcial; no se presentan las valoraciones como históricas.
+
 Desde esta carpeta:
 python tools/generar.py --informe "RUTA/informe-YYYY-MM-DD.md" --fecha YYYY-MM-DD
 Validar que el número de filas, seleccionados y matriz coincide con el informe.
