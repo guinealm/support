@@ -25,14 +25,15 @@ def render(source, fecha):
                             "Confirmación posterior: enviado")):
             i += 1
             continue
-        if line.startswith("|"):
+        if line.startswith("|") or (i + 1 < len(lines) and "|" in line and
+                re.fullmatch(r"[\s|:\-]+", lines[i + 1])):
             rows = []
-            while i < len(lines) and lines[i].strip().startswith("|"):
+            while i < len(lines) and "|" in lines[i] and lines[i].strip():
                 cells = [v.strip() for v in lines[i].strip().strip("|").split("|")]
                 if not all(re.fullmatch(r"[-: ]+", c) for c in cells):
                     rows.append(cells)
                 i += 1
-            is_titles = rows[0][0] in ("Título", "Película")
+            is_titles = rows[0][0] in ("Título", "Película", "Título / tipo", "Título (tipo)")
             caption = (group or "Películas del informe") if is_titles else "Matriz de evaluación"
             chunks.append('<div class="table-scroll" role="region" tabindex="0" aria-label="'+html.escape(caption)+'"><table><caption>'+html.escape(caption)+'</caption><thead><tr>')
             if is_titles:
@@ -50,9 +51,9 @@ def render(source, fecha):
                         raise ValueError("Falta ID FilmAffinity: "+row[0])
                     title = re.sub(r"\[(.*?)\]\(https?://[^)]+\)", r"\1", row[0]).rstrip("*")
                     # La misma pelicula en varias plataformas comparte marca.
-                    season = re.search(r"\[T(\d+)(?:[^\]]*)\]", title)
+                    season = re.search(r"\bT(\d+)\b", title)
                     key = "fa:" + match[1] + (":t"+season[1] if season else "")
-                    is_selected = bool(re.fullmatch(r"Seleccionad[ao]|Cumple(?:;.*)?", row[-1].strip().strip("*")))
+                    is_selected = bool(re.fullmatch(r"Seleccionad[ao](?::.*)?|Cumple(?:;.*)?", row[-1].strip().strip("*")))
                     selected += int(is_selected)
                     count += 1
                     attrs = ' data-title-key="'+key+'" class="'+("selected" if is_selected else "")+'"'
