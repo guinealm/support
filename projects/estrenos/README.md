@@ -1,4 +1,17 @@
 # Estrenos · Jumalenin
+## Entrega del 08/11/2026
+Informe del viernes 06/11 recuperado el domingo 08/11: 58 títulos, 7 seleccionados,
+21 no cumplen y 30 pendientes. La recuperación de 107 pendientes anteriores no se
+ha reconsultado en este último intento y se declara incompleta.
+Fuente actual: `docs/informe-2026-11-06.md`; cifras: `docs/evidencia-2026-11-06.tsv`.
+La portada y el selector histórico incluyen el nuevo informe. Las notas son las
+consultadas el 08/11, no una reconstrucción de los valores del viernes.
+Instrucciones actuales de traspaso: `docs/TRASPASO-MANUAL.md`.
+La preparación local está autorizada; la publicación remota corresponde al usuario.
+El seguimiento y el correo no dependen de completar ese traspaso. Esta entrega no
+crea automatizaciones ni reactiva reintentos de cinco minutos. Las instrucciones
+de la conversación prevalecen sobre los procedimientos históricos descritos abajo.
+
 Versión local preparada el 17/10/2026. Informe inicial: 16/10/2026.
 Destino: support.jumalenin.com/projects/estrenos/ (pendiente de publicación).
 
