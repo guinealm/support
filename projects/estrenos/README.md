@@ -1,4 +1,8 @@
 # Estrenos · Jumalenin
+Ante un bloqueo de consulta o una recuperación sin progreso, leer primero
+[Diagnóstico y procedimiento de recuperación](docs/DIAGNOSTICO-Y-RECUPERACION.md).
+Incluye las evidencias del incidente del 06–08/11/2026 y cómo evitar repetirlo.
+
 ## Entrega del 08/11/2026
 Informe del viernes 06/11 recuperado el domingo 08/11: 58 títulos, 7 seleccionados,
 21 no cumplen y 30 pendientes. La recuperación de 107 pendientes anteriores no se
