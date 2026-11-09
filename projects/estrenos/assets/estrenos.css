@@ -30,6 +30,11 @@ tr[data-title-key] td {font-weight:400}
 tr.selected:not(.seen) td,tr.selected:not(.seen) td a {font-weight:750}
 tr.selected.seen td,tr.selected.seen td a {font-weight:400}
 .seen-cell {text-align:center}
+.catalog-button {display:inline-block;padding:.7rem 1rem;border-radius:6px;background:var(--jm-primary,#245b5f);color:white;font-weight:700;text-decoration:none}
+.catalog-button:hover {text-decoration:underline}
+.recommendation-details {margin:0;min-width:15rem}
+.recommendation-details dt {font-size:.8rem;color:var(--jm-primary,#245b5f)}
+.recommendation-details dd {margin:0 0 .5rem}
 input[type=checkbox] {width:22px;height:22px;margin:0;accent-color:var(--jm-primary,#245b5f);cursor:pointer}
 a {color:var(--jm-primary,#245b5f)}
 :focus-visible {outline:3px solid var(--jm-accent,#c28f2c);outline-offset:3px}

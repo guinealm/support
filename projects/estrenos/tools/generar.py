@@ -4,6 +4,7 @@ No consulta fuentes ni envia correo ni publica.
 """
 import argparse, datetime, html, re
 from pathlib import Path
+from recomendados import add_button, render_catalog
 
 def inline(text):
     text = html.escape(text, quote=True)
@@ -156,8 +157,10 @@ def update_archive(root, fecha, content):
             lambda _: report_selector(date, pages), page, count=1, flags=re.S)
         if matches != 1:
             raise ValueError("Falta la fecha del informe: " + date)
-        prepared[root / f"informe-{date}.html"] = page
+        prepared[root / f"informe-{date}.html"] = add_button(page)
     prepared[index] = prepared[root / f"informe-{max(pages)}.html"]
+    prepared[root / 'recomendados.html'] = render_catalog({
+        date: prepared[root / f"informe-{date}.html"] for date in pages})
     for target, page in prepared.items():
         temp = target.with_suffix(".html.tmp")
         temp.write_text(page, encoding="utf-8")

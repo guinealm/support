@@ -41,6 +41,16 @@ Si falla la investigación, conservar versión anterior o publicar expresamente 
 El generador conserva informe-YYYY-MM-DD.html, actualiza el selector de todos los informes e index.html y no toca las marcas personales. index.html siempre muestra la fecha más reciente, aunque se incorpore después una semana anterior. Cada archivo se sustituye de forma atómica; el conjunto no constituye una transacción. Hay que conservar los HTML históricos al actualizar la carpeta.
 También reconoce las cabeceras y estados de selección de los primeros informes, sin recalcular sus valoraciones ni cambiar sus advertencias.
 
+## Todos los recomendados
+El botón de la portada abre `recomendados.html`, un catálogo acumulado de las filas
+seleccionadas en los HTML semanales locales. Se actualiza con `tools/generar.py`.
+Cada título y temporada aparece una sola vez, ordenado por su última recomendación.
+Se conserva aunque posteriormente deje de cumplir; sus datos son los de la última
+recomendación, con medios históricos y enlaces a las semanas que lo recomendaron.
+La disponibilidad no se presenta como actual. Las advertencias completas siguen
+en cada informe enlazado. Las marcas Vista usan la misma clave que los informes.
+Validación local: `python tools/validar_recomendados.py`.
+
 ## Marcas Vista
 localStorage por origen y navegador, sin cuentas ni servidor.
 Clave estable: jumalenin:estrenos:vistas:v1:fa:ID; temporadas identificadas añaden :tN.
