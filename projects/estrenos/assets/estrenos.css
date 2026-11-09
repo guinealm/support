@@ -32,9 +32,12 @@ tr.selected.seen td,tr.selected.seen td a {font-weight:400}
 .seen-cell {text-align:center}
 .catalog-button {display:inline-block;padding:.7rem 1rem;border-radius:6px;background:var(--jm-primary,#245b5f);color:white;font-weight:700;text-decoration:none}
 .catalog-button:hover {text-decoration:underline}
+.format-badge {display:inline-block;padding:.1rem .45rem;border:1px solid var(--jm-primary,#245b5f);border-radius:4px;background:var(--jm-primary-soft,#d9e8e9);color:var(--jm-primary,#245b5f);font-size:.8rem;white-space:nowrap}
 .recommendation-details {margin:0;min-width:15rem}
-.recommendation-details dt {font-size:.8rem;color:var(--jm-primary,#245b5f)}
-.recommendation-details dd {margin:0 0 .5rem}
+.recommendation-details dt {display:inline;font-size:.8rem;color:var(--jm-primary,#245b5f)}
+.recommendation-details dt::after {content:": "}
+.recommendation-details dd {display:inline;margin:0}
+.recommendation-details dd:not(:last-child)::after {content:" · "}
 input[type=checkbox] {width:22px;height:22px;margin:0;accent-color:var(--jm-primary,#245b5f);cursor:pointer}
 a {color:var(--jm-primary,#245b5f)}
 :focus-visible {outline:3px solid var(--jm-accent,#c28f2c);outline-offset:3px}

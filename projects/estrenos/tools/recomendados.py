@@ -17,6 +17,8 @@ def collect(pages):
     for date, page in sorted(pages.items()):
         for table in re.findall(r'<table>(.*?)</table>', page, re.S):
             headers = re.findall(r'<th\b[^>]*>(.*?)</th>', table, re.S)
+            caption = re.search(r'<caption>(.*?)</caption>', table, re.S)
+            series_table = bool(caption and re.search(r'\bseries\b', caption[1], re.I))
             for key, classes, body in re.findall(
                     r'<tr data-title-key="([^"]+)" class="([^"]*)">(.*?)</tr>', table, re.S):
                 if 'selected' not in classes.split():
@@ -25,6 +27,8 @@ def collect(pages):
                 if len(cells) != len(headers):
                     raise ValueError('Tabla irregular en ' + date)
                 entry = entries.setdefault(key, {'dates': set(), 'media': set()})
+                entry['series'] = (entry.get('series', False) or series_table or
+                                   bool(re.search(r'\((?:mini)?serie\)', cells[1], re.I)))
                 entry['dates'].add(date)
                 for header, cell in zip(headers[2:], cells[2:]):
                     if any(word in header.lower() for word in ('medio', 'plataforma')):
@@ -45,8 +49,12 @@ def render_catalog(pages):
             f'<a href="informe-{date}.html">{datetime.date.fromisoformat(date).strftime("%d/%m/%Y")}</a>'
             for date in sorted(item['dates'], reverse=True))
         media = '<br>'.join(sorted(item['media'])) or 'Consultar informe'
+        title = item['title']
+        if item['series']:
+            title = re.sub(r'\s*\((?:mini)?serie\)', '', title, flags=re.I)
+            title += ' <span class="format-badge">Serie</span>'
         rows.append(f'<tr data-title-key="{html.escape(key, quote=True)}" class="selected">'
-                    f'<td class="seen-cell">{item["checkbox"]}</td><td>{item["title"]}</td>'
+                    f'<td class="seen-cell">{item["checkbox"]}</td><td>{title}</td>'
                     f'<td>{media}</td><td>{details}</td><td>{links}</td></tr>')
     body = (f'<h2>Todos los recomendados · {len(entries)} títulos y temporadas</h2>'
             '<p>Archivo de recomendaciones de los informes disponibles. Un título permanece aquí aunque después deje de cumplir los criterios. '
