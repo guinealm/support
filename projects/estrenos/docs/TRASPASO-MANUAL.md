@@ -1,42 +1,15 @@
-# Entrega manual de estrenos — 08/11/2026
+# Traspaso manual de Estrenos — entrega del 13/11/2026
 
-El paquete contiene una web estática y sus fuentes. No requiere base de datos,
-instalación de dependencias ni compilación. La entrega incorpora el informe parcial
-del 06/11/2026: 58 títulos y 7 seleccionados. Las limitaciones están en el informe.
+Los archivos ya están incorporados en `C:/jumalenin-ecosistema/sites/support/projects/estrenos`.
+No necesitas descomprimir ni copiar un paquete para revisar esta entrega.
 
-## Contenido
+1. Abre `estrenos.code-workspace` en VSCode y revisa los cambios del repositorio Support.
+2. Comprueba `index.html`, `informe-2026-11-13.html`, `recomendados.html` y el selector histórico.
+3. Revisa también el Markdown del informe, el ajuste del generador y la documentación.
+4. Tramita tú los cambios a GitHub mediante tu procedimiento habitual.
+5. Para Hostinger, publica desde esta carpeta los HTML (incluidos todos los históricos y recomendados) y `assets/`, manteniendo la estructura del sitio Support. Conserva una copia previa del destino. No subas documentación privada, correos ni `estado.json`.
+6. Comprueba después en el destino la fecha 13/11/2026, las 60 filas, 3 seleccionados, catálogo de 59 recomendaciones y persistencia de Vista en ese mismo dominio y navegador.
 
-- `publicar/`: index.html, informes históricos y assets. Es la carpeta para Hostinger.
-- `fuente/`: la misma web, el generador Python, README y documentación. Es el código
-  fuente para conservar en GitHub dentro de la ruta del proyecto estrenos.
-- `LEEME.md`: estas instrucciones.
+Es una web estática sin compilación. Los CSS/JS locales existentes siguen vigentes y usa los estilos comunes externos habituales. La entrega conserva la revisión parcial: 49 pendientes y pendientes anteriores no reconsultados. Cinco entradas sin ID de ficha muestran «Ficha pendiente» en lugar de una casilla Vista.
 
-El historial operativo, destinatarios y confirmaciones de Gmail quedan fuera del ZIP.
-La web conserva sus dependencias visuales ya existentes de common.jumalenin.com.
-No se ha realizado ninguna publicación remota.
-
-## GitHub, por el usuario
-
-1. Descomprime el ZIP en una carpeta nueva.
-2. En tu repositorio de Support, abre `projects/estrenos`.
-3. Incorpora el contenido de `fuente/` manteniendo sus carpetas y revisa los cambios.
-4. Confirma tú la actualización mediante tu procedimiento habitual. No subas
-   el historial privado `estado.json` ni archivos de correo.
-
-## Hostinger, por el usuario
-
-1. En el administrador de archivos del sitio Support, localiza la carpeta que sirve
-   `support.jumalenin.com/projects/estrenos/`. Usa la raíz real de ese dominio;
-   no presupongas que coincide con la de otros sitios.
-2. Descarga una copia de la carpeta actual antes de actualizarla.
-3. Sube el contenido de `publicar/` a esa carpeta, preservando `assets/` y todos
-   los archivos `informe-YYYY-MM-DD.html`. No subas la carpeta contenedora publicar
-   como un nivel adicional. No modifiques otros proyectos.
-4. Abre la página y comprueba que la versión del selector es 06/11/2026, que hay
-   58 títulos y 7 seleccionados, que las fechas anteriores se abren y que una
-   casilla Vista mantiene su marca al recargar en ese mismo navegador.
-
-Las marcas Vista existentes se conservan si mantienes el mismo dominio y navegador
-y no borras el almacenamiento local. No se transfieren desde una vista local a otro
-dominio. El informe, el correo y su historial ya están preparados independientemente
-de este traspaso manual.
+No se ha publicado por parte del asistente. El correo ya enviado no se repite. La publicación manual no bloquea el seguimiento semanal.

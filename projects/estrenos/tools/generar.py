@@ -48,17 +48,20 @@ def render(source, fecha):
                 checkbox = ""
                 if is_titles:
                     match = re.search(r"/film(\d+)\.html", row[0])
-                    if not match:
+                    if not match and not row[-1].strip().startswith("Pendiente"):
                         raise ValueError("Falta ID FilmAffinity: "+row[0])
                     title = re.sub(r"\[(.*?)\]\(https?://[^)]+\)", r"\1", row[0]).rstrip("*")
                     # La misma pelicula en varias plataformas comparte marca.
                     season = re.search(r"\bT(\d+)\b", title)
-                    key = "fa:" + match[1] + (":t"+season[1] if season else "")
-                    is_selected = bool(re.fullmatch(r"Seleccionad[ao](?::.*)?|Cumple(?:;.*)?", row[-1].strip().strip("*")))
+                    key = "fa:" + match[1] + (":t"+season[1] if season else "") if match else None
+                    is_selected = bool(re.fullmatch(r"Seleccionad[ao](?:[:;].*)?|Cumple(?:;.*)?", row[-1].strip().strip("*")))
                     selected += int(is_selected)
                     count += 1
-                    attrs = ' data-title-key="'+key+'" class="'+("selected" if is_selected else "")+'"'
-                    checkbox = '<td class="seen-cell"><input type="checkbox" disabled data-seen="'+key+'" aria-label="Marcar como vista: '+html.escape(title, quote=True)+'"></td>'
+                    if key:
+                        attrs = ' data-title-key="'+key+'" class="'+("selected" if is_selected else "")+'"'
+                        checkbox = '<td class="seen-cell"><input type="checkbox" disabled data-seen="'+key+'" aria-label="Marcar como vista: '+html.escape(title, quote=True)+'"></td>'
+                    else:
+                        checkbox = '<td class="seen-cell"><span title="Marca Vista no disponible hasta verificar la ficha">Ficha pendiente</span></td>'
                 chunks.append('<tr'+attrs+'>'+checkbox)
                 chunks.extend('<td>'+inline(c)+'</td>' for c in row)
                 chunks.append('</tr>')

@@ -1,4 +1,14 @@
 # Estrenos · Jumalenin
+## Procedimiento vigente y entrega del 13/11/2026
+
+Cada semana se completan valoración FilmAffinity, correo, archivos en este repositorio,
+validación de cambios revisables en VSCode y aviso para la publicación manual del usuario.
+Véase [procedimiento semanal](docs/PROCEDIMIENTO-SEMANAL.md).
+Esta instrucción sustituye la antigua propuesta de sustituir el correo por la web.
+Entrega local del 14/11: informe parcial del 13/11, 60 títulos y 3 seleccionados;
+portada, nueve semanas del histórico y catálogo de 59 recomendaciones actualizados.
+Fuente: `docs/informe-2026-11-13.md`. No se repiten valoración ni correo.
+
 Ante un bloqueo de consulta o una recuperación sin progreso, leer primero
 [Diagnóstico y procedimiento de recuperación](docs/DIAGNOSTICO-Y-RECUPERACION.md).
 Incluye las evidencias del incidente del 06–08/11/2026 y cómo evitar repetirlo.
@@ -77,6 +87,9 @@ No crear otra automatización ni una segunda tarea que envíe correos duplicados
 El archivo estrenos.code-workspace facilita abrir la carpeta en un editor; no registra por sí solo un proyecto en Codex.
 
 ## Paso de correo a web
+Propuesta histórica, sin vigencia: se mantiene el correo y la publicación manual,
+conforme al procedimiento de cinco pasos enlazado al principio.
+
 Tras revisar y autorizar publicación de esta ruta, actualizar la automatización existente:
 1. Mantener criterios, horario, recuperación, historial y comprobación de duplicados.
 2. Generar index.html con el informe semanal validado.
