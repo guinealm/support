@@ -46,3 +46,7 @@ a {color:var(--jm-primary,#245b5f)}
 .site-brand img {max-width:220px}
 @media(max-width:600px) {th,td {padding:.6rem}.hero{padding-block:2rem}.table-scroll{border-radius:4px}h1{font-size:2rem}table{min-width:850px}}
 @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto}}
+.personal-rating {max-width:100%;padding:.25rem .4rem;border:1px solid #697983;border-radius:4px;font:inherit;background:#fff;color:#1f2933}
+.personal-rating[data-rating="recommended"] {background:#dcfce7;color:#14532d}
+.personal-rating[data-rating="neutral"] {background:#fef3c7;color:#713f12}
+.personal-rating[data-rating="dismissed"] {background:#fee2e2;color:#7f1d1d}

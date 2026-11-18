@@ -8,7 +8,15 @@ from recomendados import add_button, render_catalog
 
 def inline(text):
     text = html.escape(text, quote=True)
-    text = re.sub(r'\[(.*?)\]\((https?://[^)]+)\)', r'<a href="\2">\1</a>', text)
+
+    def render_link(match):
+        label, url = match.groups()
+        attributes = ''
+        if url.startswith('https://www.filmaffinity.com/'):
+            attributes = ' target="_blank" rel="noopener"'
+        return f'<a href="{url}"{attributes}>{label}</a>'
+
+    text = re.sub(r'\[(.*?)\]\((https?://[^)]+)\)', render_link, text)
     return re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
 
 def render(source, fecha):
