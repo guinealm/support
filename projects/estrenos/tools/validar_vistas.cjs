@@ -5,12 +5,14 @@ const assert = require('node:assert/strict');
 const source = fs.readFileSync(require('node:path').join(__dirname, '../assets/estrenos.js'), 'utf8');
 const saved = new Map();
 const windows = [];
-function page() {
+function page(personalOnly = false) {
   const events = {};
   const ratingEvents = {};
   const select = {dataset: {}, setAttribute: () => {},
     addEventListener: (name, fn) => {ratingEvents[name] = fn;}};
-  const row = {classList: {toggle: (_, value) => {box.seen = value;}},
+  const count = {textContent: personalOnly ? '0' : '1'};
+  const row = {hidden: personalOnly, hasAttribute: () => personalOnly,
+    classList: {toggle: (_, value) => {box.seen = value;}},
     cells: [{}, {textContent: 'Una película'}],
     insertCell: index => {
       assert.equal(index, 1);
@@ -33,14 +35,15 @@ function page() {
     document: {
       querySelectorAll: selector => selector === '.seen-cell' ? [seenCell] : [box],
       createElement: tag => tag === 'th' ? header : select,
-      getElementById: () => ({textContent: ''})
+      getElementById: id => id === 'catalog-count' ? count : {textContent: ''}
     },
     localStorage: {getItem: k => saved.get(k), setItem: write, removeItem: k => write(k, null)}});
   assert.equal(header.textContent, 'Valoración');
-  return {box, events, select, ratingEvents};
+  return {box, events, select, ratingEvents, row, count};
 }
 const weekly = page();
 const catalog = page();
+const personal = page(true);
 weekly.box.checked = true;
 weekly.events.change();
 assert.equal(catalog.box.checked, true);
@@ -51,6 +54,10 @@ for (const value of ['recommended', 'neutral', 'dismissed']) {
   weekly.ratingEvents.change();
   assert.equal(catalog.select.value, value);
   assert.equal(catalog.select.dataset.rating, value);
+  assert.equal(personal.row.hidden, value !== 'recommended');
+  assert.equal(Number(personal.count.textContent), Number(value === 'recommended'));
+  assert.equal(catalog.row.hidden, false);
+  assert.equal(page(true).row.hidden, value !== 'recommended');
   assert.equal(page().select.value, value);
 }
 catalog.select.value = '';

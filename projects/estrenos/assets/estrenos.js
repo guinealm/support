@@ -5,6 +5,7 @@
   const ratings = ["recommended", "neutral", "dismissed"];
   const controls = new Map();
   const status = document.getElementById("storage-status");
+  const catalogCount = document.getElementById("catalog-count");
   let available = true;
 
   function announce() {
@@ -83,6 +84,13 @@
     bind(select, ratingPrefix + box.dataset.seen, value => {
       select.value = ratings.includes(value) ? value : "";
       select.dataset.rating = select.value;
+      if (catalogCount && row.hasAttribute("data-personal-only")) {
+        const visible = select.value === "recommended";
+        if (row.hidden === visible) {
+          row.hidden = !visible;
+          catalogCount.textContent = Number(catalogCount.textContent) + (visible ? 1 : -1);
+        }
+      }
     }, () => select.value || null);
   });
 

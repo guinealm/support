@@ -12,7 +12,7 @@ def add_button(page):
     return page
 
 
-def collect(pages):
+def collect(pages, selected_only=True):
     entries = {}
     for date, page in sorted(pages.items()):
         for table in re.findall(r'<table>(.*?)</table>', page, re.S):
@@ -21,7 +21,7 @@ def collect(pages):
             series_table = bool(caption and re.search(r'\bseries\b', caption[1], re.I))
             for key, classes, body in re.findall(
                     r'<tr data-title-key="([^"]+)" class="([^"]*)">(.*?)</tr>', table, re.S):
-                if 'selected' not in classes.split():
+                if selected_only and 'selected' not in classes.split():
                     continue
                 cells = re.findall(r'<td\b[^>]*>(.*?)</td>', body, re.S)
                 if len(cells) != len(headers):
@@ -33,7 +33,6 @@ def collect(pages):
                 for header, cell in zip(headers[2:], cells[2:]):
                     if any(word in header.lower() for word in ('medio', 'plataforma')):
                         entry['media'].add(cell)
-                # Sólo las filas seleccionadas actualizan la instantánea conservada.
                 entry.update(date=date, checkbox=cells[0], title=cells[1],
                              details=list(zip(headers[2:], cells[2:])))
     return entries
@@ -41,6 +40,9 @@ def collect(pages):
 
 def render_catalog(pages):
     entries = collect(pages)
+    selected = set(entries)
+    entries.update({key: item for key, item in collect(pages, selected_only=False).items()
+                    if key not in selected})
     rows = []
     for key, item in sorted(entries.items(), key=lambda pair: (pair[1]['date'], pair[0]), reverse=True):
         details = '<dl class="recommendation-details">' + ''.join(
@@ -53,18 +55,19 @@ def render_catalog(pages):
         if item['series']:
             title = re.sub(r'\s*\((?:mini)?serie\)', '', title, flags=re.I)
             title += ' <span class="format-badge">Serie</span>'
-        rows.append(f'<tr data-title-key="{html.escape(key, quote=True)}" class="selected">'
+        attributes = 'class="selected"' if key in selected else 'data-personal-only hidden'
+        rows.append(f'<tr data-title-key="{html.escape(key, quote=True)}" {attributes}>'
                     f'<td class="seen-cell">{item["checkbox"]}</td><td>{title}</td>'
                     f'<td>{media}</td><td>{details}</td><td>{links}</td></tr>')
-    body = (f'<h2>Todos los recomendados · {len(entries)} títulos y temporadas</h2>'
-            '<p>Archivo de recomendaciones de los informes disponibles. Un título permanece aquí aunque después deje de cumplir los criterios. '
-            'Ordenado por su última recomendación, de más reciente a más antigua.</p>'
-            '<p>Los datos corresponden a la última recomendación registrada; las plataformas recogen las menciones históricas, '
+    body = (f'<h2>Todos los recomendados · <span id="catalog-count">{len(selected)}</span> títulos y temporadas</h2>'
+            '<p>Incluye las obras seleccionadas al menos una vez en los informes y las que has valorado como «Recomendable» en este navegador.</p>'
+            '<p>El orden y los datos corresponden al último informe que seleccionó cada obra o, si solo la has recomendado tú, '
+            'al último informe donde apareció. Las plataformas recogen las menciones históricas, '
             'no la disponibilidad actual. Consulta los informes enlazados para sus advertencias, cobertura y fechas efectivas de consulta.</p>'
             '<div class="table-scroll" role="region" tabindex="0" aria-label="Todos los recomendados"><table>'
             '<caption>Recomendaciones acumuladas</caption><thead><tr><th scope="col">Vista</th>'
             '<th scope="col">Título</th><th scope="col">Medios / plataformas registrados</th>'
-            '<th scope="col">Datos de la última recomendación</th><th scope="col">Informes donde se recomendó</th>'
+            '<th scope="col">Datos del informe</th><th scope="col">Informes de referencia</th>'
             '</tr></thead><tbody>' + ''.join(rows) + '</tbody></table></div>')
     page = pages[max(pages)]
     page = re.sub(r'<title>.*?</title>', '<title>Todos los recomendados · Estrenos · Jumalenin</title>', page)
